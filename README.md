@@ -1,25 +1,22 @@
-# Jax Plays
+# JaxPlays
+
+## What is JaxPlays?
 
 JaxPlays is the one-stop place to go for all information about current, upcoming and past live theatre performances in Northeast Florida.
 
 Find out which local community theatres are perform which shows, look at the cast lists to see who is in the latest shows, and see where they've performed before!
 
-# git-wiki-skeleton
+## Why is JaxPlays?
+JaxPlays' mission is to preserve the history, promote the current and advance the future of live theatre in Northeast Florida.
 
-NOTE: it's fully supported by github platform, you don't need to install anything locally
+JaxPlays' vision is to build a repository of information about every live theatre performance that has happened in Northeast Florida including:
 
-This is a [skeleton](skeleton) repository that can be used as a template to bootstrap your wiki using "[remote_theme](https://github.com/benbalter/jekyll-remote-theme)" config
+cast and crew lists,
+descriptions,
+reviews, and
+upcoming audition announcements.
 
-For documentation, installation guide and demo of git-wiki-theme visit [THIS PAGE](http://drassil.github.io/git-wiki/)
+## Who is JaxPlays?
+JaxPlays is owned and operated by Ray Hollister, but the goal is for JaxPlays to be a collaborative effort that everyone can edit.
 
-## The git-wiki project
-
-The git-wiki project is composed by 3 different repository:
-
-- [git-wiki-theme](https://github.com/Drassil/git-wiki-theme): This is the repository of the theme that implements the wiki functionalities. You would have not fork it unless you need to send a Pull Request or create your wiki project from scratch.
-
-- [git-wiki-skeleton](https://github.com/Drassil/git-wiki-skeleton): This is the repo that you should fork or use as a template. It uses the [jekyll remote theme](https://github.com/benbalter/jekyll-remote-theme) functionality that allows you to create your own wiki based on git-wiki-theme. By using the remote functionality you can automatically keep your wiki always updated with latest features from the **git-wiki-theme**, but you can also fully customize it. 
-
-- [git-wiki](https://github.com/Drassil/git-wiki): This is the documentation repository and website of the **git-wiki-theme** project. You would have not fork it unless you want to contribute to the git-wiki project documentation.
-
-Version: 1.0.8
+If you have any questions, comments or complaints, please visit my website and feel free to contact me on any of the platforms listed or email jaxplayswiki@gmail.com.
