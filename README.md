@@ -1,5 +1,9 @@
 # Jax Plays
 
+JaxPlays is the one-stop place to go for all information about current, upcoming and past live theatre performances in Northeast Florida.
+
+Find out which local community theatres are perform which shows, look at the cast lists to see who is in the latest shows, and see where they've performed before!
+
 # git-wiki-skeleton
 
 NOTE: it's fully supported by github platform, you don't need to install anything locally
