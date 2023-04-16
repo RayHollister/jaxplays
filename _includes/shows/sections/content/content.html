@@ -1,0 +1,136 @@
+<div class="git-wiki-page">
+  <div>
+
+    {% include git-wiki/sections/tools/tools.html %}
+
+    {% include git-wiki/components/toc/toc.html %}
+
+    {% if site.inc_before_content %}
+    {% include {{ site.inc_before_content }} %}
+    {% endif %}
+
+    <div id="git-wiki-shows-content">
+      <div class="showdescription">
+        <h1>{{page.title}}</h1>
+
+        <h2 id="description">Description</h2>
+        {{ content }}
+      </div>
+
+      <div class="sidebar">
+        <div class="showdetails">
+          <h2 id="details">Details</h2>
+          <table>
+            <tbody>
+              {% for detail in page.details %}
+              <tr>
+                <td class="leftcol">{{ detail[0] }}</td>
+                <td>
+                  {% if detail[0] == 'Web' %}
+                  <a target="_blank" href="{{ detail[1] }}" targe="_blank">{{ detail[1] }}</a>
+                  {% elsif detail[0] == 'Theatre' %}
+                  <a target="_blank" href="/theatre/{{ detail[1] | slugify }}">{{ detail[1] }}</a>
+                  {% elsif detail[0] == 'Title' and detail[1] contains '- wiki' %}
+                  <a target="_blank"
+                    href="{{site.wikipedia}}{{ detail[1] | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ detail[1] | replace: ' - wiki', '' }}</a>
+                  {% elsif detail[0] == 'Music' and detail[1] contains '- wiki' %}
+                  <a target="_blank"
+                    href="{{site.wikipedia}}{{ detail[1] | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ detail[1] | replace: ' - wiki', '' }}</a>
+                  {% elsif detail[0] == 'Lyrics' and detail[1] contains '- wiki' %}
+                  <a target="_blank"
+                    href="{{site.wikipedia}}{{ detail[1] | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ detail[1] | replace: ' - wiki', '' }}</a>
+                  {% elsif detail[0] == 'Book' and detail[1] contains '- wiki' %}
+                  <a target="_blank"
+                    href="{{site.wikipedia}}{{ detail[1] | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ detail[1] | replace: ' - wiki', '' }}</a>
+                  {% else %}
+                  {{ detail[1] | markdownify | remove: '<p>' | remove: '</p>' }}
+                  {% endif %}
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+
+        <div class="showtimes">
+          <h2 id="showtimes">Show Times</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% assign showtimes = page.showtimes | newline_to_br | strip | split: '<br />' %}
+              {% for showtime in showtimes %}
+              {% assign date_time = showtime | date: "%A, %B %-d, %Y %H:%M" %}
+              {% assign date = date_time | date: "%A, %B %-d, %Y" %}
+              {% assign time = date_time | date: "%-I:%M %P" %}
+              <tr>
+                <td>{{ date }}</td>
+                <td>{{ time }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+      <div class="additional-content">
+        <div class="castlist">
+          <h2 id="castlist">Cast</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Character(s)</th>
+                <th>Actor(s)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for character in page.cast %}
+              <tr>
+                <td>{{ character[0] }}</td>
+                <td><a href="/people/{{ character[1] | slugify }}">{{ character[1] }}</a></td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+
+        <div class="crewlist">
+          <h2 id="crewlist">Crew</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Title(s)</th>
+                <th>Member(s)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for title in page.crew %}
+              <tr>
+                <td>{{ title[0] }}</td>
+                <td><a href="/people/{{ title[1] | slugify }}">{{ title[1] }}</a></td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+
+
+        <div class="external-links">
+          <h2 id="external-links">External Links</h2>
+          <ul>
+            {% for link in page.external_links %}
+            <li><a href="{{ link[1] }}" target="_blank">{{ link[0] }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      {% if site.inc_after_content %}
+      {% include {{ site.inc_after_content }} %}
+      {% endif %}
+      </section>
+    </div>

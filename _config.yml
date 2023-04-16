@@ -89,6 +89,12 @@ defaults:
  -
     scope:
       path: ""
+      type: "shows"
+    values:
+      layout: "shows"
+ -
+    scope:
+      path: ""
       type: "posts"
     values:
       layout: "git-wiki-post"

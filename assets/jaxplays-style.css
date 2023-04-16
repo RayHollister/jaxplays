@@ -6,23 +6,61 @@
     margin-top: 1rem;
 }
 
-div#git-wiki-content {
-    display: flex;
-    flex-direction: column;
-}
-
-table.showtimes,
-table.castlist,
-table.crewlist,
-table.showdetails {
+.showtimes table,
+.castlist table,
+.crewlist table,
+.showdetails table {
     width: auto;
+}
+
+table.showdetails thead tr th {
+    font-size: 24px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+}
+
+/* Add this for a gray background on the sidebar for all devices */
+.sidebar {
+    background-color: rgba(128, 128, 128, 0.1);
+}
+.sidebar table td.leftcol {
+    font-weight: 600;
+} 
+#git-wiki-content {
     display: flex;
     flex-direction: column;
 }
 
+.additional-content {
+    display: flex;
+    flex-direction: column;
+}
 
-table.showdetails thead tr th{
-    font-size: 24px;
-    font-family: "Segoe UI",Arial,sans-serif;
-    font-weight: 400;
+/* Media query for desktop devices */
+@media (min-width: 1024px) {
+    #git-wiki-shows-content {
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "content sidebar"
+            "additional-content sidebar";
+    }
+
+    .showdescription {
+        grid-area: content;
+    }
+
+    .additional-content {
+        grid-area: additional-content;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+        padding: 1rem;
+    }
 }
