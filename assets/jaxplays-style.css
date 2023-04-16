@@ -26,7 +26,7 @@ table.showdetails thead tr th {
 .sidebar table td.leftcol {
     font-weight: 600;
 } 
-#git-wiki-content {
+#git-wiki-shows-content {
     display: flex;
     flex-direction: column;
 }
