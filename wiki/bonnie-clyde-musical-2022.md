@@ -1,23 +1,24 @@
 ## Bonnie & Clyde (musical) (2022)
 
-<!-- | image = File:Bonnie&Clyde-ABET2022.jpeg -->
-
-### Details
-
-| Name | [Bonnie & Clyde (musical)](https://en.wikipedia.org/wiki/Bonnie & Clyde (musical)) |
-| Theatre | [All Beaches Experimental Theatre](ABET) |
-| Music | [Frank Wildhorn](https://en.wikipedia.org/wiki/Frank Wildhorn) |
-| Lyrics |[Don Black (lyricist)](https://en.wikipedia.org/wiki/Don Black) |
-| Book | Ivan Menchell |
-| Basis | The lives of [Bonnie and Clyde](https://en.wikipedia.org/wiki/Bonnie_and_Clyde) |
-| Web | https://www.eventbrite.com/e/bonnie-clyde-the-musical-tickets-168951437297 |
-
 ### Description
 
+{:.showdescription}
 "America's most notorious lovers and bank robbers take the country by storm in this sexy and compelling adventure. At the height of the Great Depression, Bonnie Parker and Clyde Barrow went from two small-town nobodies in West Texas to America's most renowned folk heroes and Texas law enforcement's worst nightmares. Fearless, shameless and alluring, Bonnie & Clyde, is the electrifying story of love, adventure and crime that captured the attention of an entire country." — [Bonnie & Clyde the musical - Eventbrite](https://www.eventbrite.com/e/bonnie-clyde-the-musical-tickets-168951437297)
+
+{:.showdetails}
+| Details ||
+| --- | --- |
+| Name | [Bonnie & Clyde (musical)]({{site.wikipedia}}Bonnie & Clyde (musical)) |
+| Theatre | [All Beaches Experimental Theatre](ABET) |
+| Music | [Frank Wildhorn]({{site.wikipedia}}Frank Wildhorn) |
+| Lyrics |[Don Black (lyricist)]({{site.wikipedia}}Don Black) |
+| Book | Ivan Menchell |
+| Basis | The lives of [Bonnie and Clyde]({{site.wikipedia}}Bonnie_and_Clyde) |
+| Web | https://www.eventbrite.com/e/bonnie-clyde-the-musical-tickets-168951437297 |
 
 ### Show Times
 
+{:.showtimes}
 | Day        | Time    |
 | ---------- | ------- |
 | 03/18/2022 | 7:30 PM |
@@ -33,6 +34,7 @@
 
 ### Cast
 
+{:.castlist}
 | Characters                   | Actors             |
 | ---------------------------- | ------------------ |
 | Young Bonnie                 | Salka Corring      |
@@ -58,6 +60,7 @@
 
 ### Crew
 
+{:.crewlist}
 | Titles             | Members     |
 | ------------------ | ----------- |
 | Director           | Kacy Hope   |

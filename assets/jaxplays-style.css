@@ -1,0 +1,28 @@
+.jaxplays_title {
+    text-align: center;
+    font-family: Montserrat Black;
+    Montserrat;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+div#git-wiki-content {
+    display: flex;
+    flex-direction: column;
+}
+
+table.showtimes,
+table.castlist,
+table.crewlist,
+table.showdetails {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+table.showdetails thead tr th{
+    font-size: 24px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+}
