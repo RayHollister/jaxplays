@@ -27,22 +27,10 @@
                 <td class="leftcol">{{ detail[0] }}</td>
                 <td>
                   {% if detail[0] == 'Web' %}
-                  <a target="_blank" href="{{ detail[1] }}" targe="_blank">{{ detail[1] }}</a>
+                  <a target="_blank" href="{{ detail[1] }}" targe="_blank">Official website</a>
                   {% elsif detail[0] == 'Theatre' %}
                   <a target="_blank" href="/{{ detail[1] | strip | replace: ' ', '_' }}">{{ detail[1] }}</a>
-                  {% elsif detail[0] == 'Title' and detail[1] contains '- wiki' %}
-                  <a target="_blank"
-                    href="{{site.wikipedia}}{{ detail[1] | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ detail[1] | replace: ' - wiki', '' }}</a>
-                  {% elsif detail[0] == 'Music' and detail[1] contains '- wiki' %}
-                  <a target="_blank"
-                    href="{{site.wikipedia}}{{ detail[1] | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ detail[1] | replace: ' - wiki', '' }}</a>
-                  {% elsif detail[0] == 'Lyrics' and detail[1] contains '- wiki' %}
-                  <a target="_blank"
-                    href="{{site.wikipedia}}{{ detail[1] | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ detail[1] | replace: ' - wiki', '' }}</a>
-                  {% elsif detail[0] == 'Book' and detail[1] contains '- wiki' %}
-                  <a target="_blank"
-                    href="{{site.wikipedia}}{{ detail[1] | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ detail[1] | replace: ' - wiki', '' }}</a>
-                  {% elsif detail[0] == 'Writer' and detail[1] contains '- wiki' %}
+                  {% elsif detail[1] contains '- wiki' %}
                   <a target="_blank"
                     href="{{site.wikipedia}}{{ detail[1] | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ detail[1] | replace: ' - wiki', '' }}</a>
                   {% else %}
