@@ -24,29 +24,25 @@
                 <td class="leftcol">{{ detail[0] }}</td>
                 <td>
                   {% assign values = detail[1] | split: ', ' %}
-                  {% assign output = '' %}
                   {% for value in values %}
-                    {% if value contains '- wiki' %}
-                      {% capture temp %}<a target="_blank" href="{{site.wikipedia}}{{ value | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ value | replace: ' - wiki', '' }}</a>{% endcapture %}
-                    {% elsif detail[0] == 'Web' %}
-                      {% capture temp %}<a target="_blank" href="{{ value }}" targe="_blank">Official website</a>{% endcapture %}
-                    {% elsif detail[0] == 'Theatre' %}
-                      {% capture temp %}<a target="_blank" href="/{{ value | strip | replace: ' ', '_' }}">{{ value }}</a>{% endcapture %}
-                    {% else %}
-                      {% capture temp %}{{ value | markdownify | remove: '<p>' | remove: '</p>' }}{% endcapture %}
-                    {% endif %}
-                    {% assign output = output | append: temp %}
-                    {% unless forloop.last %}
-                      {% assign output = output | append: ', ' %}
-                    {% endunless %}
+                    {% if value contains '- wiki' -%}
+                      <a target="_blank" href="{{site.wikipedia}}{{ value | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ value | replace: ' - wiki', '' }}</a>
+                    {%- elsif detail[0] == 'Web' -%}
+                      <a target="_blank" href="{{ value }}" targe="_blank">Official website</a>
+                    {%- elsif detail[0] == 'Theatre' -%}
+                      <a target="_blank" href="/{{ value | strip | replace: ' ', '_' }}">{{ value }}</a>
+                    {%- else -%}
+                      {{ value | markdownify | strip | remove: '<p>' | remove: '</p>' | remove: "\r" | remove: "\n" }}
+                    {%- endif %}
+                    {%- unless forloop.last -%}, {%- endunless %}
                   {% endfor %}
-                  {{ output }}
                 </td>
               </tr>
               {% endfor %}
             </tbody>
           </table>
         </div>
+
 
         <div class="showtimes">
           <h2 id="showtimes">Show Times</h2>
