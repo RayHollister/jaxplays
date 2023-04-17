@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+
 :root {
     --body-font-color: #727272;
     --header-font-color: #393939;
-    --logo-font-family: "Montserrat Black", "Montserrat";
+    --logo-font-family: 'Montserrat';
+    --logo-font-weight: 900;
   }
 
 footer {
@@ -16,6 +19,7 @@ h1 {
     text-align: center;
     font-family: var(--logo-font-family);
     font-size: 3rem;
+    font-weight: var(--logo-font-weight);
     margin-top: 1rem;
 }
 
@@ -110,7 +114,7 @@ table.showdetails thead tr th {
         color: var(--header-font-color);
         font-family: var(--logo-font-family);
         font-size: 3rem;
-        /* font-family: "Montserrat Black", "Montserrat"; */
+        font-weight: var(--logo-font-weight);
     }
     #git-wiki-mobile-header img.mobilelogo {
         max-height: 50px;
