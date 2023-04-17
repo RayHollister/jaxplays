@@ -100,10 +100,23 @@ table.showdetails thead tr th {
     }
     #git-wiki-mobile-header {
         width: calc(100vw - 2rem);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 0px;
+        top: 1rem;
     }
     #git-wiki-mobile-header a.sitelogoandtext {
         color: var(--header-font-color);
         font-family: var(--logo-font-family);
+        font-size: 3rem;
         /* font-family: "Montserrat Black", "Montserrat"; */
+    }
+    #git-wiki-mobile-header img.mobilelogo {
+        max-height: 50px;
+        height: 40px;
+    }
+    #git-wiki-sidebar {
+            top: 80px;
     }
 }

@@ -2,7 +2,7 @@
   <button class="w3-button w3-teal" onclick="sidebar_toggle()">&#9776;</button>
   <a class="sitelogoandtext" href="{{ '/' | relative_url }}">
     {% if site.logo_url %}
-    <img src="{{ site.logo_url | relative_url }}" width="20px">
+    <img class="mobilelogo" src="{{ site.logo_url | relative_url }}">
     {% endif %}
     {{ site.title | escape }}
   </a>
