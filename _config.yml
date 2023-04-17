@@ -101,6 +101,12 @@ defaults:
  -
     scope:
       path: ""
+      type: "theatre"
+    values:
+      layout: "theatre"
+ -
+    scope:
+      path: ""
       type: "posts"
     values:
       layout: "git-wiki-post"

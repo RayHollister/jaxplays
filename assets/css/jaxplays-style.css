@@ -10,7 +10,8 @@
 .crewlist table,
 .showdetails table,
 .castcredits table,
-.crewcredits table {
+.crewcredits table,
+.theatreshows table {
     width: auto;
 }
 
