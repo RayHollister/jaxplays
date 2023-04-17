@@ -11,6 +11,9 @@ footer {
     float: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--logo-font-family);
+}
 h1 {
     font-size: 36px;
 }
@@ -65,7 +68,8 @@ table.showdetails thead tr th {
 
 .showdescription,
 .additional-content, 
-.sidebar {
+.sidebar,
+.external-links {
     padding: 1rem;
 }
 
