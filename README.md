@@ -1,5 +1,3 @@
-# JaxPlays
-
 ## What is JaxPlays?
 
 JaxPlays is the one-stop place to go for all information about current, upcoming and past live theatre performances in Northeast Florida.
