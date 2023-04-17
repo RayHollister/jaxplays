@@ -32,7 +32,8 @@ h1 {
 .showdetails table,
 .castcredits table,
 .crewcredits table,
-.theatreshows table {
+.theatreshows table,
+table {
     width: auto;
 }
 
