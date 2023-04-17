@@ -10,9 +10,6 @@
 <header class="w3-sidebar w3-bar-block w3-collapse" id="git-wiki-sidebar">
   <div>
     <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="sidebar_toggle()">Close &times;</button>
-    {% if site.inc_before_header %}
-    {% include {{ site.inc_before_header }} %}
-    {% endif %}
 
     <div class="w3-hide-medium w3-hide-small">
       {% if site.logo_url %}
@@ -22,6 +19,11 @@
       {% endif %}
     </div>
 
+    {% include git-wiki/components/search/index.html %}
+
+    {% if site.inc_before_header %}
+    {% include {{ site.inc_before_header }} %}
+    {% endif %}
 
     {% if site.github.is_user_page %}
     <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
@@ -38,6 +40,8 @@
     {% if site.blog_feature and site.show_wiki_posts %}
     {% include git-wiki/components/lists/post-list.html %}
     {% endif %}
+
+    
 
     {% if site.inc_after_header %}
     {% include {{ site.inc_after_header }} %}

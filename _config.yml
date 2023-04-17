@@ -1,6 +1,6 @@
 remote_theme: Drassil/git-wiki-theme@master
 # (string) Title of your wiki
-title: "Jax Plays"
+title: "JaxPlays"
 # (string) if you've installed your wiki in subfolder, you must change this configuration
 # with your folder name, otherwise leave it empty
 baseurl: "/"
@@ -157,7 +157,7 @@ inc_before_scripts :
 inc_after_scripts : 
 inc_before_styles : 
 inc_after_styles : style.html
-inc_before_header : 
+inc_before_header : sidebar.html
 inc_after_header : 
 inc_before_tail : 
 inc_after_tail : 
@@ -165,7 +165,7 @@ inc_before_tools :
 inc_after_tools : 
 
 inc_before_page_list :
-inc_after_page_list : sidebar.html
+inc_after_page_list : 
 inc_before_post_list :
 inc_after_post_list :
 

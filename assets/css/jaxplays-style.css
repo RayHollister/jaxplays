@@ -1,3 +1,9 @@
+footer {
+    float: none;
+}
+h1 {
+    font-size: 36px;
+}
 .jaxplays_title {
     text-align: center;
     font-family: Montserrat Black, Montserrat;
