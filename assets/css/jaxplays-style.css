@@ -1,12 +1,20 @@
+:root {
+    --body-font-color: #727272;
+    --header-font-color: #393939;
+    --logo-font-family: "Montserrat Black", "Montserrat";
+  }
+
 footer {
     float: none;
 }
+
 h1 {
     font-size: 36px;
 }
+
 .jaxplays_title {
     text-align: center;
-    font-family: Montserrat Black, Montserrat;
+    font-family: var(--logo-font-family);
     font-size: 3rem;
     margin-top: 1rem;
 }
@@ -31,13 +39,16 @@ table.showdetails thead tr th {
 .sidebar {
     background-color: rgba(128, 128, 128, 0.1);
 }
+
 .sidebar table td.leftcol {
     font-weight: 600;
-} 
+}
+
 #git-wiki-shows-content {
     display: flex;
     flex-direction: column;
 }
+
 #git-wiki-people-content {
     display: flex;
     flex-direction: column;
@@ -46,6 +57,12 @@ table.showdetails thead tr th {
 .additional-content {
     display: flex;
     flex-direction: column;
+}
+
+.showdescription,
+.additional-content, 
+.sidebar {
+    padding: 1rem;
 }
 
 /* Media query for desktop devices */
@@ -73,6 +90,20 @@ table.showdetails thead tr th {
         top: 0;
         /* height: 100vh; */
         overflow-y: auto;
+    }
+}
+
+/* Media query for tablets and mobile devices */
+@media (max-width: 1023px) {
+    body {
         padding: 1rem;
+    }
+    #git-wiki-mobile-header {
+        width: calc(100vw - 2rem);
+    }
+    #git-wiki-mobile-header a.sitelogoandtext {
+        color: var(--header-font-color);
+        font-family: var(--logo-font-family);
+        /* font-family: "Montserrat Black", "Montserrat"; */
     }
 }
