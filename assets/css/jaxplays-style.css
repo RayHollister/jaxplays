@@ -8,7 +8,9 @@
 .showtimes table,
 .castlist table,
 .crewlist table,
-.showdetails table {
+.showdetails table,
+.castcredits table,
+.crewcredits table {
     width: auto;
 }
 
@@ -26,6 +28,10 @@ table.showdetails thead tr th {
     font-weight: 600;
 } 
 #git-wiki-shows-content {
+    display: flex;
+    flex-direction: column;
+}
+#git-wiki-people-content {
     display: flex;
     flex-direction: column;
 }

@@ -1,0 +1,105 @@
+<div class="git-wiki-page">
+  {% include git-wiki/sections/tools/tools.html %}
+  
+  {% include git-wiki/components/toc/toc.html %}
+  
+  {% if site.inc_before_content %}
+  {% include {{ site.inc_before_content }} %}
+  {% endif %}
+  
+  <div id="git-wiki-people-content">
+    <h1>{{page.title}}</h1>
+  
+    {{ content }}
+
+    {% assign person_name = page.title %}
+    {% assign person_cast_credits = "" | split: "" %}
+    {% assign person_crew_credits = "" | split: "" %}
+  
+    {% for p in site.pages %}
+    {% if p.details and p.details.Theatre and p.showtimes %}
+    {% if p.cast %}
+    {% assign cast_items = p.cast | items %}
+    {% for cast_item in cast_items %}
+    {% assign key = cast_item[0] %}
+    {% assign value = cast_item[1] %}
+    {% if value contains person_name %}
+    {% assign show_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
+    {% assign theatre_url = p.details.Theatre | replace: " ", "_" %}
+    {% capture credit %}<tr><td>{{ key }}</td><td><a href="{{ p.url }}">{{ p.title }}</a></td><td><a href="/theatres/{{ theatre_url }}">{{ p.details.Theatre }}</a></td><td>{{ show_year }}</td></tr>{% endcapture %}
+    {% unless person_cast_credits contains credit %}
+    {% assign person_cast_credits = person_cast_credits | push: credit %}
+    {% endunless %}
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+  
+        {% if p.crew %}
+          {% assign crew_items = p.crew | items %}
+          {% for crew_item in crew_items %}
+            {% assign key = crew_item[0] %}
+            {% assign value = crew_item[1] %}
+            {% if value contains person_name %}
+              {% assign show_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
+              {% assign theatre_url = p.details.Theatre | replace: " ", "_" %}
+              {% capture credit %}<tr><td>{{ key }}</td><td><a href="{{ p.url }}">{{ p.title }}</a></td><td><a href="/theatres/{{ theatre_url }}">{{ p.details.Theatre }}</a></td><td>{{ show_year }}</td></tr>{% endcapture %}
+              {% unless person_crew_credits contains credit %}
+                {% assign person_crew_credits = person_crew_credits | push: credit %}
+              {% endunless %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+  
+    {% endif %}
+    {% endfor %}
+  
+    {% if person_cast_credits.size > 0 %}
+  
+      <div class="castcredits">
+        <h2>Cast credits:</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Role</th>
+              <th>Show</th>
+              <th>Theatre</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for credit in person_cast_credits %}
+              {{ credit }}
+            {% endfor %}
+          </tbody>
+        </table>
+      </div> 
+    {% endif %}
+  
+    {% if person_crew_credits.size > 0 %}
+    <div class="crewcredits">
+      <h2>Crew credits:</h2>
+      <table>
+      <thead>
+      <tr>
+      <th>Role</th>
+      <th>Show</th>
+      <th>Theatre</th>
+      <th>Year</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for credit in person_crew_credits %}
+      {{ credit }}
+      {% endfor %}
+      </tbody>
+      </table>
+      </div>
+      {% endif %}
+      
+        </div>
+      {% if site.inc_after_content %}
+      {% include {{ site.inc_after_content }} %}
+      {% endif %}
+      
+      </div>
+  

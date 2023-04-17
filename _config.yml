@@ -95,6 +95,12 @@ defaults:
  -
     scope:
       path: ""
+      type: "people"
+    values:
+      layout: "people"
+ -
+    scope:
+      path: ""
       type: "posts"
     values:
       layout: "git-wiki-post"

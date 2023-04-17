@@ -29,7 +29,7 @@
                   {% if detail[0] == 'Web' %}
                   <a target="_blank" href="{{ detail[1] }}" targe="_blank">{{ detail[1] }}</a>
                   {% elsif detail[0] == 'Theatre' %}
-                  <a target="_blank" href="/theatre/{{ detail[1] | slugify }}">{{ detail[1] }}</a>
+                  <a target="_blank" href="/{{ detail[1] | strip | replace: ' ', '_' }}">{{ detail[1] }}</a>
                   {% elsif detail[0] == 'Title' and detail[1] contains '- wiki' %}
                   <a target="_blank"
                     href="{{site.wikipedia}}{{ detail[1] | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ detail[1] | replace: ' - wiki', '' }}</a>
@@ -94,7 +94,7 @@
               {% for character in page.cast %}
               <tr>
                 <td>{{ character[0] }}</td>
-                <td><a href="/people/{{ character[1] | slugify }}">{{ character[1] }}</a></td>
+                <td><a href="/{{ character[1] | replace: " ", "_" }}">{{ character[1] }}</a></td>
               </tr>
               {% endfor %}
             </tbody>
@@ -114,7 +114,7 @@
               {% for title in page.crew %}
               <tr>
                 <td>{{ title[0] }}</td>
-                <td><a href="/people/{{ title[1] | slugify }}">{{ title[1] }}</a></td>
+                <td><a href="/{{ title[1] | replace: " ", "_" }}">{{ title[1] }}</a></td>
               </tr>
               {% endfor %}
             </tbody>
