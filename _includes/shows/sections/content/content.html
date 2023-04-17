@@ -23,16 +23,24 @@
               <tr>
                 <td class="leftcol">{{ detail[0] }}</td>
                 <td>
-                  {% if detail[0] == 'Web' %}
-                  <a target="_blank" href="{{ detail[1] }}" targe="_blank">Official website</a>
-                  {% elsif detail[0] == 'Theatre' %}
-                  <a target="_blank" href="/{{ detail[1] | strip | replace: ' ', '_' }}">{{ detail[1] }}</a>
-                  {% elsif detail[1] contains '- wiki' %}
-                  <a target="_blank"
-                    href="{{site.wikipedia}}{{ detail[1] | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ detail[1] | replace: ' - wiki', '' }}</a>
-                  {% else %}
-                  {{ detail[1] | markdownify | remove: '<p>' | remove: '</p>' }}
-                  {% endif %}
+                  {% assign values = detail[1] | split: ', ' %}
+                  {% assign output = '' %}
+                  {% for value in values %}
+                    {% if value contains '- wiki' %}
+                      {% capture temp %}<a target="_blank" href="{{site.wikipedia}}{{ value | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ value | replace: ' - wiki', '' }}</a>{% endcapture %}
+                    {% elsif detail[0] == 'Web' %}
+                      {% capture temp %}<a target="_blank" href="{{ value }}" targe="_blank">Official website</a>{% endcapture %}
+                    {% elsif detail[0] == 'Theatre' %}
+                      {% capture temp %}<a target="_blank" href="/{{ value | strip | replace: ' ', '_' }}">{{ value }}</a>{% endcapture %}
+                    {% else %}
+                      {% capture temp %}{{ value | markdownify | remove: '<p>' | remove: '</p>' }}{% endcapture %}
+                    {% endif %}
+                    {% assign output = output | append: temp %}
+                    {% unless forloop.last %}
+                      {% assign output = output | append: ', ' %}
+                    {% endunless %}
+                  {% endfor %}
+                  {{ output }}
                 </td>
               </tr>
               {% endfor %}
