@@ -23,7 +23,11 @@
               <tr>
                 <td class="leftcol">{{ detail[0] }}</td>
                 <td>
-                  {% assign values = detail[1] | split: ', ' %}
+                  {% if detail[0] == 'Title' %}
+                    {% assign values = detail[1] | split: '|nonexistent|' %}
+                  {% else %}
+                    {% assign values = detail[1] | split: ', ' %}
+                  {% endif %}
                   {% for value in values %}
                     {% if value contains '- wiki' -%}
                       <a target="_blank" href="{{site.wikipedia}}{{ value | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ value | replace: ' - wiki', '' }}</a>
@@ -42,7 +46,6 @@
             </tbody>
           </table>
         </div>
-
 
         <div class="showtimes">
           <h2 id="showtimes">Show Times</h2>
