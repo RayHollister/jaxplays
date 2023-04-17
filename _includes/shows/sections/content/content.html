@@ -83,7 +83,12 @@
               {% for character in page.cast %}
               <tr>
                 <td>{{ character[0] }}</td>
-                <td><a href="/{{ character[1] | replace: " ", "_" }}">{{ character[1] }}</a></td>
+                <td>
+                  {% assign actors = character[1] | split: ', ' %}
+                  {% for actor in actors -%}
+                    <a href="/{{ actor | replace: ' ', '_' }}">{{ actor }}</a>{% unless forloop.last %}, {% endunless %}
+                  {%- endfor %}
+                </td>
               </tr>
               {% endfor %}
             </tbody>
@@ -103,13 +108,18 @@
               {% for title in page.crew %}
               <tr>
                 <td>{{ title[0] }}</td>
-                <td><a href="/{{ title[1] | replace: " ", "_" }}">{{ title[1] }}</a></td>
+                <td>
+                  {% assign members = title[1] | split: ', ' %}
+                  {% for member in members -%}
+                    <a href="/{{ member | replace: ' ', '_' }}">{{ member }}</a>{% unless forloop.last %}, {% endunless %}
+                  {%- endfor %}
+                </td>
               </tr>
               {% endfor %}
             </tbody>
           </table>
         </div>
-
+      </div>
 
         <div class="external-links">
           <h2 id="external-links">External Links</h2>
