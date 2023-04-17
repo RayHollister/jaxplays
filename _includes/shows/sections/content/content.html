@@ -1,5 +1,5 @@
 <div class="git-wiki-page">
-  <div>
+  <section>
 
     {% include git-wiki/sections/tools/tools.html %}
 
@@ -40,6 +40,9 @@
                   <a target="_blank"
                     href="{{site.wikipedia}}{{ detail[1] | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ detail[1] | replace: ' - wiki', '' }}</a>
                   {% elsif detail[0] == 'Book' and detail[1] contains '- wiki' %}
+                  <a target="_blank"
+                    href="{{site.wikipedia}}{{ detail[1] | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ detail[1] | replace: ' - wiki', '' }}</a>
+                  {% elsif detail[0] == 'Writer' and detail[1] contains '- wiki' %}
                   <a target="_blank"
                     href="{{site.wikipedia}}{{ detail[1] | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ detail[1] | replace: ' - wiki', '' }}</a>
                   {% else %}
@@ -132,5 +135,5 @@
       {% if site.inc_after_content %}
       {% include {{ site.inc_after_content }} %}
       {% endif %}
-      </section>
-    </div>
+  </section>
+</div>
