@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: Bye Bye Birdie (2020)
-image: 
+image: 2020_Bye_Bye_Birdie_(musical).jpg
 category: musical
 details:
   Title: Bye Bye Birdie - wiki

@@ -74,6 +74,10 @@ table.showdetails thead tr th {
     padding: 1rem;
 }
 
+.featured_image {
+    margin-bottom: 1rem;
+}
+
 /* Media query for desktop devices */
 @media (min-width: 1024px) {
     #git-wiki-shows-content {

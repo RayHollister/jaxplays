@@ -16,6 +16,10 @@
 
       <div class="sidebar">
         <div class="showdetails">
+          {% if page.image %}
+            <img class="featured_image" src="/media/posters/{{ page.image }}" alt="{{ page.title }}">
+          {% endif %}
+          
           <h2 id="details">Details</h2>
           <table>
             <tbody>
