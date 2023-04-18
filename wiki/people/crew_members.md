@@ -10,8 +10,12 @@ title: All Crew Members
   {% if page.layout == 'shows' %}
     {% assign crew = page.crew %}
     {% for role in crew %}
-      {% assign crew_member = role[1] %}
-      {% assign all_crew_members = all_crew_members | push: crew_member %}
+      {% assign crew_member_value = role[1] %}
+      {% assign crew_members = crew_member_value | newline_to_br | strip | split: '<br />' %}
+      {% for crew_member in crew_members %}
+        {% assign crew_member_trimmed = crew_member | strip %}
+        {% assign all_crew_members = all_crew_members | push: crew_member_trimmed %}
+      {% endfor %}
     {% endfor %}
   {% endif %}
 {% endfor %}

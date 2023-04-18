@@ -24,7 +24,9 @@ showtimes: |
   2022-05-01 19:30:00
 cast:
   Matilda Wormwood: Amanda Powell
-  Miss Agatha Trunchbull: Courtney Russell, Sam Cobean
+  Miss Agatha Trunchbull: |
+    Courtney Russell
+    Sam Cobean
   Miss Honey: Haley Vonnoh
   Mr. Wormwood: Jimmy Kalista
   Mrs. Wormwood: Alexandra Carroll
@@ -35,8 +37,21 @@ cast:
   Doctor/The Escapologist: Jimmy Galaviz
   Rudolpho: Carlos Chavez-Tafur
   Children’s Entertainer: Scott Kessler
-  Kid Ensemble: Nora Costrino, Demee Mason, Camille Santana, Carlee Sawyers, Hazlee Kate Spivey, Madilyn Yoder
-  Ensemble: Bailey Schram, Chambers Waller, Carson Weeks, Ruby Weeks, Hannah Weller, Allison Williams, Lila Zaccaro
+  Kid Ensemble: |
+    Nora Costrino
+    Demee Mason
+    Camille Santana
+    Carlee Sawyers
+    Hazlee Kate Spivey
+    Madilyn Yoder
+  Ensemble: |
+    Bailey Schram
+    Chambers Waller
+    Carson Weeks
+    Ruby Weeks
+    Hannah Weller
+    Allison Williams
+    Lila Zaccaro
 crew:
 external_links:
   Matilda the Musical - Amelia Community Theatre: https://www.ameliacommunitytheatre.org/Performances/Roald-Dahl%E2%80%99s-Matilda-The-Musical

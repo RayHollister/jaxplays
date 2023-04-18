@@ -29,18 +29,34 @@ crew:
     Director: David Girard
     Stage Manager: Cynthia Riegler
     Dramaturge: Ramona Ramdeen
-    Set Design: David Girard, Claire Cimino
+    Set Design: |
+        David Girard
+        Claire Cimino
     Set Dressing / Props: Claire Cimino
     Lighting Design: Bryan Frank
     Scenic Artist: Meganne Johnson
     Light and Sound Operator: Sabine Larsen
     Stagehand: Hunter Steinke
-    Set Construction: Tom Barr, Brian Johnson, Meganne Johnson, George Kruer, Patrick Wilson
+    Set Construction: |
+        Tom Barr
+        Brian Johnson
+        Meganne Johnson
+        George Kruer
+        Patrick Wilson
     Graphic Designer / PR Photographer: Caryl Butterley
     Production Photographer: Susan J Roche
     Window Cling Designer: Shepherd
-    Program: Celia Frank, Dagher Printing
-    Opening Night Reception: Theresa Rookey, Audrey Dearborn, Walter Krupinski, Ken Rookey, Susan Cathcart, Karen Lahey, Jodi Moore
+    Program: | 
+        Celia Frank
+        Dagher Printing
+    Opening Night Reception: |
+        Theresa Rookey
+        Audrey Dearborn
+        Walter Krupinski
+        Ken Rookey
+        Susan Cathcart
+        Karen Lahey
+        Jodi Moore
 external_links:
     Radio Golf - ABET | All Beaches Experimental Theatre: http://www.abettheatre.com/2019-2020-season-28/radio-golf/
 ---

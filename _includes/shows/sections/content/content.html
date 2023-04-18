@@ -87,9 +87,11 @@
               <tr>
                 <td>{{ character[0] }}</td>
                 <td>
-                  {% assign actors = character[1] | split: ', ' %}
+                  {% assign cast_member_value = character[1] %}
+                  {% assign actors = cast_member_value | newline_to_br | strip | split: '<br />' %}
                   {% for actor in actors -%}
-                    <a href="/{{ actor | replace: ' ', '_' }}">{{ actor }}</a>{% unless forloop.last %}, {% endunless %}
+                    {% assign actor_trimmed = actor | strip %}
+                    <a href="/{{ actor_trimmed | replace: ' ', '_' }}">{{ actor_trimmed }}</a>{% unless forloop.last %}, {% endunless %}
                   {%- endfor %}
                 </td>
               </tr>
@@ -112,9 +114,11 @@
               <tr>
                 <td>{{ title[0] }}</td>
                 <td>
-                  {% assign members = title[1] | split: ', ' %}
+                  {% assign crew_member_value = title[1] %}
+                  {% assign members = crew_member_value | newline_to_br | strip | split: '<br />' %}
                   {% for member in members -%}
-                    <a href="/{{ member | replace: ' ', '_' }}">{{ member }}</a>{% unless forloop.last %}, {% endunless %}
+                    {% assign member_trimmed = member | strip %}
+                    <a href="/{{ member_trimmed | replace: ' ', '_' }}">{{ member_trimmed }}</a>{% unless forloop.last %}, {% endunless %}
                   {%- endfor %}
                 </td>
               </tr>
@@ -122,7 +126,6 @@
             </tbody>
           </table>
         </div>
-      </div>
 
         <div class="external-links">
           <h2 id="external-links">External Links</h2>

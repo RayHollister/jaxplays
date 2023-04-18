@@ -10,15 +10,19 @@ title: All Cast Members
   {% if page.layout == 'shows' %}
     {% assign cast = page.cast %}
     {% for character in cast %}
-      {% assign cast_member = character[1] %}
-      {% assign all_cast_members = all_cast_members | push: cast_member %}
+      {% assign cast_member_value = character[1] %}
+      {% assign cast_members = cast_member_value | newline_to_br | strip | split: '<br />' %}
+      {% for cast_member in cast_members %}
+        {% assign cast_member_trimmed = cast_member | strip %}
+        {% assign all_cast_members = all_cast_members | push: cast_member_trimmed %}
+      {% endfor %}
     {% endfor %}
   {% endif %}
 {% endfor %}
 
 {% assign unique_cast_members = all_cast_members | uniq | sort %}
 
-<table>
+  <table id="cast-members-table" class="table table-striped table-bordered">
   <thead>
     <tr>
       <th>Cast Member</th>
@@ -36,3 +40,9 @@ title: All Cast Members
     {% endfor %}
   </tbody>
 </table>
+
+<script>
+  $(document).ready(function() {
+    $('#cast-members-table').DataTable();
+  });
+</script>
