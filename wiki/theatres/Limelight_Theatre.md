@@ -1,6 +1,7 @@
 ---
 title: Limelight Theatre
 layout: theatre
+image: Limelight_Theatre.jpeg
 Details:
     Founded: 1992
     Address: |
