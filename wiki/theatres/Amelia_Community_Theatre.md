@@ -1,6 +1,7 @@
 ---
 title: Amelia Community Theatre
 layout: theatre
+image: Amelia_Community_Theatre.png
 Details:
     Address: 207 Cedar St, Fernandina Beach, FL 32034
     Website: https://www.ameliacommunitytheatre.org
@@ -9,10 +10,10 @@ Details:
     Instagram: ameliacommunitytheatre
     Phone: 1-904-261-6749
 ---
-Amelia Community Theatre (ACT) is a community theater located in Fernandina Beach, Florida. Founded in 1981, the theater has been a vibrant and essential part of the local arts scene for over four decades, offering a wide range of productions and educational opportunities for audiences of all ages.
+Amelia Community Theatre (ACT) is a non-profit community theatre located in Fernandina Beach, Florida. Founded in 1981, the theatre has been a vital part of the local arts scene for over four decades. The theatre offers a diverse range of productions, including classic plays, contemporary works, musicals, and original productions. The theatre is committed to showcasing the talents of local actors, directors, designers, and crew members and offers an inclusive and welcoming environment for both seasoned professionals and aspiring artists.
 
-ACT produces a variety of shows each season, including classic plays, contemporary works, musicals, and original productions. The theater is committed to showcasing the talents of local actors, directors, designers, and crew members, and offers an inclusive and welcoming environment for both seasoned professionals and aspiring artists. The theater's intimate 100-seat main stage and smaller studio theater provide an up-close and personal theater experience for audiences, with excellent sightlines and acoustics.
+ACT's intimate 100-seat main stage and smaller studio theatre provide an up-close and personal theatre experience for audiences, with excellent sightlines and acoustics. In addition to its mainstage productions, ACT offers educational opportunities for aspiring actors and theatre professionals of all ages through its Youth Programs and Theatre Academy. These programs provide a supportive and engaging environment for students to develop their skills in acting, playwriting, stagecraft, and more.
 
-In addition to its mainstage productions, ACT also offers educational opportunities for aspiring actors and theater professionals of all ages through its Youth Programs and Theatre Academy. These programs provide a supportive and engaging environment for students to develop their skills in acting, playwriting, stagecraft, and more.
+ACT is a volunteer-based, non-profit organization that relies on the support of donors, volunteers, and sponsors to continue its mission of enriching the community through the art of live theatre. Since its founding, ACT has produced over 300 shows for adults and children. For the first 10 years, most of ACT's performances were presented in the Fernandina Beach High School auditorium, with other local buildings serving as performance spaces until ACT purchased a vacant school board building in 1988, which became its first permanent home and is now named Studio 209.
 
-ACT is a non-profit organization and relies on the support of volunteers, donors, and sponsors to continue its mission of enriching the community through the art of live theater. With its commitment to artistic excellence, community engagement, and inclusivity, Amelia Community Theatre has become a beloved and indispensable institution in the Fernandina Beach community and beyond.
+In 2010, ACT completed construction of a new 7,500 square foot building called the Main Stage, with an auditorium capacity of 170 seats. The Main Stage now holds up to 186 patrons and offers professional quality video broadcasts. In 2020, ACT adapted to the pandemic by offering livestreams of performances to provide live theatre to at-home audiences.
