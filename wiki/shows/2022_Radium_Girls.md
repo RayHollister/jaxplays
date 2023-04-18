@@ -8,7 +8,7 @@ details:
   Writer: D.W. Gregory
   Genre: Drama
   Setting: U.S. Radium Corporation
-  Web: https://www.ameliacommunitytheatre.org/Performances/Radium-Girls
+  Website: https://www.ameliacommunitytheatre.org/Performances/Radium-Girls
 showtimes: |
   2022-06-10 19:30:00
   2022-06-11 19:30:00

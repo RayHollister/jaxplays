@@ -10,7 +10,7 @@ details:
   Lyrics: Lee Adams - wiki
   Book: Michael Stewart (playwright) - wiki
   Basis: N/A
-  Web: https://www.christepiscopalchurch.org/event/bye-bye-birdie/
+  Website: https://www.christepiscopalchurch.org/event/bye-bye-birdie/
 showtimes: |
   2020-02-27 19:00:00
   2020-02-28 19:00:00

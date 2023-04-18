@@ -8,7 +8,7 @@ details:
   Writer: Stephen Karam - wiki
   Setting: An apartment in lower Manhattan
   Subject: Family
-  Web: https://www.ameliacommunitytheatre.org/Performances/The-Humans-
+  Website: https://www.ameliacommunitytheatre.org/Performances/The-Humans-
 showtimes: |
   2020-01-31 20:00:00
   2020-02-01 20:00:00

@@ -8,7 +8,7 @@ details:
   Theatre: Amelia Community Theatre
   Writer: Lauren Gunderson - wiki
   Genre: Comedy
-  Web: https://www.ameliacommunitytheatre.org/Performances/The-Book-of-Will
+  Website: https://www.ameliacommunitytheatre.org/Performances/The-Book-of-Will
 showtimes: |
   2020-03-27 20:00:00
   2020-03-28 20:00:00

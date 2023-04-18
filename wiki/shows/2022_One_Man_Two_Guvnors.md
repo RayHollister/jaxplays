@@ -8,7 +8,7 @@ details:
   Writer: Richard Bean - wiki
   Genre: Comedy
   Setting: 1963 Brighton, England
-  Web: https://www.ameliacommunitytheatre.org/Performances/One-Man%2C-Two-Guvnors
+  Website: https://www.ameliacommunitytheatre.org/Performances/One-Man%2C-Two-Guvnors
 showtimes: |
   2022-08-12 19:30:00
   2022-08-13 19:30:00

@@ -9,7 +9,7 @@ details:
   Lyrics: Tim Minchin
   Book: Dennis Kelly - wiki
   Basis: Matilda_(novel) - wiki
-  Web: https://www.ameliacommunitytheatre.org/Performances/Roald-Dahl%E2%80%99s-Matilda-The-Musical
+  Website: https://www.ameliacommunitytheatre.org/Performances/Roald-Dahl%E2%80%99s-Matilda-The-Musical
 showtimes: |
   2022-04-14 19:30:00
   2022-04-15 19:30:00

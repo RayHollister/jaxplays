@@ -8,7 +8,7 @@ details:
   Setting: Sherwood Forest & Nottinghamshire England
   Writer: Ken Ludwig - wiki
   Genre: Comedy
-  Web: http://www.abettheatre.com/
+  Website: http://www.abettheatre.com/
 showtimes: |
   2020-05-08 20:00:00
   2020-05-09 20:00:00
