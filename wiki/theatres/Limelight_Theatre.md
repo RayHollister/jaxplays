@@ -3,7 +3,9 @@ title: Limelight Theatre
 layout: theatre
 Details:
     Founded: 1992
-    Address: 11 Old Mission Ave, St. Augustine, FL 32084
+    Address: |
+      11 Old Mission Ave
+      St. Augustine, FL 32084
     Website: https://limelight-theatre.org
     Facebook: limelight.theatre
     Twitter: limelightstaug

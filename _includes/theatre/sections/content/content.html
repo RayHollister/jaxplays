@@ -6,69 +6,141 @@
   {% endif %}
 
   <div id="git-wiki-theatre-content">
-    <h1>{{page.title}}</h1>
+    <div class="theatredescription">
+      <h1>{{page.title}}</h1>
 
-    {{ content }}
-
-    {% assign theatre_name = page.title %}
-    {% assign theatre_shows = "" | split: "" %}
-
-    {% for p in site.pages %}
-      {% if p.details and p.details.Theatre and p.showtimes and p.details.Theatre == theatre_name %}
-        {% assign show_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
-        {% assign show_start_date = p.showtimes | newline_to_br | strip_html | split: " " | first %}
-        {% assign modified_title = p.title | slice: -7, 7 %}
-        {% if modified_title contains " (" %}
-          {% assign title_length = p.title | size %}
-          {% assign title_length_minus_seven = title_length | minus: 7 %}
-          {% assign modified_title = p.title | slice: 0, title_length_minus_seven %}
-        {% else %}
-          {% assign modified_title = p.title %}
-        {% endif %}
-        {% capture show_info %}<tr><td>{{ show_year }}</td><td><a href="{{ p.url }}">{{ modified_title }}</a></td></tr>{% endcapture %}
-        {% unless theatre_shows contains show_info %}
-          {% assign theatre_shows = theatre_shows | push: show_info %}
-        {% endunless %}
-      {% endif %}
-    {% endfor %}
-
-    {% assign theatre_shows_sorted = "" | split: "" %}
-    {% for show_info in theatre_shows %}
-    {% assign show_date = show_info | split: " " | first %}
-    {% assign inserted = false %}
-    {% for sorted_info in theatre_shows_sorted %}
-    {% assign sorted_date = sorted_info | split: " " | first %}
-    {% if show_date < sorted_date %}
-    {% assign theatre_shows_sorted = theatre_shows_sorted | insert_at: forloop.index0, show_info %}
-    {% assign inserted = true %}
-    {% break %}
-    {% endif %}
-    {% endfor %}
-    {% if inserted == false %}
-    {% assign theatre_shows_sorted = theatre_shows_sorted | push: show_info %}
-    {% endif %}
-    {% endfor %}
-
-    {% if theatre_shows_sorted.size > 0 %}
-    <div class="theatreshows">
-      <h2>Shows:</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Show</th>
-            <th>Year</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for show_info in theatre_shows_sorted %}
-          {{ show_info }}
-          {% endfor %}
-        </tbody>
-      </table>
+      {{ content }}
     </div>
-    {% endif %}
+
+    <div class="sidebar">
+      <div class="theatredetails">
+        {% if page.image %}
+        <img class="featured_image" src="/media/theatrelogos/{{ page.image }}" alt="{{ page.title }}">
+        {% endif %}
+
+        {% assign details = page.Details %}
+
+        <table class="theatre_details">
+          <tbody>
+            {% for detail in details %}
+            {% assign key = detail[0] %}
+            {% assign value = detail[1] %}
+            {% if key == 'Address' %}
+            <tr>
+              <td class="leftcol">Address</td>
+              <td>
+                {% assign address_lines = value | newline_to_br | strip | split: '<br />' %}
+                {% for address_line in address_lines %}
+                {{ address_line }}<br>
+                {% endfor %}
+                <ul>
+                  <li><a href="https://www.google.com/maps/search/?api=1&query={{ value | uri_escape }}">Google Maps</a>
+                  </li>
+                  <li><a href="https://maps.apple.com/?q={{ value | uri_escape }}">Apple Maps</a></li>
+                </ul>
+              </td>
+            </tr>
+            {% elsif key == 'Website' %}
+            <tr>
+              <td class="leftcol">{{ key }}</td>
+              <td><a target="_blank" href="{{ value }}">{{ value | split: '://' | last | split: 'www.' | last }}</a>
+              </td>
+            </tr>
+            {% elsif key == 'Facebook' %}
+            <tr>
+              <td class="leftcol">{{ key }}</td>
+              <td><a href="https://www.facebook.com/{{ value }}" target="_blank">{{ value }}</a></td>
+            </tr>
+            {% elsif key == 'Twitter' %}
+            <tr>
+              <td class="leftcol">{{ key }}</td>
+              <td><a href="https://twitter.com/{{ value }}" target="_blank">{{ value }}</a></td>
+            </tr>
+            {% elsif key == 'Instagram' %}
+            <tr>
+              <td class="leftcol">{{ key }}</td>
+              <td><a href="https://www.instagram.com/{{ value }}" target="_blank">{{ value }}</a></td>
+            </tr>
+            {% elsif key == 'Phone' %}
+            <tr>
+              <td class="leftcol">{{ key }}</td>
+              <td><a href="tel:{{ value }}">{{ value }}</a></td>
+            </tr>
+            {% else %}
+            <tr>
+              <td class="leftcol">{{ key }}</td>
+              <td>{{ value }}</td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+    <div class="additional-content">
+      {% assign theatre_name = page.title %}
+      {% assign theatre_shows = "" | split: "" %}
+
+      {% for p in site.pages %}
+      {% if p.details and p.details.Theatre and p.showtimes and p.details.Theatre == theatre_name %}
+      {% assign show_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
+      {% assign show_start_date = p.showtimes | newline_to_br | strip_html | split: " " | first %}
+      {% assign modified_title = p.title | slice: -7, 7 %}
+      {% if modified_title contains " (" %}
+      {% assign title_length = p.title | size %}
+      {% assign title_length_minus_seven = title_length | minus: 7 %}
+      {% assign modified_title = p.title | slice: 0, title_length_minus_seven %}
+      {% else %}
+      {% assign modified_title = p.title %}
+      {% endif %}
+      {% capture show_info %}<tr><td>{{ show_year }}</td><td><a href="{{ p.url }}">{{ modified_title }}</a></td></tr>{% endcapture %}
+      {% unless theatre_shows contains show_info %}
+      {% assign theatre_shows = theatre_shows | push: show_info %}
+      {% endunless %}
+      {% endif %}
+      {% endfor %}
+
+      {% assign theatre_shows_sorted = "" | split: "" %}
+      {% for show_info in theatre_shows %}
+      {% assign show_date = show_info | split: " " | first %}
+      {% assign inserted = false %}
+      {% for sorted_info in theatre_shows_sorted %}
+      {% assign sorted_date = sorted_info | split: " " | first %}
+      {% if show_date < sorted_date %}
+      {% assign theatre_shows_sorted = theatre_shows_sorted | insert_at: forloop.index0, show_info %}
+      {% assign inserted = true %}
+      {% break %}
+      {% endif %}
+      {% endfor %}
+      {% if inserted == false %}
+      {% assign theatre_shows_sorted = theatre_shows_sorted | push: show_info %}
+      {% endif %}
+      {% endfor %}
+
+      {% if theatre_shows_sorted.size > 0 %}
+      <div class="theatreshows">
+        <h2>Shows:</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Show</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for show_info in theatre_shows_sorted %}
+            {{ show_info }}
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
+    </div>
 
     {% if site.inc_after_content %}
     {% include {{ site.inc_after_content }} %}
     {% endif %}
   </div>
+</div>

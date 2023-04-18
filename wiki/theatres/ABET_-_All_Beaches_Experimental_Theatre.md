@@ -1,19 +1,27 @@
 ---
 title: ABET - All Beaches Experimental Theatre
 layout: theatre
+image: ABET_-_All_Beaches_Experimental_Theatre.jpeg
 Details:
     Founded: 1992
-    Address: The Foundation Academy, 3675 San Pablo Rd S, Jacksonville, FL
-    Website: http://www.abettheatre.com/
+    Address: |
+        ABET #331627
+        1001 Mayport Road
+        Atlantic Beach, FL 32233-9998
+    Website: https://www.abettheatre.com
     Facebook: ABETtheatre
     Twitter: ABETtheatre
     Instagram: 	abettheatre
     Phone: 	1-904-249-7177
 ---
-ABET (All Beaches Experimental Theatre) is a non-profit community theatre organization located in Atlantic Beach, Florida. Founded in 1991, ABET has been dedicated to providing high-quality theatrical productions for the local community and showcasing the talents of local actors, directors, designers, and crew members.
+All Beaches Experimental Theatre, also known as ABET, is a not-for-profit theatre located in the Jacksonville, Florida area. ABET is registered with the State of Florida as a tax-exempt charitable organization and is committed to bringing the excitement of live theatre to diverse audiences through an emphasis on new and original plays, neglected classics, and developing new talent.
 
-ABET's main stage productions include a range of genres, from classic plays to contemporary works, musicals, and experimental productions, with a focus on presenting engaging and thought-provoking performances that challenge and entertain audiences. The theatre is committed to nurturing and fostering the development of artistic talent and supporting the growth of emerging artists.
+ABET strives for diversity in all aspects of their productions, with many roles being race and gender-neutral. The theatre invites everyone to get involved by volunteering, buying a subscription, making a donation, auditioning for a play, or taking a drama workshop for adults or children.
 
-In addition to its mainstage productions, ABET offers a range of educational programs, including workshops, camps, and classes for both adults and children. These programs are aimed at fostering a love of theatre and developing the skills of aspiring actors and theatre professionals. ABET is committed to providing accessible and inclusive programming and creating opportunities for artists from diverse backgrounds to showcase their talents.
+ABET's reputation for high-quality productions began with its founding by Carson Merry Baillie and three of her drama workshop graduates in 1992 as Atlantic Beach Experimental Theatre. Baillie skillfully guided the theatre's growth during the first 13 years, establishing a reputation for producing original scripts, challenging plays, and high-quality musicals.
 
-ABET is run by a dedicated team of volunteers, and its performances take place in an intimate 150-seat theatre space, providing a personal and engaging theatre experience for audiences. ABET has become a vital part of the Atlantic Beach community, providing a welcoming and supportive environment for artists and theatre-goers alike.
+Barbara Evans served as Managing Artistic Director for the next two years, continuing the theatre's fine tradition. Celia Frank took over as Managing Artistic Director in 2007 and retired on June 1, 2021. Lee Hamby assumed the role of Managing Artistic Director in August 2021 and arranged for ABET to utilize The Foundation Academy theatre facility for the 2021/2022 season.
+
+ABET has received generous grants and support from various organizations, including the City of Jacksonville, Community Foundation in Jacksonville, Cultural Council of Greater Jacksonville, Tom and Jean Nehl Fund of The Community Foundation in Jacksonville, and The Robin Shepherd Group, among others.
+
+In the spring of 2018, ABET moved from Atlantic Beach to Neptune Beach and changed its full name to All Beaches Experimental Theatre. However, in June 2021, ABET lost its home in Neptune Beach due to the renovation of the shopping center. Nonetheless, ABET continues to thrive and provide high-quality theatre to diverse audiences in the Jacksonville area.
