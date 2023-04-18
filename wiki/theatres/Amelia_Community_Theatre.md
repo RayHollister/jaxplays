@@ -3,7 +3,10 @@ title: Amelia Community Theatre
 layout: theatre
 image: Amelia_Community_Theatre.png
 Details:
-    Address: 207 Cedar St, Fernandina Beach, FL 32034
+    Founded: 1981
+    Address: |
+        207 Cedar St
+        Fernandina Beach, FL 32034
     Website: https://www.ameliacommunitytheatre.org
     Facebook: ameliacommunitytheatre
     Twitter: ACTAmelia

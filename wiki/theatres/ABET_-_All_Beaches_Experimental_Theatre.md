@@ -12,6 +12,7 @@ Details:
     Facebook: ABETtheatre
     Twitter: ABETtheatre
     Instagram: 	abettheatre
+    LinkedIn: 
     Phone: 	1-904-249-7177
 ---
 All Beaches Experimental Theatre, also known as ABET, is a not-for-profit theatre located in the Jacksonville, Florida area. ABET is registered with the State of Florida as a tax-exempt charitable organization and is committed to bringing the excitement of live theatre to diverse audiences through an emphasis on new and original plays, neglected classics, and developing new talent.

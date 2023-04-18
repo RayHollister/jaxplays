@@ -7,104 +7,182 @@
     {% endif %}
 
     <div id="git-wiki-people-content">
-      <h1>{{page.title}}</h1>
+      <div class="peopledescription">
+        <h1>{{page.title}}</h1>
 
-      {{ content }}
-
-      {% assign person_name = page.title %}
-      {% assign person_cast_credits = "" | split: "" %}
-      {% assign person_crew_credits = "" | split: "" %}
-
-      {% for p in site.pages %}
-      {% if p.details and p.details.Theatre and p.showtimes %}
-      {% if p.cast %}
-      {% assign cast_items = p.cast | items %}
-      {% for cast_item in cast_items %}
-      {% assign key = cast_item[0] %}
-      {% assign value = cast_item[1] %}
-      {% if value contains person_name %}
-      {% assign show_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
-      {% assign theatre_url = p.details.Theatre | replace: " ", "_" %}
-      {% capture credit %}<tr>
-        <td>{{ key }}</td>
-        <td><a href="{{ p.url }}">{{ p.title }}</a></td>
-        <td><a href="/{{ theatre_url }}">{{ p.details.Theatre }}</a></td>
-        <td>{{ show_year }}</td>
-      </tr>{% endcapture %}
-      {% unless person_cast_credits contains credit %}
-      {% assign person_cast_credits = person_cast_credits | push: credit %}
-      {% endunless %}
-      {% endif %}
-      {% endfor %}
-      {% endif %}
-
-      {% if p.crew %}
-      {% assign crew_items = p.crew | items %}
-      {% for crew_item in crew_items %}
-      {% assign key = crew_item[0] %}
-      {% assign value = crew_item[1] %}
-      {% if value contains person_name %}
-      {% assign show_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
-      {% assign theatre_url = p.details.Theatre | replace: " ", "_" %}
-      {% capture credit %}<tr>
-        <td>{{ key }}</td>
-        <td><a href="{{ p.url }}">{{ p.title }}</a></td>
-        <td><a href="/{{ theatre_url }}">{{ p.details.Theatre }}</a></td>
-        <td>{{ show_year }}</td>
-      </tr>{% endcapture %}
-      {% unless person_crew_credits contains credit %}
-      {% assign person_crew_credits = person_crew_credits | push: credit %}
-      {% endunless %}
-      {% endif %}
-      {% endfor %}
-      {% endif %}
-
-      {% endif %}
-      {% endfor %}
-
-      {% if person_cast_credits.size > 0 %}
-
-      <div class="castcredits">
-        <h2>Cast credits</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Role</th>
-              <th>Show</th>
-              <th>Theatre</th>
-              <th>Year</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for credit in person_cast_credits %}
-            {{ credit }}
-            {% endfor %}
-          </tbody>
-        </table>
+        {{ content }}
       </div>
-      {% endif %}
+      <div class="sidebar">
+        <div class="theatredetails">
 
-      {% if person_crew_credits.size > 0 %}
-      <div class="crewcredits">
-        <h2>Crew credits</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Role</th>
-              <th>Show</th>
-              <th>Theatre</th>
-              <th>Year</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for credit in person_crew_credits %}
-            {{ credit }}
-            {% endfor %}
-          </tbody>
-        </table>
+          {% if page.image %}
+          <img class="featured_image" src="media/headshots/{{ page.image }}" alt="{{ page.title }}">
+          {% endif %}
+
+          {% assign details = page.Details %}
+
+          <table class="people_details">
+            <tbody>
+              {% for detail in details %}
+              {% assign key = detail[0] %}
+              {% assign value = detail[1] %}
+              {% if value != "" and value != nil %}
+                {% if key == 'Address' %}
+                <tr>
+                  <td class="leftcol">Address</td>
+                  <td>
+                    {% assign address_lines = value | newline_to_br | strip | split: '<br />' %}
+                    {% for address_line in address_lines %}
+                    {{ address_line }}<br>
+                    {% endfor %}
+                    <ul>
+                      <li><a href="https://www.google.com/maps/search/?api=1&query={{ value | uri_escape }}">Google Maps</a>
+                      </li>
+                      <li><a href="https://maps.apple.com/?q={{ value | uri_escape }}">Apple Maps</a></li>
+                    </ul>
+                  </td>
+                </tr>
+                {% elsif key == 'Website' %}
+                <tr>
+                  <td class="leftcol">{{ key }}</td>
+                  <td><a target="_blank" href="{{ value }}">{{ value | split: '://' | last | split: 'www.' | last }}</a>
+                  </td>
+                </tr>
+                {% elsif key == 'Facebook' %}
+                <tr>
+                  <td class="leftcol">{{ key }}</td>
+                  <td><a href="https://www.facebook.com/{{ value }}" target="_blank">{{ value }}</a></td>
+                </tr>
+                {% elsif key == 'Twitter' %}
+                <tr>
+                  <td class="leftcol">{{ key }}</td>
+                  <td><a href="https://twitter.com/{{ value }}" target="_blank">{{ value }}</a></td>
+                </tr>
+                {% elsif key == 'Instagram' %}
+                <tr>
+                  <td class="leftcol">{{ key }}</td>
+                  <td><a href="https://www.instagram.com/{{ value }}" target="_blank">{{ value }}</a></td>
+                </tr>
+                {% elsif key == 'LinkedIn' %}
+                <tr>
+                  <td class="leftcol">{{ key }}</td>
+                  <td><a href="https://www.linkedin.com/in/{{ value }}" target="_blank">{{ value }}</a></td>
+                </tr>
+                {% elsif key == 'Phone' %}
+                <tr>
+                  <td class="leftcol">{{ key }}</td>
+                  <td><a href="tel:{{ value }}">{{ value }}</a></td>
+                </tr>
+                {% else %}
+                <tr>
+                  <td class="leftcol">{{ key }}</td>
+                  <td>{{ value }}</td>
+                </tr>
+                {% endif %}
+              {% endif %}
+              {% endfor %}
+            </tbody>
+          </table>
+
+        </div>
       </div>
-      {% endif %}
 
+      <div class="additional-content">
+        {% assign person_name = page.title %}
+        {% assign person_cast_credits = "" | split: "" %}
+        {% assign person_crew_credits = "" | split: "" %}
+
+        {% for p in site.pages %}
+        {% if p.details and p.details.Theatre and p.showtimes %}
+        {% if p.cast %}
+        {% assign cast_items = p.cast | items %}
+        {% for cast_item in cast_items %}
+        {% assign key = cast_item[0] %}
+        {% assign value = cast_item[1] %}
+        {% if value contains person_name %}
+        {% assign show_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
+        {% assign theatre_url = p.details.Theatre | replace: " ", "_" %}
+        {% capture credit %}<tr>
+          <td>{{ key }}</td>
+          <td><a href="{{ p.url }}">{{ p.title }}</a></td>
+          <td><a href="/{{ theatre_url }}">{{ p.details.Theatre }}</a></td>
+          <td>{{ show_year }}</td>
+        </tr>{% endcapture %}
+        {% unless person_cast_credits contains credit %}
+        {% assign person_cast_credits = person_cast_credits | push: credit %}
+        {% endunless %}
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+
+        {% if p.crew %}
+        {% assign crew_items = p.crew | items %}
+        {% for crew_item in crew_items %}
+        {% assign key = crew_item[0] %}
+        {% assign value = crew_item[1] %}
+        {% if value contains person_name %}
+        {% assign show_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
+        {% assign theatre_url = p.details.Theatre | replace: " ", "_" %}
+        {% capture credit %}<tr>
+          <td>{{ key }}</td>
+          <td><a href="{{ p.url }}">{{ p.title }}</a></td>
+          <td><a href="/{{ theatre_url }}">{{ p.details.Theatre }}</a></td>
+          <td>{{ show_year }}</td>
+        </tr>{% endcapture %}
+        {% unless person_crew_credits contains credit %}
+        {% assign person_crew_credits = person_crew_credits | push: credit %}
+        {% endunless %}
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+
+        {% endif %}
+        {% endfor %}
+
+        {% if person_cast_credits.size > 0 %}
+
+        <div class="castcredits">
+          <h2>Cast credits</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Role</th>
+                <th>Show</th>
+                <th>Theatre</th>
+                <th>Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for credit in person_cast_credits %}
+              {{ credit }}
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        {% endif %}
+
+        {% if person_crew_credits.size > 0 %}
+        <div class="crewcredits">
+          <h2>Crew credits</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Role</th>
+                <th>Show</th>
+                <th>Theatre</th>
+                <th>Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for credit in person_crew_credits %}
+              {{ credit }}
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        {% endif %}
+
+      </div>
     </div>
     {% if site.inc_after_content %}
     {% include {{ site.inc_after_content }} %}

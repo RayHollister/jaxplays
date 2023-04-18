@@ -49,6 +49,15 @@ table.showdetails thead tr th {
 
 .sidebar table td.leftcol {
     font-weight: 600;
+    vertical-align: top;
+}
+
+.sidebar table ul.map_links {
+    margin-bottom: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
 }
 
 #git-wiki-shows-content,
@@ -79,7 +88,8 @@ table.showdetails thead tr th {
 @media (min-width: 1024px) {
 
     #git-wiki-shows-content,
-    #git-wiki-theatre-content {
+    #git-wiki-theatre-content,
+    #git-wiki-people-content {
         display: grid;
         grid-template-columns: 1fr 400px;
         grid-template-rows: auto auto;
@@ -89,7 +99,8 @@ table.showdetails thead tr th {
     }
 
     .showdescription,
-    .theatredescription {
+    .theatredescription,
+    .peopledescription {
         grid-area: content;
     }
 
