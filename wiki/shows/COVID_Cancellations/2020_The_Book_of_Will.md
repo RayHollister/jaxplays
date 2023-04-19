@@ -24,4 +24,4 @@ external_links:
 ---
 After the death of William Shakespeare, his friends scramble to save his plays to be printed in the First Folio before they are lost forever.
 
-This production was unfortunately cancelled due to the COVID-19 pandemic. 
+\* This production was cancelled due to the COVID-19 pandemic.  

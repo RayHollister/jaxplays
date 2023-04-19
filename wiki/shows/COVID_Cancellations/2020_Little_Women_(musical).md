@@ -51,4 +51,4 @@ cast:
 crew:
   Director: Bob Pritchar
 ---
-This production was unfortunately cancelled due to the COVID-19 pandemic. 
+\* This production was cancelled due to the COVID-19 pandemic.  

@@ -31,3 +31,4 @@ crew:
 external_links:
   "Shows | Limelight Theatre": https://limelight-theatre.org/shows/
 ---
+\* This production was cancelled due to the COVID-19 pandemic.  
