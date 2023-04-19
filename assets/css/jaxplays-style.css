@@ -84,6 +84,17 @@ table.showdetails thead tr th {
     margin-bottom: 1rem;
 }
 
+/* Style for Blog */
+
+p.byline {
+    font-style: italic;
+    margin-bottom: .5rem;
+}
+p.dateline {
+    color: #949494;
+    font-size: .85em;
+}
+
 /* Media query for desktop devices */
 @media (min-width: 1024px) {
 
