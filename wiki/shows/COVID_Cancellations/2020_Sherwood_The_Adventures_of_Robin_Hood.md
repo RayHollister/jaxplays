@@ -1,5 +1,6 @@
 ---
 published: false
+cancelled: COVID-19
 layout: shows
 title: "Sherwood: The Adventures of Robin Hood (2020)"
 category: comedy

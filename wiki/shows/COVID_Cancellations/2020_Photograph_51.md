@@ -1,5 +1,6 @@
 ---
 published: false
+cancelled: COVID-19
 layout: shows
 title: Photograph 51 (2020)
 category: play

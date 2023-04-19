@@ -1,5 +1,6 @@
 ---
 published: false
+cancelled: COVID-19
 layout: shows
 title: Bus Stop (2020)
 category: play

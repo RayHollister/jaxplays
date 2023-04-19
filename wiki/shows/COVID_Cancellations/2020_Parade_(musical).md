@@ -1,5 +1,6 @@
 ---
 published: false
+cancelled: COVID-19
 layout: shows
 title: Parade (musical) (2020)
 category: musical
