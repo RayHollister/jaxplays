@@ -39,6 +39,9 @@
                       <a target="_blank" href="{{ value }}" targe="_blank">Official website</a>
                     {%- elsif detail[0] == 'Theatre' -%}
                       <a target="_blank" href="/{{ value | strip | replace: ' ', '_' }}">{{ value }}</a>
+                      {%- elsif detail[0] == 'Theatre' -%}
+                      <a target="_blank" href="/{{ value | strip | replace: ' ', '_' }}">{{ value }}</a>
+                      <a href="doc.pdf#toolbar=0">PDF</a>
                     {%- else -%}
                       {{ value | markdownify | strip | remove: '<p>' | remove: '</p>' | remove: "\r" | remove: "\n" }}
                     {%- endif %}
@@ -47,6 +50,12 @@
                 </td>
               </tr>
               {% endfor %}
+              {% if page.playbill %}
+              <tr><td></td><td class="leftcol">
+                <a target="_blank" href="/media/playbills/{{ page.playbill }}">Playbill</a>
+              </td>
+              </tr>
+              {% endif %}
             </tbody>
           </table>
         </div>
