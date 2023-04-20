@@ -24,6 +24,10 @@ h1 {
     font-size: 36px;
 }
 
+input#search-input {
+    width: 100%;
+}
+
 .jaxplays_title {
     text-align: center;
     font-family: var(--logo-font-family);
@@ -31,6 +35,7 @@ h1 {
     font-weight: var(--logo-font-weight);
     margin-top: 1rem;
 }
+
 
 table {
     width: auto;
