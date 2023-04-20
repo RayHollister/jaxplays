@@ -27,8 +27,7 @@ crew:
   Director: Caryl Butterley
 external_links:
   Actors Collective - Photograph 51: http://www.actorscollective.com/photograph-51/
----
-\* This production was cancelled due to the COVID-19 pandemic. 
+--- 
 
 "A riveting and moving portrait of Rosalind Franklin, one of the great female scientists of the twentieth century, and the often overlooked role she played in the discovery of the double helix. Photograph 51 masterfully weaves the thriller-like twists and tension in the race to discover the structure of DNA with lyrical moments of awe and scientific wonder, while revealing the unsung achievements of this trail-blazing, fiercely independent woman." — [Actors Collective - The Secret of Life: A Science Play Series](http://www.actorscollective.com/the-secret-of-life/)
 

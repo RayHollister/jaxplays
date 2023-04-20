@@ -43,4 +43,3 @@ crew:
 external_links:
   On Stage | opct: https://www.opct.info
 ---
-\* This production was cancelled due to the COVID-19 pandemic.

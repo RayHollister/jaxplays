@@ -51,5 +51,4 @@ cast:
   Ensemble: 
 crew:
   Director: Bob Pritchar
----
-\* This production was cancelled due to the COVID-19 pandemic.  
+---  

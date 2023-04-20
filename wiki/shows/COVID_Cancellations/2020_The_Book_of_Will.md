@@ -24,5 +24,4 @@ external_links:
   "The Book of Will - Amelia Community Theatre": "https://www.ameliacommunitytheatre.org/Performances/The-Book-of-Will"
 ---
 After the death of William Shakespeare, his friends scramble to save his plays to be printed in the First Folio before they are lost forever.
-
-\* This production was cancelled due to the COVID-19 pandemic.  
+  

@@ -39,6 +39,5 @@ crew:
   Director: Bradley Akers
 external_links:
 ---
-
-\* This production was cancelled due to the COVID-19 pandemic.  
+  
 
