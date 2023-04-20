@@ -1,6 +1,7 @@
 ---
 layout: shows
 title: 42nd Street (musical) (2022)
+image: 2022_42nd_Street.jpg
 category: musical
 details:
   Title: 42nd Street (musical) - wiki
@@ -52,4 +53,4 @@ showtimes: |
 cast:
 crew:
 ---
-"Celebrate the 42nd anniversary of the biggest tap dance musical! Young Peggy Sawyer arrives in New York to audition for a Broadway show, but between prima donnas and the hectic drama behind the curtain, will circumstance
+"Celebrate the 42nd anniversary of the biggest tap dance musical! Young Peggy Sawyer arrives in New York to audition for a Broadway show, but between prima donnas and the hectic drama behind the curtain, will circumstance dissuade Peggy from following her dreams?" [Home - Alhambra Theatre & Dining](https://www.alhambrajax.com/)
