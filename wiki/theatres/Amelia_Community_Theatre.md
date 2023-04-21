@@ -1,6 +1,6 @@
 ---
 title: Amelia Community Theatre
-layout: theatre
+layout: theatres
 image: Amelia_Community_Theatre.png
 Details:
     Founded: 1981

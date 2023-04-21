@@ -1,11 +1,56 @@
 <div class="mainmenu">
   Menu <!-- (<a href="{{ site.github.repository_url }}/edit/{{site.git_branch | escape}}/_includes/sidebar.html">Edit</a>): -->
+  {% comment %}
+  {% assign show_count = 0 %}
+  {% for page in site.pages %}
+    {% if page.layout == 'shows' %}
+      {% assign show_count = show_count | plus: 1 %}
+    {% endif %}
+  {% endfor %}
 
+  {% assign theatres_count = 0 %}
+  {% for page in site.pages %}
+    {% if page.layout == 'theatres' %}
+      {% assign theatres_count = theatres_count | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign crew_member_count = 0 %}
+  {% for page in site.pages %}
+    {% if page.layout == 'shows' %}
+      {% assign crew = page.crew %}
+      {% for role in crew %}
+        {% assign crew_member_value = role[1] %}
+        {% assign crew_members = crew_member_value | newline_to_br | strip | split: '<br />' %}
+        {% for crew_member in crew_members %}
+          {% assign crew_member_trimmed = crew_member | strip %}
+          {% assign crew_member_count = crew_member_count | plus: 1 %}
+        {% endfor %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign cast_member_count = 0 %}
+  {% for page in site.pages %}
+    {% if page.layout == 'shows' %}
+      {% assign cast = page.cast %}
+      {% for role in cast %}
+        {% assign cast_member_value = role[1] %}
+        {% assign cast_members = cast_member_value | newline_to_br | strip | split: '<br />' %}
+        {% for cast_member in cast_members %}
+          {% assign cast_member_trimmed = cast_member | strip %}
+          {% assign cast_member_count = cast_member_count | plus: 1 %}
+        {% endfor %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+  {% endcomment %} 
+  
   <ul>
     <li><a href="{{ '/' | relative_url }}">Home</a></li>
-    <li><a href="/theatres">Theatres</a></li>
-    <li><a href="/cast_members">Cast Members</a></li>
-    <li><a href="/crew_members">Crew Members</a></li>
-    <li><a href="/all_pages">All Pages</a></li>
+    <li><a href="/theatres">{{ theatres_count }} Theatres</a></li>
+    <li><a href="/shows">{{ show_count }} Shows</a></li>
+    <li><a href="/crew_members">{{ crew_member_count }} Crew Members</a></li>
+    <li><a href="/cast_members">{{ cast_member_count }} Cast Members</a></li>
   </ul>
 </div>

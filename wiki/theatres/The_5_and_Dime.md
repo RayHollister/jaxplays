@@ -1,6 +1,6 @@
 ---
 title: The 5 & Dime
-layout: theatre
+layout: theatres
 image: The_Five_And_Dime.jpeg
 details:
     Founded: 2011

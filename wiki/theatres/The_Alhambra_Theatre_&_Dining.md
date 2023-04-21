@@ -1,6 +1,6 @@
 ---
 title: The Alhambra Theatre & Dining
-layout: theatre
+layout: theatres
 image: The_Alhambra_Theatre_&_Dining.png
 Details: 
     Founded: 1967

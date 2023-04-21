@@ -1,6 +1,6 @@
 ---
 title: The Island Theater
-layout: theatre
+layout: theatres
 image: The_Island_Theater.png
 Details:
     Founded: 2017-10-26

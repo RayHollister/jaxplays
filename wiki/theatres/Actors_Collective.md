@@ -1,6 +1,6 @@
 ---
 title: Actors Collective
-layout: theatre
+layout: theatres
 image: 
 Details:
     Founded: 2018

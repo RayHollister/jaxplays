@@ -101,9 +101,9 @@ defaults:
  -
     scope:
       path: ""
-      type: "theatre"
+      type: "theatres"
     values:
-      layout: "theatre"
+      layout: "theatres"
  -
     scope:
       path: ""

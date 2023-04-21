@@ -1,6 +1,6 @@
 ---
 title: Phase Eight Theater Company
-layout: theatre
+layout: theatres
 image: Phase_Eight_Theater_Company.jpeg
 Details:
     Founded: 2017
