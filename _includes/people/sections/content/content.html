@@ -24,10 +24,10 @@
           <table class="people_details">
             <tbody>
               {% for detail in details %}
-              {% assign key = detail[0] %}
+              {% assign key = detail[0] | downcase %}
               {% assign value = detail[1] %}
               {% if value != "" and value != nil %}
-                {% if key == 'Address' %}
+                {% if key == 'address' %}
                 <tr>
                   <td class="leftcol">Address</td>
                   <td>
@@ -42,40 +42,35 @@
                     </ul>
                   </td>
                 </tr>
-                {% elsif key == 'Website' %}
+                {% elsif key == 'web' or key == 'website' %}
                 <tr>
-                  <td class="leftcol">{{ key }}</td>
+                  <td class="leftcol">{{ key | capitalize }}</td>
                   <td><a target="_blank" href="{{ value }}">{{ value | split: '://' | last | split: 'www.' | last }}</a>
                   </td>
                 </tr>
-                {% elsif key == 'Facebook' %}
+                {% elsif key == 'facebook' %}
                 <tr>
-                  <td class="leftcol">{{ key }}</td>
+                  <td class="leftcol">Facebook</td>
                   <td><a href="https://www.facebook.com/{{ value }}" target="_blank">{{ value }}</a></td>
                 </tr>
-                {% elsif key == 'Twitter' %}
+                {% elsif key == 'twitter' %}
                 <tr>
-                  <td class="leftcol">{{ key }}</td>
+                  <td class="leftcol">Twitter</td>
                   <td><a href="https://twitter.com/{{ value }}" target="_blank">{{ value }}</a></td>
                 </tr>
-                {% elsif key == 'Instagram' %}
+                {% elsif key == 'instagram' %}
                 <tr>
-                  <td class="leftcol">{{ key }}</td>
+                  <td class="leftcol">Instagram</td>
                   <td><a href="https://www.instagram.com/{{ value }}" target="_blank">{{ value }}</a></td>
                 </tr>
-                {% elsif key == 'LinkedIn' %}
+                {% elsif key == 'linkedin' %}
                 <tr>
-                  <td class="leftcol">{{ key }}</td>
+                  <td class="leftcol">LinkedIn</td>
                   <td><a href="https://www.linkedin.com/in/{{ value }}" target="_blank">{{ value }}</a></td>
-                </tr>
-                {% elsif key == 'Phone' %}
-                <tr>
-                  <td class="leftcol">{{ key }}</td>
-                  <td><a href="tel:{{ value }}">{{ value }}</a></td>
                 </tr>
                 {% else %}
                 <tr>
-                  <td class="leftcol">{{ key }}</td>
+                  <td class="leftcol">{{ detail[0] }}</td>
                   <td>{{ value }}</td>
                 </tr>
                 {% endif %}

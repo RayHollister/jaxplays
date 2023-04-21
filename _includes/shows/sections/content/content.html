@@ -36,7 +36,7 @@
                     {% if value contains '- wiki' -%}
                       <a target="_blank" href="{{site.wikipedia}}{{ value | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ value | replace: ' - wiki', '' }}</a>
                     {%- elsif detail[0] == 'Website' -%}
-                      <a target="_blank" href="{{ value }}" targe="_blank">Official website</a>
+                      <a target="_blank" href="{{ value }}" targe="_blank">Production website</a>
                     {%- elsif detail[0] == 'Theatre' -%}
                       <a target="_blank" href="/{{ value | strip | replace: ' ', '_' }}">{{ value }}</a>
                       {%- elsif detail[0] == 'Theatre' -%}

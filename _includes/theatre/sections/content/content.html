@@ -28,61 +28,61 @@
           </thead>
           <tbody>
             {% for detail in details %}
-            {% assign key = detail[0] %}
+            {% assign key = detail[0] | downcase %}
             {% assign value = detail[1] %}
             {% if value != "" and value != nil %}
-            {% if key == 'Address' %}
-            <tr>
-              <td class="leftcol">Address</td>
-              <td>
-                {% assign address_lines = value | newline_to_br | strip | split: '<br />' %}
-                {% for address_line in address_lines %}
-                {{ address_line }}<br>
-                {% endfor %}
-                <ul class="map_links">
-                  <li><a href="https://www.google.com/maps/search/?api=1&query={{ value | uri_escape }}">Google Maps</a>
-                  </li>
-                  <li><a href="https://maps.apple.com/?q={{ value | uri_escape }}">Apple Maps</a></li>
-                </ul>
-              </td>
-            </tr>
-            {% elsif key == 'Website' %}
-            <tr>
-              <td class="leftcol">{{ key }}</td>
-              <td><a target="_blank" href="{{ value }}">{{ value | split: '://' | last | split: 'www.' | last }}</a>
-              </td>
-            </tr>
-            {% elsif key == 'Facebook' %}
-            <tr>
-              <td class="leftcol">{{ key }}</td>
-              <td><a href="https://www.facebook.com/{{ value }}" target="_blank">{{ value }}</a></td>
-            </tr>
-            {% elsif key == 'Twitter' %}
-            <tr>
-              <td class="leftcol">{{ key }}</td>
-              <td><a href="https://twitter.com/{{ value }}" target="_blank">{{ value }}</a></td>
-            </tr>
-            {% elsif key == 'Instagram' %}
-            <tr>
-              <td class="leftcol">{{ key }}</td>
-              <td><a href="https://www.instagram.com/{{ value }}" target="_blank">{{ value }}</a></td>
-            </tr>
-            {% elsif key == 'LinkedIn' %}
-            <tr>
-              <td class="leftcol">{{ key }}</td>
-              <td><a href="https://www.linkedin.com/company/{{ value }}" target="_blank">{{ value }}</a></td>
-            </tr>
-            {% elsif key == 'Phone' %}
-            <tr>
-              <td class="leftcol">{{ key }}</td>
-              <td><a href="tel:{{ value }}">{{ value }}</a></td>
-            </tr>
-            {% else %}
-            <tr>
-              <td class="leftcol">{{ key }}</td>
-              <td>{{ value }}</td>
-            </tr>
-            {% endif %}
+              {% if key == 'address' %}
+              <tr>
+                <td class="leftcol">Address</td>
+                <td>
+                  {% assign address_lines = value | newline_to_br | strip | split: '<br />' %}
+                  {% for address_line in address_lines %}
+                  {{ address_line }}<br>
+                  {% endfor %}
+                  <ul class="map_links">
+                    <li><a href="https://www.google.com/maps/search/?api=1&query={{ value | uri_escape }}">Google Maps</a>
+                    </li>
+                    <li><a href="https://maps.apple.com/?q={{ value | uri_escape }}">Apple Maps</a></li>
+                  </ul>
+                </td>
+              </tr>
+              {% elsif key contains 'web' or key == 'website' %}
+              <tr>
+                <td class="leftcol">Website</td>
+                <td><a target="_blank" href="{{ value }}">{{ value | split: '://' | last | split: 'www.' | last }}</a>
+                </td>
+              </tr>
+              {% elsif key == 'facebook' %}
+              <tr>
+                <td class="leftcol">Facebook</td>
+                <td><a href="https://www.facebook.com/{{ value }}" target="_blank">{{ value }}</a></td>
+              </tr>
+              {% elsif key == 'twitter' %}
+              <tr>
+                <td class="leftcol">Twitter</td>
+                <td><a href="https://twitter.com/{{ value }}" target="_blank">{{ value }}</a></td>
+              </tr>
+              {% elsif key == 'instagram' %}
+              <tr>
+                <td class="leftcol">Instagram</td>
+                <td><a href="https://www.instagram.com/{{ value }}" target="_blank">{{ value }}</a></td>
+              </tr>
+              {% elsif key contains 'linkedin' %}
+              <tr>
+                <td class="leftcol">LinkedIn</td>
+                <td><a href="https://www.linkedin.com/company/{{ value }}" target="_blank">{{ value }}</a></td>
+              </tr>
+              {% elsif key == 'phone' %}
+              <tr>
+                <td class="leftcol">Phone</td>
+                <td><a href="tel:{{ value }}">{{ value }}</a></td>
+              </tr>
+              {% else %}
+              <tr>
+                <td class="leftcol">{{ detail[0] }}</td>
+                <td>{{ value }}</td>
+              </tr>
+              {% endif %}
             {% endif %}
             {% endfor %}
           </tbody>
