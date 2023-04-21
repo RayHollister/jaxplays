@@ -5,7 +5,7 @@ title: "JaxPlays"
 # with your folder name, otherwise leave it empty
 baseurl: "/"
 # (string) Description of your wiki
-description: JaxPlays is the one-stop place to go for all information about current, upcoming and past live theatre performances in Northeast Florida.
+description: Explore Northeast Florida's rich theatre history with JaxPlays.
 # (boolean) disable edit functionalities (edit/delete/add pages)
 disable_edit: false
 # (boolean) Enable/disable wiki page list in sidebar
