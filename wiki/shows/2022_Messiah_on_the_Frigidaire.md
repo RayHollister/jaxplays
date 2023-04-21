@@ -26,7 +26,7 @@ showtimes: |
   2022-04-24 14:00:00
 cast:
   Lou Ann Hightower: Jennifer Latka
-  Dwayne Hightower: James "Dez" Desmond
+  Dwayne Hightower: James 'Dez' Desmond
   Betsy Gridley: Cathy O'Brien
   Reverend Hodges: Bill Rains
   Larry Williamson: Jan Buskar

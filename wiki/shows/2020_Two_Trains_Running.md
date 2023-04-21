@@ -36,7 +36,7 @@ crew:
   Producers: |
     Tina Turner
     Mechelle Maples-Canady
-  Stage Manager: Jaquette "Jackie" Jantzen
+  Stage Manager: Jaquette 'Jackie' Jantzen
   Set Designers: |
     Daniel Dungan
     Brian Niece

@@ -48,10 +48,14 @@ crew:
   Technical Direction: Brandon Lettow
   Lighting Design: Candace Dickens
   Costume Design: Dana Ferger
-  Costume Team: Mikaela Dalton, Wesley Urbaczyz
+  Costume Team: |
+    Mikaela Dalton
+    Wesley Urbaczyz
   Property Design: Cayla Coen
   Stage Manager: Alexandra Gravina
-  Board Ops: Ian Hyche, Victoria Rogers
+  Board Ops: |
+    Ian Hyche
+    Victoria Rogers
   Production Assistants and Crew: |
     Lexi Dares
     Anna Fleece

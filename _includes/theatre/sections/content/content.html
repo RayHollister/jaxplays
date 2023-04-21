@@ -67,6 +67,11 @@
                 <td class="leftcol">Instagram</td>
                 <td><a href="https://www.instagram.com/{{ value }}" target="_blank">{{ value }}</a></td>
               </tr>
+              {% elsif key contains 'youtube' %}
+              <tr>
+                <td class="leftcol">YouTube</td>
+                <td><a href="https://www.youtube.com/@{{ value }}" target="_blank">{{ value }}</a></td>
+              </tr>
               {% elsif key contains 'linkedin' %}
               <tr>
                 <td class="leftcol">LinkedIn</td>
@@ -153,6 +158,15 @@
         </table>
       </div>
       {% endif %}
+    </div>
+
+    <div class="external-links">
+      <h2 id="external-links">External Links</h2>
+      <ul>
+        {% for link in page.external_links %}
+        <li><a href="{{ link[1] }}" target="_blank">{{ link[0] }}</a></li>
+        {% endfor %}
+      </ul>
     </div>
 
     {% if site.inc_after_content %}
