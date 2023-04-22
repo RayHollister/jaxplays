@@ -1,12 +1,12 @@
 ---
 layout: shows
-title: Peter Pan (2012)
+title: Newsies (2019)
 image: 
 category: 
 details:
   Theatre: FSCJ Summer Musical Theatre Experience
 cast:
+  Actor: Michael Lipp
 crew:
-  Director: Michael Lipp
 external_links:
---- 
+---
