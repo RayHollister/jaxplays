@@ -1,7 +1,7 @@
 ---
 title: Actors Collective
 layout: theatres
-image: 
+image: Actors_Collective.jpeg
 Details:
     Founded: 2018
     Address: 

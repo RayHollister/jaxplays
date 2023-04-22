@@ -1,7 +1,7 @@
 ---
 title: Orange Park Community Theatre
 layout: theatres
-image: 
+image: Orange_Park_Community_Theatre.jpeg
 Details:
     Founded: 
     Address: |
