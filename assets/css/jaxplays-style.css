@@ -67,7 +67,8 @@ table.showdetails thead tr th {
 
 #git-wiki-shows-content,
 #git-wiki-people-content,
-#git-wiki-theatre-content {
+#git-wiki-theatre-content,
+#git-wiki-venue-content {
     display: flex;
     flex-direction: column;
 }
@@ -79,6 +80,7 @@ table.showdetails thead tr th {
 
 .showdescription,
 .theatredescription,
+.venuedescription,
 .additional-content,
 .sidebar,
 .external-links {
@@ -105,6 +107,7 @@ p.dateline {
 
     #git-wiki-shows-content,
     #git-wiki-theatre-content,
+    #git-wiki-venue-content,
     #git-wiki-people-content {
         display: grid;
         grid-template-columns: 1fr 400px;
@@ -116,6 +119,7 @@ p.dateline {
 
     .showdescription,
     .theatredescription,
+    .venuedescription,
     .peopledescription {
         grid-area: content;
     }

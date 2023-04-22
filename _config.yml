@@ -106,6 +106,12 @@ defaults:
       layout: "theatres"
  -
     scope:
+      path: "venues"
+      type: "venues"
+    values:
+      layout: "venues"
+ -
+    scope:
       path: ""
       type: "posts"
     values:
