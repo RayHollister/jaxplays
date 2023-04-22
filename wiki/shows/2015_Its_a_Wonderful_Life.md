@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: It's a Wonderful Life (2015)
-redirect_from: /2015_It's_a_Wonderful_Life
+redirect_from: 2015_It's_a_Wonderful_Life
 image: 2015_It's_a_Wonderful_Life.jpeg
 category: radio drama
 details:
