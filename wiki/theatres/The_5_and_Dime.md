@@ -1,5 +1,7 @@
 ---
 title: The 5 & Dime
+redirect_from: /The_Five_and_Dime
+redirect_from: /the5anddime
 layout: theatres
 image: The_Five_And_Dime.jpeg
 details:
