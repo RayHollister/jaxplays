@@ -2,10 +2,6 @@
 title: Joshua Kreis McTiernan
 redirect_from: 
   - /Joshua_McTiernan
-  - /JoshuaMcTiernan
-  - /JoshuaKreisMcTiernan
-  - /Joshua Kreis McTiernan
-  - /Joshua-Kreis-McTiernan
 layout: people
 headshot:
 headshot_credit: 
