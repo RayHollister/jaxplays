@@ -134,6 +134,14 @@ p.dateline {
     font-size: .85em;
 }
 
+ul#results-container {
+    margin-top: 1rem;
+    padding-left: 0;
+}
+ul#results-container li {
+    line-height: 2
+}
+
 /* Media query for desktop devices */
 @media (min-width: 1024px) {
 

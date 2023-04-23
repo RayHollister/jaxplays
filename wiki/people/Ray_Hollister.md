@@ -23,7 +23,7 @@ Ray Hollister is most known for his role producing and directing [WJCT Radio The
 
 ## Theatre Credits
 
-| Year | Title | Role | Details | Notes |
-| ---- | ----- | ---- | ------- | ----- |
-| 2005 | 'Godspell' | Judas | Crossroad Church | |
-| 2012 | 'Bug' | Light Board Operator, Sound Board Operator | Players by the Sea | |
+| Year | Role | Show | Theatre | 
+| ---- | ---- | ---- | ------- | ----- |
+| 2005 | Judas | 'Godspell' | Crossroad Church |
+| 2012 | Light Board Operator, Sound Board Operator | 'Bug' | Players by the Sea |
