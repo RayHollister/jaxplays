@@ -1,8 +1,11 @@
 ---
 title: Apex Theatre Studio
 layout: theatres
-image: Apex_Theatre_Studio.png
-Details:
+logo: Apex_Theatre_Studio.png
+logo_credit:
+logo_alt:
+logo_caption:
+details:
     Founded: 2013
     Address: |
         425 West Town Place, Unit 112

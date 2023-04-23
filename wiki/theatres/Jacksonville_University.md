@@ -1,8 +1,11 @@
 ---
 title: Jacksonville University
 layout: theatres
-image: 
-Details:
+logo: 
+logo_credit:
+logo_alt:
+logo_caption:
+details:
   Founded: 
   disbanded:
   Address: |

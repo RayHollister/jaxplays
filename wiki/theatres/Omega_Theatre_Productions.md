@@ -1,8 +1,11 @@
 ---
 title: Omega Theatre Productions
 layout: theatres
-image: 
-Details:
+logo: 
+logo_credit:
+logo_alt:
+logo_caption:
+details:
   Founded: 1999
   Founder: Justin Murphy
   disbanded: 

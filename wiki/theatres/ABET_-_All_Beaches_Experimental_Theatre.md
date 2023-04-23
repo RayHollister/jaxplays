@@ -1,7 +1,10 @@
 ---
 title: ABET - All Beaches Experimental Theatre
 layout: theatres
-image: ABET_-_All_Beaches_Experimental_Theatre.jpeg
+logo: ABET_-_All_Beaches_Experimental_Theatre.jpeg
+logo_credit:
+logo_alt:
+logo_caption:
 details:
     Founded: 1992
     Address: |

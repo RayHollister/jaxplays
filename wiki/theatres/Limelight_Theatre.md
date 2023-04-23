@@ -1,8 +1,11 @@
 ---
 title: Limelight Theatre
 layout: theatres
-image: Limelight_Theatre.jpeg
-Details:
+logo: Limelight_Theatre.jpeg
+logo_credit:
+logo_alt:
+logo_caption:
+details:
     Founded: 1992
     Address: |
       11 Old Mission Ave

@@ -1,8 +1,11 @@
 ---
 title: Players by the Sea
 layout: theatres
-image: Players_by_the_Sea.jpeg
-Details:
+logo: Players_by_the_Sea.jpeg
+logo_credit:
+logo_alt:
+logo_caption:
+details:
     Founded: 1966
     Address: |
       106 N 6th St

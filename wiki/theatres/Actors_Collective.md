@@ -1,8 +1,11 @@
 ---
 title: Actors Collective
 layout: theatres
-image: Actors_Collective.jpeg
-Details:
+logo: Actors_Collective.jpeg
+logo_credit:
+logo_alt:
+logo_caption:
+details:
     Founded: 2018
     Address: 
     Website: http://www.actorscollective.com

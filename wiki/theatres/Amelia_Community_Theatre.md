@@ -1,8 +1,11 @@
 ---
 title: Amelia Community Theatre
 layout: theatres
-image: Amelia_Community_Theatre.png
-Details:
+logo: Amelia_Community_Theatre.png
+logo_credit:
+logo_alt:
+logo_caption:
+details:
     Founded: 1981
     Address: |
         207 Cedar St

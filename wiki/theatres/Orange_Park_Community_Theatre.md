@@ -1,8 +1,11 @@
 ---
 title: Orange Park Community Theatre
 layout: theatres
-image: Orange_Park_Community_Theatre.jpeg
-Details:
+logo: Orange_Park_Community_Theatre.jpeg
+logo_credit:
+logo_alt:
+logo_caption:
+details:
     Founded: 
     Address: |
         2900 Moody Ave

@@ -1,8 +1,11 @@
 ---
 title: Theatre Jacksonville
 layout: theatres
-image: Theatre_Jacksonville.webp
-Details:
+logo: Theatre_Jacksonville.webp
+logo_credit:
+logo_alt:
+logo_caption:
+details:
   Founded: 1919
   Address: |
     2032 San Marco Blvd
