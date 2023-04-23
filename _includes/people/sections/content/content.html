@@ -15,9 +15,27 @@
       <div class="sidebar">
         <div class="theatredetails">
 
-          {% if page.image %}
-          <img class="featured_image" src="media/headshots/{{ page.image }}" alt="{{ page.title }}">
+          {% if page.headshot %}
+          {% capture alt_text %}
+          {% if page.headshot_alt %}{{ page.headshot_alt }}
+          {% else %}{{ page.title }}
           {% endif %}
+          {% endcapture %}
+          <img class="featured_image" src="media/headshots/{{ page.headshot }}" alt="{{ alt_text }}">
+          {% if page.headshot_caption or page.headshot_credit %}
+          <div class="image-info">
+            {% if page.headshot_caption %}
+            <span class="image-caption">{{ page.headshot_caption }}</span>
+            {% endif %}
+            {% if page.headshot_caption and page.headshot_credit %} | {% endif %}
+            {% if page.headshot_credit %}
+            <span class="image-credit">(📷 {{ page.headshot_credit }})</span>
+            {% endif %}
+          </div>
+          {% endif %}
+
+          {% endif %}
+
 
           {% assign details = page.Details %}
 
@@ -27,53 +45,54 @@
               {% assign key = detail[0] | downcase %}
               {% assign value = detail[1] %}
               {% if value != "" and value != nil %}
-                {% if key == 'address' %}
-                <tr>
-                  <td class="leftcol">Address</td>
-                  <td>
-                    {% assign address_lines = value | newline_to_br | strip | split: '<br />' %}
-                    {% for address_line in address_lines %}
-                    {{ address_line }}<br>
-                    {% endfor %}
-                    <ul>
-                      <li><a href="https://www.google.com/maps/search/?api=1&query={{ value | uri_escape }}">Google Maps</a>
-                      </li>
-                      <li><a href="https://maps.apple.com/?q={{ value | uri_escape }}">Apple Maps</a></li>
-                    </ul>
-                  </td>
-                </tr>
-                {% elsif key == 'web' or key == 'website' %}
-                <tr>
-                  <td class="leftcol">{{ key | capitalize }}</td>
-                  <td><a target="_blank" href="{{ value }}">{{ value | split: '://' | last | split: 'www.' | last }}</a>
-                  </td>
-                </tr>
-                {% elsif key == 'facebook' %}
-                <tr>
-                  <td class="leftcol">Facebook</td>
-                  <td><a href="https://www.facebook.com/{{ value }}" target="_blank">{{ value }}</a></td>
-                </tr>
-                {% elsif key == 'twitter' %}
-                <tr>
-                  <td class="leftcol">Twitter</td>
-                  <td><a href="https://twitter.com/{{ value }}" target="_blank">{{ value }}</a></td>
-                </tr>
-                {% elsif key == 'instagram' %}
-                <tr>
-                  <td class="leftcol">Instagram</td>
-                  <td><a href="https://www.instagram.com/{{ value }}" target="_blank">{{ value }}</a></td>
-                </tr>
-                {% elsif key == 'linkedin' %}
-                <tr>
-                  <td class="leftcol">LinkedIn</td>
-                  <td><a href="https://www.linkedin.com/in/{{ value }}" target="_blank">{{ value }}</a></td>
-                </tr>
-                {% else %}
-                <tr>
-                  <td class="leftcol">{{ detail[0] }}</td>
-                  <td>{{ value }}</td>
-                </tr>
-                {% endif %}
+              {% if key == 'address' %}
+              <tr>
+                <td class="leftcol">Address</td>
+                <td>
+                  {% assign address_lines = value | newline_to_br | strip | split: '<br />' %}
+                  {% for address_line in address_lines %}
+                  {{ address_line }}<br>
+                  {% endfor %}
+                  <ul>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query={{ value | uri_escape }}">Google
+                        Maps</a>
+                    </li>
+                    <li><a href="https://maps.apple.com/?q={{ value | uri_escape }}">Apple Maps</a></li>
+                  </ul>
+                </td>
+              </tr>
+              {% elsif key == 'web' or key == 'website' %}
+              <tr>
+                <td class="leftcol">{{ key | capitalize }}</td>
+                <td><a target="_blank" href="{{ value }}">{{ value | split: '://' | last | split: 'www.' | last }}</a>
+                </td>
+              </tr>
+              {% elsif key == 'facebook' %}
+              <tr>
+                <td class="leftcol">Facebook</td>
+                <td><a href="https://www.facebook.com/{{ value }}" target="_blank">{{ value }}</a></td>
+              </tr>
+              {% elsif key == 'twitter' %}
+              <tr>
+                <td class="leftcol">Twitter</td>
+                <td><a href="https://twitter.com/{{ value }}" target="_blank">{{ value }}</a></td>
+              </tr>
+              {% elsif key == 'instagram' %}
+              <tr>
+                <td class="leftcol">Instagram</td>
+                <td><a href="https://www.instagram.com/{{ value }}" target="_blank">{{ value }}</a></td>
+              </tr>
+              {% elsif key == 'linkedin' %}
+              <tr>
+                <td class="leftcol">LinkedIn</td>
+                <td><a href="https://www.linkedin.com/in/{{ value }}" target="_blank">{{ value }}</a></td>
+              </tr>
+              {% else %}
+              <tr>
+                <td class="leftcol">{{ detail[0] }}</td>
+                <td>{{ value }}</td>
+              </tr>
+              {% endif %}
               {% endif %}
               {% endfor %}
             </tbody>

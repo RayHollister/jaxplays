@@ -2,6 +2,7 @@
 
 :root {
     --body-font-color: #727272;
+    --caption-font-color: #949494;
     --header-font-color: #393939;
     --logo-font-family: 'Montserrat';
     --logo-font-weight: 900;
@@ -91,6 +92,17 @@ table.showdetails thead tr th {
     margin-bottom: 1rem;
 }
 
+/* Photo Credits & Captions */
+.image-info {
+    margin: -.5rem 0 1rem;
+}
+.image-caption, .image-credit {
+    font-size: .85em;
+    color: var(--caption-font-color);
+}
+
+
+
 /* Style for Blog */
 
 p.byline {
@@ -98,7 +110,7 @@ p.byline {
     margin-bottom: .5rem;
 }
 p.dateline {
-    color: #949494;
+    color: var(--caption-font-color);
     font-size: .85em;
 }
 
