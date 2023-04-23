@@ -14,6 +14,7 @@
 
     <div class="sidebar">
       <div class="theatredetails">
+        <div class="featured_image">
         {% if page.logo %}
         {% capture alt_text %}
         {% if page.logo_alt %}{{ page.logo_alt }}
@@ -33,6 +34,7 @@
           </div>
           {% endif %}
         {% endif %}
+        </div>
 
         {% assign details = page.Details | default: page.details %}
 

@@ -87,29 +87,41 @@ table.showdetails thead tr th {
 .external-links {
     padding: 1rem;
 }
-.showdetails,
-.theatredetails,
-.venuedetails,
-.peopledetails {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
+
 .featured_image {
-    margin-bottom: 1rem;
-}
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
 /* Photo Credits & Captions */
-.image-info {
-    margin: -.5rem 0 1rem;
+figure {
+    margin: 0 0 1rem;
 }
-.image-caption, .image-credit {
+figure img{
+    margin-bottom: .5rem;
+}
+figcaption {
+    /* margin: -.5rem 0 1rem; */
     font-size: .85em;
     color: var(--caption-font-color);
 }
 
+/* Photo Gallery */
 
+.photo-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.photo-gallery figure {
+    max-width: 300px;
+}
 
 /* Style for Blog */
 
