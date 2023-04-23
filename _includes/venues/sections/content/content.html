@@ -14,8 +14,24 @@
 
     <div class="sidebar">
       <div class="venuedetails">
-        {% if page.image %}
-        <img class="featured_image" src="/media/venuelogos/{{ page.image }}" alt="{{ page.title }}">
+        {% if page.logo %}
+        {% capture alt_text %}
+        {% if page.logo_alt %}{{ page.logo_alt }}
+        {% else %}{{ page.title }}
+        {% endif %}
+        {% endcapture %}
+        <img class="featured_image" src="media/logos/{{ page.logo }}" alt="{{ alt_text }}">
+          {% if page.logo_caption or page.logo_credit %}
+          <div class="image-info">
+            {% if page.logo_caption %}
+            <span class="image-caption">{{ page.logo_caption }}</span>
+            {% endif %}
+            {% if page.logo_caption and page.logo_credit %} | {% endif %}
+            {% if page.logo_credit %}
+            <span class="image-credit">(📷 {{ page.logo_credit }})</span>
+            {% endif %}
+          </div>
+          {% endif %}
         {% endif %}
 
         {% assign details = page.Details | default: page.details %}
