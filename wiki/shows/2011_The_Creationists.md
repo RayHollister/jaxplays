@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: The Creationists (2011)
-image:
+poster:
 category:
 details:
   Theatre: Players by the Sea

@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: Messiah on the Frigidaire (2022)
-image: 2022_Messiah_on_the_Frigidaire.jpeg
+poster: 2022_Messiah_on_the_Frigidaire.jpeg
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Title: Messiah on the Frigidaire

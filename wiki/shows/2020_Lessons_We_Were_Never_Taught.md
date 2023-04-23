@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: Lessons We Were Never Taught (2020)
-image: 2020_Lessons_We_Were_Never_Taught.jpg
+poster: 2020_Lessons_We_Were_Never_Taught.jpg
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Title: Lessons We Were Never Taught

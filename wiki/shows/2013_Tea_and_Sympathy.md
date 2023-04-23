@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: Tea and Sympathy (2013)
-image: 
+poster: 
+poster_credit: 
+poster_alt:
+poster_caption:
 category: 
 details:
   Theatre: Theatre Jacksonville

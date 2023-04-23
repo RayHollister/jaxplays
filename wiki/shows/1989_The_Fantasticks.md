@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: The Fantasticks (1989)
-image:
+poster:
 category:
 details:
   Theatre: Players by the Sea

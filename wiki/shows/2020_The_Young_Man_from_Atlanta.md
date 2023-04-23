@@ -1,6 +1,10 @@
 ---
 layout: shows
 title: The Young Man from Atlanta (2020)
+poster:
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Title: The Young Man from Atlanta - wiki

@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: 42nd Street (musical) (2022)
-image: 2022_42nd_Street.jpg
+poster: 2022_42nd_Street.jpg
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
 details:
   Title: 42nd Street (musical) - wiki

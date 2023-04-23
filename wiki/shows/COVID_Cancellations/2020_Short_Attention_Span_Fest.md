@@ -1,6 +1,9 @@
 ---
 layout: shows
 title: Short Attention Span Fest (2020)
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Theatre: The 5 and Dime

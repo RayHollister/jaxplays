@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: I Never Sang for My Father (1993)
-image:
+poster:
 category:
 details:
   Theatre: Players by the Sea

@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: They're Playing Our Song (1990)
-image: 
+poster: 
+poster_credit: 
+poster_alt:
+poster_caption:
 category: 
 details:
   Theatre: Theatre Jacksonville

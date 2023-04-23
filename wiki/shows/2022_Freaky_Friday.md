@@ -1,8 +1,11 @@
 ---
 layout: shows
 title: Freaky Friday (2022)
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
-image: 2022_Freaky_Friday.jpg
+poster: 2022_Freaky_Friday.jpg
 details:
   Title: Freaky Friday (musical) - wiki
   Theatre: Orange Park Community Theatre

@@ -3,6 +3,9 @@ published: false
 cancelled: COVID-19
 layout: shows
 title: The Music Man (2020)
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
 details:
   Title: The Music Man - wiki

@@ -1,6 +1,10 @@
 ---
 layout: shows
 title: Snoopy! The Musical (2022)
+poster:
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
 details:
   Theatre: ABET - All Beaches Experimental Theatre

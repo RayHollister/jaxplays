@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: The Sweet Delilah Swim Club
-image: 2022_The_Sweet_Delilah_Swim_Club.jpg
+poster: 2022_The_Sweet_Delilah_Swim_Club.jpg
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Title: The Sweet Delilah Swim Club

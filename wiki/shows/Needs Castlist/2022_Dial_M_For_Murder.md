@@ -1,6 +1,9 @@
 ---
 layout: shows
 title: Dial M For Murder (2022)
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details: 
     Title: Dial M For Murder - wiki

@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: Two Trains Running (2020)
-image: 2020_Two_Trains_Running.png
+poster: 2020_Two_Trains_Running.png
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Title: Two Trains Running - wiki

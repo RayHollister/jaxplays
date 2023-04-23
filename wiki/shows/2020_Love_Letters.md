@@ -1,6 +1,10 @@
 ---
 layout: shows
 title: Love Letters (2020)
+poster:
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Title: Love Letters (play) - wiki

@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: The Food of Love (2020)
-image: 2020_The_Food_of_Love.png
+poster: 2020_The_Food_of_Love.png
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Title: The Food of Love

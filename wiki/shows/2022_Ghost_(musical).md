@@ -1,8 +1,11 @@
 ---
 layout: shows
 title: Ghost (musical) (2022)
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
-image: 2022_Ghost_(musical).jpg
+poster: 2022_Ghost_(musical).jpg
 details:
   Title: Ghost (musical)
   Theatre: The Alhambra Theatre & Dining

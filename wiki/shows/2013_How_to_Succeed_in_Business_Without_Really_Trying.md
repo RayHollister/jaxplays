@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: How to Succeed in Business Without Really Trying (2013)
-image: 
+poster: 
+poster_credit: 
+poster_alt:
+poster_caption:
 category: 
 details:
   Theatre: FSCJ Summer Musical Theatre Experience

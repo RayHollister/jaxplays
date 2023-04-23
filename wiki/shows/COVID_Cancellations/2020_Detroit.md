@@ -3,6 +3,9 @@ published: false
 cancelled: COVID-19
 layout: shows
 title: Detroit (2020)
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Title: Detroit (play) - wiki

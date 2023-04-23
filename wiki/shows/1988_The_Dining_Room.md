@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: The Dining Room (1988)
-image:
+poster:
 category:
 details:
   Theatre: Players by the Sea

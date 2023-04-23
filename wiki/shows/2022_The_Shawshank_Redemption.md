@@ -1,6 +1,10 @@
 ---
 layout: shows
 title: The Shawshank Redemption (2022)
+poster:
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Theatre: ABET - All Beaches Experimental Theatre

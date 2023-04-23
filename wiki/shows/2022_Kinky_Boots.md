@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: Kinky Boots (2022)
-image: 2022_Kinky_Boots.jpeg
+poster: 2022_Kinky_Boots.jpeg
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
 details:
   Name: Kinky Boots

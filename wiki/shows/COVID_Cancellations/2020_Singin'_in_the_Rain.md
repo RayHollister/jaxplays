@@ -3,6 +3,9 @@ published: false
 cancelled: COVID-19
 layout: shows
 title: Singin in the Rain (2020)
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
 details: 
     Title: Singin' in the Rain (musical) - wiki

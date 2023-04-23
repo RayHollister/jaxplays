@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: Dancing at Lughnasa (1996)
-image:
+poster:
 category:
 details:
   Theatre: Theatre Jacksonville

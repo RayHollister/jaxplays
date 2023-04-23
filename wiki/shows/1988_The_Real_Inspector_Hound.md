@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: The Real Inspector Hound (1988)
-image: 
+poster: 
+poster_credit: 
+poster_alt:
+poster_caption:
 category: 
 details:
   Theatre: Jacksonville Actors Theatre

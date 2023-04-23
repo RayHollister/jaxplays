@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: Children of a Lesser God (1989)
-image:
+poster:
 category:
 details:
   Theatre: Players by the Sea

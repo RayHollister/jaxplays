@@ -3,6 +3,9 @@
 cancelled: COVID-19
 layout: shows
 title: Cinderella (2020)
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
 details:
   Title: Cinderella (Rodgers and Hammerstein musical) - wiki

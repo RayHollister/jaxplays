@@ -1,6 +1,10 @@
 ---
 layout: shows
 title: One Man, Two Guvnors (2022)
+poster:
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Title: One Man, Two Guvnors - wiki

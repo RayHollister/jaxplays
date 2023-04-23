@@ -1,6 +1,10 @@
 ---
 layout: shows
 title: "The Eight: Reindeer Monologues (2011)"
+poster:
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Theatre: The 5 and Dime

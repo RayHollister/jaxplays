@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: In the Heights (2020)
-image: 2020_In_the_Heights.jpg
+poster: 2020_In_the_Heights.jpg
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
 details:
   Title: In the Heights - wiki 

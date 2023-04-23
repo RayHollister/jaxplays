@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: The Grapes of Wrath (2000)
-image:
+poster:
 category:
 details:
   Theatre: Players by the Sea

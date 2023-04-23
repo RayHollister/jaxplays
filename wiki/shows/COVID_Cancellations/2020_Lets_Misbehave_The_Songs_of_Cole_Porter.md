@@ -3,6 +3,9 @@ published: false
 cancelled: COVID-19
 layout: shows
 title: "Let's Misbehave: The Songs of Cole Porter (2020)"
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
 details:
   Theatre: The 5 and Dime

@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: Coastal Disturbances (1989)
-image: 
+poster: 
+poster_credit: 
+poster_alt:
+poster_caption:
 category: 
 details:
   Theatre: Jacksonville Actors Theatre

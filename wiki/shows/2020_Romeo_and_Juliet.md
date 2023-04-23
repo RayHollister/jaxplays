@@ -1,6 +1,10 @@
 ---
 layout: shows
 title: Romeo & Juliet (2020)
+poster:
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Title: Romeo & Juliet

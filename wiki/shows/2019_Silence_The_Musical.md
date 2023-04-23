@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: Silence! The Musical (2019)
-image: 2019_Silence_The_Musical.webp
+poster: 2019_Silence_The_Musical.webp
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
 details:
   Title: Silence! The Musical

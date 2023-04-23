@@ -3,6 +3,9 @@ published: false
 cancelled: COVID-19
 layout: shows
 title: The Musical Comedy Murders of 1940 (2020)
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Title: The Musical Comedy Murders of 1940 - wiki

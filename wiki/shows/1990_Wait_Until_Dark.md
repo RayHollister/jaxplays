@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: Wait Until Dark (1990)
-image:
+poster:
 category:
 details:
   Theatre: Players by the Sea

@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: Ragtime (2022)
-image: 2022_Ragtime_(musical).png
+poster: 2022_Ragtime_(musical).png
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
 details:
   Title: Ragtime (musical) - wiki

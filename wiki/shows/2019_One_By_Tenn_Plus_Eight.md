@@ -1,8 +1,11 @@
 ---
 layout: shows
 title: One by Tenn Plus Eight (2019)
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
-image: 2019_OneBy_Tenn_Plus_Eight.jpeg
+poster: 2019_OneBy_Tenn_Plus_Eight.jpeg
 playbill: 2019_One_By_Tenn_Plus_Eight.pdf
 details:
   Title: "One by Tenn Plus Eight: Short Stories For the Stage"

@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: Round and Round the Garden (1987)
-image:
+poster:
 category:
 details:
   Theatre: Players by the Sea

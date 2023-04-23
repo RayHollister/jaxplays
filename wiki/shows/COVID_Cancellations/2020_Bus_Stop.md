@@ -3,6 +3,9 @@ published: false
 cancelled: COVID-19
 layout: shows
 title: Bus Stop (2020)
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Title: Bus Stop (play) - wiki

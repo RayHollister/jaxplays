@@ -3,6 +3,9 @@ published: false
 cancelled: COVID-19
 layout: shows
 title: Guess Who's Coming to Dinner (2020)
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Theatre: Theatre Jacksonville

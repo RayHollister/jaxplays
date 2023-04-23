@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: The Rainmaker (1986)
-image:
+poster:
 category:
 details:
   Theatre: Players by the Sea

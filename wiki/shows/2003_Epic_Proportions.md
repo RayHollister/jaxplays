@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: Epic Proportions (2003)
-image: 
+poster: 
+poster_credit: 
+poster_alt:
+poster_caption:
 category: 
 details:
   Theatre: Theatre Jacksonville

@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: White Christmas (2022)
-image: 2022_White_Christmas_(musical).jpg
+poster: 2022_White_Christmas_(musical).jpg
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
 details:
   Title: White Christmas

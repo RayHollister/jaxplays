@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: Happy Birthday, Wanda June (1987)
-image:
+poster:
 category:
 details:
   Theatre: Players by the Sea

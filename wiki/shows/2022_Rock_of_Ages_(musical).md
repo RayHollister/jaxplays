@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: Rock of Ages (2022)
-image: 2022_Rock_of_Ages_(musical).jpeg
+poster: 2022_Rock_of_Ages_(musical).jpeg
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
 details:
   Title: Rock of Ages (musical) - wiki

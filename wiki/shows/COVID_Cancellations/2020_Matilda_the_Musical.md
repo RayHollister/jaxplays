@@ -3,7 +3,10 @@ published: false
 cancelled: COVID-19
 layout: shows
 title: Matilda the Musical (2020)
-image: 2020_Matilda_the_Musical.png
+poster: 2020_Matilda_the_Musical.png
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
 details:
   Title: Matilda the Musical

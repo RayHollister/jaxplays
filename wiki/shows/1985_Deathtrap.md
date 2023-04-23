@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: Deathtrap (1985)
-image:
+poster:
 category:
 details:
   Theatre: Players by the Sea

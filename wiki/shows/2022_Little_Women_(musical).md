@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: Little Women (musical) (2022)
-image: 2020_Little_Women.jpeg
+poster: 2020_Little_Women.jpeg
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
 details:
   Title: Little Women (musical) - wiki

@@ -3,6 +3,9 @@ published: false
 cancelled: COVID-19
 layout: shows
 title: Grease (musical) (2020)
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
 details:
   Theatre: The Alhambra Theatre & Dining

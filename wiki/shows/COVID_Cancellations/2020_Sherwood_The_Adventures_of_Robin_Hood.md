@@ -3,6 +3,9 @@ published: false
 cancelled: COVID-19
 layout: shows
 title: "Sherwood: The Adventures of Robin Hood (2020)"
+poster_credit: 
+poster_alt:
+poster_caption:
 category: comedy
 details:
   Theatre: ABET - All Beaches Experimental Theatre

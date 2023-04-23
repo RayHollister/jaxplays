@@ -1,6 +1,9 @@
 ---
 layout: shows
 title: Violet (2019)
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
 details:
     Title: Violet (musical) - wiki

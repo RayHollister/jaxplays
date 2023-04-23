@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: Sweat (2019)
-image: 2019_Sweat.webp
+poster: 2019_Sweat.webp
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Title: Sweat

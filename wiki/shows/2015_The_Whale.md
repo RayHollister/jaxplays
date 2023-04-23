@@ -1,6 +1,10 @@
 ---
 layout: shows
 title: The Whale (2015)
+poster:
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Title: The Whale

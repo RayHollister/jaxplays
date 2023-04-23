@@ -1,6 +1,10 @@
 ---
 layout: shows
 title: Love! Valour! Compassion! (2019)
+poster:
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Title: Love! Valour! Compassion!

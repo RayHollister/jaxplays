@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: Dinner with Booker T. (2020)
-image: 2020_Dinner_with_Booker_T.jpg
+poster: 2020_Dinner_with_Booker_T.jpg
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Title: Dinner with Booker T.

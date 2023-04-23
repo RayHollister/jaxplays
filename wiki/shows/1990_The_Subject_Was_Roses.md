@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: The Subject Was Roses (1990)
-image:
+poster:
 category:
 details:
   Theatre: Players by the Sea

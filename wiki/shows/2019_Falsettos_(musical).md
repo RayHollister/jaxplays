@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: Falsettos (2019)
-image: 2019_Falsettos_(musical).webp
+poster: 2019_Falsettos_(musical).webp
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
 details:
   Title: Falsettos - wiki

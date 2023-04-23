@@ -3,6 +3,9 @@ published: false
 cancelled: COVID-19
 layout: shows
 title: The Book of Will (2020)
+poster_credit: 
+poster_alt:
+poster_caption:
 category: play
 details:
   Title: The Book of Will

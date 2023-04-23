@@ -1,6 +1,9 @@
 ---
 layout: shows
 title: Parade (musical) (2022)
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
 details:
   Title: Parade (musical) - wiki

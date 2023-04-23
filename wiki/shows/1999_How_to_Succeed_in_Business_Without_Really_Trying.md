@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: How to Succeed in Business Without Really Trying (1999)
-image: 
+poster: 
+poster_credit: 
+poster_alt:
+poster_caption:
 category: 
 details:
   Theatre: Theatre Jacksonville

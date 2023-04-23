@@ -1,7 +1,10 @@
 ---
 layout: shows
 title: Is There Life After High School? (1993)
-image: 
+poster: 
+poster_credit: 
+poster_alt:
+poster_caption:
 category: musical
 details:
   Theatre: Players by the Sea
