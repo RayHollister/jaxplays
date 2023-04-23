@@ -10,6 +10,23 @@
       <div class="peopledescription">
         <h1>{{page.title}}</h1>
 
+        <!-- Creates an AKA section at the top -->
+        {% if page.redirect_from %}
+          <p>Also known as
+          {% for redirect_url in page.redirect_from %}
+            {% assign redirect_name = redirect_url | remove: "/" | replace: "_", " " %}
+            {% if forloop.last %}
+              {{ redirect_name }}.
+            {% elsif forloop.length > 1 and forloop.index == forloop.length | minus: 1 %}
+              {{ redirect_name }}, and
+            {% else %}
+              {{ redirect_name }},
+            {% endif %}
+          {% endfor %}
+          </p>
+        {% endif %}
+
+
         {{ content }}
       </div>
       <div class="sidebar">
@@ -49,6 +66,16 @@
               {% assign key = detail[0] | downcase %}
               {% assign value = detail[1] %}
               {% if value != "" and value != nil %}
+              {% assign split_values = value | split: "|" %}
+              {% if split_values.size > 1 %}
+                {% assign value_name = split_values[0] | strip %}
+                {% assign value_url = split_values[1] | strip %}
+              {% else %}
+                {% assign value_name = value %}
+                {% assign value_url = value %}
+              {% endif %}
+
+
               {% if key == 'address' %}
               <tr>
                 <td class="leftcol">Address</td>
@@ -68,28 +95,43 @@
               {% elsif key == 'web' or key == 'website' %}
               <tr>
                 <td class="leftcol">{{ key | capitalize }}</td>
-                <td><a target="_blank" href="{{ value }}">{{ value | split: '://' | last | split: 'www.' | last }}</a>
+                <td><a target="_blank" href="{{ value_url }}">{{ value | split: '://' | last | split: 'www.' | last }}</a>
                 </td>
               </tr>
               {% elsif key == 'facebook' %}
               <tr>
                 <td class="leftcol">Facebook</td>
-                <td><a href="https://www.facebook.com/{{ value }}" target="_blank">{{ value }}</a></td>
+                <td><a href="https://www.facebook.com/{{ value_url }}" target="_blank">{{ value_name }}</a></td>
               </tr>
               {% elsif key == 'twitter' %}
               <tr>
                 <td class="leftcol">Twitter</td>
-                <td><a href="https://twitter.com/{{ value }}" target="_blank">{{ value }}</a></td>
+                <td><a href="https://twitter.com/{{ value_url }}" target="_blank">{{ value_name }}</a></td>
               </tr>
               {% elsif key == 'instagram' %}
               <tr>
                 <td class="leftcol">Instagram</td>
-                <td><a href="https://www.instagram.com/{{ value }}" target="_blank">{{ value }}</a></td>
+                <td><a href="https://www.instagram.com/{{ value_url }}" target="_blank">{{ value_name }}</a></td>
               </tr>
               {% elsif key == 'linkedin' %}
               <tr>
                 <td class="leftcol">LinkedIn</td>
-                <td><a href="https://www.linkedin.com/in/{{ value }}" target="_blank">{{ value }}</a></td>
+                <td><a href="https://www.linkedin.com/in/{{ value_url }}" target="_blank">{{ value_name }}</a></td>
+              </tr>
+              {% elsif key == 'ibdb' %}
+              <tr>
+                <td class="leftcol">IBDB</td>
+                <td><a href="https://www.ibdb.com/broadway-cast-staff/{{ value_url }}" target="_blank">{{ value_name }}</a></td>
+              </tr>
+              {% elsif key == 'imdb' %}
+              <tr>
+                <td class="leftcol">IMDb</td>
+                <td><a href="https://www.imdb.com/name/{{ value_url }}" target="_blank">{{ value_name }}</a></td>
+              </tr>
+              {% elsif key == 'wikipedia' %}
+              <tr>
+                <td class="leftcol">Wikipedia</td>
+                <td><a href="https://en.wikipedia.org/wiki/{{ value_url }}" target="_blank">{{ value_name }}</a></td>
               </tr>
               {% else %}
               <tr>
@@ -106,25 +148,48 @@
       </div>
 
       <div class="additional-content">
-        {% assign person_name = page.title %}
+        {% assign person_names = page.title | split: "|" %}
+
+        {% if page.redirect_from %}
+          {% for redirect_url in page.redirect_from %}
+            {% assign redirect_name = redirect_url | remove: "/" | replace: "_", " " %}
+            {% assign person_names = person_names | push: redirect_name %}
+          {% endfor %}
+        {% endif %}
+
         {% assign person_cast_credits = "" | split: "" %}
         {% assign person_crew_credits = "" | split: "" %}
 
         {% for p in site.pages %}
-        {% if p.details and p.details.Theatre and p.showtimes %}
+        {% if p.details and p.details.Theatre %}
         {% if p.cast %}
         {% assign cast_items = p.cast | items %}
         {% for cast_item in cast_items %}
         {% assign key = cast_item[0] %}
         {% assign value = cast_item[1] %}
-        {% if value contains person_name %}
-        {% assign show_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
+
+        {% assign name_found = false %}
+        {% for name in person_names %}
+          {% if value contains name %}
+            {% assign name_found = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        {% if name_found %}
+        
+        {% if p.showtimes %}
+          {% assign show_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
+        {% else %}
+          {% assign filename = p.path | split: "/" | last %}
+          {% assign show_year = filename | slice: 0,4 %}
+        {% endif %}
+
         {% assign theatre_url = p.details.Theatre | replace: " ", "_" %}
         {% capture credit %}<tr>
+          <td>{{ show_year }}</td>
           <td>{{ key }}</td>
           <td><a href="{{ p.url }}">{{ p.title }}</a></td>
           <td><a href="/{{ theatre_url }}">{{ p.details.Theatre }}</a></td>
-          <td>{{ show_year }}</td>
         </tr>{% endcapture %}
         {% unless person_cast_credits contains credit %}
         {% assign person_cast_credits = person_cast_credits | push: credit %}
@@ -138,14 +203,29 @@
         {% for crew_item in crew_items %}
         {% assign key = crew_item[0] %}
         {% assign value = crew_item[1] %}
-        {% if value contains person_name %}
-        {% assign show_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
+        
+        {% assign name_found = false %}
+        {% for name in person_names %}
+          {% if value contains name %}
+            {% assign name_found = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        {% if name_found %}
+        
+        {% if p.showtimes %}
+          {% assign show_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
+        {% else %}
+          {% assign filename = p.path | split: "/" | last %}
+          {% assign show_year = filename | slice: 0,4 %}
+        {% endif %}
+       
         {% assign theatre_url = p.details.Theatre | replace: " ", "_" %}
         {% capture credit %}<tr>
+          <td>{{ show_year }}</td>
           <td>{{ key }}</td>
           <td><a href="{{ p.url }}">{{ p.title }}</a></td>
           <td><a href="/{{ theatre_url }}">{{ p.details.Theatre }}</a></td>
-          <td>{{ show_year }}</td>
         </tr>{% endcapture %}
         {% unless person_crew_credits contains credit %}
         {% assign person_crew_credits = person_crew_credits | push: credit %}
@@ -164,10 +244,10 @@
           <table>
             <thead>
               <tr>
+                <th>Year</th>
                 <th>Role</th>
                 <th>Show</th>
                 <th>Theatre</th>
-                <th>Year</th>
               </tr>
             </thead>
             <tbody>
@@ -185,10 +265,10 @@
           <table>
             <thead>
               <tr>
+                <th>Year</th>
                 <th>Role</th>
                 <th>Show</th>
                 <th>Theatre</th>
-                <th>Year</th>
               </tr>
             </thead>
             <tbody>
@@ -201,6 +281,7 @@
         {% endif %}
 
       </div>
+
     </div>
     {% if site.inc_after_content %}
     {% include {{ site.inc_after_content }} %}
