@@ -1,7 +1,10 @@
 ---
 title: Ray Hollister
 layout: people
-image: ray_Hollister.jpg
+headshot: ray_Hollister.jpg
+headshot_credit: Ray Hollister
+headshot_alt: Ray Hollister in 2018 standing in front of the Town Square Theater in the Magic Kingdom at Walt Disney World.
+headshot_caption: Ray Hollister in 2018 standing in front of the Town Square Theater in the Magic Kingdom at Walt Disney World.
 Details:
   Website: https://rayhollister.com
   Facebook: rayhollister

@@ -4,7 +4,7 @@ layout: theatres
 image: 
 Details:
   Founded: 1999
-  Founder: [Justin Murphy](Justin Murphy)
+  Founder: Justin Murphy
   disbanded: 
   Address: 
   facebook: 
