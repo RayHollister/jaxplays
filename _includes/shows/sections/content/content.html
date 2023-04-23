@@ -156,6 +156,13 @@
           </table>
         </div>
 
+        <div class="photogallery">
+          {% assign photo_folder = "/media/photos" | append: page.url %}
+          {% include image-gallery.html folder=photo_folder %}
+
+        </div>
+
+
         <div class="external-links">
           <h2 id="external-links">External Links</h2>
           <ul>
