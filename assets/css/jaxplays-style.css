@@ -87,7 +87,15 @@ table.showdetails thead tr th {
 .external-links {
     padding: 1rem;
 }
-
+.showdetails,
+.theatredetails,
+.venuedetails,
+.peopledetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
 .featured_image {
     margin-bottom: 1rem;
 }

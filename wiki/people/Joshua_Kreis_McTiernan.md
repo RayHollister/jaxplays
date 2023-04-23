@@ -7,7 +7,10 @@ redirect_from:
   - /Joshua Kreis McTiernan
   - /Joshua-Kreis-McTiernan
 layout: people
-image: 
+headshot:
+headshot_credit: 
+headshot_alt: 
+headshot_caption: 
 Details:
   Website: https://mctiernanjoshua.wixsite.com/home
   Facebook: 

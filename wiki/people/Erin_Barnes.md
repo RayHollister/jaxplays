@@ -1,7 +1,10 @@
 ---
 title: Erin Barnes
 layout: people
-image: Erin_Barnes.jpeg
+headshot: Erin_Barnes.jpeg
+headshot_credit: 
+headshot_alt: 
+headshot_caption: 
 Details:
   Facebook: 
   Twitter: 

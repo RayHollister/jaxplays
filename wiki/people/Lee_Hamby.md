@@ -1,7 +1,10 @@
 ---
 title: Lee Hamby
 layout: people
-image: Lee_Hamby.jpeg
+headshot: Lee_Hamby.jpeg
+headshot_credit: 
+headshot_alt: 
+headshot_caption: 
 Details:
   Website: https://leehamby.weebly.com
   Facebook:
