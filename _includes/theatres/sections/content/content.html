@@ -120,8 +120,15 @@
       {% assign theatre_shows = "" | split: "" %}
 
       {% for p in site.pages %}
-      {% if p.details and p.details.Theatre and p.showtimes and p.details.Theatre == theatre_name %}
-      {% assign show_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
+      {% if p.details and p.details.Theatre and p.details.Theatre == theatre_name %}
+
+      {% if p.showtimes %}
+        {% assign show_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
+      {% else %}
+        {% assign filename = p.path | split: "/" | last %}
+        {% assign show_year = filename | slice: 0,4 %}
+      {% endif %}
+
       {% assign show_start_date = p.showtimes | newline_to_br | strip_html | split: " " | first %}
       {% assign modified_title = p.title | slice: -7, 7 %}
       {% if modified_title contains " (" %}
@@ -164,8 +171,8 @@
         <table>
           <thead>
             <tr>
-              <th>Show</th>
               <th>Year</th>
+              <th>Show</th>
             </tr>
           </thead>
           <tbody>

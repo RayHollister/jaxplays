@@ -16,5 +16,5 @@ details:
     Instagram: apextheatrejax
     LinkedIn: 
     Phone: 
-Artistic Director: Ian Mairs
+    Artistic Director: Ian Mairs
 ---

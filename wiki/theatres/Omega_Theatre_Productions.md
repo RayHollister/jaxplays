@@ -15,6 +15,7 @@ details:
   instagram: 
   LinkedIn: 
   Website: 
+external_links: 
+Justin Murphy - IMDB: https://www.imdb.com/name/nm2410069/bio
 ---
 Omega Theatre Productions is a defunct production company that produced Jesus Christ Superstar at [The Florida Theatre](The_Florida_Theatre) in 1999.
-- [Justin Murphy - IMDB](https://www.imdb.com/name/nm2410069/bio)
