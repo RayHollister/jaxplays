@@ -27,9 +27,11 @@ cast:
   Thaddaeus:
   Judas (not Iscariot):
   Priest 1: Ray Hollister
+  Priest 2: Adonis Boyd
   Ensemble: |
 crew:
   Director: Michelle Ottley-Fisher
+  Assistant Director: Adonis Boyd
   Choreographer: Michelle Ottley-Fisher
   Conductor: Roger Butterley
   Music Director: Cathy Murphy
