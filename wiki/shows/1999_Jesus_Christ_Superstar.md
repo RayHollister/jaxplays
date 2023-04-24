@@ -28,8 +28,8 @@ cast:
   Judas (not Iscariot):
   Priest 1: Ray Hollister
 crew:
-  Director: Michelle Ottley Fisher
-  Choreographer: Michelle Ottley Fisher
+  Director: Michelle Ottley-Fisher
+  Choreographer: Michelle Ottley-Fisher
   Music Director: Cathy Murphy
 external_links:
 ---

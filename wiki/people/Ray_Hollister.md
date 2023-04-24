@@ -1,5 +1,7 @@
 ---
 title: Ray Hollister
+redirect_from:
+- /Rayburn Hollister
 layout: people
 headshot: Ray_Hollister.jpg
 headshot_credit: Ray Hollister

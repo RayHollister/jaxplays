@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap");
 
 :root {
-    --body-font-color: #727272;
-    --caption-font-color: #949494;
-    --header-font-color: #393939;
-    --logo-font-family: 'Montserrat';
-    --logo-font-weight: 900;
+  --body-font-color: #727272;
+  --caption-font-color: #949494;
+  --header-font-color: #393939;
+  --logo-font-family: "Montserrat";
+  --logo-font-weight: 900;
 }
 
 footer {
-    float: none;
+  float: none;
 }
 
 h1,
@@ -18,65 +18,64 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--logo-font-family);
+  font-family: var(--logo-font-family);
 }
 
 h1 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 input#search-input {
-    width: 100%;
+  width: 100%;
 }
 
 .jaxplays_title {
-    text-align: center;
-    font-family: var(--logo-font-family);
-    font-size: 3rem;
-    font-weight: var(--logo-font-weight);
-    margin-top: 1rem;
+  text-align: center;
+  font-family: var(--logo-font-family);
+  font-size: 3rem;
+  font-weight: var(--logo-font-weight);
+  margin-top: 1rem;
 }
 
-
 table {
-    width: auto;
+  width: auto;
 }
 
 table.showdetails thead tr th {
-    font-size: 24px;
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-weight: 400;
+  font-size: 24px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
 }
 
 /* Add this for a gray background on the sidebar for all devices */
 .sidebar {
-    background-color: rgba(128, 128, 128, 0.1);
+  background-color: rgba(128, 128, 128, 0.1);
 }
 
 .sidebar table td.leftcol {
-    font-weight: 600;
-    vertical-align: top;
+  font-weight: 600;
+  vertical-align: top;
 }
 
 .sidebar table ul.map_links {
-    margin-bottom: 0;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-weight: 600;
+  margin-bottom: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
 }
 
 #git-wiki-shows-content,
 #git-wiki-people-content,
 #git-wiki-theatre-content,
 #git-wiki-venue-content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .additional-content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .showdescription,
@@ -85,139 +84,147 @@ table.showdetails thead tr th {
 .additional-content,
 .sidebar,
 .external-links {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .featured_image {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.peopledetails h6 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--header-font-color);
+  display: flex;
+  justify-content: center;
+  line-height: 1;
+}
 
 /* Photo Credits & Captions */
 figure {
-    margin: 0 0 1rem;
+  margin: 0 0 1rem;
 }
-figure img{
-    margin-bottom: .5rem;
+figure img {
+  margin-bottom: 0.5rem;
 }
 figcaption {
-    /* margin: -.5rem 0 1rem; */
-    font-size: .85em;
-    color: var(--caption-font-color);
+  /* margin: -.5rem 0 1rem; */
+  font-size: 0.85em;
+  color: var(--caption-font-color);
 }
 
 /* Photo Gallery */
 
 .photo-gallery {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .photo-gallery figure {
-    max-width: 300px;
+  max-width: 300px;
 }
 
 /* Style for Blog */
 
 p.byline {
-    font-style: italic;
-    margin-bottom: .5rem;
+  font-style: italic;
+  margin-bottom: 0.5rem;
 }
 p.dateline {
-    color: var(--caption-font-color);
-    font-size: .85em;
+  color: var(--caption-font-color);
+  font-size: 0.85em;
 }
 
 ul#results-container {
-    margin-top: 1rem;
-    padding-left: 0;
+  margin-top: 1rem;
+  padding-left: 0;
 }
 ul#results-container li {
-    line-height: 2
+  line-height: 2;
 }
 
 /* Media query for desktop devices */
 @media (min-width: 1024px) {
+  #git-wiki-shows-content,
+  #git-wiki-theatre-content,
+  #git-wiki-venue-content,
+  #git-wiki-people-content {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "content sidebar"
+      "additional-content sidebar";
+  }
 
-    #git-wiki-shows-content,
-    #git-wiki-theatre-content,
-    #git-wiki-venue-content,
-    #git-wiki-people-content {
-        display: grid;
-        grid-template-columns: 1fr 400px;
-        grid-template-rows: auto auto;
-        grid-template-areas:
-            "content sidebar"
-            "additional-content sidebar";
-    }
+  .showdescription,
+  .theatredescription,
+  .venuedescription,
+  .peopledescription {
+    grid-area: content;
+  }
 
-    .showdescription,
-    .theatredescription,
-    .venuedescription,
-    .peopledescription {
-        grid-area: content;
-    }
+  .additional-content {
+    grid-area: additional-content;
+  }
 
-    .additional-content {
-        grid-area: additional-content;
-    }
-
-    .sidebar {
-        grid-area: sidebar;
-        position: sticky;
-        top: 0;
-        /* height: 100vh; */
-        overflow-y: auto;
-    }
+  .sidebar {
+    grid-area: sidebar;
+    position: sticky;
+    top: 0;
+    /* height: 100vh; */
+    overflow-y: auto;
+  }
 }
 
 /* Media query for tablets and mobile devices */
 @media (max-width: 1023px) {
-    body {
-        padding: 1rem;
-    }
+  body {
+    padding: 1rem;
+  }
 
-    #git-wiki-mobile-header {
-        width: calc(100vw);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        border: 0px;
-        border-radius: 0;
-        margin-left: -1rem;
-        height: 75px;
-    }
+  #git-wiki-mobile-header {
+    width: calc(100vw);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0px;
+    border-radius: 0;
+    margin-left: -1rem;
+    height: 75px;
+  }
 
-    #git-wiki-mobile-header button.w3-button {
-        height: 75px;
-        width: 75px;
-        font-size: 2.4rem;
-        padding: 0;
-    }
+  #git-wiki-mobile-header button.w3-button {
+    height: 75px;
+    width: 75px;
+    font-size: 2.4rem;
+    padding: 0;
+  }
 
-    #git-wiki-mobile-header a.sitelogoandtext {
-        color: var(--header-font-color);
-        font-family: var(--logo-font-family);
-        font-size: 3rem;
-        font-weight: var(--logo-font-weight);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 1rem;
-    }
+  #git-wiki-mobile-header a.sitelogoandtext {
+    color: var(--header-font-color);
+    font-family: var(--logo-font-family);
+    font-size: 3rem;
+    font-weight: var(--logo-font-weight);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
 
-    #git-wiki-mobile-header img.mobilelogo {
-        max-height: 55px;
-        height: 55px;
-    }
+  #git-wiki-mobile-header img.mobilelogo {
+    max-height: 55px;
+    height: 55px;
+  }
 
-    #git-wiki-sidebar {
-        top: 75px;
-    }
+  #git-wiki-sidebar {
+    top: 75px;
+  }
 }
