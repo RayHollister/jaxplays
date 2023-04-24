@@ -155,7 +155,7 @@ inc_before_content :
 inc_after_content : 
 inc_before_footer : 
 inc_after_footer : 
-inc_before_head : 
+inc_before_head: google_tag_manager_head.html 
 inc_after_head : 
 inc_before_meta : 
 inc_after_meta : 
@@ -169,6 +169,8 @@ inc_before_tail :
 inc_after_tail : 
 inc_before_tools : 
 inc_after_tools : 
+
+inc_after_opening_body_tag : google_tag_manager_body.html
 
 inc_before_page_list :
 inc_after_page_list : 

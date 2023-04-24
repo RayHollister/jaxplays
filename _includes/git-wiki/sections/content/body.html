@@ -1,4 +1,8 @@
 <body style="background-color: black;" onload="darkModeSetBodyBg()">
+    {% if site.inc_after_opening_body_tag %}
+        {% include {{ site.inc_after_opening_body_tag }} %}
+      {% endif %}
+
     <!-- dark mode -->
     <script>
         darkModeSetBodyBg()
