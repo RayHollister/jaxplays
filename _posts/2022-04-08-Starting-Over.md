@@ -18,7 +18,7 @@ I have a lot of work ahead of me, just to get caught up back to when the site wa
 
 Also, unfortunately, while JaxPlays was on hiatus, jaxplays.com was inundated with spammers and bots. So, the site is currently locked down to only admins. No one else can create an account or add content until I've been able to update the site's core code and extensions. The goal is for JaxPlays to be a collaborative effort that everyone can participate in, but obviously it must be safe from spammers first!
 
-If you would like to help, please [https://rayhollister.com reach out to me on social media] or you can [email me](mailto:jaxplayswiki@gmail.com). MediaWiki, the platform JaxPlays is built on, is a bit tricky to learn at first, but if you are familiar with HTML or markup language, it doesn't take long to learn. If you are interested, let me know, and I will set up an account for you and send you a brief getting started guide. 
+If you would like to help, please [ reach out to me on social media](https://rayhollister.com) or you can [email me](mailto:jaxplayswiki@gmail.com). MediaWiki, the platform JaxPlays is built on, is a bit tricky to learn at first, but if you are familiar with HTML or markup language, it doesn't take long to learn. If you are interested, let me know, and I will set up an account for you and send you a brief getting started guide. 
 
 Break a leg! 
 
