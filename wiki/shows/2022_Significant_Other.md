@@ -1,10 +1,10 @@
 ---
 layout: shows
 title: Significant Other (2022)
-poster: 2022_Significant_Other.jpg
-poster_credit: 
-poster_alt:
-poster_caption:
+image: 2022_Significant_Other.jpg
+image_credit: 
+image_alt:
+image_caption:
 category: play
 details:
   Title: Significant Other

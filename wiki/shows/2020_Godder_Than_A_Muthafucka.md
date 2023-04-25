@@ -1,10 +1,10 @@
 ---
 layout: shows
 title: Godder Than A Muthafucka (2020)
-poster: 2020_Godder_Than_A_Muthafucka.jpg
-poster_credit: 
-poster_alt:
-poster_caption:
+image: 2020_Godder_Than_A_Muthafucka.jpg
+image_credit: 
+image_alt:
+image_caption:
 category: play
 details:
   Title: Godder Than A Muthafucka

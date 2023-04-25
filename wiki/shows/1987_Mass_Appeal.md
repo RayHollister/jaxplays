@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: Mass Appeal (1987)
-poster:
+image:
 category:
 details:
   Theatre: Players by the Sea

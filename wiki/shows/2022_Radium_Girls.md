@@ -1,10 +1,10 @@
 ---
 layout: shows
 title: Radium Girls (2022)
-poster:
-poster_credit: 
-poster_alt:
-poster_caption:
+image:
+image_credit: 
+image_alt:
+image_caption:
 category: play
 details:
   Title: Radium Girls

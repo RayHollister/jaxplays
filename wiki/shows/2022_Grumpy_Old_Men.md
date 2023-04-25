@@ -1,10 +1,10 @@
 ---
 layout: shows
 title: Grumpy Old Men (2022)
-poster: 2022_Grumpy_Old_Men.jpg
-poster_credit: 
-poster_alt:
-poster_caption:
+image: 2022_Grumpy_Old_Men.jpg
+image_credit: 
+image_alt:
+image_caption:
 category: musical
 details:
   Theatre: The Alhambra Theatre & Dining

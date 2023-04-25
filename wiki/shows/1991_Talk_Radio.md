@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: Talk Radio (1991)
-poster:
+image:
 category:
 details:
   Theatre: Players by the Sea

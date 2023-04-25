@@ -2,10 +2,10 @@
 layout: shows
 title: It's a Wonderful Life (2015)
 redirect_from: 2015_It's_a_Wonderful_Life
-poster: 2015_It's_a_Wonderful_Life.jpeg
-poster_credit: 
-poster_alt:
-poster_caption:
+image: 2015_It's_a_Wonderful_Life.jpeg
+image_credit: 
+image_alt:
+image_caption:
 category: radio drama
 details:
   Theatre: WJCT Radio Theater

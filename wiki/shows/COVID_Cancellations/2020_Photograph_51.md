@@ -3,11 +3,11 @@ published: false
 cancelled: COVID-19
 layout: shows
 title: Photograph 51 (2020)
-poster_credit: 
-poster_alt:
-poster_caption:
+image_credit: 
+image_alt:
+image_caption:
 category: play
-poster: 
+image: 
 playbill: 2020_photograph_51.pdf
 details:
   Title: Photograph 51 (play) - wiki

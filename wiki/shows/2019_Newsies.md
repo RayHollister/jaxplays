@@ -1,10 +1,10 @@
 ---
 layout: shows
 title: Newsies (2019)
-poster: 
-poster_credit: 
-poster_alt:
-poster_caption:
+image: 
+image_credit: 
+image_alt:
+image_caption:
 category: 
 details:
   Theatre: FSCJ Summer Musical Theatre Experience

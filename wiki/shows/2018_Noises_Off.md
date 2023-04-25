@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: Noises Off (2018)
-poster:
+image:
 category:
 details:
   Theatre: Players by the Sea

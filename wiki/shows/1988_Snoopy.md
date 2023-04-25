@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: Snoopy (1988)
-poster:
+image:
 category:
 details:
   Theatre: Players by the Sea

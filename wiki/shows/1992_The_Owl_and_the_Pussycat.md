@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: The Owl and the Pussycat (1992)
-poster:
+image:
 category:
 details:
   Theatre: Players by the Sea

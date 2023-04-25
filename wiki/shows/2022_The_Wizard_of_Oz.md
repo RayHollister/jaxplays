@@ -1,10 +1,10 @@
 ---
 layout: shows
 title: The Wizard of Oz (2022)
-poster: 2022_The_Wizard_of_Oz.jpg
-poster_credit: 
-poster_alt:
-poster_caption:
+image: 2022_The_Wizard_of_Oz.jpg
+image_credit: 
+image_alt:
+image_caption:
 category: musical
 details:
   Title: The Wizard of Oz

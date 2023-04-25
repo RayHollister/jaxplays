@@ -1,10 +1,10 @@
 ---
 layout: shows
 title: You're a Good Man, Charlie Brown (2004)
-poster: 
-poster_credit: 
-poster_alt:
-poster_caption:
+image: 
+image_credit: 
+image_alt:
+image_caption:
 category: 
 details:
   Theatre: Theatre Jacksonville

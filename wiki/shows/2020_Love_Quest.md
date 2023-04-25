@@ -1,10 +1,10 @@
 ---
 layout: shows
 title: Love Quest (2020)
-poster: 2020_Love_Quest.webp
-poster_credit: 
-poster_alt:
-poster_caption:
+image: 2020_Love_Quest.webp
+image_credit: 
+image_alt:
+image_caption:
 category: play
 details:
   Title: Love Quest

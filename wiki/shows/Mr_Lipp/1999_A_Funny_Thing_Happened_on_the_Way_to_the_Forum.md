@@ -1,9 +1,9 @@
 ---
 layout: shows
 title: A Funny Thing Happened on the Way to the Forum (1999)
-poster_credit: 
-poster_alt:
-poster_caption:
+image_credit: 
+image_alt:
+image_caption:
 category: play
 details:
   Theatre: Theatre Jacksonville

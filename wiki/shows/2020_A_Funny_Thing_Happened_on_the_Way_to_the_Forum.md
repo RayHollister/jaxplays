@@ -1,10 +1,10 @@
 ---
 layout: shows
 title: A Funny Thing Happened on the Way to the Forum (2020)
-poster: 2020_A_Funny_Thing_Happened_on_the_Way_to_the_Forum.jpg
-poster_credit: 
-poster_alt:
-poster_caption:
+image: 2020_A_Funny_Thing_Happened_on_the_Way_to_the_Forum.jpg
+image_credit: 
+image_alt:
+image_caption:
 category: musical
 details:
   Title: A Funny Thing Happened on the Way to the Forum - wiki

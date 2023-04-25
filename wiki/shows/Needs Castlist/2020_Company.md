@@ -1,9 +1,9 @@
 ---
 layout: shows
 title: Company (2020)
-poster_credit: 
-poster_alt:
-poster_caption:
+image_credit: 
+image_alt:
+image_caption:
 category: musical
 details:
   Title: Company (musical) - wiki

@@ -1,13 +1,13 @@
 ---
 layout: shows
 title: Broadway Bound! (2020)
-poster: 2020_Broadway_Bound.png
-poster_credit: 
-poster_alt: "The 5 & Dime Live! Cabaret Series: Broadway Bound!"
-poster_caption: 
-poster_credit: 
-poster_alt:
-poster_caption:
+image: 2020_Broadway_Bound.png
+image_credit: 
+image_alt: "The 5 & Dime Live! Cabaret Series: Broadway Bound!"
+image_caption: 
+image_credit: 
+image_alt:
+image_caption:
 category: 
 details:
   Title: Broadway Bound!

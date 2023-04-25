@@ -1,9 +1,9 @@
 ---
 layout: shows
 title: The Rainmaker (2007)
-poster_credit: 
-poster_alt:
-poster_caption:
+image_credit: 
+image_alt:
+image_caption:
 category: 
 details:
     Title: The Rainmaker (play) - wiki

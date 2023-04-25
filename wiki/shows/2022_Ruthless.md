@@ -1,10 +1,10 @@
 ---
 layout: shows
 title: Ruthless! (2022)
-poster: 2022_Ruthless.jpeg
-poster_credit: 
-poster_alt:
-poster_caption:
+image: 2022_Ruthless.jpeg
+image_credit: 
+image_alt:
+image_caption:
 category: musical
 details:
   Title: Ruthless! - wiki

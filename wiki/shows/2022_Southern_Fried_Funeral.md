@@ -1,10 +1,10 @@
 ---
 layout: shows
 title: Southern Fried Funeral (2022)
-poster: 2022_Southern_Fried_Funeral.jpeg
-poster_credit: 
-poster_alt:
-poster_caption:
+image: 2022_Southern_Fried_Funeral.jpeg
+image_credit: 
+image_alt:
+image_caption:
 category: play
 details:
   Title: Southern Fried Funeral

@@ -1,9 +1,9 @@
 ---
 layout: shows
 title: The 25th Annual Putnam County Spelling Bee (2010)
-poster_credit: 
-poster_alt:
-poster_caption:
+image_credit: 
+image_alt:
+image_caption:
 category: musical comedy
 details:
     Title: The 25th Annual Putnam County Spelling Bee - wiki

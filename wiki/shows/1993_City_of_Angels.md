@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: City of Angels (1993)
-poster:
+image:
 category:
 details:
   Theatre: Theatre Jacksonville

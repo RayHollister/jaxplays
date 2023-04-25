@@ -1,10 +1,10 @@
 ---
 layout: shows
 title: Parade (2010)
-poster:
-poster_credit: 
-poster_alt:
-poster_caption:
+image:
+image_credit: 
+image_alt:
+image_caption:
 category: musical
 details:
   Theatre: Players by the Sea

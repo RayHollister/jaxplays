@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: Six Degrees of Separation (1995)
-poster:
+image:
 category:
 details:
   Theatre: Players by the Sea

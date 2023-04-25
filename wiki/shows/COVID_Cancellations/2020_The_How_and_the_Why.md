@@ -3,9 +3,9 @@ published: false
 cancelled: COVID-19
 layout: shows
 title: The How and the Why (2020)
-poster_credit: 
-poster_alt:
-poster_caption:
+image_credit: 
+image_alt:
+image_caption:
 category: play
 details:
   Title: The How and the Why - wiki

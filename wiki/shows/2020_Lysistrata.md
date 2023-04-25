@@ -1,11 +1,11 @@
 ---
 layout: shows
 title: Lysistrata (2020)
-poster: 2020_Lysistrata.jpg
+image: 2020_Lysistrata.jpg
 playbill: 2020_Lysistrata.pdf
-poster_credit: 
-poster_alt:
-poster_caption:
+image_credit: 
+image_alt:
+image_caption:
 category: play
 details:
   Title: Lysistrata

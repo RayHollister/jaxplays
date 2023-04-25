@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: The Curious Savage (1994)
-poster:
+image:
 category:
 details:
   Theatre: Players by the Sea

@@ -1,9 +1,9 @@
 ---
 layout: shows
 title: Bedroom Farce (2005)
-poster_credit: 
-poster_alt:
-poster_caption:
+image_credit: 
+image_alt:
+image_caption:
 category: play
 details:
     Title: Bedroom Farce (play) - wiki

@@ -1,11 +1,11 @@
 ---
 layout: shows
 title: Photograph 51 (2019)
-poster_credit: 
-poster_alt:
-poster_caption:
+image_credit: 
+image_alt:
+image_caption:
 category: play
-poster: 
+image: 
 playbill: 
 details:
   Title: Photograph 51 (play) - wiki

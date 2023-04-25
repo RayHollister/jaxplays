@@ -17,21 +17,21 @@
       <div class="sidebar">
         <div class="showdetails">
           <div class="featured_image">
-            {% if page.poster %}
+            {% if page.image %}
             {% capture alt_text %}
-            {% if page.poster_alt %}{{ page.poster_alt }}
+            {% if page.image_alt %}{{ page.image_alt }}
             {% else %}{{ page.title }}
             {% endif %}
             {% endcapture %}
-            <img class="featured_image" src="media/posters/{{ page.poster }}" alt="{{ alt_text }}">
-            {% if page.poster_caption or page.poster_credit %}
+            <img class="featured_image" src="media/posters/{{ page.image }}" alt="{{ alt_text }}">
+            {% if page.image_caption or page.image_credit %}
             <div class="image-info">
-              {% if page.poster_caption %}
-              <span class="image-caption">{{ page.poster_caption }}</span>
+              {% if page.image_caption %}
+              <span class="image-caption">{{ page.image_caption }}</span>
               {% endif %}
-              {% if page.poster_caption and page.poster_credit %} | {% endif %}
-              {% if page.poster_credit %}
-              <span class="image-credit">(📷 {{ page.poster_credit }})</span>
+              {% if page.image_caption and page.image_credit %} | {% endif %}
+              {% if page.image_credit %}
+              <span class="image-credit">(📷 {{ page.image_credit }})</span>
               {% endif %}
             </div>
             {% endif %}

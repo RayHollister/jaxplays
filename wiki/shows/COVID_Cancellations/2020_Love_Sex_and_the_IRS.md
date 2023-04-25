@@ -3,9 +3,9 @@ published: false
 cancelled: COVID-19
 layout: shows
 title: Love, Sex and the I.R.S. (2020)
-poster_credit: 
-poster_alt:
-poster_caption:
+image_credit: 
+image_alt:
+image_caption:
 category: play
 details:
   Theatre: The Alhambra Theatre & Dining

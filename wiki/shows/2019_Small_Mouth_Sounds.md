@@ -1,10 +1,10 @@
 ---
 layout: shows
 title: Small Mouth Sounds (2019)
-poster: 2019_Small_Mouth_Sounds.webp
-poster_credit: 
-poster_alt:
-poster_caption:
+image: 2019_Small_Mouth_Sounds.webp
+image_credit: 
+image_alt:
+image_caption:
 category: play
 details:
   Title: Small Mouth Sounds

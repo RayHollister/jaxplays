@@ -1,10 +1,10 @@
 ---
 layout: shows
 title: Bonnie & Clyde (musical) (2022)
-poster:
-poster_credit: 
-poster_alt:
-poster_caption:
+image:
+image_credit: 
+image_alt:
+image_caption:
 category: musical
 details:
   Title: Bonnie & Clyde (musical) - wiki

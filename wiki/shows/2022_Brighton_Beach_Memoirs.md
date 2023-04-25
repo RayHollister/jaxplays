@@ -1,11 +1,11 @@
 ---
 layout: shows
 title: Brighton Beach Memoirs (2022)
-poster_credit: 
-poster_alt:
-poster_caption:
+image_credit: 
+image_alt:
+image_caption:
 category: play
-poster: 2022_Brighton_Beach_Memoirs.jpg
+image: 2022_Brighton_Beach_Memoirs.jpg
 details:
   Title: Brighton Beach Memoirs - wiki
   Theatre: Orange Park Community Theatre

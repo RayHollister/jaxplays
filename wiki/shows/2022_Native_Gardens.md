@@ -1,10 +1,10 @@
 ---
 layout: shows
 title: Native Gardens (2022)
-poster: 2022_Native_Gardens.jpg
-poster_credit: 
-poster_alt:
-poster_caption:
+image: 2022_Native_Gardens.jpg
+image_credit: 
+image_alt:
+image_caption:
 category: play
 details:
   Title: Native Gardens

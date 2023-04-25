@@ -1,11 +1,11 @@
 ---
 layout: shows
 title: Matilda the Musical (2022)
-poster_credit: 
-poster_alt:
-poster_caption:
+image_credit: 
+image_alt:
+image_caption:
 category: musical
-poster: 2022_Matilda_(musical).png
+image: 2022_Matilda_(musical).png
 details:
   Title: Matilda the Musical - wiki
   Theatre: Amelia Community Theatre

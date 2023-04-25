@@ -1,7 +1,7 @@
 ---
 title: Jesus Christ Superstar (1999)
 layout: shows
-poster:
+image:
 category:
 details:
   Theatre: Omega Theatre Productions

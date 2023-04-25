@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: Bad Habits (1994)
-poster:
+image:
 category:
 details:
   Theatre: Players by the Sea

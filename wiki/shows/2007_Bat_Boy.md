@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: Bat Boy (2007)
-poster:
+image:
 category:
 details:
   Theatre: Players by the Sea

@@ -1,11 +1,11 @@
 ---
 layout: shows
 title: The Great Gatsby (2022)
-poster_credit: 
-poster_alt:
-poster_caption:
+image_credit: 
+image_alt:
+image_caption:
 category: play
-poster: 2022_The_Great_Gatsby.jpg
+image: 2022_The_Great_Gatsby.jpg
 details:
   Title: The Great Gatsby - wiki
   Theatre: The Island Theater

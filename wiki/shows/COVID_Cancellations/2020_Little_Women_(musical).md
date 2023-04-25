@@ -3,10 +3,10 @@ published: false
 cancelled: COVID-19
 layout: shows
 title: Little Women (musical) (2020)
-poster: 
-poster_credit: 
-poster_alt:
-poster_caption:
+image: 
+image_credit: 
+image_alt:
+image_caption:
 category: musical
 details:
   Title: Little Women (musical) - wiki

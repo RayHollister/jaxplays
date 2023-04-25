@@ -1,7 +1,7 @@
 ---
 layout: shows
 title: Doubt (2008)
-poster:
+image:
 category:
 details:
   Theatre: Players by the Sea

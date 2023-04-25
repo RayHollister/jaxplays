@@ -1,10 +1,10 @@
 ---
 layout: shows
 title: The Piano Lesson (2022)
-poster: 
-poster_credit: 
-poster_alt:
-poster_caption:
+image: 
+image_credit: 
+image_alt:
+image_caption:
 category: play
 details:
   Title: The Piano Lesson - wiki

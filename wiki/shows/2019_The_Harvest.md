@@ -1,10 +1,10 @@
 ---
 layout: shows
 title: The Harvest (2019)
-poster: 2019_The_Harvest.webp
-poster_credit: 
-poster_alt:
-poster_caption:
+image: 2019_The_Harvest.webp
+image_credit: 
+image_alt:
+image_caption:
 category: play
 details:
   Title: The Harvest

@@ -1,10 +1,10 @@
 ---
 layout: shows
 title: Bye Bye Birdie (2020)
-poster: 2020_Bye_Bye_Birdie_(musical).jpg
-poster_credit: 
-poster_alt:
-poster_caption:
+image: 2020_Bye_Bye_Birdie_(musical).jpg
+image_credit: 
+image_alt:
+image_caption:
 category: musical
 details:
   Title: Bye Bye Birdie - wiki

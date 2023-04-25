@@ -1,10 +1,10 @@
 ---
 layout: shows
 title: Radio Golf (2020)
-poster:
-poster_credit: 
-poster_alt:
-poster_caption:
+image:
+image_credit: 
+image_alt:
+image_caption:
 category: drama
 details:
     Title: Radio Golf - wiki
