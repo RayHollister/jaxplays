@@ -6,7 +6,7 @@ redirect_from:
   - /James_D._Beeks
   - /James_Beeks
 layout: people
-headshot: 
+image: 
 headshot_credit: 
 headshot_alt: 
 headshot_caption: 

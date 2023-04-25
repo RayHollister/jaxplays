@@ -4,7 +4,7 @@ redirect_from:
   - /Michelle Ottley
   - /Michelle Ottley Fisher
 layout: people
-headshot: 
+image: 
 headshot_credit: 
 headshot_alt: 
 headshot_caption: 

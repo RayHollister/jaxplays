@@ -1,7 +1,7 @@
 ---
 title: Lee Hamby
 layout: people
-headshot: Lee_Hamby.jpeg
+image: Lee_Hamby.jpeg
 headshot_credit: 
 headshot_alt: 
 headshot_caption: 

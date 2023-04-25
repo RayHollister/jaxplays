@@ -17,15 +17,15 @@
           <h6>{{ page.title }}</h6>
 
           <div class="featured_image">
-            {% if page.headshot %}
+            {% if page.image %}
             {% capture alt_text %}
             {% if page.headshot_alt %}{{ page.headshot_alt }}
             {% else %}{{ page.title }}
             {% endif %}
             {% endcapture %}
-            <figure class="headshot">
+            <figure class="image">
 
-              <img src="{{ 'media/headshots/' | append: page.headshot }}" alt="{{ alt_text }}">
+              <img src="{{ 'media/headshots/' | append: page.image }}" alt="{{ alt_text }}">
               {% if page.headshot_caption or page.headshot_credit %}
               <figcaption>
                 {% if page.headshot_caption %}

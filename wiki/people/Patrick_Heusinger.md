@@ -3,7 +3,7 @@ title: Patrick Heusinger
 redirect_from: 
   - /Paddy Heusinger
 layout: people
-headshot: 
+image: 
 headshot_credit: 
 headshot_alt: 
 headshot_caption: 

@@ -3,7 +3,7 @@ title: Joshua Kreis McTiernan
 redirect_from: 
   - /Joshua_McTiernan
 layout: people
-headshot:
+image:
 headshot_credit: 
 headshot_alt: 
 headshot_caption: 

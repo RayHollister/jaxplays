@@ -1,7 +1,7 @@
 ---
 title: Michael Lipp
 layout: people
-headshot: Michael_Lipp.jpg
+image: Michael_Lipp.jpg
 headshot_credit: 
 headshot_alt: 
 headshot_caption: 

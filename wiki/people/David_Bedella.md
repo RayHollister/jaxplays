@@ -1,7 +1,7 @@
 ---
 title: David Bedella
 layout: people
-headshot: 
+image: 
 headshot_credit: 
 headshot_alt: 
 headshot_caption: 

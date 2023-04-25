@@ -3,7 +3,7 @@ title: Ashley Delegal Trupp
 redirect_from:
   - /Ashley_Delegal
 layout: people
-headshot: 
+image: 
 headshot_credit: 
 headshot_alt: 
 headshot_caption: 

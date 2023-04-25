@@ -1,7 +1,7 @@
 ---
 title: Erin Barnes
 layout: people
-headshot: Erin_Barnes.jpeg
+image: Erin_Barnes.jpeg
 headshot_credit: 
 headshot_alt: 
 headshot_caption: 
