@@ -4,7 +4,7 @@ redirect_from:
   - /BABS' LAB
   - /BABS’LAB
 layout: venues
-logo: BABS_LABS.png
+image: BABS_LABS.png
 logo_credit:
 logo_alt:
 logo_caption:

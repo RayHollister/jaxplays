@@ -1,7 +1,7 @@
 ---
 title: Players by the Sea
 layout: theatres
-logo: Players_by_the_Sea.jpeg
+image: Players_by_the_Sea.jpeg
 logo_credit:
 logo_alt:
 logo_caption:

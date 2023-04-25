@@ -1,7 +1,7 @@
 ---
 title: Phase Eight Theater Company
 layout: theatres
-logo: Phase_Eight_Theater_Company.jpeg
+image: Phase_Eight_Theater_Company.jpeg
 logo_credit:
 logo_alt:
 logo_caption:

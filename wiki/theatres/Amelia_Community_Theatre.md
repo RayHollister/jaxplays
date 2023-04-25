@@ -1,7 +1,7 @@
 ---
 title: Amelia Community Theatre
 layout: theatres
-logo: Amelia_Community_Theatre.png
+image: Amelia_Community_Theatre.png
 logo_credit:
 logo_alt:
 logo_caption:

@@ -1,7 +1,7 @@
 ---
 title: Limelight Theatre
 layout: theatres
-logo: Limelight_Theatre.jpeg
+image: Limelight_Theatre.jpeg
 logo_credit:
 logo_alt:
 logo_caption:

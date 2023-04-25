@@ -1,7 +1,7 @@
 ---
 title: Actors Collective
 layout: theatres
-logo: Actors_Collective.jpeg
+image: Actors_Collective.jpeg
 logo_credit:
 logo_alt:
 logo_caption:

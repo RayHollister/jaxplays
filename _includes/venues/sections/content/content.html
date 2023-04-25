@@ -15,13 +15,13 @@
     <div class="sidebar">
       <div class="venuedetails">
         <div class="featured_image">
-          {% if page.logo %}
+          {% if page.image %}
           {% capture alt_text %}
           {% if page.logo_alt %}{{ page.logo_alt }}
           {% else %}{{ page.title }}
           {% endif %}
           {% endcapture %}
-          <img class="featured_image" src="media/logos/{{ page.logo }}" alt="{{ alt_text }}">
+          <img class="featured_image" src="media/logos/{{ page.image }}" alt="{{ alt_text }}">
           {% if page.logo_caption or page.logo_credit %}
           <div class="image-info">
             {% if page.logo_caption %}

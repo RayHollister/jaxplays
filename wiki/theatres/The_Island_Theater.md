@@ -1,7 +1,7 @@
 ---
 title: The Island Theater
 layout: theatres
-logo: The_Island_Theater.png
+image: The_Island_Theater.png
 logo_credit:
 logo_alt:
 logo_caption:

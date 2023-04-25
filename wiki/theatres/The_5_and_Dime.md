@@ -6,7 +6,7 @@ redirect_from:
   - /the5anddime
   - /thefiveanddime
 layout: theatres
-logo: The_Five_And_Dime.jpeg
+image: The_Five_And_Dime.jpeg
 logo_credit:
 logo_alt:
 logo_caption:

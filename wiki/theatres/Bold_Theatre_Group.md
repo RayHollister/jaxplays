@@ -1,7 +1,7 @@
 ---
 title: Bold Theatre Group
 layout: theatres
-logo: 
+image: 
 logo_credit:
 logo_alt:
 logo_caption:

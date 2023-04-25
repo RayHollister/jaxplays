@@ -1,7 +1,7 @@
 ---
 title: Adele Grage Cultural Center
 layout: venues
-logo: 
+image: 
 logo_credit:
 logo_alt:
 logo_caption:

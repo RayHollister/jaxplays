@@ -1,7 +1,7 @@
 ---
 title: Apex Theatre Studio
 layout: theatres
-logo: Apex_Theatre_Studio.png
+image: Apex_Theatre_Studio.png
 logo_credit:
 logo_alt:
 logo_caption:

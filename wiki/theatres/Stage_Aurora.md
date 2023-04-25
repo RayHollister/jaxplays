@@ -1,7 +1,7 @@
 ---
 title: Stage Aurora
 layout: theatres
-logo: Stage_Aurora.jpeg
+image: Stage_Aurora.jpeg
 logo_credit:
 logo_alt:
 logo_caption:

@@ -1,7 +1,7 @@
 ---
 title: The Alhambra Theatre & Dining
 layout: theatres
-logo: The_Alhambra_Theatre_&_Dining.png
+image: The_Alhambra_Theatre_&_Dining.png
 logo_credit:
 logo_alt:
 logo_caption:

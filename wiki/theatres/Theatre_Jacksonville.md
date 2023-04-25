@@ -1,7 +1,7 @@
 ---
 title: Theatre Jacksonville
 layout: theatres
-logo: Theatre_Jacksonville.webp
+image: Theatre_Jacksonville.webp
 logo_credit:
 logo_alt:
 logo_caption:
