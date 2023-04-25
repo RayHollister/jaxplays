@@ -5,9 +5,9 @@ redirect_from:
   - /Michelle Ottley Fisher
 layout: people
 image: 
-headshot_credit: 
-headshot_alt: 
-headshot_caption: 
+image_credit: 
+image_alt: 
+image_caption: 
 Details:
   Website:
   Facebook:

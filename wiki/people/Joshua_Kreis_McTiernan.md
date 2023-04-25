@@ -4,9 +4,9 @@ redirect_from:
   - /Joshua_McTiernan
 layout: people
 image:
-headshot_credit: 
-headshot_alt: 
-headshot_caption: 
+image_credit: 
+image_alt: 
+image_caption: 
 Details:
   Website: https://mctiernanjoshua.wixsite.com/home
   Facebook: 

@@ -19,21 +19,21 @@
           <div class="featured_image">
             {% if page.image %}
             {% capture alt_text %}
-            {% if page.headshot_alt %}{{ page.headshot_alt }}
+            {% if page.image_alt %}{{ page.image_alt }}
             {% else %}{{ page.title }}
             {% endif %}
             {% endcapture %}
             <figure class="image">
 
               <img src="{{ 'media/headshots/' | append: page.image }}" alt="{{ alt_text }}">
-              {% if page.headshot_caption or page.headshot_credit %}
+              {% if page.image_caption or page.image_credit %}
               <figcaption>
-                {% if page.headshot_caption %}
-                {{ page.headshot_caption }}
+                {% if page.image_caption %}
+                {{ page.image_caption }}
                 {% endif %}
-                {% if page.headshot_caption and page.headshot_credit %} | {% endif %}
-                {% if page.headshot_credit %}
-                (📷 {{ page.headshot_credit }})
+                {% if page.image_caption and page.image_credit %} | {% endif %}
+                {% if page.image_credit %}
+                (📷 {{ page.image_credit }})
                 {% endif %}
               </figcaption>
               {% endif %}

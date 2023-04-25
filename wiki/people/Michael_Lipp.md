@@ -2,9 +2,9 @@
 title: Michael Lipp
 layout: people
 image: Michael_Lipp.jpg
-headshot_credit: 
-headshot_alt: 
-headshot_caption: 
+image_credit: 
+image_alt: 
+image_caption: 
 Details:
   Website: https://www.mrlipp.com
   Facebook:
