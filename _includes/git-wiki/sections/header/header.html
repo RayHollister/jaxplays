@@ -1,8 +1,8 @@
 <div class=" w3-xlarge w3-hide-large" id="git-wiki-mobile-header">
   <button class="w3-button w3-teal" onclick="sidebar_toggle()">&#9776;</button>
   <a class="sitelogoandtext" href="{{ '/' | relative_url }}">
-    {% if site.image_url %}
-    <img class="mobilelogo" src="{{ site.image_url | relative_url }}">
+    {% if site.logo_url %}
+    <img class="mobilelogo" src="{{ site.logo_url | relative_url }}">
     {% endif %}
     {{ site.title | escape }}
   </a>
@@ -12,7 +12,7 @@
     <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="sidebar_toggle()">Close &times;</button>
 
     <div class="w3-hide-medium w3-hide-small">
-      {% if site.image_url %}
+      {% if site.logo_url %}
       {% include git-wiki/components/logo/logo.html %}
       {% else %}
       <h1>{{ site.title | escape }}</h1>
