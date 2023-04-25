@@ -17,19 +17,19 @@
         <div class="featured_image">
           {% if page.image %}
           {% capture alt_text %}
-          {% if page.logo_alt %}{{ page.logo_alt }}
+          {% if page.image_alt %}{{ page.image_alt }}
           {% else %}{{ page.title }}
           {% endif %}
           {% endcapture %}
           <img class="featured_image" src="media/logos/{{ page.image }}" alt="{{ alt_text }}">
-          {% if page.logo_caption or page.logo_credit %}
+          {% if page.image_caption or page.image_credit %}
           <div class="image-info">
-            {% if page.logo_caption %}
-            <span class="image-caption">{{ page.logo_caption }}</span>
+            {% if page.image_caption %}
+            <span class="image-caption">{{ page.image_caption }}</span>
             {% endif %}
-            {% if page.logo_caption and page.logo_credit %} | {% endif %}
-            {% if page.logo_credit %}
-            <span class="image-credit">(📷 {{ page.logo_credit }})</span>
+            {% if page.image_caption and page.image_credit %} | {% endif %}
+            {% if page.image_credit %}
+            <span class="image-credit">(📷 {{ page.image_credit }})</span>
             {% endif %}
           </div>
           {% endif %}

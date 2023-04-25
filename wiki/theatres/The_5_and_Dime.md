@@ -7,9 +7,9 @@ redirect_from:
   - /thefiveanddime
 layout: theatres
 image: The_Five_And_Dime.jpeg
-logo_credit:
-logo_alt:
-logo_caption:
+image_credit:
+image_alt:
+image_caption:
 details:
   Founded: 2011
   disbanded:

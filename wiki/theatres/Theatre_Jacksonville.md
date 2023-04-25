@@ -2,9 +2,9 @@
 title: Theatre Jacksonville
 layout: theatres
 image: Theatre_Jacksonville.webp
-logo_credit:
-logo_alt:
-logo_caption:
+image_credit:
+image_alt:
+image_caption:
 details:
   Founded: 1919
   Address: |

@@ -2,9 +2,9 @@
 title: Stage Aurora
 layout: theatres
 image: Stage_Aurora.jpeg
-logo_credit:
-logo_alt:
-logo_caption:
+image_credit:
+image_alt:
+image_caption:
 details:
   Founded: 2000
   disbanded:

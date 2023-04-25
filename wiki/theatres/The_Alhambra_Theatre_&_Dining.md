@@ -2,9 +2,9 @@
 title: The Alhambra Theatre & Dining
 layout: theatres
 image: The_Alhambra_Theatre_&_Dining.png
-logo_credit:
-logo_alt:
-logo_caption:
+image_credit:
+image_alt:
+image_caption:
 details: 
     Founded: 1967
     Address: |

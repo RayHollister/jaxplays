@@ -2,9 +2,9 @@
 title: Bold Theatre Group
 layout: theatres
 image: 
-logo_credit:
-logo_alt:
-logo_caption:
+image_credit:
+image_alt:
+image_caption:
 details:
   Founded: 2015
   disbanded: 2018

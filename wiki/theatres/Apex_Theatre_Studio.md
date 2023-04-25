@@ -2,9 +2,9 @@
 title: Apex Theatre Studio
 layout: theatres
 image: Apex_Theatre_Studio.png
-logo_credit:
-logo_alt:
-logo_caption:
+image_credit:
+image_alt:
+image_caption:
 details:
     Founded: 2013
     Address: |

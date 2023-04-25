@@ -5,9 +5,9 @@ redirect_from:
   - /BABS’LAB
 layout: venues
 image: BABS_LABS.png
-logo_credit:
-logo_alt:
-logo_caption:
+image_credit:
+image_alt:
+image_caption:
 Details:
   Founded: 2017
   disbanded:

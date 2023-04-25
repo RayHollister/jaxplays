@@ -2,9 +2,9 @@
 title: The Island Theater
 layout: theatres
 image: The_Island_Theater.png
-logo_credit:
-logo_alt:
-logo_caption:
+image_credit:
+image_alt:
+image_caption:
 details:
     Founded: 2017-10-26
     Address: |

@@ -2,9 +2,9 @@
 title: Adele Grage Cultural Center
 layout: venues
 image: 
-logo_credit:
-logo_alt:
-logo_caption:
+image_credit:
+image_alt:
+image_caption:
 details:
     Founded: 
     Address: |
