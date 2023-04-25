@@ -1,6 +1,6 @@
 ---
 title: ABET - All Beaches Experimental Theatre
-redirect_from: ABET - Atlantic Beach Experimental Theatre
+redirect_from: /ABET - Atlantic Beach Experimental Theatre
 layout: theatres
 category: theatres
 image: ABET_-_All_Beaches_Experimental_Theatre.jpeg
