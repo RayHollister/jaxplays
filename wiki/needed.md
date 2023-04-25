@@ -24,3 +24,7 @@ These are pages (shows, theatres, people) that need to be updated and completed:
 - [Jacksonville Actors' Theatre](http://search.sunbiz.org/Inquiry/corporationsearch/SearchResultDetail?inquirytype=EntityName&directionType=ForwardList&searchNameOrder=JACKSONVILLEACTORSTHEATRE%20N054200&aggregateId=domnp-n05420-cf3f9222-0290-42cb-8cd2-9a11ac91176c&searchTerm=JACKSON%20UNITED%20CARRIERS%20INC&listNameOrder=JACKSONVILLEACCIDENTSPORTSINJU%20L170001384700)
 - [FSCJ Summer Musical Theatre Experience](https://www.fscj.edu/campuses/south-campus/nathan-h-wilson-center-for-the-arts/summer-musical-theatre-experience)
 - [The Revolutionists (2020)](https://www.barbaracolaciello.com/register/the-revolutionists)
+
+- 2020 COVID-19
+
+- [Theater groups taking different approaches to returning to stage](https://web.archive.org/web/20210120074037/https://www.jacksonville.com/story/entertainment/theater/2020/08/28/theater-groups-taking-different-approaches-returning-stage/5624357002/)
