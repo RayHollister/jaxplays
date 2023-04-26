@@ -7,27 +7,22 @@ details:
   Theatre: Omega Theatre Productions
   Venue: Florida Theatre
 cast:
-  Jesus: Justin Murphy
   Judas Iscariot: James Beeks
+  Jesus: Justin Murphy
   Mary Magdalene: Ashley Bennett
-  Pontius Pilate: Bob Butterley
+  Pontius Pilate: Robert Butterley
   Caiaphas: David Bedella
-  Annas: Brian Wilkes
-  Simone Zealotes: Sarah Sanders
-  King Herod:
   Peter: Patrick Heusinger
-  James:
-  John:
-  Andrew:
-  Philip: Ray Hollister
-  Thomas:
-  Bartholomew:
-  Matthew:
-  James, son of Alphaeus:
-  Thaddaeus:
-  Judas (not Iscariot):
-  Priest 1: Ray Hollister
-  Priest 2: Adonis Boyd
+  Simon Zealotes: Sarah Sanders
+  Annas: Bryan Wilkes
+  King Herod: Kevin Hixson
+  Priest 1: Adonis Boyd
+  Priest 2: Ray Hollister
+  Maid by the Fire: Amy Gerard
+  Soldiers: |
+    Ryan Thompson
+    Conrad De'Andrea
+    Ashley Cunningham
   Ensemble: 
 crew:
   Director: Michelle Ottley-Fisher
