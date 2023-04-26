@@ -117,16 +117,16 @@
 
     <div class="additional-content">
       {% assign theatre_name = page.title %}
-      {% assign theatre_shows = "" | split: "" %}
+      {% assign theatre_productions = "" | split: "" %}
 
       {% for p in site.pages %}
       {% if p.details and p.details.Theatre and p.details.Theatre == theatre_name %}
 
       {% if p.showtimes %}
-        {% assign show_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
+        {% assign production_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
       {% else %}
         {% assign filename = p.path | split: "/" | last %}
-        {% assign show_year = filename | slice: 0,4 %}
+        {% assign production_year = filename | slice: 0,4 %}
       {% endif %}
 
       {% assign show_start_date = p.showtimes | newline_to_br | strip_html | split: " " | first %}
@@ -139,34 +139,34 @@
       {% assign modified_title = p.title %}
       {% endif %}
       {% capture show_info %}<tr>
-        <td>{{ show_year }}</td>
+        <td>{{ production_year }}</td>
         <td><a href="{{ p.url }}">{{ modified_title }}</a></td>
       </tr>{% endcapture %}
-      {% unless theatre_shows contains show_info %}
-      {% assign theatre_shows = theatre_shows | push: show_info %}
+      {% unless theatre_productions contains show_info %}
+      {% assign theatre_productions = theatre_productions | push: show_info %}
       {% endunless %}
       {% endif %}
       {% endfor %}
 
-      {% assign theatre_shows_sorted = "" | split: "" %}
-      {% for show_info in theatre_shows %}
+      {% assign theatre_productions_sorted = "" | split: "" %}
+      {% for show_info in theatre_productions %}
       {% assign show_date = show_info | split: " " | first %}
       {% assign inserted = false %}
-      {% for sorted_info in theatre_shows_sorted %}
+      {% for sorted_info in theatre_productions_sorted %}
       {% assign sorted_date = sorted_info | split: " " | first %}
       {% if show_date < sorted_date %}
-      {% assign theatre_shows_sorted = theatre_shows_sorted | insert_at: forloop.index0, show_info %}
+      {% assign theatre_productions_sorted = theatre_productions_sorted | insert_at: forloop.index0, show_info %}
       {% assign inserted = true %}
       {% break %}
       {% endif %}
       {% endfor %}
       {% if inserted == false %}
-      {% assign theatre_shows_sorted = theatre_shows_sorted | push: show_info %}
+      {% assign theatre_productions_sorted = theatre_productions_sorted | push: show_info %}
       {% endif %}
       {% endfor %}
 
-      {% if theatre_shows_sorted.size > 0 %}
-      <div class="theatreshows">
+      {% if theatre_productions_sorted.size > 0 %}
+      <div class="theatreproductions">
         <h2>Productions</h2>
         <table>
           <thead>
@@ -176,7 +176,7 @@
             </tr>
           </thead>
           <tbody>
-            {% for show_info in theatre_shows_sorted %}
+            {% for show_info in theatre_productions_sorted %}
             {{ show_info }}
             {% endfor %}
           </tbody>

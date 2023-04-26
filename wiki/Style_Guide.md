@@ -47,7 +47,7 @@ Good example:
 Bad example:
 - "Funny Thing - Theatre Jax - 2015"
 
-### Two shows in the same year
+### Two productions in the same year
 If a show is staged twice in one year, on the second production's page, add the name of the theatre/production company after the year. 
 
 The order is determined by when the production is added to JaxPlays, even if the second production is earlier in the year.

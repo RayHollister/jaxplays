@@ -3,7 +3,7 @@
   {% comment %}
   {% assign show_count = 0 %}
   {% for page in site.pages %}
-    {% if page.layout == 'shows' %}
+    {% if page.layout == 'productions' %}
       {% assign show_count = show_count | plus: 1 %}
     {% endif %}
   {% endfor %}
@@ -17,7 +17,7 @@
 
   {% assign crew_member_count = 0 %}
   {% for page in site.pages %}
-    {% if page.layout == 'shows' %}
+    {% if page.layout == 'productions' %}
       {% assign crew = page.crew %}
       {% for role in crew %}
         {% assign crew_member_value = role[1] %}
@@ -32,7 +32,7 @@
 
   {% assign cast_member_count = 0 %}
   {% for page in site.pages %}
-    {% if page.layout == 'shows' %}
+    {% if page.layout == 'productions' %}
       {% assign cast = page.cast %}
       {% for role in cast %}
         {% assign cast_member_value = role[1] %}
@@ -49,7 +49,7 @@
   <ul>
     <li><a href="{{ '/' | relative_url }}">Home</a></li>
     <li><a href="/theatres">{{ theatres_count }} Theatres</a></li>
-    <li><a href="/shows">{{ show_count }} Shows</a></li>
+    <li><a href="/productions">{{ show_count }} Productions</a></li>
     <li><a href="/crew_members">{{ crew_member_count }} Crew Members</a></li>
     <li><a href="/cast_members">{{ cast_member_count }} Cast Members</a></li>
   </ul>

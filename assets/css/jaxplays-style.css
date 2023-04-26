@@ -41,7 +41,7 @@ table {
   width: auto;
 }
 
-table.showdetails thead tr th {
+table.productiondetails thead tr th {
   font-size: 24px;
   font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 400;
@@ -65,7 +65,7 @@ table.showdetails thead tr th {
   font-weight: 600;
 }
 
-#git-wiki-shows-content,
+#git-wiki-productions-content,
 #git-wiki-people-content,
 #git-wiki-theatre-content,
 #git-wiki-venue-content {
@@ -94,7 +94,7 @@ table.showdetails thead tr th {
   align-items: center;
 }
 
-.showdetails h6, .peopledetails h6 {
+.productiondetails h6, .peopledetails h6 {
   margin-bottom: 1rem;
   font-weight: 600;
   color: var(--header-font-color);
@@ -152,7 +152,7 @@ ul#results-container li {
 
 /* Media query for desktop devices */
 @media (min-width: 1024px) {
-  #git-wiki-shows-content,
+  #git-wiki-productions-content,
   #git-wiki-theatre-content,
   #git-wiki-venue-content,
   #git-wiki-people-content {

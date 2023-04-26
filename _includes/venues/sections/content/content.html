@@ -117,11 +117,11 @@
 
     <div class="additional-content">
       {% assign venue_name = page.title %}
-      {% assign venue_shows = "" | split: "" %}
+      {% assign venue_productions = "" | split: "" %}
 
       {% for p in site.pages %}
       {% if p.details and p.details.venue and p.showtimes and p.details.venue == venue_name %}
-      {% assign show_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
+      {% assign production_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
       {% assign show_start_date = p.showtimes | newline_to_br | strip_html | split: " " | first %}
       {% assign modified_title = p.title | slice: -7, 7 %}
       {% if modified_title contains " (" %}
@@ -132,26 +132,26 @@
       {% assign modified_title = p.title %}
       {% endif %}
       {% capture show_info %}<tr>
-        <td>{{ show_year }}</td>
+        <td>{{ production_year }}</td>
         <td><a href="{{ p.url }}">{{ modified_title }}</a></td>
       </tr>{% endcapture %}
-      {% unless venue_shows contains show_info %}
-      {% assign venue_shows = venue_shows | push: show_info %}
+      {% unless venue_productions contains show_info %}
+      {% assign venue_productions = venue_productions | push: show_info %}
       {% endunless %}
       {% endif %}
       {% endfor %}
 
-      {% assign venue_shows_sorted = "" | split: "" %}
-      {% for show_info in venue_shows %}
+      {% assign venue_productions_sorted = "" | split: "" %}
+      {% for show_info in venue_productions %}
       {% assign show_date = show_info | split: " " | first %}
       {% assign inserted = false %}
-      {% for sorted_info in venue_shows_sorted %}
+      {% for sorted_info in venue_productions_sorted %}
       {% assign sorted_date = sorted_info | split: " " | first %}
-      {% if show_date < sorted_date %} {% assign venue_shows_sorted=venue_shows_sorted | insert_at: forloop.index0,
+      {% if show_date < sorted_date %} {% assign venue_productions_sorted=venue_productions_sorted | insert_at: forloop.index0,
         show_info %} {% assign inserted=true %} {% break %} {% endif %} {% endfor %} {% if inserted==false %} {% assign
-        venue_shows_sorted=venue_shows_sorted | push: show_info %} {% endif %} {% endfor %} {% if
-        venue_shows_sorted.size> 0 %}
-        <div class="venueshows">
+        venue_productions_sorted=venue_productions_sorted | push: show_info %} {% endif %} {% endfor %} {% if
+        venue_productions_sorted.size> 0 %}
+        <div class="venueproductions">
           <h2>Productions</h2>
           <table>
             <thead>
@@ -161,7 +161,7 @@
               </tr>
             </thead>
             <tbody>
-              {% for show_info in venue_shows_sorted %}
+              {% for show_info in venue_productions_sorted %}
               {{ show_info }}
               {% endfor %}
             </tbody>

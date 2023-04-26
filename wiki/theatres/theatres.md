@@ -7,7 +7,7 @@ title: All Theatres
 {% assign all_theatres = '' | split: '' %}
 
 {% for page in site.pages %}
-  {% if page.layout == 'shows' %}
+  {% if page.layout == 'productions' %}
     {% assign details = page.details %}
     {% for detail in details %}
       {% if detail[0] == 'Theatre' %}
@@ -24,7 +24,7 @@ title: All Theatres
   <thead>
     <tr>
       <th>Theatre</th>
-      <th>Shows</th>
+      <th>productions</th>
     </tr>
   </thead>
   <tbody>

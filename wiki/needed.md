@@ -3,7 +3,7 @@ title: Work Needed
 ---
 # {{ page.title }}
 
-These are pages (shows, theatres, people) that need to be updated and completed:
+These are pages (productions, theatres, people) that need to be updated and completed:
 
 ### Cast list needed
 - [Bye Bye Birdie (2020)](2020_Bye_Bye_Birdie_(musical)) 

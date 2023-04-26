@@ -7,7 +7,7 @@ title: All Cast Members
 {% assign all_cast_members = '' | split: '' %}
 
 {% for page in site.pages %}
-  {% if page.layout == 'shows' %}
+  {% if page.layout == 'productions' %}
     {% assign cast = page.cast %}
     {% for character in cast %}
       {% assign cast_member_value = character[1] %}
@@ -26,7 +26,7 @@ title: All Cast Members
   <thead>
     <tr>
       <th>Cast Member</th>
-      <th>Shows</th>
+      <th>Productions</th>
     </tr>
   </thead>
   <tbody>

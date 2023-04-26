@@ -7,7 +7,7 @@ title: All Crew Members
 {% assign all_crew_members = '' | split: '' %}
 
 {% for page in site.pages %}
-  {% if page.layout == 'shows' %}
+  {% if page.layout == 'productions' %}
     {% assign crew = page.crew %}
     {% for role in crew %}
       {% assign crew_member_value = role[1] %}
@@ -26,7 +26,7 @@ title: All Crew Members
   <thead>
     <tr>
       <th>Crew Member</th>
-      <th>Shows</th>
+      <th>Productions</th>
     </tr>
   </thead>
   <tbody>

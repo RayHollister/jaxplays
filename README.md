@@ -1,8 +1,8 @@
 ## What is JaxPlays?
 
-JaxPlays is a growing database of past and present live theatre performances in Northeast Florida, featuring detailed information on shows, theaters and cast and crew lists. 
+JaxPlays is a growing database of past and present live theatre performances in Northeast Florida, featuring detailed information on productions, theaters and cast and crew lists. 
 
-Find out which local theatres are performing which shows, look at the cast lists to see who is in the latest shows, and see where they've performed before!
+Find out which local theatres are performing which productions, look at the cast lists to see who is in the latest productions, and see where they've performed before!
 
 ## Why is JaxPlays?
 
@@ -16,7 +16,7 @@ JaxPlays' vision is to build a comprehensive repository of information about eve
 
 Our ultimate goal is to expand beyond a mere repository of historical data, and become a hub for all things related to the thriving theatre scene in the region. 
 
-Stay tuned for updates on our efforts to provide a one-stop-shop for current and upcoming shows, ticket purchasing, reviews, and more!
+Stay tuned for updates on our efforts to provide a one-stop-shop for current and upcoming productions, ticket purchasing, reviews, and more!
 
 ## Who is JaxPlays?
 
