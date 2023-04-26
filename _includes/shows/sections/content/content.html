@@ -16,6 +16,8 @@
 
       <div class="sidebar">
         <div class="showdetails">
+          <h6>{{ page.title }}</h6>
+          
           <div class="featured_image">
             {% if page.image %}
             {% capture alt_text %}
@@ -23,19 +25,23 @@
             {% else %}{{ page.title }}
             {% endif %}
             {% endcapture %}
-            <img class="featured_image" src="media/posters/{{ page.image }}" alt="{{ alt_text }}">
-            {% if page.image_caption or page.image_credit %}
-            <div class="image-info">
-              {% if page.image_caption %}
-              <span class="image-caption">{{ page.image_caption }}</span>
+            <figure class="image">
+
+              <img src="{{ 'media/posters/' | append: page.image }}" alt="{{ alt_text }}">
+              {% if page.image_caption or page.image_credit %}
+              <figcaption>
+                {% if page.image_caption %}
+                {{ page.image_caption }}
+                {% endif %}
+                {% if page.image_caption and page.image_credit %} | {% endif %}
+                {% if page.image_credit %}
+                (📷 {{ page.image_credit }})
+                {% endif %}
+              </figcaption>
               {% endif %}
-              {% if page.image_caption and page.image_credit %} | {% endif %}
-              {% if page.image_credit %}
-              <span class="image-credit">(📷 {{ page.image_credit }})</span>
+
               {% endif %}
-            </div>
-            {% endif %}
-            {% endif %}
+            </figure>
           </div>
 
           <h2 id="details">Details</h2>

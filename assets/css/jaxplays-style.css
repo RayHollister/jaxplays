@@ -94,7 +94,7 @@ table.showdetails thead tr th {
   align-items: center;
 }
 
-.peopledetails h6 {
+.showdetails h6, .peopledetails h6 {
   margin-bottom: 1rem;
   font-weight: 600;
   color: var(--header-font-color);

@@ -1,7 +1,10 @@
 ---
 title: Jesus Christ Superstar (1999)
 layout: shows
-image:
+image: 1999_Jesus_Christ_Superstar.jpg
+image_caption: Photo of the playbill
+image_credit: Kimberly Whitfield
+playbill: 1999_Jesus_Christ_Superstar.pdf
 category:
 details:
   Theatre: Omega Theatre Productions
