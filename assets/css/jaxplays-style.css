@@ -94,7 +94,7 @@ table.productiondetails thead tr th {
   align-items: center;
 }
 
-.productiondetails h6, .peopledetails h6 {
+div.details h6 {
   margin-bottom: 1rem;
   font-weight: 600;
   color: var(--header-font-color);
@@ -152,22 +152,26 @@ ul#results-container li {
 
 /* Media query for desktop devices */
 @media (min-width: 1024px) {
+  #git-wiki-people-content,
   #git-wiki-productions-content,
+  #git-wiki-shows-content,
   #git-wiki-theatre-content,
-  #git-wiki-venue-content,
-  #git-wiki-people-content {
+  #git-wiki-venue-content {
     display: grid;
     grid-template-columns: 1fr 400px;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto 1fr;
     grid-template-areas:
       "content sidebar"
-      "additional-content sidebar";
+      "additional-content sidebar"
+      "external-links sidebar";
+    align-items: start;
   }
 
+  .peopledescription,
+  .productiondescription,
   .showdescription,
   .theatredescription,
-  .venuedescription,
-  .peopledescription {
+  .venuedescription {
     grid-area: content;
   }
 
@@ -175,11 +179,14 @@ ul#results-container li {
     grid-area: additional-content;
   }
 
+  .external-links {
+    grid-area: external-links;
+  }
+
   .sidebar {
     grid-area: sidebar;
     position: sticky;
     top: 0;
-    /* height: 100vh; */
     overflow-y: auto;
   }
 }
