@@ -8,7 +8,7 @@ image_caption:
 category: play
 details:
   Title: Godder Than A Muthafucka
-  Theatre: 1904 Music Hall
+  Venue: 1904 Music Hall
   Writer: Ebony Payne-English - wiki
   Website: http://www.ebonypayneenglish.com/
 showtimes: |
