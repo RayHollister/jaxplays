@@ -1,0 +1,13 @@
+<div class="wrapper">
+  {% include git-wiki/sections/header/header.html %}
+
+  {% assign valid_layouts = "people,productions,shows,theatres,venues" %}
+
+  {% if valid_layouts contains page.layout %}
+    {% include jaxplays/sections/content/{{ page.layout }}_content.html %}
+  {% else %}
+    {% include jaxplays/sections/content/content.html %}
+  {% endif %}
+
+  {% include git-wiki/sections/footer/footer.html %}
+</div>

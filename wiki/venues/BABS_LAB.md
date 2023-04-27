@@ -1,8 +1,8 @@
 ---
 title: BABS' LAB
 redirect_from: 
-  - /BABS' LAB
-  - /BABS’LAB
+  - /BABS%27%20LAB
+  - /BABS%27LAB
 layout: venues
 image: BABS_LABS.png
 image_credit:
@@ -21,5 +21,4 @@ Details:
   LinkedIn: barbaracolaciello
   YouTube: interactbw
   Website: https://www.barbaracolaciello.com/babslabtheatercork
-
 ---

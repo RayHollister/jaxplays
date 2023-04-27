@@ -1,8 +1,8 @@
 ---
 title: All Productions
+layout: git-wiki-default
 ---
 <h1>{{ page.title }}</h1>
-
 <ul>
 {% for page in site.pages %}
   {% if page.layout == 'productions' %}

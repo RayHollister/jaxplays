@@ -1,7 +1,7 @@
 ---
 title: All Crew Members
+layout: git-wiki-default
 ---
-
 <h1>{{ page.title }}</h1>
 
 {% assign all_crew_members = '' | split: '' %}

@@ -1,7 +1,7 @@
 ---
 title: Ashley Delegal Trupp
 redirect_from:
-  - /Ashley_Delegal
+  - /people/Ashley_Delegal
 layout: people
 image: 
 image_credit: 

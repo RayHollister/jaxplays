@@ -25,7 +25,7 @@
             {% endcapture %}
             <figure class="image">
 
-              <img src="{{ 'media/headshots/' | append: page.image }}" alt="{{ alt_text }}">
+              <img src="{{ '/media/headshots/' | append: page.image }}" alt="{{ alt_text }}">
               {% if page.image_caption or page.image_credit %}
               <figcaption>
                 {% if page.image_caption %}
@@ -53,7 +53,7 @@
                 <td class="leftcol">Other names</td>
                 <td>
                   {% for redirect_url in page.redirect_from %}
-                  {% assign redirect_name = redirect_url | remove: "/" | replace: "_", " " %}
+                  {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " %}
                   {% if forloop.last %}
                   {{ redirect_name }}
                   {% elsif forloop.length > 1 and forloop.index == forloop.length | minus: 1 %}
@@ -154,13 +154,14 @@
       </div>
 
       <div class="additional-content">
-        {% assign person_names = page.title | split: "|" %}
+        {% assign person_names = page.title | remove: "." | split: "|" %}
 
         {% if page.redirect_from %}
-        {% for redirect_url in page.redirect_from %}
-        {% assign redirect_name = redirect_url | remove: "/" | replace: "_", " " %}
-        {% assign person_names = person_names | push: redirect_name %}
-        {% endfor %}
+          {% for redirect_url in page.redirect_from %}
+            {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " | remove: "." %}
+            {% assign redirect_names = redirect_name | split: "|" %}
+            {% assign person_names = person_names | concat: redirect_names %}
+          {% endfor %}
         {% endif %}
 
         {% assign person_cast_credits = "" | split: "" %}
@@ -168,123 +169,123 @@
 
         {% for p in site.pages %}
         {% if p.details and p.details.Theatre %}
-        {% if p.cast %}
-        {% assign cast_items = p.cast | items %}
-        {% for cast_item in cast_items %}
-        {% assign key = cast_item[0] %}
-        {% assign value = cast_item[1] %}
-
-        {% assign name_found = false %}
-        {% for name in person_names %}
-        {% if value contains name %}
-        {% assign name_found = true %}
-        {% break %}
-        {% endif %}
-        {% endfor %}
-        {% if name_found %}
-
-        {% if p.showtimes %}
-        {% assign production_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
-        {% else %}
-        {% assign filename = p.path | split: "/" | last %}
-        {% assign production_year = filename | slice: 0,4 %}
-        {% endif %}
-
-        {% assign theatre_url = p.details.Theatre | replace: " ", "_" %}
-        {% capture credit %}<tr>
-          <td>{{ production_year }}</td>
-          <td>{{ key }}</td>
-          <td><a href="{{ p.url }}">{{ p.title }}</a></td>
-          <td><a href="/{{ theatre_url }}">{{ p.details.Theatre }}</a></td>
-        </tr>{% endcapture %}
-        {% unless person_cast_credits contains credit %}
-        {% assign person_cast_credits = person_cast_credits | push: credit %}
-        {% endunless %}
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-
-        {% if p.crew %}
-        {% assign crew_items = p.crew | items %}
-        {% for crew_item in crew_items %}
-        {% assign key = crew_item[0] %}
-        {% assign value = crew_item[1] %}
-
-        {% assign name_found = false %}
-        {% for name in person_names %}
-        {% if value contains name %}
-        {% assign name_found = true %}
-        {% break %}
-        {% endif %}
-        {% endfor %}
-        {% if name_found %}
-
-        {% if p.showtimes %}
-        {% assign production_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
-        {% else %}
-        {% assign filename = p.path | split: "/" | last %}
-        {% assign production_year = filename | slice: 0,4 %}
-        {% endif %}
-
-        {% assign theatre_url = p.details.Theatre | replace: " ", "_" %}
-        {% capture credit %}<tr>
-          <td>{{ production_year }}</td>
-          <td>{{ key }}</td>
-          <td><a href="{{ p.url }}">{{ p.title }}</a></td>
-          <td><a href="/{{ theatre_url }}">{{ p.details.Theatre }}</a></td>
-        </tr>{% endcapture %}
-        {% unless person_crew_credits contains credit %}
-        {% assign person_crew_credits = person_crew_credits | push: credit %}
-        {% endunless %}
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-
-        {% endif %}
-        {% endfor %}
-
-        {% if person_cast_credits.size > 0 %}
-
-        <div class="castcredits">
-          <h2>Cast credits</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Year</th>
-                <th>Role</th>
-                <th>Show</th>
-                <th>Theatre</th>
-              </tr>
-            </thead>
-            <tbody>
-              {% for credit in person_cast_credits %}
-              {{ credit }}
+          {% if p.cast %}
+            {% assign cast_items = p.cast | items %}
+            {% for cast_item in cast_items %}
+              {% assign key = cast_item[0] %}
+              {% assign value = cast_item[1] %}
+              {% assign name_found = false %}
+              {% assign value_no_periods = value | replace: ".", "" %}
+              {% for name in person_names %}
+                {% assign name_no_periods = name | replace: ".", "" %}
+                {% if value_no_periods contains name_no_periods %}
+                  {% assign name_found = true %}
+                  {% break %}
+                {% endif %}
               {% endfor %}
-            </tbody>
-          </table>
-        </div>
-        {% endif %}
+              {% if name_found %}
+                {% if p.showtimes %}
+                  {% assign production_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
+                {% else %}
+                  {% assign filename = p.path | split: "/" | last %}
+                  {% assign production_year = filename | slice: 0,4 %}
+                {% endif %}
+                {% assign theatre_url = p.details.Theatre | replace: " ", "_" %}
+                {% capture credit %}
+                  <tr>
+                    <td>{{ production_year }}</td>
+                    <td>{{ key }}</td>
+                    <td><a href="{{ p.url }}">{{ p.title }}</a></td>
+                    <td><a href="/theatres/{{ theatre_url }}">{{ p.details.Theatre }}</a></td>
+                  </tr>
+                {% endcapture %}
+                {% unless person_cast_credits contains credit %}
+                  {% assign person_cast_credits = person_cast_credits | push: credit %}
+                {% endunless %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
 
-        {% if person_crew_credits.size > 0 %}
-        <div class="crewcredits">
-          <h2>Crew credits</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Year</th>
-                <th>Role</th>
-                <th>Show</th>
-                <th>Theatre</th>
-              </tr>
-            </thead>
-            <tbody>
-              {% for credit in person_crew_credits %}
-              {{ credit }}
+          {% if p.crew %}
+            {% assign crew_items = p.crew | items %}
+            {% for crew_item in crew_items %}
+              {% assign key = crew_item[0] %}
+              {% assign value = crew_item[1] %}
+              {% assign name_found = false %}
+              {% assign value_no_periods = value | replace: ".", "" %}
+              {% for name in person_names %}
+                {% assign name_no_periods = name | replace: ".", "" %}
+                {% if value_no_periods contains name_no_periods %}
+                  {% assign name_found = true %}
+                  {% break %}
+                {% endif %}
               {% endfor %}
-            </tbody>
-          </table>
-        </div>
+              {% if name_found %}
+                {% if p.showtimes %}
+                  {% assign production_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
+                {% else %}
+                  {% assign filename = p.path | split: "/" | last %}
+                  {% assign production_year = filename | slice: 0,4 %}
+                {% endif %}
+                {% assign theatre_url = p.details.Theatre | replace: " ", "_" %}
+                {% capture credit %}
+                  <tr>
+                    <td>{{ production_year }}</td>
+                    <td>{{ key }}</td>
+                    <td><a href="{{ p.url }}">{{ p.title }}</a></td>
+                    <td><a href="/theatres/{{ theatre_url }}">{{ p.details.Theatre }}</a></td>
+                  </tr>
+                {% endcapture %}
+                {% unless person_crew_credits contains credit %}
+                  {% assign person_crew_credits = person_crew_credits | push: credit %}
+                {% endunless %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
         {% endif %}
+      {% endfor %}
+
+          {% if person_cast_credits.size > 0 %}
+            <div class="castcredits">
+              <h2>Cast credits</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Year</th>
+                    <th>Role</th>
+                    <th>Show</th>
+                    <th>Theatre</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for credit in person_cast_credits %}
+                    {{ credit }}
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          {% endif %}
+  
+          {% if person_crew_credits.size > 0 %}
+            <div class="crewcredits">
+              <h2>Crew credits</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Year</th>
+                    <th>Role</th>
+                    <th>Show</th>
+                    <th>Theatre</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for credit in person_crew_credits %}
+                    {{ credit }}
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          {% endif %}
 
       </div>
 

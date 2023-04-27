@@ -1,7 +1,7 @@
 ---
 title: All Theatres
+layout: git-wiki-default
 ---
-
 <h1>{{ page.title }}</h1>
 
 {% assign all_theatres = '' | split: '' %}
@@ -24,14 +24,14 @@ title: All Theatres
   <thead>
     <tr>
       <th>Theatre</th>
-      <th>productions</th>
+      <th>Production</th>
     </tr>
   </thead>
   <tbody>
     {% for theatre in unique_theatres %}
       {% assign theatre_count = all_theatres | where_exp: "item", "item == theatre" | size %}
       <tr>
-        <td><a href="/{{ theatre | replace: ' ', '_' }}">{{ theatre }}</a></td>
+        <td><a href="/theatres/{{ theatre | replace: ' ', '_' }}">{{ theatre }}</a></td>
         <td>{{ theatre_count }}</td>
       </tr>
     {% endfor %}

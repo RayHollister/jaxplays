@@ -27,7 +27,7 @@
             {% endcapture %}
             <figure class="image">
 
-              <img src="{{ 'media/posters/' | append: page.image }}" alt="{{ alt_text }}">
+              <img src="{{ '/media/posters/' | append: page.image }}" alt="{{ alt_text }}">
               {% if page.image_caption or page.image_credit %}
               <figcaption>
                 {% if page.image_caption %}
@@ -64,9 +64,9 @@
                   {%- elsif detail[0] == 'Website' -%}
                   <a target="_blank" href="{{ value }}" targe="_blank">Production website</a>
                   {%- elsif detail[0] == 'Theatre' -%}
-                  <a target="_blank" href="/{{ value | strip | replace: ' ', '_' }}">{{ value }}</a>
-                  {%- elsif detail[0] == 'Theatre' -%}
-                  <a target="_blank" href="/{{ value | strip | replace: ' ', '_' }}">{{ value }}</a>
+                  <a target="_blank" href="/theatres/{{ value | strip | replace: ' ', '_' }}">{{ value }}</a>
+                  {%- elsif detail[0] == 'Venue' -%}
+                  <a target="_blank" href="/venues/{{ value | strip | replace: ' ', '_' }}">{{ value }}</a>
                   <a href="doc.pdf#toolbar=0">PDF</a>
                   {%- else -%}
                   {{ value | markdownify | strip | remove: '<p>' | remove: '</p>' | remove: "\r" | remove: "\n" }}
@@ -132,7 +132,7 @@
                   {% assign actors = cast_member_value | newline_to_br | strip | split: '<br />' %}
                   {% for actor in actors -%}
                   {% assign actor_trimmed = actor | strip %}
-                  <a href="/{{ actor_trimmed | replace: ' ', '_' }}">{{ actor_trimmed }}</a>{% unless forloop.last %},
+                  <a href="/people/{{ actor_trimmed | replace: ' ', '_' | replace: '.', '' }}">{{ actor_trimmed }}</a>{% unless forloop.last %},
                   {% endunless %}
                   {%- endfor %}
                 </td>
@@ -160,7 +160,7 @@
                   {% assign members = crew_member_value | newline_to_br | strip | split: '<br />' %}
                   {% for member in members -%}
                   {% assign member_trimmed = member | strip %}
-                  <a href="/{{ member_trimmed | replace: ' ', '_' }}">{{ member_trimmed }}</a>{% unless forloop.last %},
+                  <a href="/people/{{ member_trimmed | replace: ' ', '_' | replace: '.', '' }}">{{ member_trimmed }}</a>{% unless forloop.last %},
                   {% endunless %}
                   {%- endfor %}
                 </td>

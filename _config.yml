@@ -74,7 +74,7 @@ defaults:
     scope:
       path: "wiki"
     values:
-      permalink: /:basename
+      permalink: /wiki/:basename
  -
     scope:
       path: "" # an empty string here means all files in the project
@@ -97,7 +97,41 @@ defaults:
       path: "blog"
     values:
       layout: "git-wiki-blog_jp"
-
+ -
+    scope:
+      path: "wiki/people"
+      type: "pages"
+    values:
+      layout: "people"
+      permalink: "/people/:basename"
+ -
+    scope:
+      path: "wiki/productions"
+      type: "pages"
+    values:
+      layout: "productions"
+      permalink: "/productions/:basename"
+ -
+    scope:
+      path: "wiki/shows"
+      type: "pages"
+    values:
+      layout: "shows"
+      permalink: "/shows/:basename"
+ -
+    scope:
+      path: "wiki/theatres"
+      type: "pages"
+    values:
+      layout: "theatres"
+      permalink: "/theatres/:basename"
+ -
+    scope:
+      path: "wiki/venues"
+      type: "pages"
+    values:
+      layout: "venues"
+      permalink: "/venues/:basename"  
 sass:
     style: compressed
 plugins:

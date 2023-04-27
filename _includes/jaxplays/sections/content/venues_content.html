@@ -21,7 +21,7 @@
           {% else %}{{ page.title }}
           {% endif %}
           {% endcapture %}
-          <img class="featured_image" src="media/logos/{{ page.image }}" alt="{{ alt_text }}">
+          <img class="featured_image" src="/media/logos/{{ page.image }}" alt="{{ alt_text }}">
           {% if page.image_caption or page.image_credit %}
           <div class="image-info">
             {% if page.image_caption %}
@@ -120,9 +120,10 @@
       {% assign venue_productions = "" | split: "" %}
 
       {% for p in site.pages %}
-      {% if p.details and p.details.venue and p.showtimes and p.details.venue == venue_name %}
+      {% if p.details and p.details.Venue and p.details.Venue == venue_name %}
       {% assign production_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
-      {% assign show_start_date = p.showtimes | newline_to_br | strip_html | split: " " | first %}
+      {% assign production_start_date = p.showtimes | newline_to_br | strip_html | split: " " | first %}
+      {% assign production_theatre = p.details.Theatre %}
       {% assign modified_title = p.title | slice: -7, 7 %}
       {% if modified_title contains " (" %}
       {% assign title_length = p.title | size %}
@@ -131,38 +132,40 @@
       {% else %}
       {% assign modified_title = p.title %}
       {% endif %}
-      {% capture show_info %}<tr>
+      {% capture production_info %}<tr>
         <td>{{ production_year }}</td>
         <td><a href="{{ p.url }}">{{ modified_title }}</a></td>
+        <td><a href="/theatres/{{ production_theatre | replace: ' ', '_' }}">{{ production_theatre }}</a></td>
       </tr>{% endcapture %}
-      {% unless venue_productions contains show_info %}
-      {% assign venue_productions = venue_productions | push: show_info %}
+      {% unless venue_productions contains production_info %}
+      {% assign venue_productions = venue_productions | push: production_info %}
       {% endunless %}
       {% endif %}
       {% endfor %}
 
       {% assign venue_productions_sorted = "" | split: "" %}
-      {% for show_info in venue_productions %}
-      {% assign show_date = show_info | split: " " | first %}
+      {% for production_info in venue_productions %}
+      {% assign production_date = production_info | split: " " | first %}
       {% assign inserted = false %}
       {% for sorted_info in venue_productions_sorted %}
       {% assign sorted_date = sorted_info | split: " " | first %}
-      {% if show_date < sorted_date %} {% assign venue_productions_sorted=venue_productions_sorted | insert_at: forloop.index0,
-        show_info %} {% assign inserted=true %} {% break %} {% endif %} {% endfor %} {% if inserted==false %} {% assign
-        venue_productions_sorted=venue_productions_sorted | push: show_info %} {% endif %} {% endfor %} {% if
+      {% if production_date < sorted_date %} {% assign venue_productions_sorted=venue_productions_sorted | insert_at: forloop.index0,
+        production_info %} {% assign inserted=true %} {% break %} {% endif %} {% endfor %} {% if inserted==false %} {% assign
+        venue_productions_sorted=venue_productions_sorted | push: production_info %} {% endif %} {% endfor %} {% if
         venue_productions_sorted.size> 0 %}
         <div class="venueproductions">
           <h2>Productions</h2>
           <table>
             <thead>
               <tr>
-                <th>Show</th>
                 <th>Year</th>
+                <th>Show</th>
+                <th>Theatre</th>
               </tr>
             </thead>
             <tbody>
-              {% for show_info in venue_productions_sorted %}
-              {{ show_info }}
+              {% for production_info in venue_productions_sorted %}
+              {{ production_info }}
               {% endfor %}
             </tbody>
           </table>

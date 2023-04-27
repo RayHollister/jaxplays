@@ -1,5 +1,6 @@
 ---
 title: All Cast Members
+layout: git-wiki-default
 ---
 
 <h1>{{ page.title }}</h1>
