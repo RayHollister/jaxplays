@@ -201,16 +201,6 @@
         </div>
         {% endif %}
 
-        <div class="external-links">
-          <h2 id="external-links">External Links</h2>
-          <ul>
-            {% for link in page.external_links %}
-            <li><a href="{{ link[1] }}" target="_blank">{{ link[0] }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-
       {% if site.inc_after_content %}
       {% include {{ site.inc_after_content }} %}
       {% endif %}
