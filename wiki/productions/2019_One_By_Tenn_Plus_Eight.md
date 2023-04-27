@@ -52,7 +52,7 @@ crew:
   Director: Caryl Butterley
   Stage Manager: Mara Grigg
   Lighting Design: Bryan Frank
-  Sound Design: Caryl Butterly
+  Sound Design: Caryl Butterley
   Light Operator: Jasper Darnell
   Sound Operator: Jasper Darnell
 external_links:
