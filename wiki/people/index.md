@@ -2,6 +2,7 @@
 title: All People
 layout: git-wiki-default
 ---
+
 <h1>{{ page.title }}</h1>
 
 {% assign all_cast_members = '' | split: '' %}
@@ -15,13 +16,13 @@ layout: git-wiki-default
       {% assign member_value = role[1] %}
       {% assign members = member_value | newline_to_br | strip | split: '<br />' %}
       {% for member in members %}
-        {% assign member_trimmed = member | strip %}
+        {% assign member_trimmed = member | strip | replace: ".", "" %}
         {% assign canonical_name = member_trimmed %}
         
         {% for person in all_people %}
           {% if person.redirect_from %}
             {% for redirect_url in person.redirect_from %}
-              {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " %}
+              {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " | replace: ".", "" %}
               {% if redirect_name == member_trimmed %}
                 {% assign canonical_name = person.title %}
               {% endif %}
@@ -37,20 +38,20 @@ layout: git-wiki-default
       {% assign member_value = role[1] %}
       {% assign members = member_value | newline_to_br | strip | split: '<br />' %}
       {% for member in members %}
-        {% assign member_trimmed = member | strip %}
+        {% assign member_trimmed = member | strip | replace: ".", "" %}
         {% assign canonical_name = member_trimmed %}
-        
+
         {% for person in all_people %}
           {% if person.redirect_from %}
             {% for redirect_url in person.redirect_from %}
-              {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " %}
+              {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " | replace: ".", "" %}
               {% if redirect_name == member_trimmed %}
                 {% assign canonical_name = person.title %}
               {% endif %}
             {% endfor %}
           {% endif %}
         {% endfor %}
-        
+
         {% assign all_crew_members = all_crew_members | push: canonical_name %}
       {% endfor %}
     {% endfor %}
@@ -59,20 +60,20 @@ layout: git-wiki-default
       {% assign member_value = role[1] %}
       {% assign members = member_value | newline_to_br | strip | split: '<br />' %}
       {% for member in members %}
-        {% assign member_trimmed = member | strip %}
+        {% assign member_trimmed = member | strip | replace: ".", "" %}
         {% assign canonical_name = member_trimmed %}
-        
+
         {% for person in all_people %}
           {% if person.redirect_from %}
             {% for redirect_url in person.redirect_from %}
-              {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " %}
+              {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " | replace: ".", "" %}
               {% if redirect_name == member_trimmed %}
                 {% assign canonical_name = person.title %}
               {% endif %}
             {% endfor %}
           {% endif %}
         {% endfor %}
-        
+
         {% assign all_orchestra_members = all_orchestra_members | push: canonical_name %}
       {% endfor %}
     {% endfor %}
@@ -97,7 +98,9 @@ layout: git-wiki-default
       {% assign orchestra_count = all_orchestra_members | where_exp: "item", "item == person" | size %}
       {% assign person_link = person | replace: " ", "_" %}
       <tr>
-        <td><a href="/people/{{ person_link  | replace: ".", "" }}">{{ person }}</a></td>
+        <td>
+          <a href="/people/{{ person_link  | replace: ".", "" }}">{{ person }}</a>
+        </td>
         <td>{{ cast_count }}</td>
         <td>{{ crew_count }}</td>
         <td>{{ orchestra_count }}</td>
