@@ -105,7 +105,7 @@ orchestra:
   Rhythm Guitar: Darin Peckham
   Bass Guitar: Sean Tarleton
   Drums: Tom Haller
-  Kevboard 1: Cathy Murphy
+  Keyboard 1: Cathy Murphy
   Keyboard 2/Organ: Scott Giddens
   Trumpet 1: Marvin Ferebe
   Trumpet 2: Mike Spotswood
