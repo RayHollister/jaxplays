@@ -53,7 +53,7 @@ cast:
   Principle Dancers : |
     Ashley Cunningham
     Kelly Howry
-    Conrad De' Andrea
+    Conrad De'Andrea
     Heather Kirshenbaum
     Kimberley Okie Medonough
 crew:
