@@ -79,24 +79,7 @@
               {% assign value_url = value %}
               {% endif %}
 
-
-              {% if key == 'address' %}
-              <tr>
-                <td class="leftcol">Address</td>
-                <td>
-                  {% assign address_lines = value | newline_to_br | strip | split: '<br />' %}
-                  {% for address_line in address_lines %}
-                  {{ address_line }}<br>
-                  {% endfor %}
-                  <ul>
-                    <li><a href="https://www.google.com/maps/search/?api=1&query={{ value | uri_escape }}">Google
-                        Maps</a>
-                    </li>
-                    <li><a href="https://maps.apple.com/?q={{ value | uri_escape }}">Apple Maps</a></li>
-                  </ul>
-                </td>
-              </tr>
-              {% elsif key == 'web' or key == 'website' %}
+              {% if key == 'web' or key == 'website' %}
               <tr>
                 <td class="leftcol">{{ key | capitalize }}</td>
                 <td><a target="_blank" href="{{ value_url }}">{{ value | split: '://' | last | split: 'www.' | last

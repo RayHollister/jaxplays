@@ -8,14 +8,15 @@ image_credit: Ray Hollister
 image_alt: Ray Hollister in 2018 standing in front of the Town Square Theater in the Magic Kingdom at Walt Disney World.
 image_caption: Ray Hollister in 2018 standing in front of the Town Square Theater in the Magic Kingdom at Walt Disney World.
 Details:
+  Birth Date: 1980-12-07
+  Birth Place: Scranton, PA
+  Year Active: 1997–present
+Contacts:
   Website: https://rayhollister.com
   Facebook: rayhollister
   Twitter: rayhollister
   Instagram: rayhollister
-  LinkedIn: rayhollister
-  Birth Date: 1980-12-07
-  Birth Place: Scranton, PA
-  Year Active: 1997–present
+  LinkedIn: rayhollister  
 ---
 Ray Hollister is a singer, actor, director, light board operator, and sound board operator. 
 
