@@ -11,7 +11,7 @@ category: play
 details:
     Title: A Number - wiki
     Theatre: Actors Collective
-    Venue: Museum of Science & History - wiki
+    Venue: Museum of Science & History
     Writer: Caryl Churchill - wiki
     Series: "The Secret of Life: A Science Play Series"
     Subject: Human cloning and identity

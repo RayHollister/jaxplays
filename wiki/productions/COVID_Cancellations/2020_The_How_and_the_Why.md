@@ -11,7 +11,7 @@ category: play
 details:
   Title: The How and the Why - wiki
   Theatre: Actors Collective
-  Venue: Museum of Science & History - wiki
+  Venue: Museum of Science & History
   Writer: Sarah Treem - wiki
   Series: "The Secret of Life: A Science Play Series"
   Website: http://www.actorscollective.com/the-secret-of-life/

@@ -12,7 +12,7 @@ details:
   Theatre: Phase Eight Theater Company
   Writer: Kelby Siddons
   Genre: Romantic Comedy
-  Venue: Museum of Contemporary Art Jacksonville - wiki
+  Venue: Museum of Contemporary Art Jacksonville
   Website: http://www.phaseeight.org/2020-season.html
 showtimes: |
   2020-02-13 19:00:00
