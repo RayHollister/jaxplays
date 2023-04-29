@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Les Misérables
-year: 2014)
+year: 2014
 image: 
 image_credit: 
 image_alt:

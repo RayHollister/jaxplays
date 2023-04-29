@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: The Grapes of Wrath
-year: 2000)
+year: 2000
 image:
 category:
 details:

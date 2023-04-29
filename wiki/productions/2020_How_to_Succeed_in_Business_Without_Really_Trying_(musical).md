@@ -1,9 +1,9 @@
 ---
 layout: productions
 title: How to Succeed in Business Without Really Trying
-year: 2020)
+year: 2020
 image: 2020_How_to_Succeed_in_Business_Without_Really_Trying_(musical).png
-image_credit: 
+image_credit:
 image_alt:
 image_caption:
 category: musical
@@ -77,7 +77,7 @@ cast:
   Jenkins Understudy: Alec Hadden
   Bratt Understudy: Alec Hadden
   Tackaberry Understudy: Thomas Nightingale
-  Peterson: Thomas Nightingale
+  Peterson Understudy: Thomas Nightingale
   Rosemary Understudy: Erin Leigh Knowles
   Smitty Understudy: Erin Leigh Knowles
   Miss Jones Understudy: Hailey Hendrickson
@@ -119,3 +119,4 @@ https://www.youtube.com/watch?v=MGA5rPz3Uho
 "This show is filled with comedy and razzle dazzle numbers, and while we’ve seen several excellent productions in the past, the Alhambra’s was our favorite." — [HOW TO SUCCEED IN BUSINESS AT ALHAMBRA THEATRE AND DINING - EU Jacksonville Newspaper](https://eujacksonville.com/2020/02/26/how-to-succeed-in-business-at-alhambra-theatre-and-dining/)
 
 "The Alhambra is known for the quality of the musical theatre talent it attracts to Jacksonville, and the “How to Succeed” cast is among the best to grace the stage at the nation’s oldest continuously operating dinner theatre." — [Review: Alhambra show succeeds at skewering corporate world - The Ponte Vedra Recorder](https://pontevedrarecorder.com/stories/review-alhambra-show-succeeds-at-skewering-corporate-world,10583)
+---

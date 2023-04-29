@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Moon Over the Brewery
-year: 2007)
+year: 2007
 image: 
 image_credit: 
 image_alt:

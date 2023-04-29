@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: The God Game
-year: 2017)
+year: 2017
 image: 
 image_credit: 
 image_alt:

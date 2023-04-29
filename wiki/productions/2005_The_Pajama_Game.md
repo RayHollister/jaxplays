@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: The Pajama Game
-year: 2005)
+year: 2005
 image: 
 image_credit: 
 image_alt:

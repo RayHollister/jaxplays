@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: The Humans
-year: 2020)
+year: 2020
 image:
 image_credit: 
 image_alt:

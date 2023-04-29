@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Ragtime
-year: 2022)
+year: 2022
 image: 2022_Ragtime_(musical).png
 image_credit: 
 image_alt:

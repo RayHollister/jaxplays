@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Godspell
-year: 1991)
+year: 1991
 image:
 category:
 details:

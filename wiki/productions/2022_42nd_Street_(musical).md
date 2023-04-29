@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: 42nd Street (musical)
-year: 2022)
+year: 2022
 image: 2022_42nd_Street.jpg
 image_credit: 
 image_alt:

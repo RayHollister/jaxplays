@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Falsettos
-year: 2019)
+year: 2019
 image: 2019_Falsettos_(musical).webp
 image_credit: 
 image_alt:

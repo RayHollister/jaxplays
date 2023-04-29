@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Silence! The Musical
-year: 2019)
+year: 2019
 image: 2019_Silence_The_Musical.webp
 image_credit: 
 image_alt:

@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: They're Playing Our Song
-year: 1990)
+year: 1990
 image: 
 image_credit: 
 image_alt:

@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: City of Angels
-year: 1993)
+year: 1993
 image:
 category:
 details:

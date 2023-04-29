@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Love Quest
-year: 2020)
+year: 2020
 image: 2020_Love_Quest.webp
 image_credit: 
 image_alt:

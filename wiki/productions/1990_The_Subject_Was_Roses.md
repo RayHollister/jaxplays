@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: The Subject Was Roses
-year: 1990)
+year: 1990
 image:
 category:
 details:

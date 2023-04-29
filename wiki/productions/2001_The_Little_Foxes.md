@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: The Little Foxes
-year: 2001)
+year: 2001
 image: 
 image_credit: 
 image_alt:

@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Ruthless!
-year: 2022)
+year: 2022
 image: 2022_Ruthless.jpeg
 image_credit: 
 image_alt:

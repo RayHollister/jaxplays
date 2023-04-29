@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: The Creationists
-year: 2011)
+year: 2011
 image:
 category:
 details:

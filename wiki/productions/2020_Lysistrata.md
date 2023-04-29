@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Lysistrata
-year: 2020)
+year: 2020
 image: 2020_Lysistrata.jpg
 playbill: 2020_Lysistrata.pdf
 image_credit: 

@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Dancing at Lughnasa
-year: 1996)
+year: 1996
 image:
 category:
 details:

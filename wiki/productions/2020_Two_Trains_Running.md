@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Two Trains Running
-year: 2020)
+year: 2020
 image: 2020_Two_Trains_Running.png
 image_credit: 
 image_alt:

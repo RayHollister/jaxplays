@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: She Loves Me
-year: 2002)
+year: 2002
 image: 
 image_credit: 
 image_alt:

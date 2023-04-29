@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Photograph 51
-year: 2019)
+year: 2019
 image_credit: 
 image_alt:
 image_caption:

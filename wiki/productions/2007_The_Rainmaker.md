@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: The Rainmaker
-year: 2007)
+year: 2007
 image_credit: 
 image_alt:
 image_caption:

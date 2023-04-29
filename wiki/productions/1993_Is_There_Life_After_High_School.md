@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Is There Life After High School?
-year: 1993)
+year: 1993
 image: 
 image_credit: 
 image_alt:

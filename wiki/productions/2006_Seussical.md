@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Seussical
-year: 2006)
+year: 2006
 image: 
 image_credit: 
 image_alt:

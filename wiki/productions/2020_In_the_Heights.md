@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: In the Heights
-year: 2020)
+year: 2020
 image: 2020_In_the_Heights.jpg
 image_credit: 
 image_alt:

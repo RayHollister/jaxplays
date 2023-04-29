@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Little Women (musical)
-year: 2022)
+year: 2022
 image: 2020_Little_Women.jpeg
 image_credit: 
 image_alt:

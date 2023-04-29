@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: I Never Sang for My Father
-year: 1993)
+year: 1993
 image:
 category:
 details:

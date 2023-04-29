@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Significant Other
-year: 2022)
+year: 2022
 image: 2022_Significant_Other.jpg
 image_credit: 
 image_alt:

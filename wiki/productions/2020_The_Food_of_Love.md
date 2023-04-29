@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: The Food of Love
-year: 2020)
+year: 2020
 image: 2020_The_Food_of_Love.png
 image_credit: 
 image_alt:

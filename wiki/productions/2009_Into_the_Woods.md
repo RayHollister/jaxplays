@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Into the Woods
-year: 2009)
+year: 2009
 image: 
 image_credit: 
 image_alt:

@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Wait Until Dark
-year: 1990)
+year: 1990
 image:
 category:
 details:

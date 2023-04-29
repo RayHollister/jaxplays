@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: A Funny Thing Happened on the Way to the Forum
-year: 1999)
+year: 1999
 image_credit: 
 image_alt:
 image_caption:

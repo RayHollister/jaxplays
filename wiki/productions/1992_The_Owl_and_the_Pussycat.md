@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: The Owl and the Pussycat
-year: 1992)
+year: 1992
 image:
 category:
 details:

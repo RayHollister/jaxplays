@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: The Fantasticks
-year: 1989)
+year: 1989
 image:
 category:
 details:

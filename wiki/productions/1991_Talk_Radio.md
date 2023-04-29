@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Talk Radio
-year: 1991)
+year: 1991
 image:
 category:
 details:

@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Enchanted April
-year: 2007)
+year: 2007
 image: 
 image_credit: 
 image_alt:

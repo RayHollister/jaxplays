@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Doubt
-year: 2008)
+year: 2008
 image:
 category:
 details:

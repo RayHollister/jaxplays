@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Epic Proportions
-year: 2003)
+year: 2003
 image: 
 image_credit: 
 image_alt:

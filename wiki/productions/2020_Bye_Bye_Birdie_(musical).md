@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Bye Bye Birdie
-year: 2020)
+year: 2020
 image: 2020_Bye_Bye_Birdie_(musical).jpg
 image_credit: 
 image_alt:

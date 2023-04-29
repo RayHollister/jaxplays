@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: One Man, Two Guvnors
-year: 2022)
+year: 2022
 image:
 image_credit: 
 image_alt:

@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: Six Degrees of Separation
-year: 1995)
+year: 1995
 image:
 category:
 details:

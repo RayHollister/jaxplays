@@ -1,7 +1,7 @@
 ---
 layout: productions
 title: A Funny Thing Happened on the Way to the Forum
-year: 2020)
+year: 2020
 image: 2020_A_Funny_Thing_Happened_on_the_Way_to_the_Forum.jpg
 image_credit: 
 image_alt:
