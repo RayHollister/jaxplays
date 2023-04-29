@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Freaky Friday (2022)
+title: Freaky Friday
+year: 2022)
 image_credit: 
 image_alt:
 image_caption:

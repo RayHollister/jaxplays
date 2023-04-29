@@ -1,6 +1,7 @@
 ---
+title: The Rainmaker
+year: 1986
 layout: productions
-title: The Rainmaker (1986)
 image:
 category:
 details:

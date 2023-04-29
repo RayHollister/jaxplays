@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Snoopy! The Musical (2022)
+title: Snoopy! The Musical
+year: 2022)
 image:
 image_credit: 
 image_alt:

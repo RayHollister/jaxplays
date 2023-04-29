@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: The Whale (2015)
+title: The Whale
+year: 2015)
 image:
 image_credit: 
 image_alt:

@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: The Great Gatsby (2022)
+title: The Great Gatsby
+year: 2022)
 image_credit: 
 image_alt:
 image_caption:

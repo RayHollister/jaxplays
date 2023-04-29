@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: The Harvest (2019)
+title: The Harvest
+year: 2019)
 image: 2019_The_Harvest.webp
 image_credit: 
 image_alt:

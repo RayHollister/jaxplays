@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: The 25th Annual Putnam County Spelling Bee (2010)
+title: The 25th Annual Putnam County Spelling Bee
+year: 2010)
 image_credit: 
 image_alt:
 image_caption:

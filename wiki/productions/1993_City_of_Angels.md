@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: City of Angels (1993)
+title: City of Angels
+year: 1993)
 image:
 category:
 details:

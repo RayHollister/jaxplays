@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Once Upon a Mattress (1987)
+title: Once Upon a Mattress
+year: 1987
 image:
 category:
 details:

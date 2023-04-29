@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Bonnie & Clyde (musical) (2022)
+title: Bonnie & Clyde (musical)
+year: 2022)
 image:
 image_credit: 
 image_alt:

@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Inherit the Wind (2011)
+title: Inherit the Wind
+year: 2011)
 image: 
 image_credit: 
 image_alt:

@@ -2,7 +2,8 @@
 published: false
 cancelled: COVID-19
 layout: productions
-title: Gutenberg! The Musical! (2020)
+title: Gutenberg! The Musical!
+year: 2020)
 image_credit: 
 image_alt:
 image_caption:

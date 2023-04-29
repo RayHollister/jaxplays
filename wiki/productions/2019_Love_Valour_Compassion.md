@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Love! Valour! Compassion! (2019)
+title: Love! Valour! Compassion!
+year: 2019)
 image:
 image_credit: 
 image_alt:

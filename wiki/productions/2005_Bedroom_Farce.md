@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Bedroom Farce (2005)
+title: Bedroom Farce
+year: 2005)
 image_credit: 
 image_alt:
 image_caption:

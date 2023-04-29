@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Matilda the Musical (2022)
+title: Matilda the Musical
+year: 2022)
 image_credit: 
 image_alt:
 image_caption:

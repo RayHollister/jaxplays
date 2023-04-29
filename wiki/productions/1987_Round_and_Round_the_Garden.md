@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Round and Round the Garden (1987)
+title: Round and Round the Garden
+year: 1987
 image:
 category:
 details:

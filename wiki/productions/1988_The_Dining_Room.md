@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: The Dining Room (1988)
+title: The Dining Room
+year: 1988
 image:
 category:
 details:

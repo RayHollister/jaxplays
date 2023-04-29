@@ -2,7 +2,8 @@
 published: false
 cancelled: COVID-19
 layout: productions
-title: Rock of Ages (musical) (2020)
+title: Rock of Ages (musical)
+year: 2020)
 image_credit: 
 image_alt:
 image_caption:

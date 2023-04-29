@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Southern Fried Funeral (2022)
+title: Southern Fried Funeral
+year: 2022)
 image: 2022_Southern_Fried_Funeral.jpeg
 image_credit: 
 image_alt:

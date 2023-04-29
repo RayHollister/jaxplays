@@ -2,7 +2,8 @@
 published: false
 cancelled: COVID-19
 layout: productions
-title: Night of January 16th (2020)
+title: Night of January 16th
+year: 2020)
 image_credit: 
 image_alt:
 image_caption:

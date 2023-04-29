@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Doubt (2008)
+title: Doubt
+year: 2008)
 image:
 category:
 details:

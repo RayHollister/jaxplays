@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Radium Girls (2022)
+title: Radium Girls
+year: 2022)
 image:
 image_credit: 
 image_alt:

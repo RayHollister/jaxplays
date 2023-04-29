@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Bad Habits (1994)
+title: Bad Habits
+year: 1994)
 image:
 category:
 details:

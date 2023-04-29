@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Ghost (musical) (2022)
+title: Ghost (musical)
+year: 2022)
 image_credit: 
 image_alt:
 image_caption:

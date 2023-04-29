@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Company (2020)
+title: Company
+year: 2020)
 image_credit: 
 image_alt:
 image_caption:

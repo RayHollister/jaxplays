@@ -2,7 +2,8 @@
 published: false
 cancelled: COVID-19
 layout: productions
-title: Love, Sex and the I.R.S. (2020)
+title: Love, Sex and the I.R.S.
+year: 2020)
 image_credit: 
 image_alt:
 image_caption:

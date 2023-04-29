@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Mass Appeal (1987)
+title: Mass Appeal
+year: 1987
 image:
 category:
 details:

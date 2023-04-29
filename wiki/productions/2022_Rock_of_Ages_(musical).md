@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Rock of Ages (2022)
+title: Rock of Ages
+year: 2022)
 image: 2022_Rock_of_Ages_(musical).jpeg
 image_credit: 
 image_alt:

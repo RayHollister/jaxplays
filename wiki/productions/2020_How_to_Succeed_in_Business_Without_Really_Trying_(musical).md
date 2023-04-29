@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: How to Succeed in Business Without Really Trying (2020)
+title: How to Succeed in Business Without Really Trying
+year: 2020)
 image: 2020_How_to_Succeed_in_Business_Without_Really_Trying_(musical).png
 image_credit: 
 image_alt:

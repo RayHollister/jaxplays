@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: How to Succeed in Business Without Really Trying (1999)
+title: How to Succeed in Business Without Really Trying
+year: 1999)
 image: 
 image_credit: 
 image_alt:

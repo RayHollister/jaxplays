@@ -2,7 +2,8 @@
 published: false
 cancelled: COVID-19
 layout: productions
-title: Assassins (2020)
+title: Assassins
+year: 2020)
 image_credit: 
 image_alt:
 image_caption:

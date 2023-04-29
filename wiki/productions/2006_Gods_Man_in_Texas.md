@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: God's Man in Texas (2006)
+title: God's Man in Texas
+year: 2006)
 image: 
 image_credit: 
 image_alt:

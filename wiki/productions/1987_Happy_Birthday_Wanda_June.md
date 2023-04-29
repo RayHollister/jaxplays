@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Happy Birthday, Wanda June (1987)
+title: Happy Birthday, Wanda June
+year: 1987
 image:
 category:
 details:

@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Brighton Beach Memoirs (2022)
+title: Brighton Beach Memoirs
+year: 2022)
 image_credit: 
 image_alt:
 image_caption:

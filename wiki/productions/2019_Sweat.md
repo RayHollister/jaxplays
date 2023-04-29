@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Sweat (2019)
+title: Sweat
+year: 2019)
 image: 2019_Sweat.webp
 image_credit: 
 image_alt:

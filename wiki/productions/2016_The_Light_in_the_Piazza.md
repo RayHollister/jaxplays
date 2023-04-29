@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: The Light in the Piazza (2016)
+title: The Light in the Piazza
+year: 2016)
 image: 
 image_credit: 
 image_alt:

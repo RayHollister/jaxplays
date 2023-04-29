@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: The Curious Savage (1994)
+title: The Curious Savage
+year: 1994)
 image:
 category:
 details:

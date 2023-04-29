@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Lessons We Were Never Taught (2020)
+title: Lessons We Were Never Taught
+year: 2020)
 image: 2020_Lessons_We_Were_Never_Taught.jpg
 image_credit: 
 image_alt:

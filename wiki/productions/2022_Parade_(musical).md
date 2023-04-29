@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Parade (musical) (2022)
+title: Parade (musical)
+year: 2022)
 image_credit: 
 image_alt:
 image_caption:

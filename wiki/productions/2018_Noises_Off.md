@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Noises Off (2018)
+title: Noises Off
+year: 2018)
 image:
 category:
 details:

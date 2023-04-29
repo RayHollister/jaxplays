@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: You're a Good Man, Charlie Brown (1986)
+title: You're a Good Man, Charlie Brown
+year: 1986
 image:
 category:
 details:

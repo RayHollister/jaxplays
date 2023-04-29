@@ -130,17 +130,11 @@
       {% endif %}
 
       {% assign show_start_date = p.showtimes | newline_to_br | strip_html | split: " " | first %}
-      {% assign modified_title = p.title | slice: -7, 7 %}
-      {% if modified_title contains " (" %}
-      {% assign title_length = p.title | size %}
-      {% assign title_length_minus_seven = title_length | minus: 7 %}
-      {% assign modified_title = p.title | slice: 0, title_length_minus_seven %}
-      {% else %}
-      {% assign modified_title = p.title %}
-      {% endif %}
+      {% assign title = p.title | slice: -7, 7 %}
+      {% assign title = p.title %}
       {% capture show_info %}<tr>
         <td>{{ production_year }}</td>
-        <td><a href="{{ p.url }}">{{ modified_title }}</a></td>
+        <td><a href="{{ p.url }}">{{ title }}</a></td>
       </tr>{% endcapture %}
       {% unless theatre_productions contains show_info %}
       {% assign theatre_productions = theatre_productions | push: show_info %}

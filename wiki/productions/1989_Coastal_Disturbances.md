@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Coastal Disturbances (1989)
+title: Coastal Disturbances
+year: 1989)
 image: 
 image_credit: 
 image_alt:

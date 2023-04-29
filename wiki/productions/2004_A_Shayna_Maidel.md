@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: A Shayna Maidel (2004)
+title: A Shayna Maidel
+year: 2004)
 image_credit: 
 image_alt:
 image_caption:

@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: It's a Wonderful Life (2015)
+title: It's a Wonderful Life
+year: 2015)
 redirect_from: 2015_It's_a_Wonderful_Life
 image: 2015_It's_a_Wonderful_Life.jpeg
 image_credit: 

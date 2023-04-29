@@ -124,17 +124,10 @@
       {% assign production_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
       {% assign production_start_date = p.showtimes | newline_to_br | strip_html | split: " " | first %}
       {% assign production_theatre = p.details.Theatre %}
-      {% assign modified_title = p.title | slice: -7, 7 %}
-      {% if modified_title contains " (" %}
-      {% assign title_length = p.title | size %}
-      {% assign title_length_minus_seven = title_length | minus: 7 %}
-      {% assign modified_title = p.title | slice: 0, title_length_minus_seven %}
-      {% else %}
-      {% assign modified_title = p.title %}
-      {% endif %}
+      {% assign title = p.title %}
       {% capture production_info %}<tr>
         <td>{{ production_year }}</td>
-        <td><a href="{{ p.url }}">{{ modified_title }}</a></td>
+        <td><a href="{{ p.url }}">{{ title }}</a></td>
         <td><a href="/theatres/{{ production_theatre | replace: ' ', '_' }}">{{ production_theatre }}</a></td>
       </tr>{% endcapture %}
       {% unless venue_productions contains production_info %}

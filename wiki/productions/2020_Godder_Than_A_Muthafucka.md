@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Godder Than A Muthafucka (2020)
+title: Godder Than A Muthafucka
+year: 2020)
 image: 2020_Godder_Than_A_Muthafucka.jpg
 image_credit: 
 image_alt:

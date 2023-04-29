@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: White Christmas (2022)
+title: White Christmas
+year: 2022)
 image: 2022_White_Christmas_(musical).jpg
 image_credit: 
 image_alt:

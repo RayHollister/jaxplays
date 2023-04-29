@@ -1,6 +1,7 @@
 ---
+title: Deathtrap
+year: 1985
 layout: productions
-title: Deathtrap (1985)
 image:
 category:
 details:

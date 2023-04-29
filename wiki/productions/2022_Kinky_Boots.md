@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Kinky Boots (2022)
+title: Kinky Boots
+year: 2022)
 image: 2022_Kinky_Boots.jpeg
 image_credit: 
 image_alt:

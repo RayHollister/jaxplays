@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Children of a Lesser God (1989)
+title: Children of a Lesser God
+year: 1989
 image:
 category:
 details:

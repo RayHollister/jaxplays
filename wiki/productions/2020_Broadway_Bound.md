@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Broadway Bound! (2020)
+title: Broadway Bound!
+year: 2020)
 image: 2020_Broadway_Bound.png
 image_credit: 
 image_alt: "The 5 & Dime Live! Cabaret Series: Broadway Bound!"

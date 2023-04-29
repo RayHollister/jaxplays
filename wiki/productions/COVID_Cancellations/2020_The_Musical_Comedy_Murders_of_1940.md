@@ -2,7 +2,8 @@
 published: false
 cancelled: COVID-19
 layout: productions
-title: The Musical Comedy Murders of 1940 (2020)
+title: The Musical Comedy Murders of 1940
+year: 2020)
 image_credit: 
 image_alt:
 image_caption:

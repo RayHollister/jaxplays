@@ -2,7 +2,8 @@
 published: false
 cancelled: COVID-19
 layout: productions
-title: The Normal Heart (2020)
+title: The Normal Heart
+year: 2020)
 image_credit: 
 image_alt:
 image_caption:

@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Dinner with Booker T. (2020)
+title: Dinner with Booker T.
+year: 2020)
 image: 2020_Dinner_with_Booker_T.jpg
 image_credit: 
 image_alt:

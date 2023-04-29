@@ -2,7 +2,8 @@
 published: false
 cancelled: COVID-19
 layout: productions
-title: The Music Man (2020)
+title: The Music Man
+year: 2020)
 image_credit: 
 image_alt:
 image_caption:

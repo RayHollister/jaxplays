@@ -2,7 +2,8 @@
 published: false
 cancelled: COVID-19
 layout: productions
-title: Guess Who's Coming to Dinner (2020)
+title: Guess Who's Coming to Dinner
+year: 2020)
 image_credit: 
 image_alt:
 image_caption:

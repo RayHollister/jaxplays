@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Parade (2010)
+title: Parade
+year: 2010)
 image:
 image_credit: 
 image_alt:

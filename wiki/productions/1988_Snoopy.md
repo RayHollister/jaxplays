@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Snoopy (1988)
+title: Snoopy
+year: 1988
 image:
 category:
 details:

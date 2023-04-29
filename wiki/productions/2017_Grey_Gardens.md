@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Grey Gardens (2017)
+title: Grey Gardens
+year: 2017)
 image: 
 image_credit: 
 image_alt:

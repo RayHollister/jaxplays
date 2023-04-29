@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Messiah on the Frigidaire (2022)
+title: Messiah on the Frigidaire
+year: 2022)
 image: 2022_Messiah_on_the_Frigidaire.jpeg
 image_credit: 
 image_alt:

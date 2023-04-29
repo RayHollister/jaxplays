@@ -2,7 +2,8 @@
 published: false
 cancelled: COVID-19
 layout: productions
-title: "Let's Misbehave: The Songs of Cole Porter (2020)"
+title: "Let's Misbehave: The Songs of Cole Porter"
+year: 2020
 image_credit: 
 image_alt:
 image_caption:

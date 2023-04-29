@@ -2,7 +2,8 @@
 published: false
 cancelled: COVID-19
 layout: productions
-title: A Wonderful Life (2020)
+title: A Wonderful Life
+year: 2020)
 image_credit: 
 image_alt:
 image_caption:

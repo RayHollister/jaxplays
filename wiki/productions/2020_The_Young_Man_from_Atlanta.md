@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: The Young Man from Atlanta (2020)
+title: The Young Man from Atlanta
+year: 2020)
 image:
 image_credit: 
 image_alt:

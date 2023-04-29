@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: The Wizard of Oz (2022)
+title: The Wizard of Oz
+year: 2022)
 image: 2022_The_Wizard_of_Oz.jpg
 image_credit: 
 image_alt:

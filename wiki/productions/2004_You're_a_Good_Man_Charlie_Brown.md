@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: You're a Good Man, Charlie Brown (2004)
+title: You're a Good Man, Charlie Brown
+year: 2004)
 image: 
 image_credit: 
 image_alt:

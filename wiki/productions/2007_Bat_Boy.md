@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Bat Boy (2007)
+title: Bat Boy
+year: 2007)
 image:
 category:
 details:

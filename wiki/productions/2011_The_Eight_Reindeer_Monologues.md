@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: "The Eight: Reindeer Monologues (2011)"
+title: "The Eight: Reindeer Monologues"
+year: 2011
 image:
 image_credit: 
 image_alt:

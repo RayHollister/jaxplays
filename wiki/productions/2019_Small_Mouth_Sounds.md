@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Small Mouth Sounds (2019)
+title: Small Mouth Sounds
+year: 2019)
 image: 2019_Small_Mouth_Sounds.webp
 image_credit: 
 image_alt:

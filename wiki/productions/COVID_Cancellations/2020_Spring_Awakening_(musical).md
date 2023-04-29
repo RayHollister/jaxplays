@@ -2,7 +2,8 @@
 published: false
 cancelled: COVID-19
 layout: productions
-title: Spring Awakening (musical) (2020)
+title: Spring Awakening (musical)
+year: 2020)
 image_credit: 
 image_alt:
 image_caption:

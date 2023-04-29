@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: The Shawshank Redemption (2022)
+title: The Shawshank Redemption
+year: 2022)
 image:
 image_credit: 
 image_alt:

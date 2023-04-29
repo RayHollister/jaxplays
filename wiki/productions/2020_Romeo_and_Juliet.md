@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Romeo & Juliet (2020)
+title: Romeo & Juliet
+year: 2020)
 image:
 image_credit: 
 image_alt:

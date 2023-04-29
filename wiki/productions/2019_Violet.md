@@ -1,6 +1,7 @@
 ---
 layout: productions
-title: Violet (2019)
+title: Violet
+year: 2019)
 image_credit: 
 image_alt:
 image_caption:
