@@ -39,7 +39,9 @@ cast:
   Miles Gloriosus: Jimmy Alexander
   Erronius: Jim Warren
   Gymnasia: Chelsea Black
-  The Geminae: Shauna Clark, Anna Fleece
+  The Geminae: | 
+    Shauna Clark
+    Anna Fleece
   Vibrata: Kimberly Cooper York
   Tintinabula: Amanda Jackson
   Panacea: Charity Zappone
