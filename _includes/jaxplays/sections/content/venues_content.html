@@ -14,6 +14,7 @@
 
     <div class="sidebar">
       <div class="details">
+        <h6>{{ page.title }}</h6>
         <div class="featured_image">
           {% if page.image %}
           {% capture alt_text %}
@@ -39,11 +40,6 @@
         {% assign details = page.Details | default: page.details %}
 
         <table class="venue_details">
-          <thead>
-            <tr>
-              <td class="leftcol" colspan="2">{{ page.title }}</td>
-            </tr>
-          </thead>
           <tbody>
             {% for detail in details %}
             {% assign key = detail[0] | downcase %}
