@@ -18,3 +18,8 @@ details:
     Phone: 	
     Artistic Director: Jereme Raickett
 ---
+Players by the Sea is a non-profit theater located in Jacksonville Beach, Florida. It was founded in 1966 and has been providing live theater performances to the local community for over five decades. The [John McManus Mainstage Theatre](/venues/John_McManus_Mainstage_Theatre) has a seating capacity of 150 and the [Grace Darling Studio Theatre](/venues/Grace_Darling_Studio_Theatre) seats 80. 
+
+Players by the Sea produces a variety of plays and musicals, ranging from contemporary works to classics. The theater also offers classes and workshops for adults and children, providing opportunities for individuals to develop their acting, singing, and dancing skills.
+
+In addition to its main stage productions, Players by the Sea also has a children's theater program, which offers classes and productions specifically for young performers. The theater also hosts special events throughout the year, such as holiday shows, benefit concerts, and community outreach programs.
