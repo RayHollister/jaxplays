@@ -55,9 +55,11 @@
                   {{ address_line }}<br>
                   {% endfor %}
                   <ul class="map_links">
-                    <li><a href="https://www.google.com/maps/search/?api=1&query={{ value | uri_escape }}">Google Maps</a>
-                    </li>
-                    <li><a href="https://maps.apple.com/?q={{ value | uri_escape }}">Apple Maps</a></li>
+                    <li><a target="_blank"
+                        href="https://www.google.com/maps/search/?api=1&query={{ value | uri_escape | replace: '%0A', '%20' }}">Google
+                        Maps</a></li>
+                    <li><a target="_blank" href="https://maps.apple.com/?q={{ value | uri_escape | replace: '%0A', '%20' }}">Apple
+                        Maps</a></li>
                   </ul>
                 </td>
               </tr>

@@ -57,7 +57,6 @@
               </tr>
               {% endif %}
 
-
               {% for detail in page.details %}
               {% if detail[0] != 'Title' %}
               <tr>
@@ -73,20 +72,40 @@
                   <a target="_blank" href="{{ value }}" targe="_blank">Production website</a>
                   {%- elsif detail[0] == 'Theatre' -%}
                   <a target="_blank" href="/theatres/{{ value | strip | replace: ' ', '_' }}">{{ value }}</a>
+                  {% if page.details.Venue == null %}
+                  {% assign theatre_name = value | strip %}
+                  {% for page in site.pages %}
+                  {% if page.layout == 'venues' and page.title == theatre_name %}
+                  {% assign venue_address = page.details.Address %}
+                  <br />
+                  {{ venue_address | newline_to_br }}
+                  <ul class="map_links">
+                    <li><a target="_blank"
+                        href="https://www.google.com/maps/search/?api=1&query={{ venue_address | uri_escape | replace: '%0A', '%20' }}">Google
+                        Maps</a></li>
+                    <li><a target="_blank"
+                        href="https://maps.apple.com/?q={{ venue_address | uri_escape | replace: '%0A', '%20' }}">Apple
+                        Maps</a></li>
+                  </ul>
+                  {% endif %}
+                  {% endfor %}
+                  {% endif %}
                   {%- elsif detail[0] == 'Venue' -%}
-                    {% assign venue_name = value | strip %}
-                    <a target="_blank" href="/venues/{{ venue_name | replace: ' ', '_' | replace: "'", "" }}">{{ venue_name }}</a>
+                  {% assign venue_name = value | strip %}
+                  <a target="_blank" href="/venues/{{ venue_name | replace: ' ', '_' | replace: "'", "" }}">{{ venue_name }}</a>
                       {% for page in site.pages %}
-                      {% if page.title == venue_name %}<br />
-                      {% assign venue_address = page.Details.Address %}
-                      {{ venue_address | newline_to_br }}
-                      <ul class="map_links">
-                        <li><a href="https://www.google.com/maps/search/?api=1&query={{ venue_address | strip_newlines | uri_escape }}">Google Maps</a>
-                        </li>
-                        <li><a href="https://maps.apple.com/?q={{ venue_address | strip_newlines | uri_escape }}">Apple Maps</a></li>
-                      </ul>
-                      {% endif %}
-                      {% endfor %}
+                        {% if page.layout == ' venues' and page.title==venue_name %} <br />
+                  {% assign venue_address = page.Details.Address %}
+                  {{ venue_address | newline_to_br }}
+                  <ul class="map_links">
+                    <li><a target="_blank"
+                        href="https://www.google.com/maps/search/?api=1&query={{ venue_address | uri_escape | replace: '%0A', '%20' }}">Google
+                        Maps</a></li>
+                    <li><a target="_blank" href="https://maps.apple.com/?q={{ venue_address | uri_escape | replace: '%0A', '%20' }}">Apple
+                        Maps</a></li>
+                  </ul>
+                  {% endif %}
+                  {% endfor %}
                   {%- else -%}
                   {{ value | markdownify | strip | remove: ' <p>' | remove: '</p>' | remove: "\r" | remove: "\n" }}
                   {%- endif %}
@@ -96,6 +115,7 @@
               </tr>
               {% endif %}
               {% endfor %}
+
               {% if page.playbill %}
               <tr>
                 <td></td>
