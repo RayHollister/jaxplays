@@ -47,6 +47,11 @@
           <h2 id="details">Details</h2>
           <table>
             <tbody>
+              <tr>
+                <td class="leftcol">Year</td>
+                <td>{{ page.year }}</td>
+              </tr>
+
               {% for detail in page.details %}
               <tr>
                 <td class="leftcol">{{ detail[0] }}</td>
@@ -87,6 +92,7 @@
           </table>
         </div>
 
+        {% if page.showtimes %}
         <div class="showtimes">
           <h2 id="showtimes">Show Times</h2>
           <table>
@@ -110,6 +116,8 @@
             </tbody>
           </table>
         </div>
+
+        {% endif %}
 
       </div>
       <div class="additional-content">

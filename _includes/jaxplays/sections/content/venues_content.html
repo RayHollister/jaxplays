@@ -121,8 +121,7 @@
 
       {% for p in site.pages %}
       {% if p.details and p.details.Venue and p.details.Venue == venue_name %}
-      {% assign production_year = p.showtimes | newline_to_br | strip_html | split: " " | first | split: "-" | first %}
-      {% assign production_start_date = p.showtimes | newline_to_br | strip_html | split: " " | first %}
+      {% assign production_year = p.year %}
       {% assign production_theatre = p.details.Theatre %}
       {% assign title = p.title %}
       {% capture production_info %}<tr>
