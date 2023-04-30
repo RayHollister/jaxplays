@@ -25,9 +25,3 @@ Ray's theatre debut was in 1997 as Stewpot in South Pacific in the Douglas Ander
 
 Ray Hollister is most well known for his role producing and directing [WJCT Radio Theater](WJCT_Radio_Theater)'s production of '[It's A Wonderful Life](2015_Its_a_Wonderful_Life)'.
 
-## Theatre Credits
-
-| Year | Role | Show | Theatre | 
-| ---- | ---- | ---- | ------- | ----- |
-| 2005 | Judas | 'Godspell' | Crossroad Church |
-| 2012 | Light Board Operator, Sound Board Operator | 'Bug' | Players by the Sea |

@@ -174,7 +174,7 @@
         {% assign person_orchestra_credits = "" | split: "" %}
         
         {% for p in site.pages %}
-        {% if p.details and p.details.Theatre %}
+        {% if p.details%}
         {% if p.cast %}
         {% assign cast_items = p.cast | items %}
         {% for cast_item in cast_items %}
@@ -192,6 +192,7 @@
         {% if name_found %}
         {% assign production_year = p.year %}
         {% assign theatre_url = p.details.Theatre | replace: " ", "_" %}
+        {% assign venue_url = p.details.Venue | replace: " ", "_" %}
         {% capture credit %}
         <tr>
           <td>{{ production_year }}</td>
@@ -223,7 +224,8 @@
         {% endfor %}
         {% if name_found %}
         {% assign production_year = p.year %}
-        {% assign theatre_url = p.details.Theatre | replace: " ", "_" %}
+          {% assign theatre_url = p.details.Theatre | replace: " ", "_" %}
+{% assign venue_url = p.details.Venue | replace: " ", "_" %}
         {% capture credit %}
         <tr>
           <td>{{ production_year }}</td>
@@ -255,7 +257,8 @@
           {% endfor %}
           {% if name_found %}
           {% assign production_year = p.year %}
-          {% assign theatre_url = p.details.Theatre | replace: " ", "_" %}
+            {% assign theatre_url = p.details.Theatre | replace: " ", "_" %}
+{% assign venue_url = p.details.Venue | replace: " ", "_" %}
           {% capture credit %}
           <tr>
             <td>{{ production_year }}</td>
