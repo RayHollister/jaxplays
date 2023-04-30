@@ -10,6 +10,7 @@ category: play
 details:
   Title: The Humans (play) - wiki
   Theatre: Amelia Community Theatre
+  Venue: ACT Main Stage
   Writer: Stephen Karam - wiki
   Setting: An apartment in lower Manhattan
   Subject: Family

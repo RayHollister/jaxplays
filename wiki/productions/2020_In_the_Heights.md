@@ -10,7 +10,8 @@ category: musical
 details:
   Title: In the Heights - wiki 
   Theatre: Jacksonville University
-  Theatre 2: FSCJ South Campus - Nathan H. Wilson Center for the Arts
+  Venue: Swisher Theater
+  Venue 2: Nathan H. Wilson Center for the Arts
   Music/Lyrics: Lin-Manuel Miranda - wiki
   Book: Quiara Alegría Hudes - wiki
   Setting: Washington Heights, Manhattan
@@ -66,6 +67,7 @@ crew:
     Olivia Montalbano
     Ainslee Nipper
 external_links:
+  "'In the Heights' by Jacksonville University’s Department of Theatre is a Dancing Delight": https://web.archive.org/web/20221202035859/https://folioweekly.com/2020/01/22/in-the-heights-jacksonville-university-department-of-theatre/
   JU - Performing Arts Series: https://www.ju.edu/cfa/cfa-events.php
   FSCJ - Fine Arts Calendar: https://www.fscj.edu/docs/default-source/wilson-center/fine-arts-calendar.pdf?sfvrsn=4
 ---

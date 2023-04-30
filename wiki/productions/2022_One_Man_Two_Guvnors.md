@@ -10,6 +10,7 @@ category: play
 details:
   Title: One Man, Two Guvnors - wiki
   Theatre: Amelia Community Theatre
+  Venue: ACT Main Stage
   Writer: Richard Bean - wiki
   Genre: Comedy
   Setting: 1963 Brighton, England

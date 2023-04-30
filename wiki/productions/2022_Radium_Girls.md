@@ -10,6 +10,7 @@ category: play
 details:
   Title: Radium Girls
   Theatre: Amelia Community Theatre
+  Venue: ACT Main Stage
   Writer: D.W. Gregory
   Genre: Drama
   Setting: U.S. Radium Corporation

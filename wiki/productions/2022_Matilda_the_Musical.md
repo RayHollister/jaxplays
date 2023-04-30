@@ -10,6 +10,7 @@ image: 2022_Matilda_(musical).png
 details:
   Title: Matilda the Musical - wiki
   Theatre: Amelia Community Theatre
+  Venue: ACT Main Stage
   Music: Tim Minchin - wiki
   Lyrics: Tim Minchin
   Book: Dennis Kelly - wiki
