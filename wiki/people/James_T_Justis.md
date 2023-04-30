@@ -10,6 +10,8 @@ image:
 image_credit: 
 image_alt: 
 image_caption: 
+birth_info:
+  birth_name: James Beeks
 Details:
   Website: 
   Facebook:
