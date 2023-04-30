@@ -62,9 +62,11 @@
                     href="{{site.wikipedia}}{{ value | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ value |
                     replace: ' - wiki', '' }}</a>
                   {%- elsif detail[0] == 'Website' -%}
-                  <a target="_blank" href="{{ value }}" targe="_blank">Production website</a>
+                  <a target="_blank" href="{{ value }}" targe="_blank">Official website</a>
                   {%- elsif detail[0] == 'Theatre' -%}
                   <a target="_blank" href="/theatres/{{ value | strip | replace: ' ', '_' }}">{{ value }}</a>
+                  {%- elsif detail[0] == 'Premiere' -%}
+                  {{ value | date: "%B %d, %Y" }}
                   {%- elsif detail[0] == 'Venue' -%}
                   <a target="_blank" href="/venues/{{ value | strip | replace: ' ', '_' }}">{{ value }}</a>
                   {%- else -%}
@@ -87,87 +89,57 @@
           </table>
         </div>
 
-        <div class="showtimes">
-          <h2 id="showtimes">Show Times</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Date</th>
-                <th>Time</th>
-              </tr>
-            </thead>
-            <tbody>
-              {% assign showtimes = page.showtimes | newline_to_br | strip | split: '<br />' %}
-              {% for showtime in showtimes %}
-              {% assign date_time = showtime | date: "%A, %B %-d, %Y %H:%M" %}
-              {% assign date = date_time | date: "%A, %B %-d, %Y" %}
-              {% assign time = date_time | date: "%-I:%M %P" %}
-              <tr>
-                <td>{{ date }}</td>
-                <td>{{ time }}</td>
-              </tr>
-              {% endfor %}
-            </tbody>
-          </table>
-        </div>
-
       </div>
       <div class="additional-content">
-        <div class="castlist">
-          <h2 id="castlist">Cast</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Character(s)</th>
-                <th>Actor(s)</th>
-              </tr>
-            </thead>
-            <tbody>
-              {% for character in page.cast %}
-              <tr>
-                <td>{{ character[0] }}</td>
-                <td>
-                  {% assign cast_member_value = character[1] %}
-                  {% assign actors = cast_member_value | newline_to_br | strip | split: '<br />' %}
-                  {% for actor in actors -%}
-                  {% assign actor_trimmed = actor | strip %}
-                  <a href="/people/{{ actor_trimmed | replace: ' ', '_' | replace: '.', '' }}">{{ actor_trimmed }}</a>{% unless forloop.last %},
-                  {% endunless %}
-                  {%- endfor %}
-                </td>
-              </tr>
-              {% endfor %}
-            </tbody>
-          </table>
-        </div>
+        
+        <h2>Productions</h2>
 
-        <div class="crewlist">
-          <h2 id="crewlist">Crew</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Title(s)</th>
-                <th>Member(s)</th>
-              </tr>
-            </thead>
-            <tbody>
-              {% for title in page.crew %}
-              <tr>
-                <td>{{ title[0] }}</td>
-                <td>
-                  {% assign crew_member_value = title[1] %}
-                  {% assign members = crew_member_value | newline_to_br | strip | split: '<br />' %}
-                  {% for member in members -%}
-                  {% assign member_trimmed = member | strip %}
-                  <a href="/people/{{ member_trimmed | replace: ' ', '_' | replace: '.', '' }}">{{ member_trimmed }}</a>{% unless forloop.last %},
-                  {% endunless %}
-                  {%- endfor %}
-                </td>
-              </tr>
-              {% endfor %}
-            </tbody>
-          </table>
-        </div>
+        {% assign current_page_title = page.title %}
+        {% assign matching_productions = "" | split: "" %}
+        
+        {% for p in site.pages %}
+        {% if p.layout == 'productions' and p.title == current_page_title %}
+        {% capture production_info %}
+        {% assign year = p.year | plus: 0 %}
+        {% assign info = year | append: "," | append: p.url | append: "," | append: p.title | append: "," | append:
+        p.details.Theatre | append: "," | append: p.details.Venue %}
+        {{ info }}
+        {% endcapture %}
+        {% assign matching_productions = matching_productions | push: production_info %}
+        {% endif %}
+        {% endfor %}
+        
+        {% assign sorted_productions = matching_productions | sort | reverse %}
+        
+        <table>
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Title</th>
+              <th>Theatre</th>
+              <th>Venue</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for production_info in sorted_productions %}
+            {% assign info_parts = production_info | split: "," %}
+            {% assign year = info_parts[0] %}
+            {% assign url = info_parts[1] %}
+            {% assign title = info_parts[2] %}
+            {% assign theatre = info_parts[3] %}
+            {% assign venue = info_parts[4] %}
+            <tr>
+              <td>{{ year }}</td>
+              <td><a href="{{ url }}">{{ title }}</a></td>
+              <td><a href="/theatres/{{ theatre | strip | replace: ' ', '_' }}">{{ theatre }}</a></td>
+              <td><a href="/venues/{{ venue | strip | replace: ' ', '_' }}">{{ venue }}</a></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+
+
+
 
         {% if page.photos %}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />

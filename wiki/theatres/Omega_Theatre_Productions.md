@@ -7,8 +7,8 @@ image_alt:
 image_caption:
 details:
   Founded: 1999
+  Closed: 2006
   Founder: Justin Murphy
-  disbanded: 
   Address: 
   facebook: 
   Twitter: 
@@ -18,4 +18,4 @@ details:
 external_links: 
 Justin Murphy - IMDB: https://www.imdb.com/name/nm2410069/bio
 ---
-Omega Theatre Productions is a defunct production company that produced Jesus Christ Superstar at [The Florida Theatre](The_Florida_Theatre) in 1999.
+Omega Theatre Productions is a defunct production company that produced [Jesus Christ Superstar](/productions/1999_Jesus_Christ_Superstar) at [The Florida Theatre](/venues/The Florida Theatre) in 1999 and [Godspell](/productions/2005_Godspell) and [Fallen Angel: A Rock Opera](/productions/2006_Fallen_Angel:_A_Rock_Opera) in 2006 at [CrossRoad Church](/venues/CrossRoad_Church). 
