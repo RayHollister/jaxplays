@@ -10,7 +10,7 @@ image_caption:
 category: play
 details:
   Title: Lysistrata
-  Theatre: The 5 and Dime
+  Theatre: The 5 & Dime
   Writer: Aristophanes - wiki
   Genre: Comedy
   Website: https://www.the5anddime.org/lysistrata

@@ -9,7 +9,7 @@ image_caption:
 category: musical
 details:
   Title: Falsettos - wiki
-  Theatre: The 5 and Dime
+  Theatre: The 5 & Dime
   Writer: William Finn - wiki, James Lapine - wiki
   Music: William Finn
   Lyrics: William Finn

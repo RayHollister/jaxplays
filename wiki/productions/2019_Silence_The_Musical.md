@@ -9,7 +9,7 @@ image_caption:
 category: musical
 details:
   Title: Silence! The Musical
-  Theatre: The 5 and Dime
+  Theatre: The 5 & Dime
   Music: Jon and Al Kaplan - wiki
   Lyrics: Jon and Al Kaplan
   Book: Hunter Bell - wiki

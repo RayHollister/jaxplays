@@ -10,7 +10,7 @@ image_caption:
 category: musical
 details:
   Title: Assassins - wiki
-  Theatre: The 5 and Dime
+  Theatre: The 5 & Dime
   Music: Stephen Sondheim - wiki
   Lyrics: Stephen Sondheim
   Book: John Weidman - wiki

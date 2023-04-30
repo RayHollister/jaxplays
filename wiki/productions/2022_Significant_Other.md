@@ -9,7 +9,7 @@ image_caption:
 category: play
 details:
   Title: Significant Other
-  Theatre: The 5 and Dime
+  Theatre: The 5 & Dime
   Venue: BABS' LAB
   Writer: Joshua Harmon (playwright) - wiki
   Website: https://www.the5anddime.org/significant-other

@@ -10,7 +10,7 @@ image_caption:
 category: play
 details:
   Title: Detroit (play) - wiki
-  Theatre: The 5 and Dime
+  Theatre: The 5 & Dime
   Writer: Lisa D'Amour - wiki
   Genre: Comedy - wiki, Drama - wiki
   Setting: Detroit, Michigan

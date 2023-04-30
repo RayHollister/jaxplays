@@ -8,7 +8,7 @@ image_alt:
 image_caption:
 category: play
 details:
-  Theatre: The 5 and Dime
+  Theatre: The 5 & Dime
 web: 
 showtimes: 
 cast:

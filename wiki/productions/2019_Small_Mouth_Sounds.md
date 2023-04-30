@@ -9,7 +9,7 @@ image_caption:
 category: play
 details:
   Title: Small Mouth Sounds
-  Theatre: The 5 and Dime
+  Theatre: The 5 & Dime
   Writer: Bess Wohl - wiki
   Website: https://www.the5anddime.org/small-mouth-sounds
 showtimes: |

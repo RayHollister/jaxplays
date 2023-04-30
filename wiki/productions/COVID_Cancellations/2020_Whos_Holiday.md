@@ -10,7 +10,7 @@ image_caption:
 category: play
 details:
   Title: Who's Holiday
-  Theatre: The 5 and Dime
+  Theatre: The 5 & Dime
   Writer: Matthew Lombardo
   Setting: Satire, Comedy
 showtimes: |

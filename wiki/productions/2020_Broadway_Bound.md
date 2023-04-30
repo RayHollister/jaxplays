@@ -9,7 +9,7 @@ image_caption:
 category: 
 details:
   Title: Broadway Bound!
-  Theatre: The 5 and Dime
+  Theatre: The 5 & Dime
   Website: https://www.the5anddime.org/broadway-bound
 showtimes: |
   2020-01-24 20:00:00

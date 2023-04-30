@@ -2,7 +2,7 @@
 title: The 5 & Dime
 redirect_from: 
   - /theatres/The_Five_and_Dime
-  - /theatres/The_5_%26_Dime
+  - /theatres/The_5_and_Dime
   - /theatres/the5anddime
   - /theatres/thefiveanddime
 layout: theatres

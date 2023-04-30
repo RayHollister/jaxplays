@@ -9,7 +9,7 @@ image_alt:
 image_caption:
 category: musical
 details:
-  Theatre: The 5 and Dime
+  Theatre: The 5 & Dime
   Music: Scott Brown (writer) - wiki, Anthony King (writer) - wiki
   Lyrics: Scott Brown, Anthony King
   Book: Scott Brown, Anthony King

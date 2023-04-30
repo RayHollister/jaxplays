@@ -10,7 +10,7 @@ image_caption:
 category: musical
 details:
   Title: Rock of Ages (musical) - wiki
-  Theatre: The 5 and Dime
+  Theatre: The 5 & Dime
   Music: Various
   Lyrics: Various
   Book: Chris D'Arienzo

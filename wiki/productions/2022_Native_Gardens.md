@@ -9,7 +9,7 @@ image_caption:
 category: play
 details:
   Title: Native Gardens
-  Theatre: The 5 and Dime
+  Theatre: The 5 & Dime
   Venue: The Florida Ballet
   Writer: Karen Zacarias - wiki
   Genre: Comedy - wiki

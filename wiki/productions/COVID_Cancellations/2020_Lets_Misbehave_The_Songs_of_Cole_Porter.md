@@ -9,7 +9,7 @@ image_alt:
 image_caption:
 category: musical
 details:
-  Theatre: The 5 and Dime
+  Theatre: The 5 & Dime
   Music: Cole Porter - wiki
   Lyrics: Cole Porter
 showtimes: |

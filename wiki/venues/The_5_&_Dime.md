@@ -2,7 +2,7 @@
 title: The 5 & Dime
 redirect_from: 
   - /venues/The_Five_and_Dime
-  - /venues/The_5_%26_Dime
+  - /venues/The_5_and_Dime
   - /venues/the5anddime
   - /venues/thefiveanddime
 layout: venues
