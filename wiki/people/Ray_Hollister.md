@@ -23,5 +23,5 @@ Ray Hollister is a singer, actor, director, light board operator, and sound boar
 
 Ray's theatre debut was in 1997 as Stewpot in South Pacific in the Douglas Anderson School of the Art summer musical.
 
-Ray Hollister is most well known for his role producing and directing [WJCT Radio Theater](WJCT_Radio_Theater)'s production of '[It's A Wonderful Life](2015_Its_a_Wonderful_Life)'.
+Ray Hollister is most well known for his role producing and directing [WJCT Radio Theater](/theatres/WJCT_Radio_Theater)'s production of '[It's A Wonderful Life](/productions/2015_Its_a_Wonderful_Life)'.
 
