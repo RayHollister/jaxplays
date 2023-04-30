@@ -9,7 +9,7 @@ image_caption:
 category: play
 details:
   Title: Lessons We Were Never Taught
-  Theatre: BABS’LAB
+  Venue: BABS’LAB
   Writer: Nikesha Elise Williams
   Genre: One-woman show - wiki
   Website: http://www.newwrites.com/lessons

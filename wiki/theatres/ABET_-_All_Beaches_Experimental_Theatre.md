@@ -10,7 +10,7 @@ image_caption:
 details:
     Founded: 1992
     Address: |
-        ABET #331627
+        PO BOX #331627
         1001 Mayport Road
         Atlantic Beach, FL 32233-9998
     Website: https://www.abettheatre.com
