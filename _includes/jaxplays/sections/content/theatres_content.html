@@ -123,9 +123,6 @@
       {% if p.details and p.details.Theatre and p.details.Theatre == theatre_name %}
 
       {% assign production_year = p.year %}
-
-      {% assign show_start_date = p.showtimes | newline_to_br | strip_html | split: " " | first %}
-      {% assign title = p.title | slice: -7, 7 %}
       {% assign title = p.title %}
       {% capture show_info %}<tr>
         <td>{{ production_year }}</td>

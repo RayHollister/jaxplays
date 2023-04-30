@@ -121,6 +121,7 @@
 
       {% for p in site.pages %}
       {% if p.details and p.details.Venue and p.details.Venue == venue_name %}
+      
       {% assign production_year = p.year %}
       {% assign production_theatre = p.details.Theatre %}
       {% assign title = p.title %}
