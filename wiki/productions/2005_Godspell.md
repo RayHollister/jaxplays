@@ -8,6 +8,7 @@ image_credit:
 playbill:
 category: musicals
 details:
+  Theatre: Omega Theatre Productions
   Venue: CrossRoad Church
 cast: 
   Jesus: Kendall Hunt
