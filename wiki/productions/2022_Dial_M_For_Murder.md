@@ -9,7 +9,7 @@ category: play
 details: 
     Title: Dial M For Murder - wiki
     Theatre: Limelight Theatre
-    Venue: Koger-Gamache Black Box
+    Venue: Koger-Gamache Studio Theatre
     Genre: Crime thriller
     Playwright: Frederick Knott - wiki
     Website: https://limelight-theatre.org/season30/
