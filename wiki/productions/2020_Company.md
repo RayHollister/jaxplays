@@ -9,6 +9,7 @@ category: musical
 details:
   Title: Company (musical) - wiki
   Theatre: Orange Park Community Theatre
+  Venue: Orange Park Community Theatre
   Music: Stephen Sondheim - wiki
   Lyrics: Stephen Sondheim
   Book: George Furth - wiki

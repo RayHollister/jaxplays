@@ -5,7 +5,7 @@ image: Erin_Barnes.jpeg
 image_credit: 
 image_alt: 
 image_caption: 
-Details:
+details:
   Facebook: 
   Twitter: 
   Instagram: 

@@ -5,7 +5,7 @@ image: Lee_Hamby.jpeg
 image_credit: 
 image_alt: 
 image_caption: 
-Details:
+details:
   Website: https://leehamby.weebly.com
   Facebook:
   Twitter: leehamby

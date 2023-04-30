@@ -11,7 +11,7 @@ birth_info:
   birth_name: Rayburn Hollister III
   birth_date: 1980-12-07
   birth_place: Scranton, Pennsylvania
-Details:
+details:
   Year Active: 1997–present
   Website: https://rayhollister.com
   Facebook: rayhollister

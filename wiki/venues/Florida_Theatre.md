@@ -2,7 +2,7 @@
 title: Florida Theatre
 layout: venues
 image: Florida_Theatre.png
-Details:
+details:
   Founded: 1927
   disbanded:
   Address: |

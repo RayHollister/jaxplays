@@ -7,7 +7,7 @@ image:
 image_credit: 
 image_alt: 
 image_caption: 
-Details:
+details:
   Website: https://mctiernanjoshua.wixsite.com/home
   Facebook: 
   Twitter: 

@@ -12,7 +12,7 @@ image_alt:
 image_caption: 
 birth_info:
   birth_name: James Beeks
-Details:
+details:
   Website: 
   Facebook:
   Twitter: 

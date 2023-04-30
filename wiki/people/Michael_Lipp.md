@@ -9,7 +9,7 @@ birth_info:
   birth_name:
   birth_date: 1961-01-03
   birth_place: New Haven, CT
-Details:
+details:
   Website: https://www.mrlipp.com
   Facebook:
   Twitter: 

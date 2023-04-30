@@ -5,7 +5,7 @@ image:
 image_credit: 
 image_alt: 
 image_caption: 
-Details:
+details:
   Website: 
   Facebook:
   Twitter: 

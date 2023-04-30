@@ -7,7 +7,7 @@ image:
 image_credit: 
 image_alt: 
 image_caption: 
-Details:
+details:
   Website: https://www.mamabluesings.com
   Facebook: 1mamablue
   Twitter: 

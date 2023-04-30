@@ -2,7 +2,7 @@
 title: 1904 Music Hall
 layout: venues
 image: 1904_Music_Hall.jpeg
-Details:
+details:
   Founded: 2011
   disbanded:
   Address: |

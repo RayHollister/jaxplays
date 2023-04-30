@@ -8,7 +8,7 @@ image: BABS_LABS.png
 image_credit:
 image_alt:
 image_caption:
-Details:
+details:
   Founded: 2017
   disbanded:
   Address: |
