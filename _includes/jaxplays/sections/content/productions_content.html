@@ -10,8 +10,25 @@
     <div id="git-wiki-productions-content">
       <div class="showdescription">
         <h1>{{page.title}}</h1>
+        
+        <!-- Get the details from the show  -->
+
+        {% assign current_page_title = page.title %}
+        {% assign show_page = nil %}
+        
+        {% for p in site.pages %}
+        {% if p.layout == "shows" and p.title == current_page_title %}
+        {% assign show_page = p %}
+        {% break %}
+        {% endif %}
+        {% endfor %}
+
+        {% if show_page != nil %}
+          {{ show_page.content | markdownify }}
+        {% endif %}
 
         {{ content }}
+        
       </div>
 
       <div class="sidebar">
@@ -21,9 +38,9 @@
           <div class="featured_image">
             {% if page.image %}
             {% capture alt_text %}
-            {% if page.image_alt %}{{ page.image_alt }}
-            {% else %}{{ page.title }}
-            {% endif %}
+              {% if page.image_alt %}{{ page.image_alt }}
+              {% else %}{{ page.title }}
+              {% endif %}
             {% endcapture %}
             <figure class="image">
 
@@ -39,9 +56,31 @@
                 {% endif %}
               </figcaption>
               {% endif %}
-
+            </figure>
+            {% elsif show_page.image %}
+            {% capture alt_text %}
+            {% if show_page.image_alt %}{{ show_page.image_alt }}
+            {% else %}{{ show_page.title }}
+            {% endif %}
+            {% endcapture %}
+            <figure class="image">
+              <img src="{{ '/media/posters/' | append: show_page.image }}" alt="{{ alt_text }}">
+              {% if show_page.image_caption or show_page.image_credit %}
+              <figcaption>
+                {% if show_page.image_caption %}
+                {{ show_page.image_caption }}
+                {% endif %}
+                {% if show_page.image_caption and show_page.image_credit %} | {% endif %}
+                {% if show_page.image_credit %}
+                (📷 {{ show_page.image_credit }})
+                {% endif %}
+              </figcaption>
               {% endif %}
             </figure>
+            {% endif %}
+
+
+            
           </div>
 
           <h2 id="details">Details</h2>
@@ -97,9 +136,41 @@
                   {%- unless forloop.last -%}, {%- endunless %}
                   {% endfor %}
                 </td>
+
               </tr>
               {% endif %}
               {% endfor %}
+
+              {% for detail in show_page.details %}
+              <tr>
+                <td class="leftcol">{{ detail[0] }}</td>
+                <td>
+                  {% if detail[0] == 'Title' %}
+                  {% assign values = detail[1] | split: '|nonexistent|' %}
+                  {% else %}
+                  {% assign values = detail[1] | split: ', ' %}
+                  {% endif %}
+                  {% for value in values %}
+                  {% if value contains '- wiki' -%}
+                  <a target="_blank" href="{{site.wikipedia}}{{ value | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ value |
+                                    replace: ' - wiki', '' }}</a>
+                  {%- elsif detail[0] == 'Website' -%}
+                  <a target="_blank" href="{{ value }}" targe="_blank">Official website</a>
+                  {%- elsif detail[0] == 'Theatre' -%}
+                  <a target="_blank" href="/theatres/{{ value | strip | replace: ' ', '_' }}">{{ value }}</a>
+                  {%- elsif detail[0] == 'Premiere' -%}
+                  {{ value | date: "%B %d, %Y" }}
+                  {%- elsif detail[0] == 'Venue' -%}
+                  <a target="_blank" href="/venues/{{ value | strip | replace: ' ', '_' }}">{{ value }}</a>
+                  {%- else -%}
+                  {{ value | markdownify | strip | remove: '<p>' | remove: '</p>' | remove: "\r" | remove: "\n" }}
+                  {%- endif %}
+                  {%- unless forloop.last -%}, {%- endunless %}
+                  {% endfor %}
+                </td>
+              </tr>
+              {% endfor %}
+
 
               {% if page.playbill %}
               <tr>
