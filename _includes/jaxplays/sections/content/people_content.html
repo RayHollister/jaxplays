@@ -42,18 +42,38 @@
             </figure>
           </div>
 
-          {% assign details = page.Details %}
-
           <table class="people_details">
             <tbody>
 
-              <!-- Creates an AKA section at the top -->
+              {% if page.birth_info %}
+              <tr>
+                <td class="leftcol">Born</td>
+                <td>
+                  {% if page.birth_info.birth_name %}
+                  {{ page.birth_info.birth_name }}
+                  {% if page.birth_info.birth_date or page.birth_info.birth_place %}<br>{% endif %}
+                  {% endif %}
+                  {% if page.birth_info.birth_date %}
+                  {{ page.birth_info.birth_date | date: "%B %-d, %Y" }}
+                  {% if page.birth_info.birth_place %}<br>{% endif %}
+                  {% endif %}
+                  {% if page.birth_info.birth_place %}
+                  {{ page.birth_info.birth_place }}
+                  {% endif %}
+                </td>
+              </tr>
+              {% endif %}
+
               {% if page.redirect_from %}
               <tr>
                 <td class="leftcol">Other names</td>
                 <td>
+                  {% if page.birth_info and page.birth_info.birth_name %}
+                  {% assign birth_name = page.birth_info.birth_name %}
+                  {% endif %}
                   {% for redirect_url in page.redirect_from %}
                   {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " %}
+                  {% unless redirect_name == birth_name %}
                   {% if forloop.last %}
                   {{ redirect_name }}
                   {% elsif forloop.length > 1 and forloop.index == forloop.length | minus: 1 %}
@@ -61,11 +81,13 @@
                   {% else %}
                   {{ redirect_name }},
                   {% endif %}
+                  {% endunless %}
                   {% endfor %}
                 </td>
               </tr>
               {% endif %}
 
+              {% assign details = page.Details %}
               {% for detail in details %}
               {% assign key = detail[0] | downcase %}
               {% assign value = detail[1] %}

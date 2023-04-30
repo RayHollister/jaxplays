@@ -7,11 +7,12 @@ image: Ray_Hollister.jpg
 image_credit: Ray Hollister
 image_alt: Ray Hollister in 2018 standing in front of the Town Square Theater in the Magic Kingdom at Walt Disney World.
 image_caption: Ray Hollister in 2018 standing in front of the Town Square Theater in the Magic Kingdom at Walt Disney World.
+birth_info:
+  birth_name: Rayburn Hollister III
+  birth_date: 1980-12-07
+  birth_place: Scranton, Pennsylvania
 Details:
-  Birth Date: 1980-12-07
-  Birth Place: Scranton, PA
   Year Active: 1997–present
-Contacts:
   Website: https://rayhollister.com
   Facebook: rayhollister
   Twitter: rayhollister
