@@ -71,7 +71,7 @@
                   {%- elsif detail[0] == 'Theatre' -%}
                   <a target="_blank" href="/theatres/{{ value | strip | replace: ' ', '_' }}">{{ value }}</a>
                   {%- elsif detail[0] == 'Venue' -%}
-                  <a target="_blank" href="/venues/{{ value | strip | replace: ' ', '_' }}">{{ value }}</a>
+                  <a target="_blank" href="/venues/{{ value | strip | replace: ' ', '_' | replace: "'", "" }}">{{ value }}</a>
                   {%- else -%}
                   {{ value | markdownify | strip | remove: '<p>' | remove: '</p>' | remove: "\r" | remove: "\n" }}
                   {%- endif %}
