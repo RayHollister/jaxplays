@@ -1,5 +1,6 @@
 ---
 title: Jesus Christ Superstar
+redirect_from: /1999_Jesus_Christ_Superstar
 year: 1999
 layout: productions
 image: 1999_Jesus_Christ_Superstar.jpg
