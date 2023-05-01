@@ -6,7 +6,7 @@ image_caption: Cover art for the album Jesus Christ Superstar
 image_credit:
 category: musicals
 details: 
-    Music: Andrew Llod Webber - wiki
+    Music: Andrew Lloyd Webber - wiki
     Lyrics: Tim Rice - wiki
     Premiere: 12 October 1971
     Theatre: Mark Hellinger Theatre - wiki
