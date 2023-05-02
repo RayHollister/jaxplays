@@ -12,7 +12,7 @@ details:
     Premiere: May 17, 1971
     Theatre: La MaMa Experimental Theatre Club
     Basis: Gospel of Saint Matthew
-    Website: https://www.jesuschristsuperstar.com
+    Website:
 ---
 "Godspell" is a renowned musical composed by Stephen Schwartz with the book by John-Michael Tebelak. First premiered in 1971, the show features a series of parables primarily based on the Gospel of Matthew, interspersed with a variety of modern music set primarily to lyrics from traditional hymns.
 

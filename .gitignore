@@ -4,6 +4,8 @@ Gemfile
 Gemfile.lock
 .sass-cache
 .vscode
+.frontmatter
 .jekyll-cache
 .jekyll-metadata
 vendor
+frontmatter.json
