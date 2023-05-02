@@ -61,9 +61,9 @@
                   <a target="_blank"
                     href="{{site.wikipedia}}{{ value | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ value |
                     replace: ' - wiki', '' }}</a>
-                  {%- elsif detail[0] == 'Website' -%}
+                  {%- elsif detail[0] == 'Website' and detail[1] != empty and detail[1] != null -%}
                   <a target="_blank" href="{{ value }}" targe="_blank">Official website</a>
-                  {%- elsif detail[0] == 'Premiere' -%}
+                  {%- elsif detail[0] == 'Premiere' and detail[1] != empty and detail[1] != null -%}
                   {{ value | date: "%B %d, %Y" }}
                   {%- elsif detail[0] == 'Venue' -%}
                   <a target="_blank" href="/venues/{{ value | strip | replace: ' ', '_' }}">{{ value }}</a>
