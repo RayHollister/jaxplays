@@ -9,8 +9,8 @@ details:
     Music: Jerry Bock - wiki
     Lyrics: Sheldon Harnick - wiki
     Book: Joseph Stein - wiki
-    Premiere: July 1964
-    Theatre: Fisher Theatre
+    Premiere: 1964-07-24
+    Theatre: Fisher Theatre in Detroit, Michigan
     Basis: Tevye and His Daughters by Sholem Aleichem
     Website: 
 ---

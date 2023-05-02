@@ -87,7 +87,7 @@ table.productiondetails thead tr th {
   padding: 1rem;
 }
 
-.featured_image {
+.featured_image, .featured_image figure {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
