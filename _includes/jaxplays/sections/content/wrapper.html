@@ -1,10 +1,10 @@
 <div class="wrapper">
   {% include git-wiki/sections/header/header.html %}
 
-  {% assign valid_layouts = "people,productions,shows,theatres,venues" %}
+  {% assign valid_collections = "people,productions,shows,theatres,venues" %}
 
-  {% if valid_layouts contains page.layout %}
-    {% include jaxplays/sections/content/{{ page.layout }}_content.html %}
+  {% if valid_collections contains page.collection %}
+    {% include jaxplays/sections/content/{{ page.collection }}_content.html %}
   {% else %}
     {% include jaxplays/sections/content/content.html %}
   {% endif %}

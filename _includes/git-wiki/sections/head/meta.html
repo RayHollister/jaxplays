@@ -2,14 +2,21 @@
 {% include {{ site.inc_before_meta }} %}
 {% endif %}
 
+{% if page.collection == 'productions' %}
+  {% assign meta_title = page.title | append: " ("| append: page.year | append: ") " | append: page.details.Theatre | append: " | " | append: site.title %}
+{% else %}
+  {% assign meta_title = page.title | append: " | " | append: site.title %}
+{% endif %}
+
+<title>{{ meta_title }}</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 <meta name="viewport" content="width=device-width">
 
-{% seo %}
+<!-- {{ page.title }} {% if page.collection == 'productions' %}@ {{ page.details.Theatre }}{% endif %} - {{ site.title }} -->
 
 {% assign pagetitle = page.name | replace: ".md", "" %}
-{% assign title = pagetitle | append: " - " | append: site.title  | strip_html %}
+{% assign title = pagetitle | append: " - " | append: site.title | strip_html %}
 
 {% if site.inc_after_meta %}
 {% include {{ site.inc_after_meta }} %}
