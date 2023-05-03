@@ -8,7 +8,8 @@ layout: git-wiki-default
     <tr>
       <th>Year</th>
       <th>Title</th>
-      <th>Theatre / Venue</th>
+      <th>Theatre</th>
+      <th>Venue</th>
     </tr>
   </thead>
   <tbody>
@@ -26,12 +27,12 @@ layout: git-wiki-default
             </a>
           </td>
           <td>
-            {% if production.details.Theatre and production.details.Venue %}
-              <a href="/theatres/{{ production.details.Theatre | replace: " ", "_" }}">{{ production.details.Theatre }}</a> / 
-              <a href="/venues/{{ production.details.Venue | replace: " ", "_" }}">{{ production.details.Venue }}</a>
-            {% elsif production.details.Theatre %}
+            {% if production.details.Theatre %}
               <a href="/theatres/{{ production.details.Theatre | replace: " ", "_" }}">{{ production.details.Theatre }}</a>
-            {% elsif production.details.Venue %}
+            {% endif %}
+          </td>
+          <td>
+            {% if production.details.Venue %}
               <a href="/venues/{{ production.details.Venue | replace: " ", "_" }}">{{ production.details.Venue }}</a>
             {% endif %}
           </td>
