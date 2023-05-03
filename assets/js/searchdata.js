@@ -47,7 +47,7 @@ var jsondata=[
         "content"  : {{ page.content | jsonify }},
      {% endif %}
      {% if title != nil and layout == 'Production' %}
-        "response" : "<strong>{{ layout }}</strong> - {{ title }} {{ page.year }}",
+        "response" : "<strong>{{ layout }}</strong> - {{ page.year }} - {{ title }}",
         "alt" : "{{ layout }} - {{ title }} {{ page.year }}"
      {% else %}
         "response" : "<strong>{{ layout }}</strong> - {{ title }}",
