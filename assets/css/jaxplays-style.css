@@ -27,6 +27,20 @@ h1 {
 
 input#search-input {
   width: calc(100%);
+  /* width: calc(100vw - 45px); */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  background-image: url("/assets/search.svg");
+  background-position: 12px 12px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  font-size: 20px;
+  line-height: 2;
+}
+
+input#search-input:focus {
+  outline: none;
 }
 
 .jaxplays_title {
@@ -87,7 +101,8 @@ table.productiondetails thead tr th {
   padding: 1rem;
 }
 
-.featured_image, .featured_image figure {
+.featured_image,
+.featured_image figure {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -246,19 +261,35 @@ ul#results-container li {
     border-radius: 5px;
     border: 1px solid #ccc;
     background-color: white;
-    background-image: url('/assets/search.svg');
+    background-image: url("/assets/search.svg");
     background-position: 12px 12px;
     background-repeat: no-repeat;
     padding-left: 40px;
-    line-height: 2.5rem;
     font-size: 20px;
   }
+
+  input#search-input:focus {
+    outline: none;
+  }
+
+  ul#results-container li {
+    line-height: 2.5;
+    padding-left: 10px;
+  }
   .git-wiki-search {
-      margin: 1rem 0;
+    margin: 1rem 0;
   }
   ul#results-container {
-      width: calc(100vw - 45px);
-      background-color: #eee;
-      line-height: 2.5;
+    width: calc(100vw - 45px);
+    background-color: #eee;
+    line-height: 2.5;
+  }
+
+  ul#results-container li:nth-child(odd) {
+    background-color: #fff;
+  }
+
+  ul#results-container li:nth-child(even) {
+    background-color: #eee;
   }
 }
