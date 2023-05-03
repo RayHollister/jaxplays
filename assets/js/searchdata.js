@@ -19,11 +19,11 @@ var jsondata=[
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
   ,
-  {% assign all_collections = site.people | concat: site.productions | concat: site.shows | concat: site.theatres | concat: site.venues %}
-  {% for page in all_collections %}
-   {
-     {% assign title = page.title | default: page.name %}
-     {% case page.layout %}
+  {% for collection in site.collections %}
+    {% for page in collection.docs %}
+      {% assign title = page.title %}
+      {% assign year = page.year %}
+      {% case collection.label %}
         {% when 'people' %}
             {% assign layout = 'Person' %}
         {% when 'productions' %}
@@ -36,25 +36,27 @@ var jsondata=[
             {% assign layout = 'Venue' %}
         {% else %}
             {% assign layout = '' %}
-     {% endcase %}
-     {% if title != nil and layout != '' %}
-        "title"    : "{{ title | escape }}",
-        "layout"   : "{{ layout }}",
-        "year"     : "{{ page.year }}",
-        "category" : "{{ page.category }}",
-        "tags"     : "{{ page.tags | join: ', ' }}",
-        "url"      : "{{ page.url }}",
-        "date"     : "{{ page.date }}",
-        "content"  : {{ page.content | jsonify }},
-     {% endif %}
-     {% if title != nil and layout == 'Production' %}
-        "response" : "<strong>{{ layout }}</strong> - {{ page.year }} - {{ title }}",
-        "alt" : "{{ layout }} - {{ title }} {{ page.year }}"
-     {% else %}
-        "response" : "<strong>{{ layout }}</strong> - {{ title }}",
-        "alt" : "{{ layout }} - {{ title }}"
-     {% endif %}
-   } {% unless forloop.last %},{% endunless %}
+      {% endcase %}
+      {% if title != nil and layout != '' %}
+        {
+          "title"    : "{{ title | escape }}",
+          "layout"   : "{{ layout }}",
+          "year"     : "{{ year }}",
+          "category" : "{{ page.category }}",
+          "tags"     : "{{ page.tags | join: ', ' }}",
+          "url"      : "{{ page.url }}",
+          "date"     : "{{ page.date }}",
+          "content"  : {{ page.content | jsonify }},
+          {% if layout == 'Production' %}
+            "response" : "<strong>{{ layout }}</strong> - {{ year }} - {{ title }}",
+            "alt" : "{{ layout }} - {{ title }} {{ year }}"
+          {% else %}
+            "response" : "<strong>{{ layout }}</strong> - {{ title }}",
+            "alt" : "{{ layout }} - {{ title }}"
+          {% endif %}
+        } {% unless forloop.last and forloop.parentloop.last %},{% endunless %}
+      {% endif %}
+    {% endfor %}
   {% endfor %}
 ];
 
@@ -69,3 +71,4 @@ var sjs = SimpleJekyllSearch({
     exclude: []
   })
 {% endif %}
+
