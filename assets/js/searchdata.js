@@ -13,7 +13,9 @@ var jsondata=[
       "tags"     : "{{ post.tags | join: ', ' }}",
       "url"      : "{{ post.url }}",
       "date"     : "{{ post.date | date_to_string }}",
-      "content"  : {{ page.content | jsonify }}
+      "content"  : {{ page.content | jsonify }},
+      "response" : "<strong>News</strong> - {{ post.title | escape }} - {{ post.date | date: '%m-%d-%Y' }}",
+      "alt" : "News - {{ post.title | escape }} - {{ post.date | date: '%m-%d-%Y' }}",
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
   ,
@@ -42,7 +44,14 @@ var jsondata=[
         "tags"     : "{{ page.tags | join: ', ' }}",
         "url"      : "{{ page.url }}",
         "date"     : "{{ page.date }}",
-        "content"  : {{ page.content | jsonify }}
+        "content"  : {{ page.content | jsonify }},
+     {% endif %}
+     {% if title != nil and layout == 'Production' %}
+        "response" : "<strong>{{ layout }}</strong> - {{ title }} {{ page.year }}",
+        "alt" : "{{ layout }} - {{ title }} {{ page.year }}"
+     {% else %}
+        "response" : "<strong>{{ layout }}</strong> - {{ title }}",
+        "alt" : "{{ layout }} - {{ title }}"
      {% endif %}
    } {% unless forloop.last %},{% endunless %}
   {% endfor %}
@@ -52,7 +61,7 @@ var sjs = SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
     json: jsondata,
-    searchResultTemplate: '<li><a href="{url}" title="{layout} - {title}">{layout} - {title}</a></li>',
+    searchResultTemplate: '<li><a href="{url}" title="{alt}">{response}</a></li>',
     noResultsText: 'No results found',
     limit: 10,
     fuzzy: false,
