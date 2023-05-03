@@ -1,5 +1,5 @@
 <div class=" w3-xlarge w3-hide-large" id="git-wiki-mobile-header">
-  <button class="w3-button w3-teal" onclick="sidebar_toggle()">&#9776;</button>
+  <button id="hamburgermenu" class="w3-button w3-teal" onclick="sidebar_toggle()">&#9776;</button>
   <a class="sitelogoandtext" href="{{ '/' | relative_url }}">
     {% if site.logo_url %}
     <img class="mobilelogo" src="{{ site.logo_url | relative_url }}">
@@ -9,8 +9,6 @@
 </div>
 <header class="w3-sidebar w3-bar-block w3-collapse" id="git-wiki-sidebar">
   <div>
-    <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="sidebar_toggle()">Close &times;</button>
-
     <div class="w3-hide-medium w3-hide-small">
       {% if site.logo_url %}
       {% include git-wiki/components/logo/logo.html %}
@@ -58,6 +56,12 @@
       sidebar.style.position = "inherit";
     } else {
       $(sidebar).attr('style', 'display: block;');
+    }
+    var button = document.getElementById('hamburgermenu');
+    if (button.innerHTML == '☰') {
+      button.innerHTML = 'X';
+    } else {
+      button.innerHTML = '☰';
     }
   }
 </script>
