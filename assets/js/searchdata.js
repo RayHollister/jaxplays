@@ -19,7 +19,8 @@ var jsondata=[
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
   ,
-  {% for page in site.html_pages %}
+  {% assign all_collections = site.people | concat: site.productions | concat: site.shows | concat: site.theatres | concat: site.venues %}
+  {% for page in all_collections %}
    {
      {% assign title = page.title | default: page.name %}
      {% case page.layout %}
