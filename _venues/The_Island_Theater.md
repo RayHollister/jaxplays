@@ -1,6 +1,6 @@
 ---
 title: The Island Theater
-layout: theatres
+layout: venues
 image: The_Island_Theater.png
 image_credit:
 image_alt:
