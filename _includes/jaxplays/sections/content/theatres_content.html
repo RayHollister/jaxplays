@@ -17,13 +17,13 @@
         <h6>{{ page.title }}</h6>
 
         <div class="featured_image">
-        {% if page.image %}
-        {% capture alt_text %}
-        {% if page.image_alt %}{{ page.image_alt }}
-        {% else %}{{ page.title }}
-        {% endif %}
-        {% endcapture %}
-        <img class="featured_image" src="/media/logos/{{ page.image }}" alt="{{ alt_text }}">
+          {% if page.image %}
+          {% capture alt_text %}
+          {% if page.image_alt %}{{ page.image_alt }}
+          {% else %}{{ page.title }}
+          {% endif %}
+          {% endcapture %}
+          <img class="featured_image" src="/media/logos/{{ page.image }}" alt="{{ alt_text }}">
           {% if page.image_caption or page.image_credit %}
           <div class="image-info">
             {% if page.image_caption %}
@@ -35,7 +35,7 @@
             {% endif %}
           </div>
           {% endif %}
-        {% endif %}
+          {% endif %}
         </div>
 
         {% assign details = page.details | default: page.details %}
@@ -46,65 +46,66 @@
             {% assign key = detail[0] | downcase %}
             {% assign value = detail[1] %}
             {% if value != "" and value != nil %}
-              {% if key == 'address' %}
-              <tr>
-                <td class="leftcol">Address</td>
-                <td>
-                  {% assign address_lines = value | newline_to_br | strip | split: '<br />' %}
-                  {% for address_line in address_lines %}
-                  {{ address_line }}<br>
-                  {% endfor %}
-                  <ul class="map_links">
-                    <li><a target="_blank"
-                        href="https://www.google.com/maps/search/?api=1&query={{ value | uri_escape | replace: '%0A', '%20' }}">Google
-                        Maps</a></li>
-                    <li><a target="_blank" href="https://maps.apple.com/?q={{ value | uri_escape | replace: '%0A', '%20' }}">Apple
-                        Maps</a></li>
-                  </ul>
-                </td>
-              </tr>
-              {% elsif key contains 'web' or key == 'website' %}
-              <tr>
-                <td class="leftcol">Website</td>
-                <td><a target="_blank" href="{{ value }}">{{ value | split: '://' | last | split: 'www.' | last }}</a>
-                </td>
-              </tr>
-              {% elsif key == 'facebook' %}
-              <tr>
-                <td class="leftcol">Facebook</td>
-                <td><a href="https://www.facebook.com/{{ value }}" target="_blank">{{ value }}</a></td>
-              </tr>
-              {% elsif key == 'twitter' %}
-              <tr>
-                <td class="leftcol">Twitter</td>
-                <td><a href="https://twitter.com/{{ value }}" target="_blank">{{ value }}</a></td>
-              </tr>
-              {% elsif key == 'instagram' %}
-              <tr>
-                <td class="leftcol">Instagram</td>
-                <td><a href="https://www.instagram.com/{{ value }}" target="_blank">{{ value }}</a></td>
-              </tr>
-              {% elsif key contains 'youtube' %}
-              <tr>
-                <td class="leftcol">YouTube</td>
-                <td><a href="https://www.youtube.com/@{{ value }}" target="_blank">{{ value }}</a></td>
-              </tr>
-              {% elsif key contains 'linkedin' %}
-              <tr>
-                <td class="leftcol">LinkedIn</td>
-                <td><a href="https://www.linkedin.com/company/{{ value }}" target="_blank">{{ value }}</a></td>
-              </tr>
-              {% elsif key == 'phone' %}
-              <tr>
-                <td class="leftcol">Phone</td>
-                <td><a href="tel:{{ value }}">{{ value }}</a></td>
-              </tr>
-              {% else %}
-              <tr>
-                <td class="leftcol">{{ detail[0] }}</td>
-                <td>{{ value }}</td>
-              </tr>
-              {% endif %}
+            {% if key == 'address' %}
+            <tr>
+              <td class="leftcol">Address</td>
+              <td>
+                {% assign address_lines = value | newline_to_br | strip | split: '<br />' %}
+                {% for address_line in address_lines %}
+                {{ address_line }}<br>
+                {% endfor %}
+                <ul class="map_links">
+                  <li><a target="_blank"
+                      href="https://www.google.com/maps/search/?api=1&query={{ value | uri_escape | replace: '%0A', '%20' }}">Google
+                      Maps</a></li>
+                  <li><a target="_blank"
+                      href="https://maps.apple.com/?q={{ value | uri_escape | replace: '%0A', '%20' }}">Apple
+                      Maps</a></li>
+                </ul>
+              </td>
+            </tr>
+            {% elsif key contains 'web' or key == 'website' %}
+            <tr>
+              <td class="leftcol">Website</td>
+              <td><a target="_blank" href="{{ value }}">{{ value | split: '://' | last | split: 'www.' | last }}</a>
+              </td>
+            </tr>
+            {% elsif key == 'facebook' %}
+            <tr>
+              <td class="leftcol">Facebook</td>
+              <td><a href="https://www.facebook.com/{{ value }}" target="_blank">{{ value }}</a></td>
+            </tr>
+            {% elsif key == 'twitter' %}
+            <tr>
+              <td class="leftcol">Twitter</td>
+              <td><a href="https://twitter.com/{{ value }}" target="_blank">{{ value }}</a></td>
+            </tr>
+            {% elsif key == 'instagram' %}
+            <tr>
+              <td class="leftcol">Instagram</td>
+              <td><a href="https://www.instagram.com/{{ value }}" target="_blank">{{ value }}</a></td>
+            </tr>
+            {% elsif key contains 'youtube' %}
+            <tr>
+              <td class="leftcol">YouTube</td>
+              <td><a href="https://www.youtube.com/@{{ value }}" target="_blank">{{ value }}</a></td>
+            </tr>
+            {% elsif key contains 'linkedin' %}
+            <tr>
+              <td class="leftcol">LinkedIn</td>
+              <td><a href="https://www.linkedin.com/company/{{ value }}" target="_blank">{{ value }}</a></td>
+            </tr>
+            {% elsif key == 'phone' %}
+            <tr>
+              <td class="leftcol">Phone</td>
+              <td><a href="tel:{{ value }}">{{ value }}</a></td>
+            </tr>
+            {% else %}
+            <tr>
+              <td class="leftcol">{{ detail[0] }}</td>
+              <td>{{ value }}</td>
+            </tr>
+            {% endif %}
             {% endif %}
             {% endfor %}
           </tbody>
@@ -115,42 +116,8 @@
     </div>
 
     <div class="additional-content">
-      {% assign theatre_name = page.title %}
-      {% assign theatre_productions = "" | split: "" %}
-
-      {% for p in site.pages %}
-      {% if p.details and p.details.Theatre and p.details.Theatre == theatre_name %}
-
-      {% assign production_year = p.year %}
-      {% assign title = p.title %}
-      {% capture show_info %}<tr>
-        <td>{{ production_year }}</td>
-        <td><a href="{{ p.url }}">{{ title }}</a></td>
-      </tr>{% endcapture %}
-      {% unless theatre_productions contains show_info %}
-      {% assign theatre_productions = theatre_productions | push: show_info %}
-      {% endunless %}
-      {% endif %}
-      {% endfor %}
-
-      {% assign theatre_productions_sorted = "" | split: "" %}
-      {% for show_info in theatre_productions %}
-      {% assign show_date = show_info | split: " " | first %}
-      {% assign inserted = false %}
-      {% for sorted_info in theatre_productions_sorted %}
-      {% assign sorted_date = sorted_info | split: " " | first %}
-      {% if show_date < sorted_date %}
-      {% assign theatre_productions_sorted = theatre_productions_sorted | insert_at: forloop.index0, show_info %}
-      {% assign inserted = true %}
-      {% break %}
-      {% endif %}
-      {% endfor %}
-      {% if inserted == false %}
-      {% assign theatre_productions_sorted = theatre_productions_sorted | push: show_info %}
-      {% endif %}
-      {% endfor %}
-
-      {% if theatre_productions_sorted.size > 0 %}
+      {% assign theatre_productions = site.productions | where: "details.Theatre", page.title | sort: "year" | reverse %}
+      {% if theatre_productions.size > 0 %}
       <div class="theatreproductions">
         <h2>Productions</h2>
         <table>
@@ -158,20 +125,31 @@
             <tr>
               <th>Year</th>
               <th>Show</th>
+              <th>Venue</th>
             </tr>
           </thead>
           <tbody>
-            {% for show_info in theatre_productions_sorted %}
-            {{ show_info }}
+            
+            {% for production in theatre_productions %}
+            <tr>
+              <td>{{ production.year }}</td>
+              <td><a href="{{ production.url }}">{{ production.title }}</a></td>
+              {% if production.details.Venue %}
+                {% assign venue = site.venues | where: "title", production.details.Venue | first %}
+                <td><a href="/venues/{{ production.details.Venue | replace: ' ', '_' | replace: "'", "" }}">{{ production.details.Venue }}</a></td>
+              {% else %}
+                <td></td>
+              {% endif %}
+            </tr>
             {% endfor %}
           </tbody>
         </table>
       </div>
       {% endif %}
-    </div>
 
-    {% if site.inc_after_content %}
-    {% include {{ site.inc_after_content }} %}
-    {% endif %}
-  </div>
-</div>
+
+      {% if site.inc_after_content %}
+      {% include {{ site.inc_after_content }} %}
+      {% endif %}
+
+    </div>

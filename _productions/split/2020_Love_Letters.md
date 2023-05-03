@@ -48,8 +48,9 @@ showtimes: |
 cast:
   Andrew Makepeace Ladd III: Tod Booth
   Melissa Gardner: Lisa Valdini (Booth)
-  Understudy - Andrew Makepeace Ladd III: Gary Marachek
-  Understudy - Melissa Gardner: Patti Eyler
+understudies:
+  Andrew Makepeace Ladd III: Gary Marachek
+  Melissa Gardner: Patti Eyler
 crew:
   Producer: Tod Booth
   Director: Jessie Booth

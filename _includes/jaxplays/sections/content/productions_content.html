@@ -16,8 +16,8 @@
         {% assign current_page_title = page.title %}
         {% assign show_page = nil %}
         
-        {% for p in site.pages %}
-        {% if p.layout == "shows" and p.title == current_page_title %}
+        {% for p in site.shows %}
+        {% if p.title == current_page_title %}
         {% assign show_page = p %}
         {% break %}
         {% endif %}
@@ -97,7 +97,7 @@
               {% endif %}
 
               {% for detail in page.details %}
-              {% if detail[0] != 'Title' %}
+              {% if detail[0] != 'Title' and detail[1] != empty and detail[1] != null %}
               <tr>
                 <td class="leftcol">{{ detail[0] }}</td>
                 <td>
@@ -142,6 +142,7 @@
               {% endfor %}
 
               {% for detail in show_page.details %}
+              {% if detail[1] != empty and detail[1] != null %}
               <tr>
                 <td class="leftcol">{{ detail[0] }}</td>
                 <td>
@@ -154,7 +155,7 @@
                   {% if value contains '- wiki' -%}
                   <a target="_blank" href="{{site.wikipedia}}{{ value | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ value |
                                     replace: ' - wiki', '' }}</a>
-                  {%- elsif detail[0] == 'Website' -%}
+                  {%- elsif detail[0] == 'Website'-%}
                   <a target="_blank" href="{{ value }}" targe="_blank">Official website</a>
                   {%- elsif detail[0] == 'Premiere' -%}
                   {{ value | date: "%B %d, %Y" }}
@@ -167,6 +168,7 @@
                   {% endfor %}
                 </td>
               </tr>
+              {% endif %}
               {% endfor %}
 
 
@@ -211,6 +213,7 @@
 
       </div>
       <div class="additional-content">
+        {% if page.cast %}
         <div class="castlist">
           <h2 id="castlist">Cast</h2>
           <table>
@@ -239,7 +242,45 @@
             </tbody>
           </table>
         </div>
+        {% endif %}
 
+        <!-- Understudy credits -->
+
+        {% if page.understudies %}
+        <div class="understudylist">
+          <h2 id="understudylist">Understudies</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Character(s)</th>
+                <th>Understudy Actor(s)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for character in page.understudies %}
+              <tr>
+                <td>{{ character[0] }}</td>
+                <td>
+                  {% assign understudy_value = character[1] %}
+                  {% assign understudies = understudy_value | newline_to_br | strip | split: '<br />' %}
+                  {% for understudy in understudies -%}
+                  {% assign understudy_trimmed = understudy | strip %}
+                  <a
+                    href="/people/{{ understudy_trimmed | replace: ' ', '_' | replace: '.', '' }}">{{ understudy_trimmed }}</a>{%
+                  unless forloop.last %},
+                  {% endunless %}
+                  {%- endfor %}
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        {% endif %}
+
+        <!-- Crew credits -->
+
+        {% if page.crew %}
         <div class="crewlist">
           <h2 id="crewlist">Crew</h2>
           <table>
@@ -269,6 +310,39 @@
             </tbody>
           </table>
         </div>
+        {% endif %}
+
+        <!-- Orchestra credits -->
+        {% if page.orchestra %}
+        <div class="orchestralist">
+          <h2 id="orchestralist">Orchestra</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Role</th>
+                <th>Musician(s)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for role in page.orchestra %}
+              <tr>
+                <td>{{ role[0] }}</td>
+                <td>
+                  {% assign musician_value = role[1] %}
+                  {% assign musicians = musician_value | newline_to_br | strip | split: '<br />' %}
+                  {% for musician in musicians -%}
+                  {% assign musician_trimmed = musician | strip %}
+                  <a href="/people/{{ musician_trimmed | replace: ' ', '_' | replace: '.', '' }}">{{ musician_trimmed }}</a>{%
+                  unless forloop.last %},
+                  {% endunless %}
+                  {%- endfor %}
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        {% endif %}
 
         {% if page.photos %}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
@@ -301,6 +375,8 @@
           {% endfor %}
         </div>
         {% endif %}
+
+
 
         {% if site.inc_after_content %}
         {% include {{ site.inc_after_content }} %}

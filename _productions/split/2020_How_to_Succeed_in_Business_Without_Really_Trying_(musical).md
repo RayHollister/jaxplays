@@ -10,6 +10,7 @@ category: musical
 details:
   Name: How to Succeed in Business Without Really Trying (musical) - wiki
   Theatre: The Alhambra Theatre & Dining
+  Venue: Alhambra Theatre
   Music: Frank Loesser - wiki
   Lyrics: Frank Loesser
   Book: Abe Burrows - wiki, Jack Weinstock - wiki, Willie Gilbert - wiki
@@ -69,19 +70,6 @@ cast:
   Miss Jones: Lolita Flagg
   Mr. Twimble, Wally Womper: Travis Young
   Hedy LaRue: Maddie Bryan
-  Finch Understudy: Brandon Leporati
-  Bud Understudy: Brandon Leporati
-  Biggley Understudy: Tod Booth
-  Twimble Understudy: Tod Booth
-  Gatch Understudy: Tod Booth
-  Jenkins Understudy: Alec Hadden
-  Bratt Understudy: Alec Hadden
-  Tackaberry Understudy: Thomas Nightingale
-  Peterson Understudy: Thomas Nightingale
-  Rosemary Understudy: Erin Leigh Knowles
-  Smitty Understudy: Erin Leigh Knowles
-  Miss Jones Understudy: Hailey Hendrickson
-  Hedy Understudy: Hailey Hendrickson
   Ensemble: |
     Rachel Anton
     Alexia Adcock-Stanford
@@ -90,6 +78,20 @@ cast:
     Alec Hadden
     Thomas Nightingale
     Erin Leigh Knowles
+understudies: 
+  Finch: Brandon Leporati
+  Bud: Brandon Leporati
+  Biggley: Tod Booth
+  Twimble: Tod Booth
+  Gatch: Tod Booth
+  Jenkins: Alec Hadden
+  Bratt: Alec Hadden
+  Tackaberry: Thomas Nightingale
+  Peterson: Thomas Nightingale
+  Rosemary: Erin Leigh Knowles
+  Smitty: Erin Leigh Knowles
+  Miss Jones: Hailey Hendrickson
+  Hedy: Hailey Hendrickson
 crew:
   Producer, Director: Tod Booth
   Choreographer: Shain Stroff
@@ -119,4 +121,3 @@ https://www.youtube.com/watch?v=MGA5rPz3Uho
 "This show is filled with comedy and razzle dazzle numbers, and while we’ve seen several excellent productions in the past, the Alhambra’s was our favorite." — [HOW TO SUCCEED IN BUSINESS AT ALHAMBRA THEATRE AND DINING - EU Jacksonville Newspaper](https://eujacksonville.com/2020/02/26/how-to-succeed-in-business-at-alhambra-theatre-and-dining/)
 
 "The Alhambra is known for the quality of the musical theatre talent it attracts to Jacksonville, and the “How to Succeed” cast is among the best to grace the stage at the nation’s oldest continuously operating dinner theatre." — [Review: Alhambra show succeeds at skewering corporate world - The Ponte Vedra Recorder](https://pontevedrarecorder.com/stories/review-alhambra-show-succeeds-at-skewering-corporate-world,10583)
----

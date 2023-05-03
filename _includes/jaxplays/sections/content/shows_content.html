@@ -95,8 +95,8 @@
         {% assign current_page_title = page.title %}
         {% assign matching_productions = "" | split: "" %}
         
-        {% for p in site.pages %}
-        {% if p.layout == 'productions' and p.title == current_page_title %}
+        {% for p in site.productions %}
+        {% if p.title == current_page_title %}
         {% capture production_info %}
         {% assign year = p.year | plus: 0 %}
         {% assign info = year | append: "," | append: p.url | append: "," | append: p.title | append: "," | append:
@@ -135,9 +135,6 @@
             {% endfor %}
           </tbody>
         </table>
-
-
-
 
         {% if page.photos %}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />

@@ -114,54 +114,32 @@
     </div>
 
     <div class="additional-content">
-      {% assign venue_name = page.title %}
-      {% assign venue_productions = "" | split: "" %}
 
-      {% for p in site.pages %}
-      {% if p.details and p.details.Venue and p.details.Venue == venue_name %}
-      
-      {% assign production_year = p.year %}
-      {% assign production_theatre = p.details.Theatre %}
-      {% assign title = p.title %}
-      {% capture production_info %}<tr>
-        <td>{{ production_year }}</td>
-        <td><a href="{{ p.url }}">{{ title }}</a></td>
-        <td><a href="/theatres/{{ production_theatre | replace: ' ', '_' }}">{{ production_theatre }}</a></td>
-      </tr>{% endcapture %}
-      {% unless venue_productions contains production_info %}
-      {% assign venue_productions = venue_productions | push: production_info %}
-      {% endunless %}
+      {% assign venue_productions = site.productions | where: "details.Venue", page.title | sort: "year" | reverse %}
+      {% if venue_productions.size > 0 %}
+      <div class="venueproductions">
+        <h2>Productions</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Show</th>
+              <th>Theatre</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for production in venue_productions %}
+            <tr>
+              <td>{{ production.year }}</td>
+              <td><a href="{{ production.url }}">{{ production.title }}</a></td>
+              <td><a
+                  href="/theatres/{{ production.details.Theatre | replace: ' ', '_' | replace: "'", "" }}">{{ production.details.Theatre }}</a></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
       {% endif %}
-      {% endfor %}
-
-      {% assign venue_productions_sorted = "" | split: "" %}
-      {% for production_info in venue_productions %}
-      {% assign production_date = production_info | split: " " | first %}
-      {% assign inserted = false %}
-      {% for sorted_info in venue_productions_sorted %}
-      {% assign sorted_date = sorted_info | split: " " | first %}
-      {% if production_date < sorted_date %} {% assign venue_productions_sorted=venue_productions_sorted | insert_at: forloop.index0,
-        production_info %} {% assign inserted=true %} {% break %} {% endif %} {% endfor %} {% if inserted==false %} {% assign
-        venue_productions_sorted=venue_productions_sorted | push: production_info %} {% endif %} {% endfor %} {% if
-        venue_productions_sorted.size> 0 %}
-        <div class="venueproductions">
-          <h2>Productions</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Year</th>
-                <th>Show</th>
-                <th>Theatre</th>
-              </tr>
-            </thead>
-            <tbody>
-              {% for production_info in venue_productions_sorted %}
-              {{ production_info }}
-              {% endfor %}
-            </tbody>
-          </table>
-        </div>
-        {% endif %}
     </div>
 
     {% if site.inc_after_content %}

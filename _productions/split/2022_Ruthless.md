@@ -32,14 +32,15 @@ showtimes: |
 cast:
   Judy Denmark: Andrea Adams
   Tina Denmark: Abigail Douglas
-  Tina Denmark Understudy: Tatum Matthews
   Miss Thorn: Brenda Schoenfeld
   Louise: Claire Smith
-  Louise Understudy: Olivia Rodgers
   Eve: Sara Sohn
-  Judy Denmark Understudy: Sara Sohn
-  Eve Understudy: Maeghan Elizabeth
   Lita Encore: Sherry Rosen
+understudies:
+  Tina Denmark: Tatum Matthews
+  Louise: Olivia Rodgers
+  Judy Denmark: Sara Sohn
+  Eve: Maeghan Elizabeth
 crew:
   Director: Jereme Raickett
   Stage Manager: Darryl J. Beamon
