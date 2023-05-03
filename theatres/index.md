@@ -6,16 +6,14 @@ layout: git-wiki-default
 
 {% assign all_theatres = '' | split: '' %}
 
-{% for page in site.pages %}
-  {% if page.layout == 'productions' %}
-    {% assign details = page.details %}
-    {% for detail in details %}
-      {% if detail[0] == 'Theatre' %}
-        {% assign theatre = detail[1] %}
-        {% assign all_theatres = all_theatres | push: theatre %}
-      {% endif %}
-    {% endfor %}
-  {% endif %}
+{% for production in site.productions %}
+  {% assign details = production.details %}
+  {% for detail in details %}
+    {% if detail[0] == 'Theatre' %}
+      {% assign theatre = detail[1] %}
+      {% assign all_theatres = all_theatres | push: theatre %}
+    {% endif %}
+  {% endfor %}
 {% endfor %}
 
 {% assign unique_theatres = all_theatres | uniq | sort %}

@@ -97,41 +97,23 @@ defaults:
       path: "news"
     values:
       layout: "git-wiki-news-jp"
- -
-    scope:
-      path: "wiki/people"
-      type: "pages"
-    values:
-      layout: "people"
-      permalink: "/people/:basename"
- -
-    scope:
-      path: "wiki/productions"
-      type: "pages"
-    values:
-      layout: "productions"
-      permalink: "/productions/:basename"
- -
-    scope:
-      path: "wiki/shows"
-      type: "pages"
-    values:
-      layout: "shows"
-      permalink: "/shows/:basename"
- -
-    scope:
-      path: "wiki/theatres"
-      type: "pages"
-    values:
-      layout: "theatres"
-      permalink: "/theatres/:basename"
- -
-    scope:
-      path: "wiki/venues"
-      type: "pages"
-    values:
-      layout: "venues"
-      permalink: "/venues/:basename"  
+
+collections:
+  people:
+    output: true
+    permalink: "/people/:path/"     
+  productions:
+    output: true
+    permalink: "/productions/:path/"    
+  shows:
+    output: true
+    permalink: "/shows/:path/"     
+  theatres:
+    output: true
+    permalink: "/theatres/:path/"    
+  venues:
+    output: true
+    permalink: "/venues/:path/"    
 sass:
     style: compressed
 plugins:

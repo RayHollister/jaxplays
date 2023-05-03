@@ -8,11 +8,10 @@ layout: git-wiki-default
 {% assign all_cast_members = '' | split: '' %}
 {% assign all_crew_members = '' | split: '' %}
 {% assign all_orchestra_members = '' | split: '' %}
-{% assign all_people = site.pages | where: "layout", "people" %}
+{% assign all_people = site.people %}
 
-{% for page in site.pages %}
-  {% if page.layout == 'productions' %}
-    {% for role in page.cast %}
+{% for production in site.productions %}
+    {% for role in production.cast %}
       {% assign member_value = role[1] %}
       {% assign members = member_value | newline_to_br | strip | split: '<br />' %}
       {% for member in members %}
@@ -34,7 +33,7 @@ layout: git-wiki-default
       {% endfor %}
     {% endfor %}
 
-    {% for role in page.crew %}
+    {% for role in production.crew %}
       {% assign member_value = role[1] %}
       {% assign members = member_value | newline_to_br | strip | split: '<br />' %}
       {% for member in members %}
@@ -56,7 +55,7 @@ layout: git-wiki-default
       {% endfor %}
     {% endfor %}
 
-    {% for role in page.orchestra %}
+    {% for role in production.orchestra %}
       {% assign member_value = role[1] %}
       {% assign members = member_value | newline_to_br | strip | split: '<br />' %}
       {% for member in members %}
@@ -77,10 +76,10 @@ layout: git-wiki-default
         {% assign all_orchestra_members = all_orchestra_members | push: canonical_name %}
       {% endfor %}
     {% endfor %}
-  {% endif %}
 {% endfor %}
 
-{% assign all_people_in_roles = all_cast_members | concat: all_crew_members | concat: all_orchestra_members | uniq | sort %}
+{% assign all_people_in_roles = all_cast_members | concat: all_crew_members | concat: all_orchestra_members
+ | uniq | sort %}
 
 <table>
   <thead>
