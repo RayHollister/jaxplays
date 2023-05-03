@@ -8,7 +8,6 @@ image_alt:
 image_caption:
 category: musical
 details:
-  Title: White Christmas
   Theatre: The Alhambra Theatre & Dining
   Music: Irving Berlin - wiki
   Lyrics: Irving Berlin

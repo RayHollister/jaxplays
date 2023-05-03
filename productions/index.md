@@ -28,12 +28,12 @@ layout: git-wiki-default
           </td>
           <td>
             {% if production.details.Theatre %}
-              <a href="/theatres/{{ production.details.Theatre | replace: " ", "_" }}">{{ production.details.Theatre }}</a>
+              <a href="/theatres/{{ production.details.Theatre | replace: " ", "_" | replace: ".", "" }}">{{ production.details.Theatre }}</a>
             {% endif %}
           </td>
           <td>
             {% if production.details.Venue %}
-              <a href="/venues/{{ production.details.Venue | replace: " ", "_" }}">{{ production.details.Venue }}</a>
+              <a href="/venues/{{ production.details.Venue | replace: " ", "_" | replace: "'", "" }}">{{ production.details.Venue }}</a>
             {% endif %}
           </td>
         </tr>

@@ -129,7 +129,7 @@
             <tr>
               <td>{{ year }}</td>
               <td><a href="{{ url }}">{{ title }}</a></td>
-              <td><a href="/theatres/{{ theatre | strip | replace: ' ', '_' }}">{{ theatre }}</a></td>
+              <td><a href="/theatres/{{ theatre | strip | replace: ' ', '_' | replace: '.', '' }}">{{ theatre }}</a></td>
               <td><a href="/venues/{{ venue | strip | replace: ' ', '_' }}">{{ venue }}</a></td>
             </tr>
             {% endfor %}

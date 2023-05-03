@@ -29,7 +29,7 @@ layout: git-wiki-default
     {% for theatre in unique_theatres %}
       {% assign theatre_count = all_theatres | where_exp: "item", "item == theatre" | size %}
       <tr>
-        <td><a href="/theatres/{{ theatre | replace: ' ', '_' }}">{{ theatre }}</a></td>
+        <td><a href="/theatres/{{ theatre | replace: ' ', '_' | replace: ".", "" }}">{{ theatre }}</a></td>
         <td>{{ theatre_count }}</td>
       </tr>
     {% endfor %}

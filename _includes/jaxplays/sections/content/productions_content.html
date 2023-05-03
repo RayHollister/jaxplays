@@ -111,7 +111,7 @@
                   <a target="_blank" href="{{ value }}" targe="_blank">Production website</a>
                   {%- elsif detail[0] == 'Theatre' -%}
                   {% assign theatre_name = value | strip %}
-                  <a target="_blank" href="/theatres/{{ value | strip | replace: ' ', '_' }}">{{ value }}</a>
+                  <a target="_blank" href="/theatres/{{ value | strip | replace: ' ', '_' | replace: ".", "" }}">{{ value }}</a>
                   {%- elsif detail[0] == 'Venue' -%}                  
                     {% assign venue_name = value | strip %}
                       {% if theatre_name != venue_name %}

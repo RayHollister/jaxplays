@@ -10,6 +10,7 @@ category: play
 details:
   Title: Southern Fried Funeral
   Theatre: St. Marys Little Theatre
+  Venue: Theatre by the Trax
   Writer: Osborne & Eppler
   Genre: Comedy/Drama
   Website: https://our.show/southernfriedfuneral

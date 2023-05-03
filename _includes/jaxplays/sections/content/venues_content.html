@@ -133,7 +133,7 @@
               <td>{{ production.year }}</td>
               <td><a href="{{ production.url }}">{{ production.title }}</a></td>
               <td><a
-                  href="/theatres/{{ production.details.Theatre | replace: ' ', '_' | replace: "'", "" }}">{{ production.details.Theatre }}</a></td>
+                  href="/theatres/{{ production.details.Theatre | replace: ' ', '_' | replace: '.', '' | replace: "'", "" }}">{{ production.details.Theatre }}</a></td>
             </tr>
             {% endfor %}
           </tbody>
