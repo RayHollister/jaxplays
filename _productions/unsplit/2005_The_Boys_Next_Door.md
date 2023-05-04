@@ -33,7 +33,9 @@ crew:
   Set Dressings: Kelly J. Wagoner
   Properties: Tonya Moore
   Poster/Graphic Design: Juan Unzueta
-  Sound Design: Jean Rahner/Carolyn Boyd
+  Sound Design: |
+    Jean Rahner
+    Carolyn Boyd
   Light Board Operation: Gloria Pepe
   Sound Board Operator: Carolyn Boyd
   Backstage Crew: |
