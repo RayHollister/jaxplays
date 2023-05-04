@@ -13,7 +13,7 @@ details:
   Theatre: Theatre Jacksonville
   Venue: Little Theatre
 cast:
-  Dr. Jeremiah "Jerry" mears: Kenny Logsdon
+  Dr. Jeremiah 'Jerry' Mears: Kenny Logsdon
   Hugo Taney: Lenny Thiesen
   Dr. Philip Gottschall: John Pope
 crew:
@@ -25,7 +25,7 @@ crew:
   Sound Design: Michael Lipp
   Properties: Kelly J. Wagoner
   Stage Manager: Sara Green
-  Announcer: Matt "Shotgun" Basford
+  Announcer: Matt 'Shotgun' Basford
   Poster Design: Juan Unzueta
   Assistant Technical Director: Tim Allen
   Light Board Operation: Gloria Pepe

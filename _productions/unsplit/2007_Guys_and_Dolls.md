@@ -19,7 +19,7 @@ cast:
   Nathan Detroit: Daniel Owen Dungan
   Nicely-Nicely Johnson: David Jon Davis
   Benny Southstreet: Kevin Jaeger
-  Harry the Horse: Ruthven "Rev" Darragh
+  Harry the Horse: Ruthven 'Rev' Darragh
   Big Julie/Newsstand Man: Jeremie Cook
   Arvide Abernathy/Tourist: Karl Rogers
   General Matilda B. Cartwright/Fruit Vendor: Selna Mendez
