@@ -111,10 +111,10 @@ layout: git-wiki-default
   <thead>
     <tr>
       <th>Name</th>
-      <th class="header cast">Cast</th>
-      <th class="header understudy">Understudy</th>
-      <th class="header crew">Crew</th>
-      <th class="header orchestra">Orchestra</th>
+      <th class="cast">Cast</th>
+      <th class="understudy">Understudy</th>
+      <th class="crew">Crew</th>
+      <th class="orchestra">Orchestra</th>
     </tr>
   </thead>
   <tbody>
@@ -128,10 +128,10 @@ layout: git-wiki-default
         <td>
           <a href="/people/{{ person_link  | replace: ".", "" }}">{{ person }}</a>
         </td>
-        <td class="row cast">{{ cast_count }}</td>
-        <td class="row undestudy">{{ understudy_count }}</td>
-        <td class="row crew">{{ crew_count }}</td>
-        <td class="row orchestra">{{ orchestra_count }}</td>
+        <td class="cast">{{ cast_count }}</td>
+        <td class="undestudy">{{ understudy_count }}</td>
+        <td class="crew">{{ crew_count }}</td>
+        <td class="orchestra">{{ orchestra_count }}</td>
       </tr>
     {% endfor %}
   </tbody>
