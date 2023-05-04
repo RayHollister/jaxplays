@@ -131,7 +131,7 @@ layout: git-wiki-default
           <a href="/people/{{ person_link  | replace: ".", "" }}">{{ person }}</a>
         </td>
         <td class="cast hide_on_mobile">{{ cast_count }}</td>
-        <td class="undestudy hide_on_mobile">{{ understudy_count }}</td>
+        <td class="understudy hide_on_mobile">{{ understudy_count }}</td>
         <td class="crew hide_on_mobile">{{ crew_count }}</td>
         <td class="orchestra hide_on_mobile">{{ orchestra_count }}</td>
         <td class="total">{{ total_count }}</td>
