@@ -22,7 +22,7 @@ cast:
   Thelma: Chanel Martin
   Sally: Jennifer Barrett
 crew:
-  Directors:
+  Directors: |
     Jean Tait
     Shirley Sacks
   Technical Direcor: Jeffery L. Wagoner
@@ -33,7 +33,7 @@ crew:
   Stage Manager: Sara Green
   Assistant Stage Manager: Megan Branch
   Sound Design: Jean Tait
-  Properties:
+  Properties: |
     Kristin Alexander
     Sara Green
     Kelly J. Wagoner
@@ -41,10 +41,10 @@ crew:
   Poster Design: Caryl Butterley
   Light Board Operation: Gloria Pepe
   Sound Board Operator: Sara Green
-  Running Crew:
+  Running Crew: |
     Megan Branch
     Greg Odenwald
-  Set Construction:
+  Set Construction: |
     Dawn Button
     Chanel Martin
     Gloria Pepe

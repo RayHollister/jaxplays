@@ -31,7 +31,7 @@ crew:
   Stage Manager: Shannon Jones
   Assistant Stage Manager: Noelle Jaycox
   Sound Design: Michael Lipp
-  Properties: 
+  Properties: |
     Jefferey L. Wagoner
     Kelly J. Wagoner
   Assistant Technical Director: Daniel Owen Dungan
@@ -42,10 +42,10 @@ crew:
   Light Board Operation: Gloria Pepe
   Sound Board Operator: Cat McLeod
   Costume Assistant: Judy Gookin
-  Running Crew:
+  Running Crew: |
     Greg Odenwald
     Abigail Saenz
-  Set Construction:
+  Set Construction: |
     James Bennett
     Kristina Elliot
     Frank Healy
