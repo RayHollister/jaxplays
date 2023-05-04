@@ -12,12 +12,12 @@ layout: git-wiki-default
 {% assign all_people = site.people %}
 
 {% for production in site.productions %}
-  {% for role in production.cast %}
-    {% assign member_value = role[1] %}
-    {% assign members = member_value | newline_to_br | strip | split: '<br />' %}
-    {% for member in members %}
-    {% assign member_trimmed = member | strip | replace: ".", "" %}
-    {% assign canonical_name = member_trimmed %}
+{% for role in production.cast %}
+{% assign member_value = role[1] %}
+{% assign members = member_value | newline_to_br | strip | split: '<br />' %}
+{% for member in members %}
+{% assign member_trimmed = member | strip | replace: ".", "" %}
+{% assign canonical_name = member_trimmed %}
 
     {% for person in all_people %}
       {% if person.redirect_from %}
@@ -31,15 +31,16 @@ layout: git-wiki-default
     {% endfor %}
 
     {% assign all_cast_members = all_cast_members | push: canonical_name %}
-  {% endfor %}
+
+{% endfor %}
 {% endfor %}
 
 {% for role in production.crew %}
-  {% assign member_value = role[1] %}
-  {% assign members = member_value | newline_to_br | strip | split: '<br />' %}
-  {% for member in members %}
-    {% assign member_trimmed = member | strip | replace: ".", "" %}
-    {% assign canonical_name = member_trimmed %}
+{% assign member_value = role[1] %}
+{% assign members = member_value | newline_to_br | strip | split: '<br />' %}
+{% for member in members %}
+{% assign member_trimmed = member | strip | replace: ".", "" %}
+{% assign canonical_name = member_trimmed %}
 
     {% for person in all_people %}
       {% if person.redirect_from %}
@@ -53,15 +54,16 @@ layout: git-wiki-default
     {% endfor %}
 
     {% assign all_crew_members = all_crew_members | push: canonical_name %}
-  {% endfor %}
+
+{% endfor %}
 {% endfor %}
 
 {% for role in production.orchestra %}
-  {% assign member_value = role[1] %}
-  {% assign members = member_value | newline_to_br | strip | split: '<br />' %}
-  {% for member in members %}
-    {% assign member_trimmed = member | strip | replace: ".", "" %}
-    {% assign canonical_name = member_trimmed %}
+{% assign member_value = role[1] %}
+{% assign members = member_value | newline_to_br | strip | split: '<br />' %}
+{% for member in members %}
+{% assign member_trimmed = member | strip | replace: ".", "" %}
+{% assign canonical_name = member_trimmed %}
 
     {% for person in all_people %}
       {% if person.redirect_from %}
@@ -75,15 +77,16 @@ layout: git-wiki-default
     {% endfor %}
 
     {% assign all_orchestra_members = all_orchestra_members | push: canonical_name %}
-  {% endfor %}
+
+{% endfor %}
 {% endfor %}
 
 {% for role in production.understudies %}
-  {% assign member_value = role[1] %}
-  {% assign members = member_value | newline_to_br | strip | split: '<br />' %}
-  {% for member in members %}
-    {% assign member_trimmed = member | strip | replace: ".", "" %}
-    {% assign canonical_name = member_trimmed %}
+{% assign member_value = role[1] %}
+{% assign members = member_value | newline_to_br | strip | split: '<br />' %}
+{% for member in members %}
+{% assign member_trimmed = member | strip | replace: ".", "" %}
+{% assign canonical_name = member_trimmed %}
 
     {% for person in all_people %}
       {% if person.redirect_from %}
@@ -97,7 +100,8 @@ layout: git-wiki-default
     {% endfor %}
 
     {% assign all_understudy_members = all_understudy_members | push: canonical_name %}
-  {% endfor %}
+
+{% endfor %}
 {% endfor %}
 {% endfor %}
 
@@ -107,10 +111,10 @@ layout: git-wiki-default
   <thead>
     <tr>
       <th>Name</th>
-      <th>Cast</th>
-      <th>Understudy</th>
-      <th>Crew</th>
-      <th>Orchestra</th>
+      <th class="header cast">Cast</th>
+      <th class="header understudy">Understudy</th>
+      <th class="header crew">Crew</th>
+      <th class="header orchestra">Orchestra</th>
     </tr>
   </thead>
   <tbody>
@@ -124,11 +128,11 @@ layout: git-wiki-default
         <td>
           <a href="/people/{{ person_link  | replace: ".", "" }}">{{ person }}</a>
         </td>
-        <td>{{ cast_count }}</td>
-        <td>{{ understudy_count }}</td>
-        <td>{{ crew_count }}</td>
-        <td>{{ orchestra_count }}</td>
+        <td class="row cast">{{ cast_count }}</td>
+        <td class="row undestudy">{{ understudy_count }}</td>
+        <td class="row crew">{{ crew_count }}</td>
+        <td class="row orchestra">{{ orchestra_count }}</td>
       </tr>
     {% endfor %}
-    </tbody>
-    </table>
+  </tbody>
+</table>
