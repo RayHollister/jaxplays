@@ -1,5 +1,5 @@
 ---
-title: Kelly J Wagoner
+title: Kelly J. Wagoner
 redirect_from:
   - /people/Kelly_Wagoner
 layout: people
