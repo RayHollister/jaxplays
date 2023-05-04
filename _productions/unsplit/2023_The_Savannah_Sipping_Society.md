@@ -19,7 +19,32 @@ showtimes: |
     2023-05-13 19:00:00
     2023-05-14 14:00:00
 cast:
+  Randa Covington: Danya Zimbauer
+  Dot Haigler: Dr. Theresa Stanley
+  MarlaFaye Mosley: Tammy Bradley
+  Jinx Jenkins: Tori Ann Smith
+  Grandmother Covington: Susan Langenbahn
 crew:
+  Director: Gloria Hurley
+  Assistant Director: Debra Parsons
+  Chief Set Architect: Skip Harris
+  Stage Manager: Vivian Hutton
+  Assistant Stage Manager: Elizabeth Husser
+  Costume Manager: Vivian Hutton
+  Sound Director: Eric Craigmiles
+  Lighting Director: Landon Seal
+  Spotlight Operator: Stella Powers
+  Stage Artists: |
+    Michael and Gloria Hurley
+    Debra Parsons
+    Jeff Seal
+    Brooks Nettum
+  Set Build Assistants: |
+    Brooks Nettum
+    Elizabeth Husser
+    Debra Parsons
+    Jeff Seal
+  Ticketmaster: Leslie Sanders
 orchestra:
 external_links:
 ---
