@@ -204,12 +204,18 @@ ul#results-container li {
     top: 0;
     overflow-y: auto;
   }
+  
+  .cast, .crew, .understudy, .orchestra, .total {
+    text-align: center;
+  }
 }
 
 /* Media query for tablets and mobile devices */
 @media (max-width: 1023px) {
   body {
     padding: 1rem;
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   #git-wiki-mobile-header {
@@ -292,4 +298,14 @@ ul#results-container li {
   ul#results-container li:nth-child(even) {
     background-color: #eee;
   }
+
+  .all_people_table {
+    font-size: 18px;
+    line-height: 2.5;
+  }
+
+  .hide_on_mobile {
+    display: none;
+  }
+
 }

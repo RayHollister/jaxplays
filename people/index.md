@@ -107,14 +107,15 @@ layout: git-wiki-default
 
 {% assign all_people_in_roles = all_cast_members | concat: all_crew_members | concat: all_orchestra_members | concat: all_understudy_members | uniq | sort %}
 
-<table>
+<table class="all_people_table">
   <thead>
     <tr>
       <th>Name</th>
-      <th class="cast">Cast</th>
-      <th class="understudy">Understudy</th>
-      <th class="crew">Crew</th>
-      <th class="orchestra">Orchestra</th>
+      <th class="cast hide_on_mobile">Cast</th>
+      <th class="understudy hide_on_mobile">Understudy</th>
+      <th class="crew hide_on_mobile">Crew</th>
+      <th class="orchestra hide_on_mobile">Orchestra</th>
+      <th class="total">Total</th>
     </tr>
   </thead>
   <tbody>
@@ -124,14 +125,16 @@ layout: git-wiki-default
       {% assign orchestra_count = all_orchestra_members | where_exp: "item", "item == person" | size %}
       {% assign understudy_count = all_understudy_members | where_exp: "item", "item == person" | size %}
       {% assign person_link = person | replace: " ", "_" %}
+      {% assign total_count = cast_count | plus: crew_count | plus: orchestra_count | plus: understudy_count %}
       <tr>
         <td>
           <a href="/people/{{ person_link  | replace: ".", "" }}">{{ person }}</a>
         </td>
-        <td class="cast">{{ cast_count }}</td>
-        <td class="undestudy">{{ understudy_count }}</td>
-        <td class="crew">{{ crew_count }}</td>
-        <td class="orchestra">{{ orchestra_count }}</td>
+        <td class="cast hide_on_mobile">{{ cast_count }}</td>
+        <td class="undestudy hide_on_mobile">{{ understudy_count }}</td>
+        <td class="crew hide_on_mobile">{{ crew_count }}</td>
+        <td class="orchestra hide_on_mobile">{{ orchestra_count }}</td>
+        <td class="total">{{ total_count }}</td>
       </tr>
     {% endfor %}
   </tbody>
