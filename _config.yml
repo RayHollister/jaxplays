@@ -101,19 +101,19 @@ defaults:
 collections:
   people:
     output: true
-    permalink: "/people/:path/"
+    permalink: "/people/:name/"
   productions:
     output: true
     permalink: "/productions/:name/"
   shows:
     output: true
-    permalink: "/shows/:path/"
+    permalink: "/shows/:name/"
   theatres:
     output: true
-    permalink: "/theatres/:path/"
+    permalink: "/theatres/:name/"
   venues:
     output: true
-    permalink: "/venues/:path/"
+    permalink: "/venues/:name/"
 sass:
     style: compressed
 plugins:
