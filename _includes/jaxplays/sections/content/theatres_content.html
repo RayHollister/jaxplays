@@ -135,8 +135,10 @@
               <td>{{ production.year }}</td>
               <td><a href="{{ production.url }}">{{ production.title }}</a></td>
               {% if production.details.Venue %}
-                {% assign venue = site.venues | where: "title", production.details.Venue | first %}
-                <td><a href="/venues/{{ production.details.Venue | replace: ' ', '_' | replace: "'", "" }}">{{ production.details.Venue }}</a></td>
+                {% assign venue_name = production.details.Venue | replace: "&", "and" | slugify %}
+                {% assign venue_url = "/venues/" | append: venue_name %}
+
+                <td><a href="{{ venue_url }}">{{ production.details.Venue }}</a></td>
               {% else %}
                 <td></td>
               {% endif %}
