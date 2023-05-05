@@ -126,11 +126,16 @@
             {% assign title = info_parts[2] %}
             {% assign theatre = info_parts[3] %}
             {% assign venue = info_parts[4] %}
+
+            {% assign theatre_name = theatre | replace: "&", "and" | slugify %}
+            {% assign theatre_url = "/theatres/" | append: theatre_name %}
+            {% assign venue_name = venue | replace: "&", "and" | slugify %}
+            {% assign venue_url = "/venues/" | append: venue_name %}
             <tr>
               <td>{{ year }}</td>
               <td><a href="{{ url }}">{{ title }}</a></td>
-              <td><a href="/theatres/{{ theatre | strip | replace: ' ', '_' | replace: '.', '' }}">{{ theatre }}</a></td>
-              <td><a href="/venues/{{ venue | strip | replace: ' ', '_' }}">{{ venue }}</a></td>
+              <td><a href="{{ theatre_url }}">{{ theatre }}</a></td>
+              <td><a href="{{ venue_url }}">{{ venue }}</a></td>
             </tr>
             {% endfor %}
           </tbody>
