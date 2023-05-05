@@ -1,7 +1,7 @@
 ---
 title: Mama Blue
 redirect_from:
-  - /people/Sarah_Sanders
+  - /people/Sarah-Sanders
 layout: people
 image: 
 image_credit: 

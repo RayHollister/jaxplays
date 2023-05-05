@@ -1,7 +1,7 @@
 ---
 title: Joshua Kreis McTiernan
 redirect_from: 
-  - /people/Joshua_McTiernan
+  - /people/Joshua-McTiernan
 layout: people
 image:
 image_credit: 

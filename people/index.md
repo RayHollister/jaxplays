@@ -21,7 +21,7 @@ layout: git-wiki-default
       {% for person in all_people %}
         {% if person.redirect_from %}
           {% for redirect_url in person.redirect_from %}
-            {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " | replace: ".", "" %}
+            {% assign redirect_name = redirect_url | remove: "/people/" | replace: "-", " " | replace: ".", "" %}
             {% if redirect_name == member_trimmed %}
               {% assign canonical_name = person.title %}
             {% endif %}
@@ -43,7 +43,7 @@ layout: git-wiki-default
       {% for person in all_people %}
         {% if person.redirect_from %}
           {% for redirect_url in person.redirect_from %}
-            {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " | replace: ".", "" %}
+            {% assign redirect_name = redirect_url | remove: "/people/" | replace: "-", " " | replace: ".", "" %}
             {% if redirect_name == member_trimmed %}
               {% assign canonical_name = person.title %}
             {% endif %}
@@ -65,7 +65,7 @@ layout: git-wiki-default
       {% for person in all_people %}
         {% if person.redirect_from %}
           {% for redirect_url in person.redirect_from %}
-            {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " | replace: ".", "" %}
+            {% assign redirect_name = redirect_url | remove: "/people/" | replace: "-", " " | replace: ".", "" %}
             {% if redirect_name == member_trimmed %}
               {% assign canonical_name = person.title %}
             {% endif %}
@@ -87,7 +87,7 @@ layout: git-wiki-default
       {% for person in all_people %}
         {% if person.redirect_from %}
           {% for redirect_url in person.redirect_from %}
-            {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " | replace: ".", "" %}
+            {% assign redirect_name = redirect_url | remove: "/people/" | replace: "-", " " | replace: ".", "" %}
             {% if redirect_name == member_trimmed %}
               {% assign canonical_name = person.title %}
             {% endif %}

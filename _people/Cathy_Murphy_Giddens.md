@@ -1,9 +1,9 @@
 ---
 title: Cathy Murphy Giddens
 redirect_from:
-  - /people/Cathy_Murphy
-  - /people/Cathy_T_Murphy
-  - /people/Cathy_Giddens_Murphy
+  - /people/Cathy-Murphy
+  - /people/Cathy-T-Murphy
+  - /people/Cathy-Giddens-Murphy
 layout: people
 image: 
 image_credit: 

@@ -1,7 +1,7 @@
 ---
 title: Juan Carlos Unzueta
 redirect_from:
-  - /people/Juan_Unzueta
+  - /people/Juan-Unzueta
 layout: people
 image: 
 image_credit: 

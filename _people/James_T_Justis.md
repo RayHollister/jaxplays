@@ -1,10 +1,10 @@
 ---
 title: James T. Justis
 redirect_from:
-  - /people/James_Delisco_Beeks
+  - /people/James-Delisco-Beeks
   - /people/Delisco
-  - /people/James_D._Beeks
-  - /people/James_Beeks
+  - /people/James-D-Beeks
+  - /people/James-Beeks
 layout: people
 image: 
 image_credit: 

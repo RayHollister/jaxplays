@@ -72,7 +72,7 @@
                   {% assign birth_name = page.birth_info.birth_name %}
                   {% endif %}
                   {% for redirect_url in page.redirect_from %}
-                  {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " %}
+                  {% assign redirect_name = redirect_url | remove: "/people/" | replace: "-", " " %}
                   {% unless redirect_name == birth_name %}
                   {% if forloop.last %}
                   {{ redirect_name }}
@@ -166,7 +166,7 @@
         
         {% if page.redirect_from %}
         {% for redirect_url in page.redirect_from %}
-        {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " | remove: "." %}
+        {% assign redirect_name = redirect_url | remove: "/people/" | replace: "-", " " | remove: "." %}
         {% assign redirect_names = redirect_name | split: "|" %}
         {% assign person_names = person_names | concat: redirect_names %}
         {% endfor %}

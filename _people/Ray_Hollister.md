@@ -1,7 +1,7 @@
 ---
 title: Ray Hollister
 redirect_from:
-- /people/Rayburn Hollister
+- /people/Rayburn-Hollister
 layout: people
 image: Ray_Hollister.jpg
 image_credit: Ray Hollister
