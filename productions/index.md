@@ -15,9 +15,9 @@ layout: git-wiki-default
   <tbody>
     {% assign sorted_productions = site.productions | sort: 'year' | reverse %}
     {% for production in sorted_productions %}
-        <tr>
-          <td>{{ production.year }}</td>
-          <td>
+        <tr class="productions">
+          <td class="year">{{ production.year }}</td>
+          <td class="title">
             <a href="{{ production.url }}">
               {% if production.title %}
                 {{ production.title }}
@@ -26,14 +26,14 @@ layout: git-wiki-default
               {% endif %}
             </a>
           </td>
-          <td>
+          <td class="theatre">
             {% if production.details.Theatre %}
               {% assign theatre_name = production.details.Theatre | replace: ".", "" | replace: "'", "" | replace: "_", "-" | replace: " ", "-" | replace: "&", "and" | downcase %}
               {% assign theatre_url = "/theatres/" | append: theatre_name | replace: "---", "-" %}
               <a href="{{ theatre_url }}">{{ production.details.Theatre }}</a>
             {% endif %}
           </td>
-          <td>
+          <td class="venue">
             {% if production.details.Venue %}
               {% assign venue_name = production.details.Venue | replace: ".", "" | replace: "'", "" | replace: "_", "-" | replace: " ", "-" | replace: "&", "and" | downcase %}
               {% assign venue_url = "/venues/" | append: venue_name | replace: "---", "-" %}
