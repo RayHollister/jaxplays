@@ -10,7 +10,7 @@ category:
 details:
   Theatre: Jacksonville Actors Theatre
 cast:
-  Actor: Michael Lipp
 crew:
+  Director: Michael Lipp
 external_links:
 ---

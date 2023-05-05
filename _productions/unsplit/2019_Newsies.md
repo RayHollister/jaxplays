@@ -10,7 +10,7 @@ category:
 details:
   Theatre: FSCJ Summer Musical Theatre Experience
 cast:
-  Actor: Michael Lipp
 crew:
+  Director: Michael Lipp
 external_links:
 ---
