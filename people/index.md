@@ -13,96 +13,91 @@ layout: git-wiki-default
 
 {% for production in site.productions %}
 {% for role in production.cast %}
-{% assign member_value = role[1] %}
-{% assign members = member_value | newline_to_br | strip | split: '<br />' %}
+{% assign members = role[1] %}
 {% for member in members %}
 {% assign member_trimmed = member | strip | replace: ".", "" %}
 {% assign canonical_name = member_trimmed %}
 
-    {% for person in all_people %}
-      {% if person.redirect_from %}
-        {% for redirect_url in person.redirect_from %}
-          {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " | replace: ".", "" %}
-          {% if redirect_name == member_trimmed %}
-            {% assign canonical_name = person.title %}
-          {% endif %}
-        {% endfor %}
-      {% endif %}
+      {% for person in all_people %}
+        {% if person.redirect_from %}
+          {% for redirect_url in person.redirect_from %}
+            {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " | replace: ".", "" %}
+            {% if redirect_name == member_trimmed %}
+              {% assign canonical_name = person.title %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign all_cast_members = all_cast_members | push: canonical_name %}
     {% endfor %}
 
-    {% assign all_cast_members = all_cast_members | push: canonical_name %}
-
-{% endfor %}
 {% endfor %}
 
 {% for role in production.crew %}
-{% assign member_value = role[1] %}
-{% assign members = member_value | newline_to_br | strip | split: '<br />' %}
+{% assign members = role[1] %}
 {% for member in members %}
 {% assign member_trimmed = member | strip | replace: ".", "" %}
 {% assign canonical_name = member_trimmed %}
 
-    {% for person in all_people %}
-      {% if person.redirect_from %}
-        {% for redirect_url in person.redirect_from %}
-          {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " | replace: ".", "" %}
-          {% if redirect_name == member_trimmed %}
-            {% assign canonical_name = person.title %}
-          {% endif %}
-        {% endfor %}
-      {% endif %}
+      {% for person in all_people %}
+        {% if person.redirect_from %}
+          {% for redirect_url in person.redirect_from %}
+            {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " | replace: ".", "" %}
+            {% if redirect_name == member_trimmed %}
+              {% assign canonical_name = person.title %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign all_crew_members = all_crew_members | push: canonical_name %}
     {% endfor %}
 
-    {% assign all_crew_members = all_crew_members | push: canonical_name %}
-
-{% endfor %}
 {% endfor %}
 
 {% for role in production.orchestra %}
-{% assign member_value = role[1] %}
-{% assign members = member_value | newline_to_br | strip | split: '<br />' %}
+{% assign members = role[1] %}
 {% for member in members %}
 {% assign member_trimmed = member | strip | replace: ".", "" %}
 {% assign canonical_name = member_trimmed %}
 
-    {% for person in all_people %}
-      {% if person.redirect_from %}
-        {% for redirect_url in person.redirect_from %}
-          {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " | replace: ".", "" %}
-          {% if redirect_name == member_trimmed %}
-            {% assign canonical_name = person.title %}
-          {% endif %}
-        {% endfor %}
-      {% endif %}
+      {% for person in all_people %}
+        {% if person.redirect_from %}
+          {% for redirect_url in person.redirect_from %}
+            {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " | replace: ".", "" %}
+            {% if redirect_name == member_trimmed %}
+              {% assign canonical_name = person.title %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign all_orchestra_members = all_orchestra_members | push: canonical_name %}
     {% endfor %}
 
-    {% assign all_orchestra_members = all_orchestra_members | push: canonical_name %}
-
-{% endfor %}
 {% endfor %}
 
 {% for role in production.understudies %}
-{% assign member_value = role[1] %}
-{% assign members = member_value | newline_to_br | strip | split: '<br />' %}
+{% assign members = role[1] %}
 {% for member in members %}
 {% assign member_trimmed = member | strip | replace: ".", "" %}
 {% assign canonical_name = member_trimmed %}
 
-    {% for person in all_people %}
-      {% if person.redirect_from %}
-        {% for redirect_url in person.redirect_from %}
-          {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " | replace: ".", "" %}
-          {% if redirect_name == member_trimmed %}
-            {% assign canonical_name = person.title %}
-          {% endif %}
-        {% endfor %}
-      {% endif %}
+      {% for person in all_people %}
+        {% if person.redirect_from %}
+          {% for redirect_url in person.redirect_from %}
+            {% assign redirect_name = redirect_url | remove: "/people/" | replace: "_", " " | replace: ".", "" %}
+            {% if redirect_name == member_trimmed %}
+              {% assign canonical_name = person.title %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign all_understudy_members = all_understudy_members | push: canonical_name %}
     {% endfor %}
-
-    {% assign all_understudy_members = all_understudy_members | push: canonical_name %}
-
-{% endfor %}
-{% endfor %}
+  {% endfor %}
 {% endfor %}
 
 {% assign all_people_in_roles = all_cast_members | concat: all_crew_members | concat: all_orchestra_members | concat: all_understudy_members | uniq | sort %}
@@ -124,7 +119,7 @@ layout: git-wiki-default
       {% assign crew_count = all_crew_members | where_exp: "item", "item == person" | size %}
       {% assign orchestra_count = all_orchestra_members | where_exp: "item", "item == person" | size %}
       {% assign understudy_count = all_understudy_members | where_exp: "item", "item == person" | size %}
-      {% assign person_link = person | replace: " ", "_" %}
+      {% assign person_link = person | replace: "_", "-" | replace: " ", "-" | replace: "&", "and" | downcase %}
       {% assign total_count = cast_count | plus: crew_count | plus: orchestra_count | plus: understudy_count %}
       <tr>
         <td>

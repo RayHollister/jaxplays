@@ -36,7 +36,7 @@ cast:
   Piragua Guy: Daniel Pesante
   Graffiti Pete: Jeremy Ferri
   Ensemble: 
-    - - Angie Acedera
+    - Angie Acedera
     - Cecilia Despres
     - Jackie Glassman
     - Arlynes Marrero
