@@ -27,9 +27,12 @@ layout: git-wiki-default
   </thead>
   <tbody>
     {% for theatre in unique_theatres %}
+
+      {% assign theatre_name = theatre | replace: "&", "and" | slugify %}
+      {% assign theatre_url = "/theatres/" | append: theatre_name %}
       {% assign theatre_count = all_theatres | where_exp: "item", "item == theatre" | size %}
       <tr>
-        <td><a href="/theatres/{{ theatre | replace: ' ', '_' | replace: ".", "" }}">{{ theatre }}</a></td>
+        <td><a href="{{ theatre_url }}">{{ theatre }}</a></td>
         <td>{{ theatre_count }}</td>
       </tr>
     {% endfor %}

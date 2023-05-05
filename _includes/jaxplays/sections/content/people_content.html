@@ -193,10 +193,10 @@
         {% if name_found %}
         {% assign production_year = p.year %}
 
-        {% assign theatre_name = p.details.Theatre | replace: ".", "" | replace: "'", "" | replace: "_", "-" | replace: " ", "-" | replace: "&", "and" | downcase %}
-        {% assign theatre_url = "/theatres/" | append: theatre_name | replace: "---", "-" %}
-        {% assign venue_name = p.details.Venue | replace: ".", "" | replace: "'", "" | replace: "_", "-" | replace: " ", "-" | replace: "&", "and" | downcase %}
-        {% assign venue_url = "/venues/" | append: venue_name | replace: "---", "-" %}
+        {% assign theatre_name = p.details.Theatre | replace: "&", "and" | slugify %}
+        {% assign theatre_url = "/theatres/" | append: theatre_name %}
+        {% assign venue_name = p.details.Venue| replace: "&", "and" | slugify %}
+        {% assign venue_url = "/venues/" | append: venue_name %}
 
         {% capture credit %}
         <tr>
@@ -267,10 +267,10 @@
         {% if name_found %}
         {% assign production_year = p.year %}
 
-        {% assign theatre_name = p.details.Theatre | replace: ".", "" | replace: "'", "" | replace: "_", "-" | replace: " ", "-" | replace: "&", "and" | downcase %}
-        {% assign theatre_url = "/theatres/" | append: theatre_name | replace: "---", "-" %}
-        {% assign venue_name = p.details.Venue | replace: ".", "" | replace: "'", "" | replace: "_", "-" | replace: " ", "-" | replace: "&", "and" | downcase %}
-        {% assign venue_url = "/venues/" | append: venue_name | replace: "---", "-" %}
+        {% assign theatre_name = p.details.Theatre | replace: "&", "and" | slugify %}
+        {% assign theatre_url = "/theatres/" | append: theatre_name %}
+        {% assign venue_name = p.details.Venue| replace: "&", "and" | slugify %}
+        {% assign venue_url = "/venues/" | append: venue_name %}
 
         {% capture credit %}
         <tr>
@@ -341,10 +341,10 @@
         {% if name_found %}
         {% assign production_year = p.year %}
 
-        {% assign theatre_name = p.details.Theatre | replace: ".", "" | replace: "'", "" | replace: "_", "-" | replace: " ", "-" | replace: "&", "and" | downcase %}
-        {% assign theatre_url = "/theatres/" | append: theatre_name | replace: "---", "-" %}
-        {% assign venue_name = p.details.Venue | replace: ".", "" | replace: "'", "" | replace: "_", "-" | replace: " ", "-" | replace: "&", "and" | downcase %}
-        {% assign venue_url = "/venues/" | append: venue_name | replace: "---", "-" %}
+        {% assign theatre_name = p.details.Theatre | replace: "&", "and" | slugify %}
+        {% assign theatre_url = "/theatres/" | append: theatre_name %}
+        {% assign venue_name = p.details.Venue| replace: "&", "and" | slugify %}
+        {% assign venue_url = "/venues/" | append: venue_name %}
 
         {% capture credit %}
         <tr>
@@ -415,10 +415,10 @@
         {% if name_found %}
         {% assign production_year = p.year %}
 
-        {% assign theatre_name = p.details.Theatre | replace: ".", "" | replace: "'", "" | replace: "_", "-" | replace: " ", "-" | replace: "&", "and" | downcase %}
-        {% assign theatre_url = "/theatres/" | append: theatre_name | replace: "---", "-" %}
-        {% assign venue_name = p.details.Venue | replace: ".", "" | replace: "'", "" | replace: "_", "-" | replace: " ", "-" | replace: "&", "and" | downcase %}
-        {% assign venue_url = "/venues/" | append: venue_name | replace: "---", "-" %}
+        {% assign theatre_name = p.details.Theatre | replace: "&", "and" | slugify %}
+        {% assign theatre_url = "/theatres/" | append: theatre_name %}
+        {% assign venue_name = p.details.Venue| replace: "&", "and" | slugify %}
+        {% assign venue_url = "/venues/" | append: venue_name %}
         
         {% capture credit %}
         <tr>

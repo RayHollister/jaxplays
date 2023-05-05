@@ -27,9 +27,11 @@ layout: git-wiki-default
   </thead>
   <tbody>
     {% for venue in unique_venues %}
+      {% assign venue_name = venue | replace: "&", "and" | slugify %}
+      {% assign venue_url = "/venues/" | append: venue_name %}
       {% assign venue_count = all_venues | where_exp: "item", "item == venue" | size %}
       <tr>
-        <td><a href="/venues/{{ venue | replace: ' ', '_' | replace: "'", "" }}">{{ venue }}</a></td>
+        <td><a href="{{ venue_url }}">{{ venue }}</a></td>
         <td>{{ venue_count }}</td>
       </tr>
     {% endfor %}

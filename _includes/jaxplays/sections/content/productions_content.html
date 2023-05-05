@@ -111,11 +111,11 @@
                   <a target="_blank" href="{{ value }}" targe="_blank">Production website</a>
                   {%- elsif detail[0] == 'Theatre' -%}
                   {% assign theatre_name = value | strip %}
-                  <a target="_blank" href="/theatres/{{ value | strip | replace: ' ', '_' | replace: ".", "" }}">{{ value }}</a>
+                  <a target="_blank" href="/theatres/{{ value | replace: '&', 'and' | slugify }}">{{ value }}</a>
                   {%- elsif detail[0] == 'Venue' -%}                  
                     {% assign venue_name = value | strip %}
                       {% if theatre_name != venue_name %}
-                        <a target="_blank" href="/venues/{{ venue_name | replace: ' ', '_' | replace: "'", "" }}">{{ venue_name }}</a><br/>
+                        <a target="_blank" href="/venues/{{ venue_name  | replace: '&', 'and' | slugify }}">{{ venue_name }}</a><br/>
                       {% endif %}
                       {% for page in site.pages %}
                         {% if page.layout == 'venues' and page.title==venue_name %}
@@ -195,8 +195,7 @@
               </tr>
             </thead>
             <tbody>
-              {% assign showtimes = page.showtimes | newline_to_br | strip | split: '<br />' %}
-              {% for showtime in showtimes %}
+              {% for showtime in page.showtimes %}
               {% assign date_time = showtime | date: "%A, %B %-d, %Y %H:%M" %}
               {% assign date = date_time | date: "%A, %B %-d, %Y" %}
               {% assign time = date_time | date: "%-I:%M %P" %}
@@ -208,8 +207,8 @@
             </tbody>
           </table>
         </div>
-
         {% endif %}
+
 
       </div>
       <div class="additional-content">
@@ -228,11 +227,10 @@
               <tr>
                 <td>{{ character[0] }}</td>
                 <td>
-                  {% assign cast_member_value = character[1] %}
-                  {% assign actors = cast_member_value | newline_to_br | strip | split: '<br />' %}
+                  {% assign actors = character[1] %}
                   {% for actor in actors -%}
                   {% assign actor_trimmed = actor | strip %}
-                  <a href="/people/{{ actor_trimmed | replace: ' ', '_' | replace: '.', '' }}">{{ actor_trimmed }}</a>{%
+                  <a href="/people/{{ actor_trimmed | slugify }}">{{ actor_trimmed }}</a>{%
                   unless forloop.last %},
                   {% endunless %}
                   {%- endfor %}
@@ -243,6 +241,7 @@
           </table>
         </div>
         {% endif %}
+
 
         <!-- Understudy credits -->
 
@@ -261,12 +260,10 @@
               <tr>
                 <td>{{ character[0] }}</td>
                 <td>
-                  {% assign understudy_value = character[1] %}
-                  {% assign understudies = understudy_value | newline_to_br | strip | split: '<br />' %}
+                  {% assign understudies = character[1] %}
                   {% for understudy in understudies -%}
                   {% assign understudy_trimmed = understudy | strip %}
-                  <a
-                    href="/people/{{ understudy_trimmed | replace: ' ', '_' | replace: '.', '' }}">{{ understudy_trimmed }}</a>{%
+                  <a href="/people/{{ understudy_trimmed | slugify }}">{{ understudy_trimmed }}</a>{%
                   unless forloop.last %},
                   {% endunless %}
                   {%- endfor %}
@@ -279,7 +276,6 @@
         {% endif %}
 
         <!-- Crew credits -->
-
         {% if page.crew %}
         <div class="crewlist">
           <h2 id="crewlist">Crew</h2>
@@ -295,12 +291,10 @@
               <tr>
                 <td>{{ title[0] }}</td>
                 <td>
-                  {% assign crew_member_value = title[1] %}
-                  {% assign members = crew_member_value | newline_to_br | strip | split: '<br />' %}
+                  {% assign members = title[1] %}
                   {% for member in members -%}
                   {% assign member_trimmed = member | strip %}
-                  <a
-                    href="/people/{{ member_trimmed | replace: ' ', '_' | replace: '.', '' }}">{{ member_trimmed }}</a>{%
+                  <a href="/people/{{ member_trimmed | slugify }}">{{ member_trimmed }}</a>{%
                   unless forloop.last %},
                   {% endunless %}
                   {%- endfor %}
@@ -328,11 +322,10 @@
               <tr>
                 <td>{{ role[0] }}</td>
                 <td>
-                  {% assign musician_value = role[1] %}
-                  {% assign musicians = musician_value | newline_to_br | strip | split: '<br />' %}
+                  {% assign musicians = role[1] %}
                   {% for musician in musicians -%}
                   {% assign musician_trimmed = musician | strip %}
-                  <a href="/people/{{ musician_trimmed | replace: ' ', '_' | replace: '.', '' }}">{{ musician_trimmed }}</a>{%
+                  <a href="/people/{{ musician_trimmed | slugify }}">{{ musician_trimmed }}</a>{%
                   unless forloop.last %},
                   {% endunless %}
                   {%- endfor %}
