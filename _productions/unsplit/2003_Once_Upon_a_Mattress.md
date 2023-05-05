@@ -51,7 +51,7 @@ crew:
   Choreograher: Kendra Sides
   Stage Manager: Kim Imbach
   Assistant to the Director: Deborah Goldberg
-  Assistant Stage Manager: Jessica "JB" Beseker
+  Assistant Stage Manager: Jessica 'JB' Beseker
   Technical Direcor: Jeffrey L. Wagoner
   Assistant Technical Director: Daniel Dungan
   Scenic Design: Kelly J. Wagoner
