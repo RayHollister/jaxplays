@@ -14,28 +14,28 @@ details:
   Music: William Finn
   Lyrics: William Finn
   Website: https://www.the5anddime.org/falsettos
-showtimes: |
-  2019-06-14 20:00:00
-  2019-06-15 20:00:00
-  2019-06-16 14:00:00
-  2019-06-17 20:00:00
-  2019-06-20 20:00:00
-  2019-06-21 20:00:00
-  2019-06-22 20:00:00
-  2019-06-23 14:00:00
-  2019-06-27 20:00:00
-  2019-06-28 20:00:00
-  2019-06-29 20:00:00
-  2019-06-30 14:00:00
+showtimes: 
+  - 19-06-14 20:00:00
+  - 19-06-15 20:00:00
+  - 19-06-16 14:00:00
+  - 19-06-17 20:00:00
+  - 19-06-20 20:00:00
+  - 19-06-21 20:00:00
+  - 19-06-22 20:00:00
+  - 19-06-23 14:00:00
+  - 19-06-27 20:00:00
+  - 19-06-28 20:00:00
+  - 19-06-29 20:00:00
+  - 19-06-30 14:00:00
 cast:
-  Performers: |
-    Josh Waller
-    David Medina
-    Cole Marshall
-    Katie Swider McCloskey
-    Kacy Hope
-    Julie Harrington
-    Cason Barnes
+  Performers: 
+    - Josh Waller
+    - David Medina
+    - Cole Marshall
+    - Katie Swider McCloskey
+    - Kacy Hope
+    - Julie Harrington
+    - Cason Barnes
 crew:
   Director: Ron Shreve
 external_links:

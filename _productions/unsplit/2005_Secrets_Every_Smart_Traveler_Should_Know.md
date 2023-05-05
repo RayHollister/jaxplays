@@ -13,12 +13,12 @@ details:
   Theatre: Theatre Jacksonville
   Venue: Little Theatre
 cast: 
-  cast: |
-    Carole V. Banks
-    Staci Cobb
-    Christine Dumars
-    Blake Osner
-    Karl Rogers
+  cast: 
+    - Carole V. Banks
+    - Staci Cobb
+    - Christine Dumars
+    - Blake Osner
+    - Karl Rogers
 crew:
   Title: Person
   Piano: Ellen Milligan
@@ -35,19 +35,19 @@ crew:
   Assistant Stage Manager: Megan Branch
   Light Board Operation: Gloria Pepe
   Sound Board Operator: Michelle Simkulet
-  Running Crew: |
-    Megan Branch
-    Rhianna Hurt
-  Set Construction: |
-    Tim Allen
-    Nikki Blue
-    Kristina Elliot
-    Anne Hueser
-    Lindsey Kinard
-    Bret Lawrence
-    Greg Odenwald
-    Gloria Pepe
-    Ashly Potter
+  Running Crew: 
+    - Megan Branch
+    - Rhianna Hurt
+  Set Construction: 
+    - Tim Allen
+    - Nikki Blue
+    - Kristina Elliot
+    - Anne Hueser
+    - Lindsey Kinard
+    - Bret Lawrence
+    - Greg Odenwald
+    - Gloria Pepe
+    - Ashly Potter
 orchestra:
 external_links:
 ---

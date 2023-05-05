@@ -13,16 +13,16 @@ details:
   Genre: Crime Fiction
   Setting: Shawshank State Penitentiary
   Website: https://www.eventbrite.com/e/the-shawshank-redemption-tickets-169122663439?aff=erelexpmlt
-showtimes: |
-  2022-05-20 19:30:00
-  2022-05-21 19:30:00
-  2022-05-22 14:00:00
-  2022-05-27 19:30:00
-  2022-05-28 19:30:00
-  2022-05-29 14:00:00
-  2022-06-03 19:30:00
-  2022-06-04 19:30:00
-  2022-06-05 14:00:00
+showtimes: 
+  - 2022-05-20 19:30:00
+  - 2022-05-21 19:30:00
+  - 2022-05-22 14:00:00
+  - 2022-05-27 19:30:00
+  - 2022-05-28 19:30:00
+  - 2022-05-29 14:00:00
+  - 2022-06-03 19:30:00
+  - 2022-06-04 19:30:00
+  - 2022-06-05 14:00:00
 cast:
   Andy Dufresne: James Bilderback
   Red: David Girard

@@ -45,35 +45,35 @@ crew:
   Rehearsal Pianist: Stephen Fennell
   Stage Manager: Kristina Elliot
   Assistant Stage Manager: Sarah Giles
-  Sound Design: |
-    Jefferey L. Wagoner
-    Caryl Butterley
+  Sound Design: 
+    - Jefferey L. Wagoner
+    - Caryl Butterley
   Properties: Jennifer Elliot
   Assistant Technical Director: Daniel Owen Dungan
   Poster Design: Caryl Butterley
   Light Board Operation: Gloria Pepe
   Sound Board Operator: Kristina Elliot
-  Dresser: |
-    Devon Anthony
-    Kelsey Tippins
-  Rail Crew: |
-    Nadeem El-Kouri
-    Greg Odenwald
-    Sam Thomas
-  Set Construction: |
-    James Bennett
-    Kristina Elliot
-    Sam Fisher
-    Shannon Jones
-    Greg Odenwald
-    Gloria Pepe
-    Nick Sacks
-    Shirley Sacks
-    Mark Stater
-    Chris Valade
-  Follow Spot Operator: |
-    Michael Haduk
-    Janna Pettegrew
+  Dresser: 
+    - Devon Anthony
+    - Kelsey Tippins
+  Rail Crew: 
+    - Nadeem El-Kouri
+    - Greg Odenwald
+    - Sam Thomas
+  Set Construction: 
+    - James Bennett
+    - Kristina Elliot
+    - Sam Fisher
+    - Shannon Jones
+    - Greg Odenwald
+    - Gloria Pepe
+    - Nick Sacks
+    - Shirley Sacks
+    - Mark Stater
+    - Chris Valade
+  Follow Spot Operator: 
+    - Michael Haduk
+    - Janna Pettegrew
 orchestra:
   Piano: Stephen Fennell
   Woodwinds: Mara Rys

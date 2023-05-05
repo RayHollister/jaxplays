@@ -15,10 +15,10 @@ details:
   Writer: Sarah Treem - wiki
   Series: "The Secret of Life: A Science Play Series"
   Website: http://www.actorscollective.com/the-secret-of-life/
-showtimes: |
-  2020-06-12 19:30:00
-  2020-06-13 19:30:00
-  2020-06-14 16:00:00
+showtimes: 
+  - 2020-06-12 19:30:00
+  - 2020-06-13 19:30:00
+  - 2020-06-14 16:00:00
 cast:
   Zelda Kahn: Sinda Nichols
   Rachel Hardeman: Milan Alley

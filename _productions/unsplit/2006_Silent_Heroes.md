@@ -27,20 +27,20 @@ crew:
   Costume Design: Audrey Wagner
   Hair and Make-up Design: Tracy Olin
   Sound Design: Amy Johnson O'Connor
-  Properties: |
-    Jeffery L. Wagoner
-    Kelly J. Wagoner
+  Properties: 
+    - Jeffery L. Wagoner
+    - Kelly J. Wagoner
   Stage Manager: Nikki Blue
   Poster Design: Juan Unzueta
   Assistant Technical Director: Tim Allen
   Light Board Operation: Gloria Pepe
   Sound Board Operator: Nikki Blue
-  Set Construction: |
-    Tim Allen
-    Jon Brenan
-    Aaron Cho
-    Gloria Pepe
-    John Pope
+  Set Construction: 
+    - Tim Allen
+    - Jon Brenan
+    - Aaron Cho
+    - Gloria Pepe
+    - John Pope
 orchestra:
 external_links:
 ---

@@ -14,13 +14,13 @@ details:
   Writer: Osborne & Eppler
   Genre: Comedy/Drama
   Website: https://our.show/southernfriedfuneral
-showtimes: |
-  2022-05-13 19:00:00
-  2022-05-14 19:00:00
-  2022-05-15 14:00:00
-  2022-05-20 19:00:00
-  2022-05-21 19:00:00
-  2022-05-22 14:00:00
+showtimes: 
+  - 2022-05-13 19:00:00
+  - 2022-05-14 19:00:00
+  - 2022-05-15 14:00:00
+  - 2022-05-20 19:00:00
+  - 2022-05-21 19:00:00
+  - 2022-05-22 14:00:00
 cast:
   Martha Ann: Brandy Champeau
   Benny Charles Greenwood: Carlos Semidei
@@ -28,9 +28,9 @@ cast:
   Harlen Frye: Debra Parsons
   Dub Frye: George Tweedy
   Fairy June Cooper: Gloria Hurley
-  Dewey Frye Jr.: |
-    Joshua Champeau
-    Samantha Champeau
+  Dewey Frye Jr.: 
+    - Joshua Champeau
+    - Samantha Champeau
   Atticus Van Leer: Ken Johnson
   Sammy Jo Frye-Lefette: Kristin Zipprich
   Ozella Meekes: Susan Langenbahn
@@ -39,9 +39,9 @@ crew:
   Director: Brooks Nettum
   Announcer: Collin Galvin
   House Manager: Constance Holt
-  Set Design: |
-    Constance Holt
-    Doug Vaught
+  Set Design: 
+    - Constance Holt
+    - Doug Vaught
   Technical Director: Garrett Holt
   Costume Manager: Nancy Galvin
   Sound Director: Tim Holt

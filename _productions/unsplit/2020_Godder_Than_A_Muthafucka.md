@@ -12,12 +12,12 @@ details:
   Venue: 1904 Music Hall
   Writer: Ebony Payne-English - wiki
   Website: http://www.ebonypayneenglish.com/
-showtimes: |
-  2020-02-23 19:00:00
+showtimes: 
+  - 2020-02-23 19:00:00
 cast:
-  Performers: |
-    Ebony Payne-English
-    Moses West
+  Performers: 
+    - Ebony Payne-English
+    - Moses West
 crew:
   Music: Mas Appeal
   Choreography: Rochelle Underdue

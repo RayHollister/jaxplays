@@ -38,12 +38,12 @@ crew:
   Sound Design: Bryce Page
   Technical Director: Jeffery L. Wagoner
   Stage Manager: Tim Driscoll
-  Assistant Stage Manager: |
-    Kristin Alexander
-    Rhianna Hurt
-  Properties: |
-    Kelly J. Wagoner
-    Jeffery L. Wagoner
+  Assistant Stage Manager: 
+    - Kristin Alexander
+    - Rhianna Hurt
+  Properties: 
+    - Kelly J. Wagoner
+    - Jeffery L. Wagoner
   Assistant Technical Director: Daniel Owen Dungan
   Lighting Board Operator: Jeffery L. Wagoner
   Sound Board Operator: Tim

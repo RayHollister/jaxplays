@@ -28,14 +28,14 @@ cast:
   Nadine: Zoie Matthew
   Clyde: Joseph Walz
   Juanita: Teresa Arnold-Simmons
-  Joy of Life Singer: |
-    Amber Holland
-    Debbie Hurm
-    Lisa LaGrande
-    Jessica Palombo
-    Neal Thorburn
-    Chris Valade
-    Joseph Walz
+  Joy of Life Singer: 
+    - Amber Holland
+    - Debbie Hurm
+    - Lisa LaGrande
+    - Jessica Palombo
+    - Neal Thorburn
+    - Chris Valade
+    - Joseph Walz
 crew:
   Director: Andrew Dickson
   Technical Direcor: Jeffery L. Wagoner
@@ -50,24 +50,24 @@ crew:
   Poster Design: Juan Unzueta
   Light Board Operation: Gloria Pepe
   Sound Board Operator: Katy Bilderback
-  Follow Spot Operator: |
-    Greg Odenwald
-    Gloria Pepe
+  Follow Spot Operator: 
+    - Greg Odenwald
+    - Gloria Pepe
   Offstage Sound: Bill White
-  Running Crew: |
-    Meon Graham
-    Sarah Kate Braddy
-  Set Construction: |
-    Brandy Hilboldt Allport
-    Richard Allport
-    Meon Graham
-    Zoie Matthew
-    Shelby Ellis
-    Becca Runyan
-    Fred Gatlin
-    Gloria Pepe
-    Greg Odenwald
-    Mark Stater
+  Running Crew: 
+    - Meon Graham
+    - Sarah Kate Braddy
+  Set Construction: 
+    - Brandy Hilboldt Allport
+    - Richard Allport
+    - Meon Graham
+    - Zoie Matthew
+    - Shelby Ellis
+    - Becca Runyan
+    - Fred Gatlin
+    - Gloria Pepe
+    - Greg Odenwald
+    - Mark Stater
 orchestra:
 external_links:
 ---

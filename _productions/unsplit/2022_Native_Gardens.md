@@ -14,11 +14,11 @@ details:
   Writer: Karen Zacarias - wiki
   Genre: Comedy - wiki
   Website: https://www.the5anddime.org/native-gardens
-showtimes: |
-  2022-06-16 20:00:00
-  2022-06-17 20:00:00
-  2022-06-18 20:00:00
-  2022-06-19 19:00:00
+showtimes: 
+  - 2022-06-16 20:00:00
+  - 2022-06-17 20:00:00
+  - 2022-06-18 20:00:00
+  - 2022-06-19 19:00:00
 cast:
   Virginia: Holly Gutshall
   Frank: Mark Wright

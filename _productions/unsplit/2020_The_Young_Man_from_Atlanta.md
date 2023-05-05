@@ -15,25 +15,25 @@ details:
   Setting: Spring 1950. Houston Texas
   Subject: Two parents attempt to cope with the death and homosexuality of their only son
   Website: https://limelight-theatre.org/shows/
-showtimes: |
-  2020-01-16 19:30:00
-  2020-01-17 19:30:00
-  2020-01-18 19:30:00
-  2020-01-19 14:00:00
-  2020-01-21 19:30:00
-  2020-01-21 19:30:00
-  2020-01-23 19:30:00
-  2020-01-25 19:30:00
-  2020-01-26 14:00:00
-  2020-01-30 19:30:00
-  2020-01-31 19:30:00
-  2020-02-01 19:30:00
-  2020-02-02 14:00:00
-  2020-02-06 19:30:00
-  2020-02-07 19:30:00
-  2020-02-07 19:30:00
-  2020-02-08 19:30:00
-  2020-02-09 14:00:00
+showtimes: 
+  - 2020-01-16 19:30:00
+  - 2020-01-17 19:30:00
+  - 2020-01-18 19:30:00
+  - 2020-01-19 14:00:00
+  - 2020-01-21 19:30:00
+  - 2020-01-21 19:30:00
+  - 2020-01-23 19:30:00
+  - 2020-01-25 19:30:00
+  - 2020-01-26 14:00:00
+  - 2020-01-30 19:30:00
+  - 2020-01-31 19:30:00
+  - 2020-02-01 19:30:00
+  - 2020-02-02 14:00:00
+  - 2020-02-06 19:30:00
+  - 2020-02-07 19:30:00
+  - 2020-02-07 19:30:00
+  - 2020-02-08 19:30:00
+  - 2020-02-09 14:00:00
 cast:
   Will Kidder: Bob Pritchard
   Lily Dale Kidder: Vanessa Warner
@@ -43,9 +43,9 @@ cast:
   Etta Doris: Meredith Wolfe
   Tom Jackson: Burt Keirstead
   Carson: Kyle Reeves
-  Ted Cleveland, Jr.: |
-    Matthew Whaley
-    Michael Beaman
+  Ted Cleveland, Jr.: 
+    - Matthew Whaley
+    - Michael Beaman
 crew:
   Director: Mike Beaman
 external_links:

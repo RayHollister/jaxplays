@@ -14,13 +14,13 @@ details:
   Adapter: Simon Levy - wiki
   Genre: Tragedy
   Website: 
-showtimes: |
-  2022-04-22 19:30:00
-  2022-04-23 19:30:00
-  2022-04-24 14:00:00
-  2022-04-29 19:30:00
-  2022-04-30 19:30:00
-  2022-05-01 14:00:00
+showtimes: 
+  - 2022-04-22 19:30:00
+  - 2022-04-23 19:30:00
+  - 2022-04-24 14:00:00
+  - 2022-04-29 19:30:00
+  - 2022-04-30 19:30:00
+  - 2022-05-01 14:00:00
 cast:
   Jay Gatsby: Cameron Skaff
   Nick Carraway: Jacob Porter
@@ -34,11 +34,11 @@ cast:
   Mrs. McKee: Stella Pennington
   Policeman: Kaysen Wall
   Mrs. Michaelis: Theresa Buchanan
-  Ensemble: |
-    Lexi Burkley
-    Annika Klee
-    Rachel Normann
-    Morrigan Lee
+  Ensemble: 
+    - Lexi Burkley
+    - Annika Klee
+    - Rachel Normann
+    - Morrigan Lee
 crew:
   Director: Tonya Stansberry
   Set Design: Tonya Stansberry

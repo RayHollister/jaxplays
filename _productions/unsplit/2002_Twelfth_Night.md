@@ -48,33 +48,33 @@ crew:
   Hair Design: Tracy Olin
   Drapery Construction: Jeanine Stites
   Prop Master: Eric Dorman
-  Set Construction: |
-    Daniel Davis
-    John Brenan
-    Gloria Pepe
-    Sipra Bihani
-    Sarah Overton
-    Deon Young
-    Greg Odenwald
-    Brian Fenn
-    Ashley Fenn
-    Chris Fenn
-  Running Crew: |
-    Leslie Hirsig
-    Chris MacDowell
-    Alissa Cooke-Dew
-    Kelly Peterman
-    Mary Beth Silvestris
-    Lindsay Abid
-    Jeff Swindling
-    David Hall
-    Jason Wayu
-    Shea O'Rourke
-  Costume Assistant: |
-    Samantha Watson
-    Jenny McCombes
-    Andra Smith
-    Beka Vaughn
+  Set Construction: 
+    - Daniel Davis
+    - John Brenan
+    - Gloria Pepe
+    - Sipra Bihani
+    - Sarah Overton
+    - Deon Young
+    - Greg Odenwald
+    - Brian Fenn
+    - Ashley Fenn
+    - Chris Fenn
+  Running Crew: 
+    - Leslie Hirsig
+    - Chris MacDowell
+    - Alissa Cooke-Dew
+    - Kelly Peterman
+    - Mary Beth Silvestris
+    - Lindsay Abid
+    - Jeff Swindling
+    - David Hall
+    - Jason Wayu
+    - Shea O'Rourke
+  Costume Assistant: 
+    - Samantha Watson
+    - Jenny McCombes
+    - Andra Smith
+    - Beka Vaughn
 orchestra:
 external_links:
 ---

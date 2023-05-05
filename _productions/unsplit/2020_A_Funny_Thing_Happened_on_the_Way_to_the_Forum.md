@@ -14,20 +14,20 @@ details:
   Lyrics: Stephen Sondheim
   Book: Burt Shevelove - wiki, Larry Gelbart - wiki
   Website: https://www.playersbythesea.org/forum
-showtimes: |
-  2020-01-24 20:00:00
-  2020-01-25 20:00:00
-  2020-01-30 20:00:00
-  2020-02-01 20:00:00
-  2020-02-02 14:00:00
-  2020-02-06 20:00:00
-  2020-02-07 20:00:00
-  2020-02-08 20:00:00
-  2020-02-09 14:00:00
-  2020-02-12 20:00:00
-  2020-02-13 20:00:00
-  2020-02-14 20:00:00
-  2020-02-15 20:00:00
+showtimes: 
+  - 2020-01-24 20:00:00
+  - 2020-01-25 20:00:00
+  - 2020-01-30 20:00:00
+  - 2020-02-01 20:00:00
+  - 2020-02-02 14:00:00
+  - 2020-02-06 20:00:00
+  - 2020-02-07 20:00:00
+  - 2020-02-08 20:00:00
+  - 2020-02-09 14:00:00
+  - 2020-02-12 20:00:00
+  - 2020-02-13 20:00:00
+  - 2020-02-14 20:00:00
+  - 2020-02-15 20:00:00
 cast:
   Pseudolus: Al Emerick
   Hero: Billy Speed
@@ -39,16 +39,16 @@ cast:
   Miles Gloriosus: Jimmy Alexander
   Erronius: Jim Warren
   Gymnasia: Chelsea Black
-  The Geminae: | 
-    Shauna Clark
-    Anna Fleece
+  The Geminae:  
+    - Shauna Clark
+    - Anna Fleece
   Vibrata: Kimberly Cooper York
   Tintinabula: Amanda Jackson
   Panacea: Charity Zappone
-  The Proteans: |
-    Jake McGraw
-    Chinua Richardson
-    Kris Stam
+  The Proteans: 
+    - Jake McGraw
+    - Chinua Richardson
+    - Kris Stam
 crew:
   Director: Michael Lipp
   Music Director: Andrew Phoenix
@@ -56,9 +56,9 @@ crew:
   Choreographer: Stephanie Riner
   Stage Manager: Cassie Neiss
   Audio Technician: Destiny Golden
-  Producers: |
-    Tyvin McSwain
-    Toni Diamond-Bingham
+  Producers: 
+    - Tyvin McSwain
+    - Toni Diamond-Bingham
 external_links:
   A Funny Thing Happened on the Way to the Forum - Players by the Sea: https://www.playersbythesea.org/forum
   A Funny Thing Happened On The Way To The Forum' at Players by the Sea - The Jacksonville BUZZ: https://iwantabuzz.com/arts/arts-in-the-know/a-funny-thing-happened-on-the-way-to-the-forum/

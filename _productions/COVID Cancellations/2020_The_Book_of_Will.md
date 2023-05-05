@@ -15,16 +15,16 @@ details:
   Writer: Lauren Gunderson - wiki
   Genre: Comedy
   Website: https://www.ameliacommunitytheatre.org/Performances/The-Book-of-Will
-showtimes: |
-  2020-03-27 20:00:00
-  2020-03-28 20:00:00
-  2020-03-29 14:00:00
-  2020-04-02 20:00:00
-  2020-04-03 20:00:00
-  2020-04-04 20:00:00
-  2020-04-05 14:00:00
-  2020-04-09 20:00:00
-  2020-04-10 20:00:00
+showtimes: 
+  - 2020-03-27 20:00:00
+  - 2020-03-28 20:00:00
+  - 2020-03-29 14:00:00
+  - 2020-04-02 20:00:00
+  - 2020-04-03 20:00:00
+  - 2020-04-04 20:00:00
+  - 2020-04-05 14:00:00
+  - 2020-04-09 20:00:00
+  - 2020-04-10 20:00:00
 external_links:
   "The Book of Will - Amelia Community Theatre": "https://www.ameliacommunitytheatre.org/Performances/The-Book-of-Will"
 ---

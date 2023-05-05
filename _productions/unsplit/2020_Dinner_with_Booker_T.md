@@ -14,8 +14,8 @@ details:
   Writer: Darryl Reuben Hall
   Genre: One-man show - wiki
   Website: https://stageaurora.ticketleap.com/
-showtimes: |
-  2020-02-08 18:30:00
+showtimes: 
+  - 2020-02-08 18:30:00
 cast:
   Booker T. Washington, et al.: Darryl Reuben Hall
 crew: 

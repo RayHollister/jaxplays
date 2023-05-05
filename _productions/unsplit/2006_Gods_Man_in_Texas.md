@@ -30,12 +30,12 @@ crew:
   Assistant Technical Director: Tim Allen
   Light Board Operation: Gloria Pepe
   Sound Board Operator: Megan Branch
-  Running Crew: |
-    Matt Calise
-    Kristina Elliot
-  Set Construction: |
-    Tim Allen
-    Jeffery L. Wagoner
+  Running Crew: 
+    - Matt Calise
+    - Kristina Elliot
+  Set Construction: 
+    - Tim Allen
+    - Jeffery L. Wagoner
 orchestra:
 external_links:
 ---

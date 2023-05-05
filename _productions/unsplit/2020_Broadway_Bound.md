@@ -11,23 +11,23 @@ details:
   Title: Broadway Bound!
   Theatre: The 5 & Dime
   Website: https://www.the5anddime.org/broadway-bound
-showtimes: |
-  2020-01-24 20:00:00
-  2020-01-25 20:00:00
-  2020-01-26 14:00:00
+showtimes: 
+  - 2020-01-24 20:00:00
+  - 2020-01-25 20:00:00
+  - 2020-01-26 14:00:00
 cast:
-  Performers: |
-    Christian Savin
-    Kaylee Hendree
-    Ari Walz
-    Alayna Martus
-    Jack Niemczyk
-    Alex Furlong
-    Sarah Stepp
-    Tess Therrien
-    Nick Nasta
-    Tatum Matthews
-    Michael Llerandi
+  Performers: 
+    - Christian Savin
+    - Kaylee Hendree
+    - Ari Walz
+    - Alayna Martus
+    - Jack Niemczyk
+    - Alex Furlong
+    - Sarah Stepp
+    - Tess Therrien
+    - Nick Nasta
+    - Tatum Matthews
+    - Michael Llerandi
   Pianist: Ben Beck
 crew:
   Director: Lee Hamby

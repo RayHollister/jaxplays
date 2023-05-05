@@ -33,24 +33,24 @@ crew:
   Set Dressings: Kelly J. Wagoner
   Properties: Tonya Moore
   Poster/Graphic Design: Juan Unzueta
-  Sound Design: |
-    Jean Rahner
-    Carolyn Boyd
+  Sound Design: 
+    - Jean Rahner
+    - Carolyn Boyd
   Light Board Operation: Gloria Pepe
   Sound Board Operator: Carolyn Boyd
-  Backstage Crew: |
-    Tim Allen
-    Rhianna Hurt
-    Bret Lawrence
-  Set Construction: |
-    Tim Allen
-    Emily Cabrera
-    Laura Hutton
-    Bret Lawrence
-    Gloria Pepe
-    John Pope
-    Sue Pope
-    Peter van Vliet
+  Backstage Crew: 
+    - Tim Allen
+    - Rhianna Hurt
+    - Bret Lawrence
+  Set Construction: 
+    - Tim Allen
+    - Emily Cabrera
+    - Laura Hutton
+    - Bret Lawrence
+    - Gloria Pepe
+    - John Pope
+    - Sue Pope
+    - Peter van Vliet
   Choreographer: Nikki Stokes
 orchestra:
 external_links:

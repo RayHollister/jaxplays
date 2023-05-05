@@ -15,17 +15,17 @@ details:
   Book: Ivan Menchell
   Basis: "The lives of [Bonnie and Clyde](https://en.wikipedia.org/wiki/Bonnie_and_Clyde)"
   Website: https://www.eventbrite.com/e/bonnie-clyde-the-musical-tickets-168951437297
-showtimes: |
-  2022-03-18 19:30:00
-  2022-03-19 19:30:00
-  2022-03-20 14:00:00
-  2022-03-24 19:30:00
-  2022-03-25 19:30:00
-  2022-03-26 19:30:00
-  2022-03-27 14:00:00
-  2022-04-01 19:30:00
-  2022-04-02 19:30:00
-  2022-04-03 14:00:00
+showtimes: 
+  - 2022-03-18 19:30:00
+  - 2022-03-19 19:30:00
+  - 2022-03-20 14:00:00
+  - 2022-03-24 19:30:00
+  - 2022-03-25 19:30:00
+  - 2022-03-26 19:30:00
+  - 2022-03-27 14:00:00
+  - 2022-04-01 19:30:00
+  - 2022-04-02 19:30:00
+  - 2022-04-03 14:00:00
 cast:
   Young Bonnie: Salka Corring
   Young Clyde: Owen Betancourt

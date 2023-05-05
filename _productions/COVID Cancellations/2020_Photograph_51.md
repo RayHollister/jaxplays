@@ -16,10 +16,10 @@ details:
   Venue: Museum of Science & History
   Writer: Anna Ziegler (playwright) - wiki
   Series: "The Secret of Life: A Science Play Series"
-showtimes: |
-  2020-03-13 19:30:00
-  2020-03-14 19:30:00
-  2020-03-15 16:00:00
+showtimes: 
+  - 2020-03-13 19:30:00
+  - 2020-03-14 19:30:00
+  - 2020-03-15 16:00:00
 cast:
   Rosalind Franklin: Karen Konzen
   Maurice Wilkins: Christopher Watson

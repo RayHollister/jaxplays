@@ -30,19 +30,19 @@ crew:
   Assistant Stage Manager: Sara Green
   Set Dressings: Kelly J. Wagoner
   Properties: Carole Ficheria
-  Sound Design: |
-    Michelle Simkulet
-    Jean Tait
+  Sound Design: 
+    - Michelle Simkulet
+    - Jean Tait
   Light Board Operation: Gloria Pepe
   Sound Board Operator: Michelle Simkulet
   Running Crew: Carole Ficheria
-  Set Construction: |
-    Nicole Blue
-    Jon Brenan
-    Emily Cabrera 
-    Laura Hutton
-    Gloria Pepe
-    Peter van Vliet
-    Kelly J. Wagoner
+  Set Construction: 
+    - Nicole Blue
+    - Jon Brenan
+    - Emily Cabrera 
+    - Laura Hutton
+    - Gloria Pepe
+    - Peter van Vliet
+    - Kelly J. Wagoner
 external_links:
 ---

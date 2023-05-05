@@ -29,20 +29,20 @@ crew:
   Assistant Technical Director: Peter van Vliet
   Set Dressings: Kelly J. Wagoner
   Properties: Carole Ficheria
-  Sound Design: |
-    Elizabeth Cardy
-    David Poirier
+  Sound Design: 
+    - Elizabeth Cardy
+    - David Poirier
   Light Board Operation: Gloria Pepe
   Sound Board Operator: Elizabeth Cardy
-  Running/Costume Crew: |
-    Candice Clayton
-    Carole Ficheria
-    Brett Lawrence
-  Set Construction: |
-    Daniel Dungan
-    Carole Ficheria
-    Ethan Tillotson
-    Peter van Vliet
-    Kelly J. Wagoner
+  Running/Costume Crew: 
+    - Candice Clayton
+    - Carole Ficheria
+    - Brett Lawrence
+  Set Construction: 
+    - Daniel Dungan
+    - Carole Ficheria
+    - Ethan Tillotson
+    - Peter van Vliet
+    - Kelly J. Wagoner
 external_links:
 ---

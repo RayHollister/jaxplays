@@ -29,24 +29,24 @@ crew:
   Stage Manager: Michelle Simkulet
   Hair and Make-up Design: Tracy Olin
   Sound Design: Trey Harrell
-  Properties: |
-    Jeffery L. Wagoner
-    Kelly J. Wagoner
-  Assistant Stage Manager: |
-    Megan Branch
-    Rhianna Hurt
+  Properties: 
+    - Jeffery L. Wagoner
+    - Kelly J. Wagoner
+  Assistant Stage Manager: 
+    - Megan Branch
+    - Rhianna Hurt
   Poster Design: Melissa Russell
   Light Board Operation: Gloria Pepe
   Sound Board Operator: Michelle Simkulet
-  Running Crew: |
-    Rhianna Hurt
-    Mark Stater
+  Running Crew: 
+    - Rhianna Hurt
+    - Mark Stater
   Costume Crew: Megan Branch
-  Set Construction: |
-    Tim Allen
-    Bonnie Barker-Johnson
-    Paula Collier
-    Gloria Pepe
+  Set Construction: 
+    - Tim Allen
+    - Bonnie Barker-Johnson
+    - Paula Collier
+    - Gloria Pepe
 orchestra:
 external_links:
 ---

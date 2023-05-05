@@ -15,22 +15,22 @@ details:
   Book: Harvey Fierstein - wiki
   Basis: Kinky_Boots_(film) - wiki
   Website: https://web.ovationtix.com/trs/pr/1094753
-showtimes: |
-  2022-07-15 20:00:00
-  2022-07-16 20:00:00
-  2022-07-17 14:00:00
-  2022-07-21 20:00:00
-  2022-07-22 20:00:00
-  2022-07-23 20:00:00
-  2022-07-24 14:00:00
-  2022-07-28 20:00:00
-  2022-07-29 20:00:00
-  2022-07-30 20:00:00
-  2022-07-31 14:00:00
-  2022-08-04 20:00:00
-  2022-08-05 20:00:00
-  2022-08-06 20:00:00
-  2022-08-07 14:00:00
+showtimes: 
+  - 2022-07-15 20:00:00
+  - 2022-07-16 20:00:00
+  - 2022-07-17 14:00:00
+  - 2022-07-21 20:00:00
+  - 2022-07-22 20:00:00
+  - 2022-07-23 20:00:00
+  - 2022-07-24 14:00:00
+  - 2022-07-28 20:00:00
+  - 2022-07-29 20:00:00
+  - 2022-07-30 20:00:00
+  - 2022-07-31 14:00:00
+  - 2022-08-04 20:00:00
+  - 2022-08-05 20:00:00
+  - 2022-08-06 20:00:00
+  - 2022-08-07 14:00:00
 cast:
   Charlie Price: Chris Robertson
   Lola/Simon: Joshua Abbott
@@ -41,18 +41,18 @@ cast:
   Trish: Lindsay Goldman
   George: Frankie Rady
   Harry: Johnny Warren
-  The Angels: |
-    Rylan Serrano
-    Darryl Beamon
-    Christian Savin
-    Tommy Kirkland
-    Brandon Jones
-  Ensemble: |
-    Terria Hill
-    Alexia McKendrick
-    Arden Trusty
-    Noah Hall
-    Jackson Moser
+  The Angels: 
+    - Rylan Serrano
+    - Darryl Beamon
+    - Christian Savin
+    - Tommy Kirkland
+    - Brandon Jones
+  Ensemble: 
+    - Terria Hill
+    - Alexia McKendrick
+    - Arden Trusty
+    - Noah Hall
+    - Jackson Moser
 crew:
   Director: Joe Kemper
   Music Director: Curtis Powell

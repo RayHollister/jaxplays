@@ -18,16 +18,16 @@ cast:
   Surly Man: Bill White
   Miss Framer: Jennifer Gagnon
   Mr. Bardolpf: Jack Wallace
-  Vistitor: |
-    Brittany Crowell
-    Kim Dennison
-    Bob Duffy
-    Mauureen Duffy
-    Carol Lynch
-    Chuck Moargan
-    Nila Reynolds
-    Ed Wagoner
-    Lydia Wagoner
+  Vistitor: 
+    - Brittany Crowell
+    - Kim Dennison
+    - Bob Duffy
+    - Mauureen Duffy
+    - Carol Lynch
+    - Chuck Moargan
+    - Nila Reynolds
+    - Ed Wagoner
+    - Lydia Wagoner
   Felina, Queen of Sorrows: Baby Grey Johnson
 crew:
   Director: Bob Cook
@@ -39,22 +39,22 @@ crew:
   Costume Design: Audrey Wagner
   Hair and Make-up Design: Tracy Olin
   Sound Design: Bob Cook
-  Properties: |
-    Jeffery L. Wagoner
-    Kelly J. Wagoner
+  Properties: 
+    - Jeffery L. Wagoner
+    - Kelly J. Wagoner
   Assistant Technical Director: Tim Allen
   Light Board Operation: Gloria Pepe
   Sound Board Operator: William Dedrick
-  Running Crew: |
-    Kristina Elliot
-    Rhianna Hurt
-    Greg Odenwald
-    Johnathan Sandrony
-  Set Construction: |
-    Gloria Pepe
-    Johnathan Sandrony
-    Matthew Calise
-    Greg Odenwald
+  Running Crew: 
+    - Kristina Elliot
+    - Rhianna Hurt
+    - Greg Odenwald
+    - Johnathan Sandrony
+  Set Construction: 
+    - Gloria Pepe
+    - Johnathan Sandrony
+    - Matthew Calise
+    - Greg Odenwald
 orchestra:
 external_links:
 ---

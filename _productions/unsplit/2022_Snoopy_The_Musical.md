@@ -14,15 +14,15 @@ details:
   Book: Warren Lockhart, Arthur Whitelaw, Michael Grace
   Basis: Charles M. Schulz's comic strip Peanuts
   Website: https://www.eventbrite.com/e/snoopy-the-musical-directed-by-cathy-dooley-tickets-169204024793
-showtimes: |
-  2022-07-22 19:30:00
-  2022-07-23 14:00:00
-  2022-07-24 19:30:00
-  2022-07-28 19:30:00
-  2022-07-29 14:00:00
-  2022-07-30 19:30:00
-  2022-07-30 14:00:00
-  2022-07-31 00:00:00
+showtimes: 
+  - 2022-07-22 19:30:00
+  - 2022-07-23 14:00:00
+  - 2022-07-24 19:30:00
+  - 2022-07-28 19:30:00
+  - 2022-07-29 14:00:00
+  - 2022-07-30 19:30:00
+  - 2022-07-30 14:00:00
+  - 2022-07-31 00:00:00
 cast:
   Snoopy: Clayton Riddley
   Lucy: Christine Phillips

@@ -53,40 +53,40 @@ crew:
   Director: Ray Hollister
   Editor: Ray Hollister
   Casting Director: Michele Simkulet
-  Production Assistance: |
-    Mary McIntyre
-    Gregory Todaro
-    Ben Freid
-    Christopher Lee
-    Shawn LeNoble
-  Executive Producer: |
-    Ray Hollister
-    Karen Feagins
-showtimes: |
-  2015-12-25 00:00:00
-  2015-12-25 01:00:00
-  2015-12-25 02:00:00
-  2015-12-25 03:00:00
-  2015-12-25 04:00:00
-  2015-12-25 05:00:00
-  2015-12-25 06:00:00
-  2015-12-25 07:00:00
-  2015-12-25 08:00:00
-  2015-12-25 09:00:00
-  2015-12-25 10:00:00
-  2015-12-25 11:00:00
-  2015-12-25 12:00:00
-  2015-12-25 13:00:00
-  2015-12-25 14:00:00
-  2015-12-25 15:00:00
-  2015-12-25 16:00:00
-  2015-12-25 17:00:00
-  2015-12-25 18:00:00
-  2015-12-25 19:00:00
-  2015-12-25 20:00:00
-  2015-12-25 21:00:00
-  2015-12-25 22:00:00
-  2015-12-25 23:00:00
+  Production Assistance: 
+    - Mary McIntyre
+    - Gregory Todaro
+    - Ben Freid
+    - Christopher Lee
+    - Shawn LeNoble
+  Executive Producer: 
+    - Ray Hollister
+    - Karen Feagins
+showtimes: 
+  - 15-12-25 00:00:00
+  - 15-12-25 01:00:00
+  - 15-12-25 02:00:00
+  - 15-12-25 03:00:00
+  - 15-12-25 04:00:00
+  - 15-12-25 05:00:00
+  - 15-12-25 06:00:00
+  - 15-12-25 07:00:00
+  - 15-12-25 08:00:00
+  - 15-12-25 09:00:00
+  - 15-12-25 10:00:00
+  - 15-12-25 11:00:00
+  - 15-12-25 12:00:00
+  - 15-12-25 13:00:00
+  - 15-12-25 14:00:00
+  - 15-12-25 15:00:00
+  - 15-12-25 16:00:00
+  - 15-12-25 17:00:00
+  - 15-12-25 18:00:00
+  - 15-12-25 19:00:00
+  - 15-12-25 20:00:00
+  - 15-12-25 21:00:00
+  - 15-12-25 22:00:00
+  - 15-12-25 23:00:00
 external_links:
   WJCT's It's A Wonderful Life Cast Party: https://wjct.smugmug.com/WJCTs-Its-A-Wonderful-Life/
   The WJCT 'It's A Wonderful Life' Behind-The-Scenes Production Podcast Thing: https://news.wjct.org/programs/wjct-its-wonderful-life-behind-scenes-production-podcast-thing

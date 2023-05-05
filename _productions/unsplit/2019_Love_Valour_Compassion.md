@@ -12,10 +12,10 @@ details:
   Theatre: The 5 & Dime
   Writer: Terrence McNally - wiki
   Website: https://www.the5anddime.org/love-valour-compassion
-showtimes: |
-  2019-10-18 20:00:00
-  2019-10-19 20:00:00
-  2019-10-20 14:00:00
+showtimes: 
+  - 19-10-18 20:00:00
+  - 19-10-19 20:00:00
+  - 19-10-20 14:00:00
 cast:
   John Jeckyll/James Jeckyll: Mike Beaman
   Perry Sellars: Joshua Taylor

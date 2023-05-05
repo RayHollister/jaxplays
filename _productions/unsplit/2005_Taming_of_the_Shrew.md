@@ -45,24 +45,24 @@ crew:
   Stage Manager: Nikki Blue
   Assistant Stage Manager: Matthew Calise
   Hair and Make-up Design: Tracy Olin
-  Properties: |
-    Rhianna Hurt
-    Claudia Wright
-  Assistant Technical Director: |
-    Tim Allen
-    Daniel Dungan
+  Properties: 
+    - Rhianna Hurt
+    - Claudia Wright
+  Assistant Technical Director: 
+    - Tim Allen
+    - Daniel Dungan
   Costume Assistant: Sarah Kate Braddy
   Light Board Operation: Gloria Pepe
   Sound Board Operator: Megan Branch
   Graphic Design: Juan Unzueta
   Study Guide: Janet Hall
-  Set Construction: |
-    Nikki Blue
-    Megan Branch
-    Candace Clayton
-    Jesse Kline
-    Greg Odenwald
-    Ashley Potter
+  Set Construction: 
+    - Nikki Blue
+    - Megan Branch
+    - Candace Clayton
+    - Jesse Kline
+    - Greg Odenwald
+    - Ashley Potter
   Backstage Crew: William Dedrick
   Costume Crew: Sarah Kate Braddy
   Photography: Sarah Boone

@@ -40,33 +40,33 @@ crew:
   Sound Design: Jason Chimonides
   Choreograher: Niki Stokes
   Stage Manager: Danielle Hudson
-  Assistant Stage Manager: |
-    Megan Branch
-    Kaila Giovaniello
-  Properties: |
-    Kelly J. Wagoner
-    Kaila Giovaniello
+  Assistant Stage Manager: 
+    - Megan Branch
+    - Kaila Giovaniello
+  Properties: 
+    - Kelly J. Wagoner
+    - Kaila Giovaniello
   Assistant Technical Director: Walter Kmiec
   Lighting Board Operator: Gloria Pepe
   Sound Board Operator: Danielle Hudson
   Graphic Design: Caryl Butterley
   Study Guide: Jason Chimonides
-  Set Construction: |
-    Tim Allen
-    Ilan Ben-Yehuda
-    Megan Branch
-    Co'Relous Bryant
-    Matt Calise
-    Jason Chimonides
-    Kaila Giovaniello
-    Danielle Hudson
-    Bonnie Barker-Johnson
-    Shawn Keith
-    Gloria Pepe
-  Backstage Crew: |
-    Megan Branch
-    Kaila Giovaniello
-    Rhianna Hurt
+  Set Construction: 
+    - Tim Allen
+    - Ilan Ben-Yehuda
+    - Megan Branch
+    - Co'Relous Bryant
+    - Matt Calise
+    - Jason Chimonides
+    - Kaila Giovaniello
+    - Danielle Hudson
+    - Bonnie Barker-Johnson
+    - Shawn Keith
+    - Gloria Pepe
+  Backstage Crew: 
+    - Megan Branch
+    - Kaila Giovaniello
+    - Rhianna Hurt
   Photography: Sarah Boone
 orchestra:
 external_links:

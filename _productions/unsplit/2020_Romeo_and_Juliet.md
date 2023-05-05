@@ -15,11 +15,11 @@ details:
   Genre: Shakespearean tragedy - wiki
   Website: https://www.playersbythesea.org/romeo-juliet
   Setting: Verona - wiki, 16th century
-showtimes: |
-  2020-02-20 20:00:00
-  2020-02-21 20:00:00
-  2020-02-22 20:00:00
-  2020-02-23 14:00:00
+showtimes: 
+  - 2020-02-20 20:00:00
+  - 2020-02-21 20:00:00
+  - 2020-02-22 20:00:00
+  - 2020-02-23 14:00:00
 cast:
   Romeo: Erica Villanueva
   Lord Montague: Virginia Mills-Barfield

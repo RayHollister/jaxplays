@@ -13,16 +13,16 @@ details:
   Music: Scott Brown (writer) - wiki, Anthony King (writer) - wiki
   Lyrics: Scott Brown, Anthony King
   Book: Scott Brown, Anthony King
-showtimes: |
-  2020-04-17 20:00:00
-  2020-04-18 20:00:00
-  2020-04-20 20:00:00
-  2020-04-24 20:00:00
-  2020-04-25 20:00:00
-  2020-04-26 14:00:00
-  2020-05-01 20:00:00
-  2020-05-02 20:00:00
-  2020-05-03 14:00:00
+showtimes: 
+  - 2020-04-17 20:00:00
+  - 2020-04-18 20:00:00
+  - 2020-04-20 20:00:00
+  - 2020-04-24 20:00:00
+  - 2020-04-25 20:00:00
+  - 2020-04-26 14:00:00
+  - 2020-05-01 20:00:00
+  - 2020-05-02 20:00:00
+  - 2020-05-03 14:00:00
 cast:
   Bud Davenport: Ethan Fisher
   Doug Simon: Cole Marshall

@@ -2,7 +2,7 @@
 layout: productions
 title: One by Tenn Plus Eight
 year: 2019
-image_credit: 
+image_credit:
 image_alt:
 image_caption:
 category: play
@@ -13,42 +13,42 @@ details:
   Theatre: Actors Collective
   Venue: ABET - All Beaches Experimental Theatre
   Writers: Adam Nathaniel Davis, Karen Konzen, Cameron J. Pfahler, Elaine Smith, Kelby Siddons, Nathan Sanders, Olivia Gowan, Tennessee Williams
-showtimes: |
-    2019-06-28 20:00:00
-    2019-06-29 20:00:00
-    2019-06-30 14:00:00
-    2019-07-05 20:00:00
-    2019-07-06 20:00:00
-    2019-07-07 14:00:00
+showtimes: 
+  - 19-06-28 20:00:00
+  - 19-06-29 20:00:00
+  - 19-06-30 14:00:00
+  - 19-07-05 20:00:00
+  - 19-07-06 20:00:00
+  - 19-07-07 14:00:00
 cast:
-    Ten Minute Life: |
-        Jason Collins 
-        Milan Alley 
-    Self Care: |
-        Milan Alley 
-        Kristen Walsh 
-    Spare Change: |
-        Rich Pintello 
-        Jason Collins 
-    Sweet Jesus!: |
-        Brooks Anne Meierdierks 
-        Christopher Watson 
-    Social Inquisition: |
-        Brooks Anne Meierdierks 
-        Christopher Watson 
-        Jason Collins 
-        Kristen Walsh 
-        Milan Alley 
-        Rich Pintello 
-    Roots in the Wind: |
-        Kristen Walsh 
-        Brooks Anne Meierdierks 
-        Jason Collins 
-        Rich Pintello 
-    Talk to Me Like the Rain and Let Me Listen: |
-        Milan Alley 
-        Christopher Watson
-  
+Ten Minute Life: 
+  Jason Collins 
+    - Milan Alley
+Self Care: 
+  Milan Alley 
+  Kristen Walsh
+Spare Change: 
+  Rich Pintello 
+  Jason Collins
+Sweet Jesus!: 
+  Brooks Anne Meierdierks 
+  Christopher Watson
+Social Inquisition: 
+  Brooks Anne Meierdierks 
+  Christopher Watson 
+  Jason Collins 
+  Kristen Walsh 
+  Milan Alley 
+  Rich Pintello
+Roots in the Wind: 
+  Kristen Walsh 
+  Brooks Anne Meierdierks 
+  Jason Collins 
+  Rich Pintello
+Talk to Me Like the Rain and Let Me Listen: 
+  Milan Alley 
+  Christopher Watson
+
 crew:
   Director: Caryl Butterley
   Stage Manager: Mara Grigg
@@ -59,6 +59,7 @@ crew:
 external_links:
   Actors Collective - One by Tenn Plus Eight: http://www.actorscollective.com/one-by-tenn-plus-eight/
 ---
+
 The Actors Collective collaborated with ABET to exhibit a series of theatrical performances, comprising of Tennessee Williams' "Talk To Me Like The Rain and Let Me Listen" alongside new original works by playwrights from the region.
 
 "Ten Minute Life"  
@@ -77,10 +78,10 @@ By Nathan Sanders
 By Adam Nathaniel Davis
 
 "Roots in the Wind"  
-By Olivia Gowan  
+By Olivia Gowan
 
 "Talk to Me Like the Rain and Let Me Listen"  
-By Tennessee Williams  
+By Tennessee Williams
 
 Monologues: "Thickness of Water", "Chemistry", "Driving School", "Vocation", "Travel" and "Propagation"
 By Karen Konzen

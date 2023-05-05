@@ -27,24 +27,24 @@ crew:
   Assistant Stage Manager: Shannon Jones
   Assistant Director: Alexis Robbins
   Sound Design: Michael Lipp
-  Properties: |
-    Shannon Jones
-    Kelly J. Wagoner
+  Properties: 
+    - Shannon Jones
+    - Kelly J. Wagoner
   Poster Design: Juan Unzueta
   Moonscape Artist: Anne Roberts
   Light Board Operation: Gloria Pepe
   Sound Board Operator: Mark Stater
-  Running Crew: |
-    Shannon Jones
-    Neal Thorburn
-  Set Construction: |
-    Kristina Elliot
-    Phillip Grow
-    Hunter Harbin
-    Shannon Jones
-    Kat McLeod
-    Gloria Pepe
-    Mark Stater
-    Juan Unzueta
+  Running Crew: 
+    - Shannon Jones
+    - Neal Thorburn
+  Set Construction: 
+    - Kristina Elliot
+    - Phillip Grow
+    - Hunter Harbin
+    - Shannon Jones
+    - Kat McLeod
+    - Gloria Pepe
+    - Mark Stater
+    - Juan Unzueta
 external_links:
 ---

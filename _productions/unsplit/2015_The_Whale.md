@@ -12,13 +12,13 @@ details:
   Theatre: The 5 & Dime
   Writer: Samuel D. Hunter - wiki
   Website: https://www.the5anddime.org
-showtimes: |
-  2015-11-13 20:00:00
-  2015-11-14 20:00:00
-  2015-11-15 14:00:00
-  2015-11-20 20:00:00
-  2015-11-21 20:00:00
-  2015-11-22 14:00:00
+showtimes: 
+  - 15-11-13 20:00:00
+  - 15-11-14 20:00:00
+  - 15-11-15 14:00:00
+  - 15-11-20 20:00:00
+  - 15-11-21 20:00:00
+  - 15-11-22 14:00:00
 cast:
   Charlie: Bill Ratliff
   Liz: Alix Bond
@@ -29,9 +29,9 @@ crew:
   Director: Juan Unzueta
   Assistant Director: Josh Waller
   Stage Manager: Abigail Saenz
-  Props: |
-    Maggie O'Connor
-    Pat Gorman
+  Props: 
+    - Maggie O'Connor
+    - Pat Gorman
   Set Design: Tom Fallon
   Lighting Design: Jim Wiggins
 external_links:

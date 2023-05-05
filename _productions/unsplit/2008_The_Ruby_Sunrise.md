@@ -35,37 +35,37 @@ crew:
   Costume Design: Tracy Olin
   Stage Manager: Geoff Weeks
   Assistant Stage Manager: Rhianna Hurt
-  Sound Design: |
-    Shirley Sacks
-    Michael Lipp
+  Sound Design: 
+    - Shirley Sacks
+    - Michael Lipp
   Technical Advisor: Sean Olin
-  Properties: |
-    Abigail Saenz
-    Mark Stater
-    Kelly J. Wagoner
+  Properties: 
+    - Abigail Saenz
+    - Mark Stater
+    - Kelly J. Wagoner
   Light Board Operation: Gloria Pepe
-  Costume Crew: |
-    Sarah-Kate Braddy
-    Colleen Doherty
-    Jessica Judge
-  Running Crew: |
-    Greg Odenwald
-    Chaz Miller
-    Abigail Saenz
-    Meon Graham
-    Becca Runyan
-    Janna Pettegrew
+  Costume Crew: 
+    - Sarah-Kate Braddy
+    - Colleen Doherty
+    - Jessica Judge
+  Running Crew: 
+    - Greg Odenwald
+    - Chaz Miller
+    - Abigail Saenz
+    - Meon Graham
+    - Becca Runyan
+    - Janna Pettegrew
   Sound Board Operator: Neal Thorburn
-  Set Construction: |
-    Greg Odenwald
-    Mark Stater
-    Rita Ferrar
-    Gloria Pepe
-    John McSweeney
-    Neal Thorburn
-    Chaz Miller
-    Stephen Brazile
-    Phillip Grow
-    Chris Stone
+  Set Construction: 
+    - Greg Odenwald
+    - Mark Stater
+    - Rita Ferrar
+    - Gloria Pepe
+    - John McSweeney
+    - Neal Thorburn
+    - Chaz Miller
+    - Stephen Brazile
+    - Phillip Grow
+    - Chris Stone
 external_links:
 ---

@@ -15,18 +15,18 @@ details:
   Genre: Drama
   Setting: The Hill District of Pittsburgh, 1969
   Subject: The uncertain future promised by the Civil Rights Movement of the 1960s
-showtimes: |
-  2020-03-13 20:00:00
-  2020-03-14 20:00:00
-  2020-03-15 14:00:00
-  2020-03-19 20:00:00
-  2020-03-20 20:00:00
-  2020-03-21 20:00:00
-  2020-03-22 14:00:00
-  2020-03-26 20:00:00
-  2020-03-27 20:00:00
-  2020-03-28 20:00:00
-  2020-03-29 14:00:00
+showtimes: 
+  - 2020-03-13 20:00:00
+  - 2020-03-14 20:00:00
+  - 2020-03-15 14:00:00
+  - 2020-03-19 20:00:00
+  - 2020-03-20 20:00:00
+  - 2020-03-21 20:00:00
+  - 2020-03-22 14:00:00
+  - 2020-03-26 20:00:00
+  - 2020-03-27 20:00:00
+  - 2020-03-28 20:00:00
+  - 2020-03-29 14:00:00
 cast:
   Memphis: Eugene Lindsey, Jr.
   Wolf: Cedarian Crawford
@@ -37,13 +37,13 @@ cast:
   West: Gregory P. Hughes
 crew:
   Director: Brian Niece
-  Producers: |
-    Tina Turner
-    Mechelle Maples-Canady
+  Producers: 
+    - Tina Turner
+    - Mechelle Maples-Canady
   Stage Manager: Jaquette 'Jackie' Jantzen
-  Set Designers: |
-    Daniel Dungan
-    Brian Niece
+  Set Designers: 
+    - Daniel Dungan
+    - Brian Niece
   Set Construction: Ben Girvin
   Lighting Designer: Daniel Dungan
   Sound Designer: Brian Niece

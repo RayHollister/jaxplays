@@ -15,26 +15,26 @@ details:
   Book: Allan Knee - wiki
   Basis: Little Women - wiki, Louisa May Alcott - wiki
   Website: https://web.archive.org/web/20220523175154/https://limelight-theatre.org/little-women/
-showtimes: |
-  2022-05-12 19:30:00
-  2022-05-13 19:30:00
-  2022-05-14 19:30:00
-  2022-05-15 14:00:00
-  2022-05-17 19:30:00
-  2022-05-19 19:30:00
-  2022-05-20 19:30:00
-  2022-05-21 19:30:00
-  2022-05-22 14:00:00
-  2022-05-26 19:30:00
-  2022-05-27 19:30:00
-  2022-05-28 19:30:00
-  2022-05-29 14:00:00
+showtimes: 
+  - 2022-05-12 19:30:00
+  - 2022-05-13 19:30:00
+  - 2022-05-14 19:30:00
+  - 2022-05-15 14:00:00
+  - 2022-05-17 19:30:00
+  - 2022-05-19 19:30:00
+  - 2022-05-20 19:30:00
+  - 2022-05-21 19:30:00
+  - 2022-05-22 14:00:00
+  - 2022-05-26 19:30:00
+  - 2022-05-27 19:30:00
+  - 2022-05-28 19:30:00
+  - 2022-05-29 14:00:00
 cast:
   Beth March: Christie Davis
   Amy March: Charity Zappone
-  Young Amy March: |
-    Ella Escamilla
-    Sophia Goral
+  Young Amy March: 
+    - Ella Escamilla
+    - Sophia Goral
   Meg March: Haiden Matthews
   Jo March: Megan Morton
   Marmee March: Susan Nowell
@@ -44,16 +44,16 @@ cast:
   Aunt March: Dawn Knipe
   Mr. Laurence: Jim Warren
   Mrs. Kirk: Melissa Mccall
-  Ensemble: |
-    Kolton Dreibrodt
-    Clay Mitchell
-    Lauren Ashley Buckley
-    Keegan Mcgee
+  Ensemble: 
+    - Kolton Dreibrodt
+    - Clay Mitchell
+    - Lauren Ashley Buckley
+    - Keegan Mcgee
 crew:
-    Director: Shelli Long
-    Music Director: Shelli Long
-    Choreographer: Saraevelyn Bergin
-    Stage Manager: Saraevelyn Bergin
+  Director: Shelli Long
+  Music Director: Shelli Long
+  Choreographer: Saraevelyn Bergin
+  Stage Manager: Saraevelyn Bergin
 external_links:
   "Little Women | Limelight Theatre": https://web.archive.org/web/20220523175154/https://limelight-theatre.org/little-women/
 ---

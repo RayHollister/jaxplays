@@ -31,9 +31,9 @@ crew:
   Stage Manager: Shannon Jones
   Assistant Stage Manager: Noelle Jaycox
   Sound Design: Michael Lipp
-  Properties: |
-    Jefferey L. Wagoner
-    Kelly J. Wagoner
+  Properties: 
+    - Jefferey L. Wagoner
+    - Kelly J. Wagoner
   Assistant Technical Director: Daniel Owen Dungan
   Poster Design: Caryl Butterley
   Watercolor Art: Shannon Hobbs
@@ -42,23 +42,23 @@ crew:
   Light Board Operation: Gloria Pepe
   Sound Board Operator: Cat McLeod
   Costume Assistant: Judy Gookin
-  Running Crew: |
-    Greg Odenwald
-    Abigail Saenz
-  Set Construction: |
-    James Bennett
-    Kristina Elliot
-    Frank Healy
-    Danielle Hudson
-    Andy Hunt
-    Caroline Hunt
-    Debbie Hurm
-    Shannon Jones
-    Gloria Pepe
-    Josh Pierre
-    Shirley Sacks
-    Abigail Saenz
-    Mark Stater
+  Running Crew: 
+    - Greg Odenwald
+    - Abigail Saenz
+  Set Construction: 
+    - James Bennett
+    - Kristina Elliot
+    - Frank Healy
+    - Danielle Hudson
+    - Andy Hunt
+    - Caroline Hunt
+    - Debbie Hurm
+    - Shannon Jones
+    - Gloria Pepe
+    - Josh Pierre
+    - Shirley Sacks
+    - Abigail Saenz
+    - Mark Stater
 orchestra:
 external_links:
 ---

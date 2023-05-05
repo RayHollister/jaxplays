@@ -13,20 +13,20 @@ details:
   Venue: BABS' LAB
   Writer: Joshua Harmon (playwright) - wiki
   Website: https://www.the5anddime.org/significant-other
-showtimes: |
-  2022-04-21 20:00:00
-  2022-04-22 20:00:00
-  2022-04-23 20:00:00
+showtimes: 
+  - 2022-04-21 20:00:00
+  - 2022-04-22 20:00:00
+  - 2022-04-23 20:00:00
 cast:
-  Cast: |
-    Bradley Akers
-    Lindsay Curry
-    Kasi Walters
-    Danielle Glenn
-    Brooks Anne Meierdierks
-    Christopher Watson
-    Daniel Austin
-    Cynthia Riegler
+  Cast: 
+    - Bradley Akers
+    - Lindsay Curry
+    - Kasi Walters
+    - Danielle Glenn
+    - Brooks Anne Meierdierks
+    - Christopher Watson
+    - Daniel Austin
+    - Cynthia Riegler
 crew:
   Director: Barbara Colaciello
 external_links:

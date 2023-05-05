@@ -22,19 +22,19 @@ cast:
   Mayzie LaBird: Staci Cobb
   Sour Kangaroo/Young Kangaroo: Lee Hamby
   General Genghis Kahn Schmitz: Erik Anthony DeCicco
-  Bird Girl: |
-    Maya Adkins
-    Brittany French
-    Miranda Lawson
-  Wickersham Brother: |
-    Josh Waller
-    Julian Goldhagen
-    Jason Goodson
+  Bird Girl: 
+    - Maya Adkins
+    - Brittany French
+    - Miranda Lawson
+  Wickersham Brother: 
+    - Josh Waller
+    - Julian Goldhagen
+    - Jason Goodson
   Grinch/Falsetto Fish/Lion Tamer: Russell Hainline
   Who/Cadet/Fish: Sarah Bartley
-  Who/Hunch: |
-    Terry Cecil
-    Kathy Surcey
+  Who/Hunch: 
+    - Terry Cecil
+    - Kathy Surcey
   Vlad Vladikoff/Who/Hunter/Hunch: Victor Dorfman
   Cindy Lou Who/Cadet: Amanda Harris
   Who/Strongman/Hunch/Judge Yertle the Turtle: Alex Hernandez
@@ -61,51 +61,51 @@ crew:
   Sound Design: Michael Lipp
   Light Board Operation: Gloria Pepe
   Sound Board Operator: Nikki Blue
-  Running Crew: |
-    Aaron Cho
-    Sarah Giles
-    Greg Odenwald
-    Jonathan Sandroni
+  Running Crew: 
+    - Aaron Cho
+    - Sarah Giles
+    - Greg Odenwald
+    - Jonathan Sandroni
   Costume Head: Aaron Crosby
-  Costume Construction: |
-    Aaron Crosby
-    Skye O'Neil
-    Ashley Potter
-    Lydia Wagoner
-  Costume Running Crew: |
-    Michelle Goodman
-    Rhianna Hurt
-  Props Running Crew: |
-    Megan Branch
-    Shannon Jones
-  Fly Crew: |
-    Matthew Calise
-    Danielle Hudson
-  Set Construction: |
-    Tim Allen
-    Nikki Blue
-    Aaron Cho
-    Kristina Elliot
-    Shannon Jones
-    Cecilia Miyares
-    Gabriella Miyares
-    Isabella Miyares
-    Lisa Miyares
-    Greg Odenwald
-    Gloria Pepe
-    Tyler Ross
-    Jonathan Sandroni
-  Follow Spot Operator: |
-    Kaila Giovaniello
-    Andrew Hanson
+  Costume Construction: 
+    - Aaron Crosby
+    - Skye O'Neil
+    - Ashley Potter
+    - Lydia Wagoner
+  Costume Running Crew: 
+    - Michelle Goodman
+    - Rhianna Hurt
+  Props Running Crew: 
+    - Megan Branch
+    - Shannon Jones
+  Fly Crew: 
+    - Matthew Calise
+    - Danielle Hudson
+  Set Construction: 
+    - Tim Allen
+    - Nikki Blue
+    - Aaron Cho
+    - Kristina Elliot
+    - Shannon Jones
+    - Cecilia Miyares
+    - Gabriella Miyares
+    - Isabella Miyares
+    - Lisa Miyares
+    - Greg Odenwald
+    - Gloria Pepe
+    - Tyler Ross
+    - Jonathan Sandroni
+  Follow Spot Operator: 
+    - Kaila Giovaniello
+    - Andrew Hanson
 orchestra:
   Keyboard: Ellen Milligan
-  Reeds: |
-    Joe Yorio
-    Kim Yorio
-  Bass: |
-    Bill McNeiland
-    Sean Tarleton
+  Reeds: 
+    - Joe Yorio
+    - Kim Yorio
+  Bass: 
+    - Bill McNeiland
+    - Sean Tarleton
   Drums: Tony Steve
   Percussion: Jonah Pierre
 external_links:

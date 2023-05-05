@@ -43,37 +43,37 @@ crew:
   Hair and Make-up Design: Tracy Olin
   Sound Design: Michael Lipp
   Poster and Graphic Design: Juan Unzueta
-  Properties: |
-    Claudia Wright
-    Carole Ficheria
+  Properties: 
+    - Claudia Wright
+    - Carole Ficheria
   Stage Manager: Mary Beth Silvestris
   Assistant Technical Director: Peter van Vliet
   Assistant Stage Manager: Jessica Besecker
   Light Board Operation: Gloria Pepe
   Sound Board Operator: Mary Beth Silvestris
-  Running Crew: |
-    Jennifer Elliot
-    Greg Odenwald
-    Tyler Ross
-  Costume Crew: |
-    Sarah Kate Braddy
-    Mandy Swift
-  Fly Crew: |
-    Tim Allen
-    Nikki Blue
-  Set Construction: |
-    Tim Allen
-    Nikki Blue
-    Cheryl Davis
-    Norman Davis
-    Mark Dorsett
-    Daniel Dungan
-    Carole Ficheria
-    Greg Odenwald
-    Gloria Pepe
-  Follow Spot Operator: |
-    Gloria Pepe
-    Carolyn Boyd
+  Running Crew: 
+    - Jennifer Elliot
+    - Greg Odenwald
+    - Tyler Ross
+  Costume Crew: 
+    - Sarah Kate Braddy
+    - Mandy Swift
+  Fly Crew: 
+    - Tim Allen
+    - Nikki Blue
+  Set Construction: 
+    - Tim Allen
+    - Nikki Blue
+    - Cheryl Davis
+    - Norman Davis
+    - Mark Dorsett
+    - Daniel Dungan
+    - Carole Ficheria
+    - Greg Odenwald
+    - Gloria Pepe
+  Follow Spot Operator: 
+    - Gloria Pepe
+    - Carolyn Boyd
 orchestra:
   Keyboard/Conductor: Laura Peden
   Guitar: Stephen Flakus

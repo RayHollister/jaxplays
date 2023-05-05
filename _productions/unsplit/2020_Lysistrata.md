@@ -14,16 +14,16 @@ details:
   Writer: Aristophanes - wiki
   Genre: Comedy
   Website: https://www.the5anddime.org/lysistrata
-showtimes: |
-  2020-02-21 20:00:00
-  2020-02-22 20:00:00
-  2020-02-24 20:00:00
-  2020-02-28 20:00:00
-  2020-02-29 20:00:00
-  2020-03-01 14:00:00
-  2020-03-06 20:00:00
-  2020-03-07 20:00:00
-  2020-03-08 14:00:00
+showtimes: 
+  - 2020-02-21 20:00:00
+  - 2020-02-22 20:00:00
+  - 2020-02-24 20:00:00
+  - 2020-02-28 20:00:00
+  - 2020-02-29 20:00:00
+  - 2020-03-01 14:00:00
+  - 2020-03-06 20:00:00
+  - 2020-03-07 20:00:00
+  - 2020-03-08 14:00:00
 cast:
   Lysistrata: Stephanie Santiago
   Kalonika: Katie Johnston
@@ -36,24 +36,24 @@ cast:
   Leader Young Women Chorus: Rachel Sadowski
   Leader Old Man’s Chorus: Kenggy Bravo
   Spartan Envoy: Marielle Erskine
-  Senator: |
-    Paige Ruggles
-    Sommer Farhat
-    Rachel Sadowski
-    Kenggy Bravo
-    Farah Nesargi
-    Deborah Reid
-  Young Women Chorus: |
-    Marielle Erskine
-    Mary Schubert
-    Catherine Tetzlaff
-  Old Women Chorus: |
-    Farah Nesargi
-    Deborah Reid
-  Men’s Chorus: |
-    Rachel Swanzy
-    Cordelia Palmer
-    Talise Zide
+  Senator: 
+    - Paige Ruggles
+    - Sommer Farhat
+    - Rachel Sadowski
+    - Kenggy Bravo
+    - Farah Nesargi
+    - Deborah Reid
+  Young Women Chorus: 
+    - Marielle Erskine
+    - Mary Schubert
+    - Catherine Tetzlaff
+  Old Women Chorus: 
+    - Farah Nesargi
+    - Deborah Reid
+  Men’s Chorus: 
+    - Rachel Swanzy
+    - Cordelia Palmer
+    - Talise Zide
 crew:
   Director: Kristin Livingston
   Stage Manager: Izabella Unice
@@ -63,15 +63,15 @@ crew:
   Costumes: Franzin Ruiz
   Sound: Rhian Franchebois
   Choreography: Cenetta Baker
-  Props: |
-    Faith Ortega
-    Jamee Robbins
-  Crew: |
-    Dolly Johnson
-    Savannah LeNoble
-  Production Managers: |
-    Cameron Sparks
-    Lee Hamby
+  Props: 
+    - Faith Ortega
+    - Jamee Robbins
+  Crew: 
+    - Dolly Johnson
+    - Savannah LeNoble
+  Production Managers: 
+    - Cameron Sparks
+    - Lee Hamby
 external_links:
    LYSISTRATA | The 5 & Dime: https://www.the5anddime.org/lysistrata
 ---

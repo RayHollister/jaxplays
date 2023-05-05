@@ -11,12 +11,12 @@ details:
   Setting: Here and Now, Now and Then
   Subject: Based on the story by Jeremy Kreis McTiernan and Joshua Kreis McTiernan
   Premiere: 2011-02-18
-showtimes: |
-    2011-02-18 20:00:00
-    2011-02-19 20:00:00
-    2011-02-24 20:00:00
-    2011-02-25 20:00:00
-    2011-02-26 20:00:00
+showtimes: 
+  - 2011-02-18 20:00:00
+  - 2011-02-19 20:00:00
+  - 2011-02-24 20:00:00
+  - 2011-02-25 20:00:00
+  - 2011-02-26 20:00:00
 cast:
   The Narrator: Brian Fullford
   Cameron: Cameron Lee Henderson
@@ -33,21 +33,21 @@ cast:
   Jack: J'royce Denard Walton
 crew:
   Director: Joshua Kreis McTiernan
-  Script Supervisors: |
-    Joshua Kreis McTiernan
-    Evan Dodd
+  Script Supervisors: 
+    - Joshua Kreis McTiernan
+    - Evan Dodd
   Stage Manager: Jane Cassingham
-  Set Design: |
-    Joshua Kreis McTiernan
-    Brianna Dykes
+  Set Design: 
+    - Joshua Kreis McTiernan
+    - Brianna Dykes
   Costume Design: J'royce Denard Walton
-  Sound Design: |
-    Joshua Kreis McTiernan
-    Ray Hollister
+  Sound Design: 
+    - Joshua Kreis McTiernan
+    - Ray Hollister
   Light/Sound Board Operator: Ray Hollister
-  Deck Crew: |
-    Jane Cassingham
-    Pablo J. Milla
+  Deck Crew: 
+    - Jane Cassingham
+    - Pablo J. Milla
 photos:
   - photo: 2011_The_Creationists_1.jpeg
     photo_credit: Pablo Milla
