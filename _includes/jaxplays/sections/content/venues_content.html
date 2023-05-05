@@ -129,11 +129,13 @@
           </thead>
           <tbody>
             {% for production in venue_productions %}
+            {% assign theatre_name = production.details.Theatre | replace: "&", "and" | slugify %}
+            {% assign theatre_url = "/theatres/" | append: theatre_name %}
             <tr>
               <td>{{ production.year }}</td>
               <td><a href="{{ production.url }}">{{ production.title }}</a></td>
               <td><a
-                  href="/theatres/{{ production.details.Theatre | replace: ' ', '_' | replace: '.', '' | replace: "'", "" }}">{{ production.details.Theatre }}</a></td>
+                  href="{{ theatre_url }}">{{ production.details.Theatre }}</a></td>
             </tr>
             {% endfor %}
           </tbody>
