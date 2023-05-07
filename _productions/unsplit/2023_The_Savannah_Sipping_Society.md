@@ -47,4 +47,17 @@ crew:
   Ticketmaster: Leslie Sanders
 orchestra:
 external_links:
+photos:
+  - photo: 2023_Savannah_Sipping_Society_1.jpeg
+    photo_credit: 
+    photo_alt: 
+    photo_caption: "Cast of The Savannah Sipping Society: Tammy Bradley, Theresa Stanley, Tori Ann Smith, Danya Zimbauer (left to right)"
+  - photo: 2023_Savannah_Sipping_Society_2.jpeg
+    photo_credit: 
+    photo_alt: 
+    photo_caption: "Cast of The Savannah Sipping Society: Danya Zimbauer, Tammy Bradley, Theresa Stanley, Tori Ann Smith (left to right)"
+  - photo: 2023_Savannah_Sipping_Society_3.jpeg
+    photo_credit: 
+    photo_alt: 
+    photo_caption: "Cast of The Savannah Sipping Society during rehearsal: Tammy Bradley, Danya Zimbauer, Theresa Stanley, Tori Ann Smith (left to right)"
 ---
