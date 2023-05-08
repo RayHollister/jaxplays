@@ -11,7 +11,7 @@ playbill:
 category: 
 details:
   Theatre: Players by the Sea
-  Venue: John McManus Mainstage Theatre
+  Venue: Grace Darling Studio Theatre
   Playwright: Tarell Alvin McCraney
   Website: https://playersbythesea.org/choir-boy
 showtimes: 
@@ -29,15 +29,24 @@ showtimes:
   - 2023-06-04 14:00:00
 cast:
   Pharus Jonathan Young: Zayne Thomie
-  Bobby Marrow: Clifton Daniels II
-  David Heard: Darryl Beamon
-  Anthony Justin'“AJ' James: Isaiah Turner
+  Robert 'Bobby' Marrow III: Clifton Daniels II
+  David Heard: Darryl J. Beamon
+  Anthony Justin 'AJ' James: Isaiah Turner
   Headmaster Marrow: Reese Dickerson
   Junior Davis: Raphael Albea
-  Mr. Pendleton: Dave Alen Thomas
+  Mr. Pendleton: Dave Alan Thomas
   Pharus Understudy: Israel Haynes
 crew:
-  Director: Jereme Raickett
+  Director: Jeremé Raickett
+  Costume Design: Tonya Thomas
+  Sound Design: China Richardson
+  Music Dirction: Tina Wilson
+  Choreography: Arias West
 external_links:
+photos:
+- photo: 2023_Choir_Boy_00.jpeg
+  photo_credit: Players by the Sea
+  photo_alt: 
+  photo_caption: 
 ---
 Choir Boy, a captivating play written by Tarell Alvin McCraney, is a stunning exploration of identity, masculinity, and respectability in a world that often rejects those who don't conform to traditional norms. Set in an all-boys, predominantly African-American prep school, the play follows Pharus, a talented and charismatic choirboy who must navigate the challenges of growing up in a society that demands conformity at all costs. With its dynamic fusion of music, dance, and drama, Choir Boy is an immersive theatrical experience that will leave you moved and inspired. As Pharus struggles to find his voice and his place in the world, the play asks us to consider what it means to be true to ourselves in the face of societal pressure, and to explore the complex intersections of race, sexuality, and power that shape our lives.

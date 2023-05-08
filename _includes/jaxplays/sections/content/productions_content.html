@@ -144,19 +144,19 @@
                   {% if theatre_name != venue_name %}
                   <a target="_blank" href="/venues/{{ venue_name  | replace: '&', 'and' | slugify }}">{{ venue_name }}</a><br />
                   {% endif %}
-                  {% for page in site.pages %}
-                  {% if page.layout == 'venues' and page.title==venue_name %}
-                  {% assign venue_address = page.details.Address %}
-                  {{ venue_address | newline_to_br }}
-                  <ul class="map_links">
-                    <li><a target="_blank"
-                        href="https://www.google.com/maps/search/?api=1&query={{ venue_address | uri_escape | replace: '%0A', '%20' }}">Google
-                        Maps</a></li>
-                    <li><a target="_blank"
-                        href="https://maps.apple.com/?q={{ venue_address | uri_escape | replace: '%0A', '%20' }}">Apple
-                        Maps</a></li>
-                  </ul>
-                  {% endif %}
+                  {% for page in site.venues %}
+                    {% if page.layout == 'venues' and page.title==venue_name %}
+                      {% assign venue_address = page.details.Address %}
+                      {{ venue_address | newline_to_br }}
+                      <ul class="map_links">
+                        <li><a target="_blank"
+                            href="https://www.google.com/maps/search/?api=1&query={{ venue_address | uri_escape | replace: '%0A', '%20' }}">Google
+                            Maps</a></li>
+                        <li><a target="_blank"
+                            href="https://maps.apple.com/?q={{ venue_address | uri_escape | replace: '%0A', '%20' }}">Apple
+                            Maps</a></li>
+                      </ul>
+                    {% endif %}
                   {% endfor %}
                   {%- else -%}
                   {{ value | markdownify | strip | remove: ' <p>' | remove: '</p>' | remove: "\r" | remove: "\n" }}
