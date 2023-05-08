@@ -26,7 +26,7 @@ crew:
   Technical Director: Andrew J. Way
   Assistant Technical Director: James Wright
   Properties:
-    - kembra Allen
+    - Kembra Allen
     - Ashira Brook
     - Amanda Jane Schade
     - Claudia Wright

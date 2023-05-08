@@ -2,6 +2,7 @@
 title: Kelly J. Wagoner
 redirect_from:
   - /people/Kelly-Wagoner
+  - /people/Kelly-J.-Wagoner
 layout: people
 image: 
 image_credit: 
