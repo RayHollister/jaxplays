@@ -3,13 +3,14 @@ title: "The Savannah Sipping Society: A Toast to Sisterhood and Laughter at St. 
 layout: posts
 date: 2023-05-07T22:12:34-04:00
 published: true
+categories: reviews
 image: 2023_Savannah_Sipping_Society_07.jpg
-image-credit: Ray Hollister
-image-alt: Danya Zimbauer, Tori Ann Smith, Tammy Bradley and Theresa Stanley (left to right)
-image-caption: Danya Zimbauer, Tori Ann Smith, Tammy Bradley and Theresa Stanley (left to right)
+image_credit: Ray Hollister
+image_alt: Danya Zimbauer, Tori Ann Smith, Tammy Bradley and Theresa Stanley (left to right)
+image_caption: Danya Zimbauer, Tori Ann Smith, Tammy Bradley and Theresa Stanley (left to right)
 author: Ray Hollister
 ---
-This weekend, the [St. Marys Little Theatre](/theatres/st-marys-little-theatre) came alive with the vibrant performance of ["The Savannah Sipping Society."](/productions/2023-the-savannah-sipping-society/) The play, a heartwarming comedy, revolves around four Southern women who, through unexpected circumstances, form a bond that transcends their individual struggles and differences.
+This weekend, the [St. Marys Little Theatre](/theatres/st-marys-little-theatre) came alive with the vibrant performance of [The Savannah Sipping Society](/productions/2023-the-savannah-sipping-society/). The play, a heartwarming comedy, revolves around four Southern women who, through unexpected circumstances, form a bond that transcends their individual struggles and differences.
 
 The ensemble cast, featuring Danya Zimbauer, Dr. Theresa Stanley, Tammy Bradley, Tori Ann Smith and Susan Langenbahn, delivered a delightful and hilarious performance that left the audience in high spirits.
 
@@ -24,3 +25,5 @@ Tammy Bradley, as MarlaFaye Mosley, endeared herself to the audience with her ca
 In a brief yet unforgettable performance, Susan Langenbahn brought Grandmother Covington to life with impeccable comic timing and a delightful stage presence. Langenbahn's portrayal was nothing short of hilarious, leaving the audience wanting more.
 
 "The Savannah Sipping Society" at St. Marys Little Theatre was a testament to the power of friendship, resilience and laughter. The ensemble cast delivered an exceptional performance that left the audience not only entertained but also craving a cocktail to toast to the sisterhood portrayed on stage. Don't miss this delightful, hilarious show that will lift your spirits and leave you with a warm feeling in your heart.
+
+For more photos, the complete cast list and crew list and the link to buy tickets, visit [The Savannah Sipping Society](/productions/2023-the-savannah-sipping-society/) page on JaxPlays. 
