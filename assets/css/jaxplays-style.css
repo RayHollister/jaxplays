@@ -164,6 +164,26 @@ ul#results-container {
 ul#results-container li {
   line-height: 2;
 }
+.mainmenu ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+    font-weight: 600;
+  }
+
+.git-wiki-post-list{
+  margin: 1rem 0
+}
+
+.post-list-title {
+  font-weight: 600;
+}
+ul.post-list {
+    padding: 0 1.5rem;
+}
+ul.post-list li {
+    padding: .2rem 0;
+}
 
 /* Media query for desktop devices */
 @media (min-width: 1024px) {
