@@ -20,7 +20,7 @@ cast:
   Lt. Comdr. Joanne Galloway: Juniper Berolzheimer
   Capt. Isaac Whitaker: Glenn Gaynon
   Lt. Col. Matthew A. Markinson: Jon Brenan
-  PFC William T. Santiago: David khosrowzadeh
+  PFC William T. Santiago: David Khosrowzadeh
   Col. Nathan Jessep: Mark Lambert
   Lt. Jonathan J. Kendrick: David Gile
   Capt. Jack Ross: Michael Bahar
