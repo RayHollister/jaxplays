@@ -49,7 +49,7 @@ cast:
     - Andre Dimapilis
     - Andrew Langenbach
     - Robert Pelaia
-  Narrator: Matt "Shotgun" Basford
+  Narrator: Matt 'Shotgun' Basford
 crew:
   Artistic Director: Michael Lipp
   Stage Manager/Assistant Director: Christopher P. Farrell
@@ -59,7 +59,7 @@ crew:
   Lighting Design: Jeffery L. Wagoner
   Slideshow Design: Kelly J. Wagoner
   Sound Design: 
-    - Matt "Shotgun" Basford
+    - Matt 'Shotgun' Basford
     - Michael Lipp
   Running Crew: 
     - Debora Goldberg
