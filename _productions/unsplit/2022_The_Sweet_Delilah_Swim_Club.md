@@ -10,6 +10,7 @@ category: play
 details:
   Title: The Sweet Delilah Swim Club
   Theatre: Theatre Jacksonville
+  Venue: Little Theatre
   Writer: Jessie Jones, Nicholas Hope, Jamie Wooten
   Genre: Comedy, Drama
   Website: https://www.theatrejax.com/season102
