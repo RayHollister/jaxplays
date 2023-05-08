@@ -46,7 +46,7 @@ crew:
     - Jeffery L. Wagoner
   Assistant Technical Director: Daniel Owen Dungan
   Lighting Board Operator: Jeffery L. Wagoner
-  Sound Board Operator: Tim
+  Sound Board Operator: Tim Driscoll
   Graphic Design: Scott Taylor
 orchestra:
 external_links:

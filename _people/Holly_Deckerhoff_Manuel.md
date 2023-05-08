@@ -1,7 +1,7 @@
 ---
-title: Daniel Dungan
+title: Holly Deckerhoff Manuel
 redirect_from:
-- /people/Daniel-Owen-Dungan
+- /people/Holly-Deckerhoff
 layout: people
 image: 
 image_credit: 
