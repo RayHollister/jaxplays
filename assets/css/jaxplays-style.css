@@ -185,6 +185,14 @@ ul.post-list li {
     padding: .2rem 0;
 }
 
+.news.featured_image figure {
+    max-width: 750px;
+}
+
+.post-wrapper {
+    max-width: 750px;
+}
+
 /* Media query for desktop devices */
 @media (min-width: 1024px) {
   #git-wiki-people-content,

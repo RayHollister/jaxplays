@@ -1,17 +1,45 @@
 ---
 layout: git-wiki-default
 ---
-<h1>{{ page. title }}</h1>
+<div class="post-wrapper">
+  <h1>{{ page. title }}</h1>
 
-{% if page.author or site.author %}
-<p class="byline">By {{ page.author | default: site.author }}</p>
-{% endif %}
-<p class="dateline">Published on {{ page.date | date: "%A, %B %d, %Y" }}</p>
+  {% if page.author or site.author %}
+  <p class="byline">By {{ page.author | default: site.author }}</p>
+  {% endif %}
+  <p class="dateline">Published on {{ page.date | date: "%A, %B %d, %Y" }}</p>
 
-<div class="blog-content">
-{{content}}
-</div>
+  <div class="news featured_image">
+    {% if page.image %}
+    {% capture alt_text %}
+    {% if page.image_alt %}{{ page.image_alt }}
+    {% else %}{{ page.title }}
+    {% endif %}
+    {% endcapture %}
+    <figure class="image">
 
-{% if page.tags.size > 0 %}
+      <img src="{{ '/media/photos/' | append: page.image }}" alt="{{ alt_text }}">
+      {% if page.image_caption or page.image_credit %}
+      <figcaption>
+        {% if page.image_caption %}
+        {{ page.image_caption }}
+        {% endif %}
+        {% if page.image_caption and page.image_credit %} | {% endif %}
+        {% if page.image_credit %}
+        (📷 {{ page.image_credit }})
+        {% endif %}
+      </figcaption>
+      {% endif %}
+
+      {% endif %}
+    </figure>
+  </div>
+
+  <div class="blog-content">
+    {{content}}
+  </div>
+
+  {% if page.tags.size > 0 %}
   <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
-{% endif %}
+  {% endif %}
+</div>
