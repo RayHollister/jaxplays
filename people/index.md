@@ -15,13 +15,13 @@ layout: git-wiki-default
   {% for role in production.cast %}
     {% assign members = role[1] %}
     {% for member in members %}
-      {% assign member_trimmed = member | strip | replace: ".", "" %}
+      {% assign member_trimmed = member | strip %}
       {% assign canonical_name = member_trimmed %}
 
       {% for person in all_people %}
         {% if person.other_names %}
           {% for other_name in person.other_names %}
-            {% assign other_name_processed = other_name | strip | replace: ".", "" %}
+            {% assign other_name_processed = other_name | strip %}
             {% if other_name_processed == member_trimmed %}
               {% assign canonical_name = person.title %}
             {% endif %}
@@ -36,13 +36,13 @@ layout: git-wiki-default
   {% for role in production.crew %}
     {% assign members = role[1] %}
     {% for member in members %}
-      {% assign member_trimmed = member | strip | replace: ".", "" %}
+      {% assign member_trimmed = member | strip %}
       {% assign canonical_name = member_trimmed %}
 
       {% for person in all_people %}
         {% if person.other_names %}
           {% for other_name in person.other_names %}
-            {% assign other_name_processed = other_name | strip | replace: ".", "" %}
+            {% assign other_name_processed = other_name | strip %}
             {% if other_name_processed == member_trimmed %}
               {% assign canonical_name = person.title %}
             {% endif %}
@@ -57,13 +57,13 @@ layout: git-wiki-default
   {% for role in production.orchestra %}
     {% assign members = role[1] %}
     {% for member in members %}
-      {% assign member_trimmed = member | strip | replace: ".", "" %}
+      {% assign member_trimmed = member | strip %}
       {% assign canonical_name = member_trimmed %}
 
       {% for person in all_people %}
         {% if person.other_names %}
           {% for other_name in person.other_names %}
-            {% assign other_name_processed = other_name | strip | replace: ".", "" %}
+            {% assign other_name_processed = other_name | strip %}
             {% if other_name_processed == member_trimmed %}
               {% assign canonical_name = person.title %}
             {% endif %}
@@ -78,13 +78,13 @@ layout: git-wiki-default
   {% for role in production.understudies %}
     {% assign members = role[1] %}
     {% for member in members %}
-      {% assign member_trimmed = member | strip | replace: ".", "" %}
+      {% assign member_trimmed = member | strip %}
       {% assign canonical_name = member_trimmed %}
 
       {% for person in all_people %}
         {% if person.other_names %}
           {% for other_name in person.other_names %}
-            {% assign other_name_processed = other_name | strip | replace: ".", "" %}
+            {% assign other_name_processed = other_name | strip %}
             {% if other_name_processed == member_trimmed %}
               {% assign canonical_name = person.title %}
             {% endif %}

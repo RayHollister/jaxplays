@@ -64,22 +64,22 @@
               </tr>
               {% endif %}
 
-              {% if page.redirect_from %}
+              {% if page.other_names %}
               <tr>
                 <td class="leftcol">Other names</td>
                 <td>
                   {% if page.birth_info and page.birth_info.birth_name %}
                   {% assign birth_name = page.birth_info.birth_name %}
                   {% endif %}
-                  {% for redirect_url in page.redirect_from %}
-                  {% assign redirect_name = redirect_url | remove: "/people/" | replace: "-", " " %}
-                  {% unless redirect_name == birth_name %}
+                  {% for other_name in page.other_names %}
+                  {% assign other_name_processed = other_name | replace: "-", " " %}
+                  {% unless other_name_processed == birth_name %}
                   {% if forloop.last %}
-                  {{ redirect_name }}
+                  {{ other_name_processed }}
                   {% elsif forloop.length > 1 and forloop.index == forloop.length | minus: 1 %}
-                  {{ redirect_name }}, and
+                  {{ other_name_processed }}, and
                   {% else %}
-                  {{ redirect_name }},
+                  {{ other_name_processed }},
                   {% endif %}
                   {% endunless %}
                   {% endfor %}
@@ -164,11 +164,11 @@
 
         {% assign person_names = page.title | remove: "." | split: "|" %}
         
-        {% if page.redirect_from %}
-        {% for redirect_url in page.redirect_from %}
-        {% assign redirect_name = redirect_url | remove: "/people/" | replace: "-", " " | remove: "." %}
-        {% assign redirect_names = redirect_name | split: "|" %}
-        {% assign person_names = person_names | concat: redirect_names %}
+        {% if page.other_names %}
+        {% for other_name in page.other_names %}
+        {% assign other_name_processed = other_name | replace: "-", " " | remove: "." %}
+        {% assign other_names_processed = other_name_processed | split: "|" %}
+        {% assign person_names = person_names | concat: other_names_processed %}
         {% endfor %}
         {% endif %}
         
@@ -192,12 +192,12 @@
         {% endfor %}
         {% if name_found %}
         {% assign production_year = p.year %}
-
+        
         {% assign theatre_name = p.details.Theatre | replace: "&", "and" | slugify %}
         {% assign theatre_url = "/theatres/" | append: theatre_name %}
         {% assign venue_name = p.details.Venue| replace: "&", "and" | slugify %}
         {% assign venue_url = "/venues/" | append: venue_name %}
-
+        
         {% capture credit %}
         <tr>
           <td>{{ production_year }}</td>
@@ -222,7 +222,7 @@
         {% endfor %}
         {% endif %}
         {% endfor %}
-
+        
         {% if person_cast_credits.size > 0 %}
         <div class="castcredits">
           <h2>Cast credits</h2>
