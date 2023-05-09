@@ -16,7 +16,7 @@ cast:
   Cupid: Christopher P. Farrell
   Hollywood: Kent Lindsey
   Blitzen: Marybeth Antoinette
-  Comet: Steven Anderson Jr.
+  Comet: Steven Anderson, Jr.
   Dancer: Amy Noel Johnson
   Donner: Bill Ratliff
   Vixen: Staci Cobb

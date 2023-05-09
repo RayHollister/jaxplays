@@ -25,7 +25,7 @@ cast:
   Frankie Epps: Chris Robertson
   Mary Phagan: Katie Sacks
   Iola Stover: 
-  Jim Conley: Steven Anderson Jr.
+  Jim Conley: Steven Anderson, Jr.
   J.N. Starnes: Zeek Smith
   Officer Ivey: Joshua Taylor
   Newt Lee: Eugene Lindsey
