@@ -118,7 +118,7 @@ layout: git-wiki-default
       {% assign understudy_count = all_understudy_members | where_exp: "item", "item == person" | size %}
       {% assign person_link = person | replace: "_", "-" | replace: " ", "-" | replace: "&", "and" | downcase %}
       {% assign total_count = cast_count | plus: crew_count | plus: orchestra_count | plus: understudy_count %}
-      <tr>
+      <tr class="people">
         <td>
           <a href="/people/{{ person_link  | replace: ".", "" }}">{{ person }}</a>
         </td>

@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap");
 
 :root {
-  --body-font-color: #727272;
-  --caption-font-color: #949494;
-  --header-font-color: #393939;
-  --logo-font-family: "Montserrat";
-  --logo-font-weight: 900;
+	--body-font-color: #727272;
+	--caption-font-color: #949494;
+	--header-font-color: #393939;
+	--logo-font-family: "Montserrat";
+	--logo-font-weight: 900;
 }
 
 footer {
-  float: none;
+	float: none;
 }
 
 h1,
@@ -18,78 +18,78 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--logo-font-family);
+	font-family: var(--logo-font-family);
 }
 
 h1 {
-  font-size: 36px;
+	font-size: 36px;
 }
 
 input#search-input {
-  width: calc(100%);
-  /* width: calc(100vw - 45px); */
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  background-color: white;
-  background-image: url("/assets/search.svg");
-  background-position: 12px 12px;
-  background-repeat: no-repeat;
-  padding-left: 40px;
-  font-size: 20px;
-  line-height: 2;
+	width: calc(100%);
+	/* width: calc(100vw - 45px); */
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	background-color: white;
+	background-image: url("/assets/search.svg");
+	background-position: 12px 12px;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	font-size: 20px;
+	line-height: 2;
 }
 
 input#search-input:focus {
-  outline: none;
+	outline: none;
 }
 
 .jaxplays_title {
-  text-align: center;
-  font-family: var(--logo-font-family);
-  font-size: 3rem;
-  font-weight: var(--logo-font-weight);
-  margin-top: 1rem;
+	text-align: center;
+	font-family: var(--logo-font-family);
+	font-size: 3rem;
+	font-weight: var(--logo-font-weight);
+	margin-top: 1rem;
 }
 
 table {
-  width: auto;
+	width: auto;
 }
 
 table.productiondetails thead tr th {
-  font-size: 24px;
-  font-family: "Segoe UI", Arial, sans-serif;
-  font-weight: 400;
+	font-size: 24px;
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-weight: 400;
 }
 
 /* Add this for a gray background on the sidebar for all devices */
 .sidebar {
-  background-color: rgba(128, 128, 128, 0.1);
+	background-color: rgba(128, 128, 128, 0.1);
 }
 
 .sidebar table td.leftcol {
-  font-weight: 600;
-  vertical-align: top;
+	font-weight: 600;
+	vertical-align: top;
 }
 
 .sidebar table ul.map_links {
-  margin-bottom: 0;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-weight: 600;
+	margin-bottom: 0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-weight: 600;
 }
 
 #git-wiki-productions-content,
 #git-wiki-people-content,
 #git-wiki-theatre-content,
 #git-wiki-venue-content {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .additional-content {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .showdescription,
@@ -98,271 +98,283 @@ table.productiondetails thead tr th {
 .additional-content,
 .sidebar,
 .external-links {
-  padding: 1rem;
+	padding: 1rem;
 }
 
 .featured_image,
 .featured_image figure {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 div.details h6 {
-  margin-bottom: 1rem;
-  font-weight: 600;
-  color: var(--header-font-color);
-  display: flex;
-  justify-content: center;
-  line-height: 1;
+	margin-bottom: 1rem;
+	font-weight: 600;
+	color: var(--header-font-color);
+	display: flex;
+	justify-content: center;
+	line-height: 1;
 }
 
 /* Photo Credits & Captions */
 figure {
-  margin: 0 0 1rem;
+	margin: 0 0 1rem;
 }
 figure img {
-  margin-bottom: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 figcaption {
-  /* margin: -.5rem 0 1rem; */
-  font-size: 0.85em;
-  color: var(--caption-font-color);
+	/* margin: -.5rem 0 1rem; */
+	font-size: 0.85em;
+	color: var(--caption-font-color);
 }
 
 /* Photo Gallery */
 
 .photo-gallery {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
 .photo-gallery figure {
-  max-width: 300px;
+	max-width: 300px;
 }
 
 /* Style for Blog */
 
 p.byline {
-  font-style: italic;
-  margin-bottom: 0.5rem;
+	font-style: italic;
+	margin-bottom: 0.5rem;
 }
 p.dateline {
-  color: var(--caption-font-color);
-  font-size: 0.85em;
+	color: var(--caption-font-color);
+	font-size: 0.85em;
 }
 
 ul#results-container {
-  margin-top: 1rem;
-  padding-left: 0;
+	margin-top: 1rem;
+	padding-left: 0;
 }
 ul#results-container li {
-  line-height: 2;
+	line-height: 2;
 }
 .mainmenu ul {
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
-    font-weight: 600;
-  }
+	list-style-type: none; /* Remove bullets */
+	padding: 0; /* Remove padding */
+	margin: 0; /* Remove margins */
+	font-weight: 600;
+}
 
-.git-wiki-post-list{
-  margin: 1rem 0
+.git-wiki-post-list {
+	margin: 1rem 0;
 }
 
 .post-list-title {
-  font-weight: 600;
+	font-weight: 600;
 }
 ul.post-list {
-    padding: 0 1.5rem;
+	padding: 0 1.5rem;
 }
 ul.post-list li {
-    padding: .2rem 0;
+	padding: 0.2rem 0;
 }
 
 .news.featured_image figure {
-    max-width: 750px;
+	max-width: 750px;
 }
 
 .post-wrapper {
-    max-width: 750px;
+	max-width: 750px;
 }
 
 /* Media query for desktop devices */
 @media (min-width: 1024px) {
-  #git-wiki-people-content,
-  #git-wiki-productions-content,
-  #git-wiki-shows-content,
-  #git-wiki-theatre-content,
-  #git-wiki-venue-content {
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-      "content sidebar"
-      "additional-content sidebar"
-      "external-links sidebar";
-    align-items: start;
-  }
+	#git-wiki-people-content,
+	#git-wiki-productions-content,
+	#git-wiki-shows-content,
+	#git-wiki-theatre-content,
+	#git-wiki-venue-content {
+		display: grid;
+		grid-template-columns: 1fr 400px;
+		grid-template-rows: auto 1fr;
+		grid-template-areas:
+			"content sidebar"
+			"additional-content sidebar"
+			"external-links sidebar";
+		align-items: start;
+	}
 
-  .peopledescription,
-  .productiondescription,
-  .showdescription,
-  .theatredescription,
-  .venuedescription {
-    grid-area: content;
-  }
+	.peopledescription,
+	.productiondescription,
+	.showdescription,
+	.theatredescription,
+	.venuedescription {
+		grid-area: content;
+	}
 
-  .additional-content {
-    grid-area: additional-content;
-  }
+	.additional-content {
+		grid-area: additional-content;
+	}
 
-  .external-links {
-    grid-area: external-links;
-  }
+	.external-links {
+		grid-area: external-links;
+	}
 
-  .sidebar {
-    grid-area: sidebar;
-    position: sticky;
-    top: 0;
-    overflow-y: auto;
-  }
-  
-  .cast, .crew, .understudy, .orchestra, .total {
-    text-align: center;
-  }
+	.sidebar {
+		grid-area: sidebar;
+		position: sticky;
+		top: 0;
+		overflow-y: auto;
+	}
+
+	.cast,
+	.crew,
+	.understudy,
+	.orchestra,
+	.total {
+		text-align: center;
+	}
 }
 
 /* Media query for tablets and mobile devices */
 @media (max-width: 1023px) {
-  body {
-    padding: 1rem;
-    font-size: 16px;
-    line-height: 1.5;
-  }
+	body {
+		padding: 1rem;
+		font-size: 16px;
+		line-height: 1.5;
+	}
 
-  #git-wiki-mobile-header {
-    width: calc(100vw);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: 0px;
-    border-radius: 0;
-    margin-left: -1rem;
-    height: 75px;
-    justify-content: center;
-  }
+	#git-wiki-mobile-header {
+		width: calc(100vw);
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		border: 0px;
+		border-radius: 0;
+		margin-left: -1rem;
+		height: 75px;
+		justify-content: center;
+	}
 
-  #git-wiki-mobile-header button.w3-button {
-    height: 75px;
-    width: 75px;
-    font-size: 2.4rem;
-    padding: 0;
-    position: absolute;
-    left: 0;
-  }
+	#git-wiki-mobile-header button.w3-button {
+		height: 75px;
+		width: 75px;
+		font-size: 2.4rem;
+		padding: 0;
+		position: absolute;
+		left: 0;
+	}
 
-  #git-wiki-mobile-header a.sitelogoandtext {
-    color: var(--header-font-color);
-    font-family: var(--logo-font-family);
-    font-size: 3rem;
-    font-weight: var(--logo-font-weight);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-  }
+	#git-wiki-mobile-header a.sitelogoandtext {
+		color: var(--header-font-color);
+		font-family: var(--logo-font-family);
+		font-size: 3rem;
+		font-weight: var(--logo-font-weight);
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 1rem;
+	}
 
-  header#git-wiki-sidebar {
-    font-size: 18px;
-    line-height: 2;
-    top: 75px;
-    width: 100% !important;
-  }
+	header#git-wiki-sidebar {
+		font-size: 18px;
+		line-height: 2;
+		top: 75px;
+		width: 100% !important;
+	}
 
-  #git-wiki-mobile-header img.mobilelogo {
-    max-height: 55px;
-    height: 55px;
-  }
+	#git-wiki-mobile-header img.mobilelogo {
+		max-height: 55px;
+		height: 55px;
+	}
 
-  input#search-input {
-    width: calc(100vw - 45px);
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: white;
-    background-image: url("/assets/search.svg");
-    background-position: 12px 12px;
-    background-repeat: no-repeat;
-    padding-left: 40px;
-    font-size: 20px;
-  }
+	input#search-input {
+		width: calc(100vw - 45px);
+		border-radius: 5px;
+		border: 1px solid #ccc;
+		background-color: white;
+		background-image: url("/assets/search.svg");
+		background-position: 12px 12px;
+		background-repeat: no-repeat;
+		padding-left: 40px;
+		font-size: 20px;
+	}
 
-  input#search-input:focus {
-    outline: none;
-  }
+	input#search-input:focus {
+		outline: none;
+	}
 
-  ul#results-container li {
-    line-height: 2.5;
-    padding-left: 10px;
-  }
-  .git-wiki-search {
-    margin: 1rem 0;
-  }
-  ul#results-container {
-    width: calc(100vw - 45px);
-    background-color: #eee;
-    line-height: 2.5;
-  }
+	ul#results-container li {
+		line-height: 2.5;
+		padding-left: 10px;
+	}
+	.git-wiki-search {
+		margin: 1rem 0;
+	}
+	ul#results-container {
+		width: calc(100vw - 45px);
+		background-color: #eee;
+		line-height: 2.5;
+	}
 
-  ul#results-container li:nth-child(odd) {
-    background-color: #fff;
-  }
+	ul#results-container li:nth-child(odd) {
+		background-color: #fff;
+	}
 
-  ul#results-container li:nth-child(even) {
-    background-color: #eee;
-  }
+	ul#results-container li:nth-child(even) {
+		background-color: #eee;
+	}
 
-  .all_people_table {
-    font-size: 18px;
-    line-height: 2.5;
-  }
+	.all_people_table {
+		font-size: 18px;
+		line-height: 2.5;
+		width: 100%;
+	}
 
-  /* style for All Productions table */
-  th, td {
-    border-bottom: 0px;
-  }
+	/* style for All Productions table */
+	th,
+	td {
+		border-bottom: 0px;
+	}
 
-  thead tr, tbody tr {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: .5rem 0;
-  }
+	thead tr,
+	tbody tr {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 0.5rem 0;
+		justify-content: space-between;
+	}
 
-  tr.productions:nth-child(even) {
-    background-color: #eee;
-  }
+	tr.people:nth-child(even),
+	tr.productions:nth-child(even),
+	tr.theatres:nth-child(even),
+	tr.venues:nth-child(even) {
+		background-color: #eee;
+	}
 
-  td.title {
-    font-size: 18px;
-    font-weight: 600;
-  /*   line-height: 2.5; */
-    flex-basis: 100%; /* set full width */
-    order: -1; /* move to beginning of row */
-  }
+	td.title {
+		font-size: 18px;
+		font-weight: 600;
+		/*   line-height: 2.5; */
+		flex-basis: 100%; /* set full width */
+		order: -1; /* move to beginning of row */
+	}
 
-  td.year, td.theatre, td.venue {
-    font-size: 14px;
-    order: 1; /* move to end of row */
-  }
+	td.year,
+	td.theatre,
+	td.venue {
+		font-size: 14px;
+		order: 1; /* move to end of row */
+	}
 
-  .hide_on_mobile {
-    display: none;
-  }
-
+	.hide_on_mobile {
+		display: none;
+	}
 }
