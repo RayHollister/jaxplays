@@ -86,8 +86,19 @@
             <tbody>
               {% assign current_year = 'now' | date: "%Y" | plus: 0 %}
               {% assign page_year = page.year | plus: 0 %}
-
-              {% if page_year != current_year or page.showtimes == nil or page.showtimes == "" %}
+              
+              {% if page.opening_date != nil and page.opening_date != "" %}
+                <tr>
+                  <td class="leftcol">Opening Date</td>
+                  <td>{{ page.opening_date | date: "%B %-d, %Y" }}</td>
+                </tr>
+                {% if page.closing_date != nil and page.closing_date != "" %}
+                <tr>
+                  <td class="leftcol">Closing Date</td>
+                  <td>{{ page.closing_date | date: "%B %-d, %Y" }}</td>
+                </tr>
+                {% endif %}
+              {% elsif page_year != current_year or page.showtimes == nil or page.showtimes == "" %}
               <tr>
                 <td class="leftcol">Year</td>
                 <td>{{ page.year }}</td>
