@@ -1,8 +1,9 @@
 ---
 title: Michelle Ottley-Fisher
 redirect_from:
-  - /people/Michelle-Ottley
-  - /people/Michelle-Ottley-Fisher
+  - /people/michelle-ottley
+other_names: 
+ - Michelle Ottley
 layout: people
 image: 
 image_credit: 

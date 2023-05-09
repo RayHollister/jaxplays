@@ -1,7 +1,9 @@
 ---
 title: Daniel Breaker
 redirect_from: 
-- /people/daniel-eric-breaker
+  - /people/daniel-eric-breaker
+other_names:
+  - Daniel Eric Breaker
 layout: people
 image: 
 image_credit: 

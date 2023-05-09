@@ -1,7 +1,9 @@
 ---
 title: Joy Smith
 redirect_from:
-- /people/Joy-Ann-Smith
+  - /people/joy-ann-smith
+other_names:
+  - Joy Ann Smith
 layout: people
 image: 
 image_credit: 

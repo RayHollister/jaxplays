@@ -1,9 +1,9 @@
 ---
-title: Daniel Dungan
+title: Dr. Lee Beger
 redirect_from:
-  - /people/daniel-owen-dungan
+  - /people/dr-lee-s-beger
 other_names:
-  - Daniel Owen Dungan
+  - Dr. Lee S Beger
 layout: people
 image: 
 image_credit: 

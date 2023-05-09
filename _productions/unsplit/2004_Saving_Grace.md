@@ -17,7 +17,7 @@ cast:
   Walter Chepple: Mark Wright
   Alex Docker: Michael Bahar
   Harriet Larkin: Staci Cobb
-  Gregor Vanitzky: Christpher P. Farrell
+  Gregor Vanitzky: Christopher P. Farrell
 crew:
   Artistic Director: Jean Tait
   Technical Direcor: Jeffery L. Wagoner

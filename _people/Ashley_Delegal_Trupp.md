@@ -1,8 +1,11 @@
 ---
 title: Ashley Delegal Trupp
 redirect_from:
-  - /people/Ashley-Delegal
-  - /people/Ashley-Blake-Delegal
+  - /people/ashley-delegal
+  - /people/ashley-blake-delegal
+other_names: 
+  - Ashley Delegal
+  - Ashley Blake Delegal
 layout: people
 image: 
 image_credit: 

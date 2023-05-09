@@ -1,7 +1,9 @@
 ---
 title: Dr. Theresa Stanley
 redirect_from:
-- /people/Theresa-Stanley
+  - /people/theresa-stanley
+other_names: 
+  - Theresa Stanley
 layout: people
 image: 
 image_credit: 

@@ -1,8 +1,9 @@
 ---
 title: Kelly J. Wagoner
 redirect_from:
-  - /people/Kelly-Wagoner
-  - /people/Kelly-J.-Wagoner
+  - /people/kelly-wagoner
+other_names: 
+  - Kelly Wagoner
 layout: people
 image: 
 image_credit: 

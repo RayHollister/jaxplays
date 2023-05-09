@@ -12,17 +12,17 @@ layout: git-wiki-default
 {% assign all_people = site.people %}
 
 {% for production in site.productions %}
-{% for role in production.cast %}
-{% assign members = role[1] %}
-{% for member in members %}
-{% assign member_trimmed = member | strip | replace: ".", "" %}
-{% assign canonical_name = member_trimmed %}
+  {% for role in production.cast %}
+    {% assign members = role[1] %}
+    {% for member in members %}
+      {% assign member_trimmed = member | strip | replace: ".", "" %}
+      {% assign canonical_name = member_trimmed %}
 
       {% for person in all_people %}
-        {% if person.redirect_from %}
-          {% for redirect_url in person.redirect_from %}
-            {% assign redirect_name = redirect_url | remove: "/people/" | replace: "-", " " | replace: ".", "" %}
-            {% if redirect_name == member_trimmed %}
+        {% if person.other_names %}
+          {% for other_name in person.other_names %}
+            {% assign other_name_processed = other_name | strip | replace: ".", "" %}
+            {% if other_name_processed == member_trimmed %}
               {% assign canonical_name = person.title %}
             {% endif %}
           {% endfor %}
@@ -31,20 +31,19 @@ layout: git-wiki-default
 
       {% assign all_cast_members = all_cast_members | push: canonical_name %}
     {% endfor %}
+  {% endfor %}
 
-{% endfor %}
-
-{% for role in production.crew %}
-{% assign members = role[1] %}
-{% for member in members %}
-{% assign member_trimmed = member | strip | replace: ".", "" %}
-{% assign canonical_name = member_trimmed %}
+  {% for role in production.crew %}
+    {% assign members = role[1] %}
+    {% for member in members %}
+      {% assign member_trimmed = member | strip | replace: ".", "" %}
+      {% assign canonical_name = member_trimmed %}
 
       {% for person in all_people %}
-        {% if person.redirect_from %}
-          {% for redirect_url in person.redirect_from %}
-            {% assign redirect_name = redirect_url | remove: "/people/" | replace: "-", " " | replace: ".", "" %}
-            {% if redirect_name == member_trimmed %}
+        {% if person.other_names %}
+          {% for other_name in person.other_names %}
+            {% assign other_name_processed = other_name | strip | replace: ".", "" %}
+            {% if other_name_processed == member_trimmed %}
               {% assign canonical_name = person.title %}
             {% endif %}
           {% endfor %}
@@ -53,20 +52,19 @@ layout: git-wiki-default
 
       {% assign all_crew_members = all_crew_members | push: canonical_name %}
     {% endfor %}
+  {% endfor %}
 
-{% endfor %}
-
-{% for role in production.orchestra %}
-{% assign members = role[1] %}
-{% for member in members %}
-{% assign member_trimmed = member | strip | replace: ".", "" %}
-{% assign canonical_name = member_trimmed %}
+  {% for role in production.orchestra %}
+    {% assign members = role[1] %}
+    {% for member in members %}
+      {% assign member_trimmed = member | strip | replace: ".", "" %}
+      {% assign canonical_name = member_trimmed %}
 
       {% for person in all_people %}
-        {% if person.redirect_from %}
-          {% for redirect_url in person.redirect_from %}
-            {% assign redirect_name = redirect_url | remove: "/people/" | replace: "-", " " | replace: ".", "" %}
-            {% if redirect_name == member_trimmed %}
+        {% if person.other_names %}
+          {% for other_name in person.other_names %}
+            {% assign other_name_processed = other_name | strip | replace: ".", "" %}
+            {% if other_name_processed == member_trimmed %}
               {% assign canonical_name = person.title %}
             {% endif %}
           {% endfor %}
@@ -75,20 +73,19 @@ layout: git-wiki-default
 
       {% assign all_orchestra_members = all_orchestra_members | push: canonical_name %}
     {% endfor %}
+  {% endfor %}
 
-{% endfor %}
-
-{% for role in production.understudies %}
-{% assign members = role[1] %}
-{% for member in members %}
-{% assign member_trimmed = member | strip | replace: ".", "" %}
-{% assign canonical_name = member_trimmed %}
+  {% for role in production.understudies %}
+    {% assign members = role[1] %}
+    {% for member in members %}
+      {% assign member_trimmed = member | strip | replace: ".", "" %}
+      {% assign canonical_name = member_trimmed %}
 
       {% for person in all_people %}
-        {% if person.redirect_from %}
-          {% for redirect_url in person.redirect_from %}
-            {% assign redirect_name = redirect_url | remove: "/people/" | replace: "-", " " | replace: ".", "" %}
-            {% if redirect_name == member_trimmed %}
+        {% if person.other_names %}
+          {% for other_name in person.other_names %}
+            {% assign other_name_processed = other_name | strip | replace: ".", "" %}
+            {% if other_name_processed == member_trimmed %}
               {% assign canonical_name = person.title %}
             {% endif %}
           {% endfor %}

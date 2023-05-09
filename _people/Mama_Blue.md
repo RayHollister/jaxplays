@@ -1,7 +1,11 @@
 ---
 title: Mama Blue
 redirect_from:
-  - /people/Sarah-Sanders
+  - /people/sarah-sanders
+  - /people/sarah-e-sanders
+other_names: 
+ - Sarah Sanders
+ - Sarah E. Sanders
 layout: people
 image: 
 image_credit: 

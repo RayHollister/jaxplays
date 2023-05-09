@@ -1,7 +1,9 @@
 ---
 title: Holly Deckerhoff Manuel
 redirect_from:
-- /people/Holly-Deckerhoff
+  - /people/holly-deckerhoff
+other_names:
+  - Holly Deckerhoff
 layout: people
 image: 
 image_credit: 
