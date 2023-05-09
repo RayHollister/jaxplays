@@ -11,7 +11,7 @@ playbill:
 category: 
 details:
   Theatre: Theatre Jacksonville
-  Venue: Little Theatre
+  Venue: Metropolitan Park
 cast:
   Lucentio: Matt Hemphill
   Tranio: Andrew Adams

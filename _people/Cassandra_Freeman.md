@@ -1,7 +1,7 @@
 ---
 title: Cassandra Freeman
 redirect_from: 
-- /people/Cassie-Freeman
+- /people/cassie-freeman
 layout: people
 image: 
 image_credit: 

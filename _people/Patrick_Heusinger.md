@@ -1,7 +1,7 @@
 ---
 title: Patrick Heusinger
 redirect_from: 
-  - /people/Paddy-Heusinger
+  - /people/paddy-heusinger
 layout: people
 image: 
 image_credit: 
