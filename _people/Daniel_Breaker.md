@@ -7,6 +7,10 @@ image:
 image_credit: 
 image_alt: 
 image_caption: 
+birth_info:
+  birth_name: 
+  birth_date: 1980-06-02
+  birth_place: Manhattan, Kansas
 details:
   Website: 
   Facebook:
