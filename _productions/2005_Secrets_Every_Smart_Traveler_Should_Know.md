@@ -16,7 +16,7 @@ cast:
   cast: 
     - Carole V. Banks
     - Staci Cobb
-    - Christine Dumars
+    - Christine DuMars
     - Blake Osner
     - Karl Rogers
 crew:

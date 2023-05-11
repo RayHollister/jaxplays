@@ -17,7 +17,7 @@ cast:
   Mrs. Nordstrom: Trish Strain
   Mr. Anderson: Amber Amerson
   Mr. Erlanson: Karl Rogers
-  Mrs. Segstrom: Christine Dumars
+  Mrs. Segstrom: Christine DuMars
   Fredrika: Emily Martin
   Madame Armfeldt: Susan Carcaba
   Frid: David T. Abraham

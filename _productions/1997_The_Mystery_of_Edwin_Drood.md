@@ -32,7 +32,7 @@ cast:
     - Carey Malloy
     - Paddy Heusinger
     - Eric Kevin Platon
-    - Christine Dumars
+    - Christine DuMars
     - Brook Ratti
     - Joy Conklin
     - Christopher Farrell

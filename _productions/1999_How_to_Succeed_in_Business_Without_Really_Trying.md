@@ -38,7 +38,7 @@ cast:
   Mr. Toynbee: Aaron Staton
   Secretary Pool:
     - Joy Beth Conklin
-    - Christine Dumars
+    - Christine DuMars
     - Jacinda Frantz
     - Sarah French
     - Laura Moss

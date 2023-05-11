@@ -20,7 +20,7 @@ cast:
   Georg Nowack: Matthew Johnson
   Shopper: 
     - Amy Szkody
-    - Christine Dumars
+    - Christine DuMars
     - Margaret Blajian
   Mr. Maraczek: Tom Nehl
   Amalia Balash: Jennifer Brooks Thomas
@@ -31,17 +31,17 @@ cast:
     - JaMario Stills
   Café Customer:
     - Margaret Blajian
-    - Christine Dumars
+    - Christine DuMars
     - Karl Rogers
     - Amy Szkody
-  Nurse: Christine Dumars
+  Nurse: Christine DuMars
   Caroler:
     - Amy Szkody
     - Karl Rogers
     - Josh Waller
   Christmas Shopper:
     - Margaret Blajian
-    - Christine Dumars
+    - Christine DuMars
     - Tim Driscoll
     - JaMario Stills
 crew:

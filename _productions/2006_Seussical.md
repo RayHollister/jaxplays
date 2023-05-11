@@ -17,7 +17,7 @@ cast:
   Cat in the Hat: Robert Pelaia
   Horton the Elephant: Michael Lipp
   Mr. Mayor of Whoville: Karl Rogers
-  Mrs. Mayor of Whoville: Christine Dumars
+  Mrs. Mayor of Whoville: Christine DuMars
   Gertrude McFuzz: Carrie Thornton
   Mayzie LaBird: Staci Cobb
   Sour Kangaroo/Young Kangaroo: Lee Hamby
