@@ -9,8 +9,8 @@ layout: git-wiki-default
   {% endif %}
   <p class="dateline">Published on {{ page.date | date: "%A, %B %d, %Y" }}</p>
 
+  {% if page.image %}
   <div class="news featured_image">
-    {% if page.image %}
     {% capture alt_text %}
     {% if page.image_alt %}{{ page.image_alt }}
     {% else %}{{ page.title }}
@@ -30,10 +30,9 @@ layout: git-wiki-default
         {% endif %}
       </figcaption>
       {% endif %}
-
-      {% endif %}
     </figure>
   </div>
+  {% endif %}
 
   <div class="blog-content">
     {{content}}

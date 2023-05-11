@@ -2,7 +2,9 @@
 published: true
 layout: posts
 title: Latest News
+categories: News
 author: Ray Hollister
+excerpt_separator: <!--more-->
 ---
 Hey folks, 
 
@@ -11,7 +13,7 @@ Ray Hollister here, lead editor and developer of JaxPlays.
 I started JaxPlays on January 9, 2020. Perhaps not the best timing. 🤷🏻‍♂️
 
 Needless to say, things did not go as we expected for local, live theatre that year or the next. 
-
+<!--more-->
 Now that the Coronavirus situation has settled down, I am excited to get started working on JaxPlays again, adding shows and cast and crew lists. I am working on adding audition announcements and reviews soon, and I expect to have a big announcement in a month or so!
 
 I have a lot of work ahead of me, just to get caught up back to when the site was launched, but I also have a bit of free time since [I broke my back last month](https://rayhollister.com/ibrokemyback).

@@ -1,38 +1,74 @@
 ---
-title: News
+title: JaxPlays News & Reviews
 layout: git-wiki-default
 ---
-
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-    <div class="post-item">
-        <p class="author">
-            <span class="date">{{ post.date | date: "%-d %B %Y"}}</span>
-        </p>
-        <div class="git-wiki-content">
-            {{ post.excerpt }}
-
-            <a href="{{ post.url | relative_url }}">...Read all</a>
-        </div>
+<h1>JaxPlays News & Reviews</h1>
+<div class="post-wrapper">
+  <!-- This loops through the paginated posts -->
+  {% for post in paginator.posts %}
+  <div class="post-item">
+    {% if post.image %}
+    <div class="news featured_image">
+      {% capture alt_text %}
+      {% if post.image_alt %}{{ post.image_alt }}
+      {% else %}{{ post.title }}
+      {% endif %}
+      {% endcapture %}
+      <a href="{{ post.url | relative_url }}">
+        <figure class="image">
+          <img src="{{ '/media/photos/' | append: post.image }}" alt="{{ alt_text }}">
+          {% if post.image_caption or post.image_credit %}
+          <figcaption>
+            {% if post.image_caption %}
+            {{ post.image_caption }}
+            {% endif %}
+            {% if post.image_caption and post.image_credit %} | {% endif %}
+            {% if post.image_credit %}
+            (📷 {{ post.image_credit }})
+            {% endif %}
+          </figcaption>
+          {% endif %}
+        </figure>
+      </a>
     </div>
-    <hr>
-{% endfor %}
+    {% endif %}
+    
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    {% if post.author or site.author %}
+    <p class="byline">
+      {% if post.categories %}
+      <span class="post-categories">{% for category in post.categories %}{{ category }}{% unless forloop.last %}, {%
+        endunless %}{% endfor %} — </span>
+      {% endif %}
+      <span class="dateline">{{ post.date | date: "%A, %B %d, %Y" }} — </span>
+      {{ post.author | default: site.author }}
+    </p>
+    {% endif %}
 
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
+    <div class="git-wiki-content">
+      {{ post.excerpt }}
+      <a href="{{ post.url | relative_url }}">Read more...</a>
+    </div>
+  </div>
+  <hr>
+  {% endfor %}
+
+  <!-- Pagination links -->
+  <div class="pagination">
+    {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | relative_url }}" class="previous">
       Previous
     </a>
-  {% else %}
+    {% else %}
     <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">
-    Page: {{ paginator.page }} of {{ paginator.total_pages }}
-  </span>
-  {% if paginator.next_page %}
+    {% endif %}
+    <span class="page_number ">
+      Page: {{ paginator.page }} of {{ paginator.total_pages }}
+    </span>
+    {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | relative_url }}" class="next">Next</a>
-  {% else %}
+    {% else %}
     <span class="next ">Next</span>
-  {% endif %}
+    {% endif %}
+  </div>
 </div>
