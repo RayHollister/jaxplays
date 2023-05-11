@@ -16,6 +16,7 @@ layout: git-wiki-default
         justify-content: space-between;
         width: 100%;
         gap: 20px;
+        margin: 20px 0;
       }
 
       .button-row {
@@ -77,5 +78,7 @@ layout: git-wiki-default
       <a href="/venues" class="button">Venues</a>
     </div>
   </div>
+
+  {% include upcoming_productions.html %}
 
 </div>
