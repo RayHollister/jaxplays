@@ -197,8 +197,11 @@ ul.post-list li {
 	max-width: 1200px;
 }
 
-.productions {
+.productions, .people {
 	cursor: pointer;
+}
+.peopleheader {
+	z-index: 999;
 }
 
 .productions a {
@@ -208,14 +211,16 @@ ul.post-list li {
 	white-space: nowrap;
 }
 
-.production_poster {
+.production_poster,
+.headshots {
 	height: 90px;
 	width: 60px;
 	overflow: hidden;
 	position: relative;
 }
 
-.production_poster img {
+.production_poster img,
+.headshots img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
@@ -225,7 +230,7 @@ ul.post-list li {
 	transform: translate(-50%, -50%);
 }
 
-.production_title {
+.production_title, .people_name {
 	font-size: 1.1rem;
 	font-weight: 600;
 }
@@ -360,22 +365,19 @@ ul.post-list li {
 		line-height: 2.5;
 	}
 
-	ul#results-container li:nth-child(odd), .productions:nth-of-type(odd) {
+	ul#results-container li:nth-child(odd),
+	.productions:nth-of-type(odd),
+	.people:nth-of-type(odd) {
 		background-color: #fff;
 	}
 
-	ul#results-container li:nth-child(even), .productions:nth-of-type(even) {
+	ul#results-container li:nth-child(even),
+	.productions:nth-of-type(even),
+	.people:nth-of-type(even) {
 		background-color: #eee;
-	}
-
-	.all_people_table {
-		font-size: 18px;
-		line-height: 2.5;
-		width: 100%;
 	}
 
 	.hide_on_mobile {
 		display: none;
 	}
 }
-
