@@ -115,6 +115,8 @@ collections:
   venues:
     output: true
     permalink: "/:collection/:name/"
+collections_dir: wiki
+
 sass:
     style: compressed
 plugins:
