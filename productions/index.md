@@ -19,7 +19,7 @@ layout: git-wiki-default
         {% if image %}
           <img src="{{ image | prepend: '/wiki/media/posters/' }}" alt="{{ production.title }}" class="img-fluid">
         {% else %}
-          <img src="/wiki/media/default/production_logo.png" alt="Default Production Image" class="img-fluid">
+          <img src="/wiki/media/default/production_poster.png" alt="Default Production Image" class="img-fluid">
         {% endif %}
       </div>
       <div class="col-lg-10 col-10">
