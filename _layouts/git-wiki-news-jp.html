@@ -16,7 +16,7 @@ layout: git-wiki-default
       {% endcapture %}
       <a href="{{ post.url | relative_url }}">
         <figure class="image">
-          <img src="{{ '/media/photos/' | append: post.image }}" alt="{{ alt_text }}">
+          <img src="{{ '/wiki/media/photos/' | append: post.image }}" alt="{{ alt_text }}">
           {% if post.image_caption or post.image_credit %}
           <figcaption>
             {% if post.image_caption %}

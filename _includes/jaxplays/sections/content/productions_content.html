@@ -50,7 +50,7 @@
             {% endcapture %}
             <figure class="image">
 
-              <img src="{{ '/media/posters/' | append: page.image }}" alt="{{ alt_text }}">
+              <img src="{{ '/wiki/media/posters/' | append: page.image }}" alt="{{ alt_text }}">
               {% if page.image_caption or page.image_credit %}
               <figcaption>
                 {% if page.image_caption %}
@@ -70,7 +70,7 @@
             {% endif %}
             {% endcapture %}
             <figure class="image">
-              <img src="{{ '/media/posters/' | append: show_page.image }}" alt="{{ alt_text }}">
+              <img src="{{ '/wiki/media/posters/' | append: show_page.image }}" alt="{{ alt_text }}">
               {% if show_page.image_caption or show_page.image_credit %}
               <figcaption>
                 {% if show_page.image_caption %}
@@ -190,7 +190,7 @@
               <tr>
                 <td></td>
                 <td class="leftcol">
-                  <a target="_blank" href="/media/playbills/{{ page.playbill }}">Playbill</a>
+                  <a target="_blank" href="/wiki/media/playbills/{{ page.playbill }}">Playbill</a>
                 </td>
               </tr>
               {% endif %}
@@ -368,9 +368,9 @@
           {% endif %}
           {% endcapture %}
           <figure class="photo">
-            <a href="{{ '/media/photos/' | append: photo.photo }}" data-lightbox="gallery"
+            <a href="{{ '/wiki/media/photos/' | append: photo.photo }}" data-lightbox="gallery"
               data-title="{{ photo.photo_caption }}{% if photo.photo_caption and photo.photo_credit %} | {% endif %}{{ photo.photo_credit }}"><img
-                src="{{ '/media/photos/' | append: photo.photo }}" alt="{{ alt_text }}" /></a>
+                src="{{ '/wiki/media/photos/' | append: photo.photo }}" alt="{{ alt_text }}" /></a>
             {% if photo.photo_caption or photo.photo_credit %}
             <figcaption>
               {% if photo.photo_caption %}
