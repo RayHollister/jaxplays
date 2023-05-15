@@ -1,4 +1,5 @@
 _site
+/wiki
 Gemfile.*.lock
 Gemfile
 Gemfile.lock
