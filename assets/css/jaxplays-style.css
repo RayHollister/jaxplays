@@ -197,6 +197,39 @@ ul.post-list li {
 	max-width: 1200px;
 }
 
+.productions {
+	cursor: pointer;
+}
+
+.productions a {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.production_poster {
+	height: 90px;
+	width: 60px;
+	overflow: hidden;
+	position: relative;
+}
+
+.production_poster img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.production_title {
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
 /* Media query for desktop devices */
 @media (min-width: 1024px) {
 	#git-wiki-people-content,
@@ -327,11 +360,11 @@ ul.post-list li {
 		line-height: 2.5;
 	}
 
-	ul#results-container li:nth-child(odd) {
+	ul#results-container li:nth-child(odd), .productions:nth-of-type(odd) {
 		background-color: #fff;
 	}
 
-	ul#results-container li:nth-child(even) {
+	ul#results-container li:nth-child(even), .productions:nth-of-type(even) {
 		background-color: #eee;
 	}
 
@@ -341,44 +374,8 @@ ul.post-list li {
 		width: 100%;
 	}
 
-	/* style for All Productions table */
-	th,
-	td {
-		border-bottom: 0px;
-	}
-
-	thead tr,
-	tbody tr {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		padding: 0.5rem 0;
-		justify-content: space-between;
-	}
-
-	tr.people:nth-child(even),
-	tr.productions:nth-child(even),
-	tr.theatres:nth-child(even),
-	tr.venues:nth-child(even) {
-		background-color: #eee;
-	}
-
-	td.title {
-		font-size: 18px;
-		font-weight: 600;
-		/*   line-height: 2.5; */
-		flex-basis: 100%; /* set full width */
-		order: -1; /* move to beginning of row */
-	}
-
-	td.year,
-	td.theatre,
-	td.venue {
-		font-size: 14px;
-		order: 1; /* move to end of row */
-	}
-
 	.hide_on_mobile {
 		display: none;
 	}
 }
+
