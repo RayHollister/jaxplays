@@ -104,6 +104,9 @@ layout: git-wiki-default
 
 {% assign all_people_in_roles = all_cast_members | concat: all_crew_members | concat: all_orchestra_members | concat: all_understudy_members | uniq | sort %}
 
+<!-- Filter input -->
+<input class="form-control mb-3" id="peopleFilter" type="text" placeholder="Search people...">
+
 <!-- Sticky header for desktop and tablet -->
 <div class="row mb-2 peopleheader align-items-center p-2 position-sticky top-0 bg-white d-none d-lg-flex">
   <div class="col-lg-2 col-2 headshots"></div>
@@ -164,9 +167,18 @@ layout: git-wiki-default
 
 <script>
 $(document).ready(function() {
+  // Click event for people
   $(".people").click(function() {
     window.location = $(this).find("a").attr("href");
     return false;
+  });
+
+  // Filter function for people
+  $("#peopleFilter").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $(".people").filter(function() {
+      $(this).toggle($(this).find(".people_name a").text().toLowerCase().indexOf(value) > -1)
+    });
   });
 });
 </script>

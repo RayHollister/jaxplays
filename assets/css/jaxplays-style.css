@@ -26,7 +26,8 @@ h1 {
 }
 
 input#search-input,
-input#productionFilter {
+input#productionFilter,
+input#peopleFilter {
 	width: calc(100%);
 	border-radius: 5px;
 	border: 1px solid #ccc;
@@ -40,8 +41,10 @@ input#productionFilter {
 }
 
 input#search-input:focus,
-input#productionFilter:focus {
+input#productionFilter:focus,
+input#peopleFilter:focus {
 	outline: none;
+	box-shadow: none;
 }
 
 .jaxplays_title {
@@ -340,7 +343,8 @@ ul.post-list li {
 	}
 
 	input#search-input,
-	input#productionFilter {
+	input#productionFilter,
+	input#peopleFilter {
 		width: calc(100vw - 45px);
 		border-radius: 5px;
 		border: 1px solid #ccc;
@@ -353,8 +357,10 @@ ul.post-list li {
 	}
 
 	input#search-input:focus,
-	input#productionFilter {
+	input#productionFilter, 
+	input#peopleFilter:focus {
 		outline: none;
+		box-shadow: none;
 	}
 
 	ul#results-container li {
