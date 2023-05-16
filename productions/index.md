@@ -11,7 +11,7 @@ layout: git-wiki-default
   {% assign sorted_productions = site.productions | sort: 'year' | reverse %}
   {% for production in sorted_productions %}
     <div class="row mb-2 productions align-items-center p-2" data-production-title="{{ production.title | downcase }}">
-      <div class="col-lg-2 col-2 production_poster">
+      <div class="col-lg-1 col-1 production_poster">
         {% assign image = production.image %}
         {% if image == nil %}
           {% for show in site.shows %}
@@ -26,7 +26,7 @@ layout: git-wiki-default
           <img src="/wiki/media/default/production_poster.png" alt="Default Production Image" class="img-fluid">
         {% endif %}
       </div>
-      <div class="col-lg-10 col-10">
+      <div class="col">
         <div class="row">
           <div class="col-lg-9 col-12">
             <div class="d-flex flex-column justify-content-center h-100">
@@ -51,7 +51,7 @@ layout: git-wiki-default
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-12 text-lg-right text-right">
+          <div class="col-lg-3 col-12 text-lg-end"> 
             {% if production.opening_date and production.closing_date %}
               {{ production.opening_date | date: "%B %e" }} &mdash; {{ production.closing_date | date: "%B %e, %Y" }}
             {% elsif production.opening_date %}
