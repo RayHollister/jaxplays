@@ -25,9 +25,9 @@ h1 {
 	font-size: 36px;
 }
 
-input#search-input {
+input#search-input,
+input#productionFilter {
 	width: calc(100%);
-	/* width: calc(100vw - 45px); */
 	border-radius: 5px;
 	border: 1px solid #ccc;
 	background-color: white;
@@ -39,7 +39,8 @@ input#search-input {
 	line-height: 2;
 }
 
-input#search-input:focus {
+input#search-input:focus,
+input#productionFilter:focus {
 	outline: none;
 }
 
@@ -197,7 +198,8 @@ ul.post-list li {
 	max-width: 1200px;
 }
 
-.productions, .people {
+.productions,
+.people {
 	cursor: pointer;
 }
 .peopleheader {
@@ -230,7 +232,8 @@ ul.post-list li {
 	transform: translate(-50%, -50%);
 }
 
-.production_title, .people_name {
+.production_title,
+.people_name {
 	font-size: 1.1rem;
 	font-weight: 600;
 }
@@ -336,19 +339,21 @@ ul.post-list li {
 		height: 55px;
 	}
 
-	input#search-input {
+	input#search-input,
+	input#productionFilter {
 		width: calc(100vw - 45px);
 		border-radius: 5px;
 		border: 1px solid #ccc;
 		background-color: white;
-		background-image: url("/assets/search.svg");
+		background-image: url("/assets/search.svg") !important;
 		background-position: 12px 12px;
 		background-repeat: no-repeat;
 		padding-left: 40px;
 		font-size: 20px;
 	}
 
-	input#search-input:focus {
+	input#search-input:focus,
+	input#productionFilter {
 		outline: none;
 	}
 

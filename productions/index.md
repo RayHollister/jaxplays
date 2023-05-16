@@ -2,11 +2,15 @@
 title: All Productions
 layout: git-wiki-default
 ---
+
 <div class="container-lg">
   <h1>{{ page.title }}</h1>
+  <!-- Filter input -->
+  <input class="form-control mb-3" id="productionFilter" type="text" placeholder="Search productions...">
+  <!-- Productions -->
   {% assign sorted_productions = site.productions | sort: 'year' | reverse %}
   {% for production in sorted_productions %}
-    <div class="row mb-2 productions align-items-center p-2">
+    <div class="row mb-2 productions align-items-center p-2" data-production-title="{{ production.title | downcase }}">
       <div class="col-lg-2 col-2 production_poster">
         {% assign image = production.image %}
         {% if image == nil %}
@@ -64,9 +68,18 @@ layout: git-wiki-default
 
 <script>
 $(document).ready(function() {
+  // Click event for productions
   $(".productions").click(function() {
     window.location = $(this).find("a").attr("href");
     return false;
+  });
+
+  // Filter function for productions
+  $("#productionFilter").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $(".productions").filter(function() {
+      $(this).toggle($(this).data('production-title').indexOf(value) > -1)
+    });
   });
 });
 </script>
