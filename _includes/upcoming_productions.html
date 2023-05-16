@@ -41,7 +41,7 @@
   }
   </style>
 
-  <ul class="showtimes">
+<ul class="showtimes">
   {% assign today = site.time | date: "%Y-%m-%d" | date: "%s" %}
   {% assign max_date = today | plus: 2592000 | date: "%s" %}
   {% assign showtimes = "" | split: "" %}
@@ -52,6 +52,11 @@
         {% assign showtime_date = showtime | date: "%s" %}
         {% if showtime_date >= today and showtime_date <= max_date and first_showtime %}
           {% assign showtime_info = showtime_date | append: "|" | append: production.title | append: "|" | append: production.details.Theatre | append: "|" | append: production.url %}
+          {% if production.opening_date and production.closing_date %}
+            {% assign formatted_opening_date = production.opening_date | date: "%B %e" %}
+            {% assign formatted_closing_date = production.closing_date | date: "%B %e, %Y" %}
+            {% assign showtime_info = showtime_info | append: "|" | append: formatted_opening_date | append: " — " | append: formatted_closing_date %}
+          {% endif %}
           {% assign showtimes = showtimes | push: showtime_info %}
           {% assign first_showtime = false %}
         {% endif %}
@@ -64,10 +69,9 @@
     {% assign production_title = showtime_parts[1] %}
     {% assign theatre = showtime_parts[2] %}
     {% assign production_url = showtime_parts[3] %}
-    <li><a href="{{ production_url }}"><span class="production_title">{{ production_title }}</span> at {{ theatre }}</a></li>
+    {% assign production_dates = showtime_parts[4] %}
+    <li><a href="{{ production_url }}"><span class="production_title">{{ production_title }}</span> at {{ theatre }}<br>{{ production_dates }}</a></li>
   {% endfor %}
   </ul>
-
-
 
 </div>
