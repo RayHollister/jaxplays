@@ -115,13 +115,13 @@ layout: git-wiki-default
   </div>
   <div class="col-lg-4 col-4">
     <div class="row">
-      <div class="col-lg-3 col-3">Cast</div>
-      <div class="col-lg-3 col-3">Understudy</div>
-      <div class="col-lg-3 col-3">Crew</div>
-      <div class="col-lg-3 col-3">Orchestra</div>
+      <div class="col-lg-3 col-3 sort" id="sort-cast">Cast</div>
+      <div class="col-lg-3 col-3 sort" id="sort-understudy">Understudy</div>
+      <div class="col-lg-3 col-3 sort" id="sort-crew">Crew</div>
+      <div class="col-lg-3 col-3 sort" id="sort-orchestra">Orchestra</div>
     </div>
   </div>
-  <div class="col-lg-2 col-2">Total</div>
+  <div class="col-lg-2 col-2 sort" id="sort-total">Total</div>
 </div>
 
 {% for person in all_people_in_roles %}
@@ -152,13 +152,13 @@ layout: git-wiki-default
     </div>
     <div class="col-lg-4 col-4 d-none d-lg-block">
       <div class="row">
-        <div class="col-lg-3 col-3">{{ cast_count }}</div>
-        <div class="col-lg-3 col-3">{{ understudy_count }}</div>
-        <div class="col-lg-3 col-3">{{ crew_count }}</div>
-        <div class="col-lg-3 col-3">{{ orchestra_count }}</div>
+        <div class="col-lg-3 col-3 cast-count">{{ cast_count }}</div>
+        <div class="col-lg-3 col-3 understudy-count">{{ understudy_count }}</div>
+        <div class="col-lg-3 col-3 crew-count">{{ crew_count }}</div>
+        <div class="col-lg-3 col-3 orchestra-count">{{ orchestra_count }}</div>
       </div>
     </div>
-    <div class="col-lg-2 d-none d-lg-flex">{{ total_count }}</div>
+    <div class="col-lg-2 d-none d-lg-flex total-count">{{ total_count }}</div>
   </div>
 
 {% endfor %}
@@ -166,19 +166,41 @@ layout: git-wiki-default
 </div>
 
 <script>
-$(document).ready(function() {
-  // Click event for people
-  $(".people").click(function() {
-    window.location = $(this).find("a").attr("href");
-    return false;
-  });
+  $(document).ready(function() {
+    // Click event for people
+    $(".people").click(function() {
+      window.location = $(this).find("a").attr("href");
+      return false;
+    });
 
-  // Filter function for people
-  $("#peopleFilter").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $(".people").filter(function() {
-      $(this).toggle($(this).find(".people_name a").text().toLowerCase().indexOf(value) > -1)
+    // Filter function for people
+    $("#peopleFilter").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $(".people").filter(function() {
+        $(this).toggle($(this).find(".people_name a").text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+
+    // Sort function for people
+    $(".sort").click(function() {
+      var id = $(this).attr('id');
+      var sortClass = id.replace('sort-', '') + '-count';
+      var $people = $('.people');
+
+      $people.sort(function(a, b){
+        var an = parseInt($(a).find('.' + sortClass).text());
+        var bn = parseInt($(b).find('.' + sortClass).text());
+
+        if(an > bn) {
+          return -1;
+        }
+        if(an < bn) {
+          return 1;
+        }
+        return 0;
+      });
+
+      $people.detach().appendTo($(".container-lg"));
     });
   });
-});
 </script>
