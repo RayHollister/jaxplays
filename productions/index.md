@@ -8,7 +8,7 @@ layout: git-wiki-default
   <!-- Filter input -->
   <input class="form-control mb-3" id="productionFilter" type="text" placeholder="Search productions...">
   <!-- Productions -->
-  {% assign sorted_productions = site.productions | sort: 'year' | reverse %}
+  {% assign sorted_productions = site.productions | sort: 'opening_date' | reverse %}
   {% for production in sorted_productions %}
     <div class="row mb-2 productions align-items-center p-2" data-production-title="{{ production.title | downcase }}">
       <div class="col-lg-1 col-1 production_poster">
