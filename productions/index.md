@@ -59,7 +59,11 @@ layout: git-wiki-default
               {% if production.opening_date and production.closing_date %}
                 {{ production.opening_date | date: "%B %e" }} &mdash; {{ production.closing_date | date: "%B %e, %Y" }}
               {% elsif production.opening_date %}
-                {{ production.opening_date | date: "%B %e, %Y" }}
+                {% if production.opening_date.size == 7 %}
+                  {{ production.opening_date | append: "-01" | date: "%B %Y" }}
+                {% else %}
+                  {{ production.opening_date | date: "%B %e, %Y" }}
+                {% endif %}
               {% else %}
                 {{ production.year }}
               {% endif %}

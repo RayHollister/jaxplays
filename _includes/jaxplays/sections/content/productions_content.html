@@ -96,7 +96,13 @@
               {% if page.opening_date != nil and page.opening_date != "" %}
                 <tr>
                   <td class="leftcol">Opening Date</td>
-                  <td>{{ page.opening_date | date: "%B %-d, %Y" }}</td>
+                  <td>
+                    {% if page.opening_date.size == 7 %}
+                      {{ page.opening_date | append: "-01" | date: "%B %Y" }}
+                    {% else %}
+                      {{ page.opening_date | date: "%B %e, %Y" }}
+                    {% endif %}
+                  </td>
                 </tr>
                 {% if page.closing_date != nil and page.closing_date != "" %}
                 <tr>
