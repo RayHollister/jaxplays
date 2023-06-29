@@ -12,6 +12,11 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 <meta name="viewport" content="width=device-width">
+{% if page.robots %}
+  <meta name="robots" content="{{page.robots}}" />
+{% else %}
+  <meta name="robots" content="index, follow" />
+{% endif %}
 
 <!-- {{ page.title }} {% if page.collection == 'productions' %}@ {{ page.details.Theatre }}{% endif %} - {{ site.title }} -->
 

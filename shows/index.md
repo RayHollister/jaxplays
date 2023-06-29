@@ -1,6 +1,7 @@
 ---
 title: All Shows
 layout: git-wiki-default
+robots: noindex
 ---
 <h1>{{ page.title }}</h1>
 <ul>
