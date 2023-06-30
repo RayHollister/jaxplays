@@ -5,6 +5,8 @@ layout: git-wiki-default
 
 <h1>{{ page.title }}</h1>
 
+Welcome to your definitive guide to theatres in Jacksonville, Florida! Whether you're an ardent fan of the performing arts, searching for quality entertainment options in Jacksonville, or planning a special night out, our comprehensive list of Jacksonville theatres is here to assist you. We cover everything from high-energy Broadway plays and musicals right here in our city, to intimate community theatre performances. Discover drama and theatre in Jacksonville like never before, with details about the most engaging local playhouses and stunning concert venues. Don't miss out on the fantastic performances happening at Jacksonville's theatre venues, from musicals that will have you humming along, to drama that will leave you on the edge of your seat.
+
 {% assign all_theatres = '' | split: '' %}
 
 {% for production in site.productions %}
