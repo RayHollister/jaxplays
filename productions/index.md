@@ -30,12 +30,12 @@ layout: git-wiki-default
             <img src="/wiki/media/default/production_poster.png" alt="Default Production Image" class="img-fluid">
           {% endif %}
         </div>
-        <div class="col-lg-10 col-10">
+        <div class="col-lg-11 col-10">
           <div class="row">
-            <div class="col">
+            <div class="col-12 col-lg-6">
               <div class="d-flex flex-column justify-content-center h-100">
                 <div class="production_title">
-                  <a href="{{ production.url }}" class="text-truncate">
+                  <a href="{{ production.url }}" class="">
                     {% if production.title %}
                       {{ production.title }}
                     {% else %}
@@ -55,7 +55,7 @@ layout: git-wiki-default
                 </div>
               </div>
             </div>
-            <div class="col text-lg-end"> 
+            <div class="col-12 col-lg-6 text-lg-end"> 
               {% if production.opening_date and production.closing_date %}
                 {{ production.opening_date | date: "%B %e" }} &mdash; {{ production.closing_date | date: "%B %e, %Y" }}
               {% elsif production.opening_date %}

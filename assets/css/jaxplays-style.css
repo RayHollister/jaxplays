@@ -213,7 +213,7 @@ ul.post-list li {
 	display: block;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	white-space: nowrap;
+	/* white-space: nowrap; */
 }
 
 .production_poster,
