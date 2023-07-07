@@ -30,7 +30,7 @@ layout: git-wiki-default
             <img src="/wiki/media/default/production_poster.png" alt="Default Production Image" class="img-fluid">
           {% endif %}
         </div>
-        <div class="col-lg-11 col-10">
+        <div class="col-lg-11 col-8">
           <div class="row">
             <div class="col-12 col-lg-6">
               <div class="d-flex flex-column justify-content-center h-100">
@@ -57,17 +57,18 @@ layout: git-wiki-default
             </div>
             <div class="col-12 col-lg-6 text-lg-end"> 
               {% if production.opening_date and production.closing_date %}
-                {{ production.opening_date | date: "%B %e" }} &mdash; {{ production.closing_date | date: "%B %e, %Y" }}
+                {{ production.opening_date | date: "%m/%d/%Y" }} &mdash; {{ production.closing_date | date: "%m/%d/%Y" }}
               {% elsif production.opening_date %}
                 {% if production.opening_date.size == 7 %}
-                  {{ production.opening_date | append: "-01" | date: "%B %Y" }}
+                  {{ production.opening_date | append: "-01" | date: "%m/%d/%Y" }}
                 {% else %}
-                  {{ production.opening_date | date: "%B %e, %Y" }}
+                  {{ production.opening_date | date: "%m/%d/%Y" }}
                 {% endif %}
               {% else %}
                 {{ production.year }}
               {% endif %}
             </div>
+
           </div>
         </div>
       </div>
