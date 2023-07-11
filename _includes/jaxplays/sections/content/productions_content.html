@@ -15,13 +15,19 @@
 
     <div id="git-wiki-productions-content">
       <div class="showdescription">
-        <h1>{{page.title}}</h1>
-        
+
+        <h1>{{page.title}}
+          {% if page.cancelled == 'COVID-19' %}
+          - <i class="fa-solid fa-virus-covid" alt="Coronavirus icon"
+            title="This production was either cancelled, delayed or ended early due to the COVID-19 pandemic."></i>
+          {% endif %}
+        </h1>
+
         <!-- Get the details from the show  -->
 
         {% assign current_page_title = page.title %}
         {% assign show_page = nil %}
-        
+
         {% for p in site.shows %}
         {% if p.title == current_page_title %}
         {% assign show_page = p %}
@@ -29,14 +35,27 @@
         {% endif %}
         {% endfor %}
 
+        {% assign cancellation_class = "" %}
+        {% if page.cancelled != nil %}
+          {% assign cancellation_class = "cancelled" %}
+        {% endif %}
+        
         {% if show_page != nil %}
+        <div id="showdetails" class="{{ cancellation_class }}">
+          <h5>About the show:</h5>
           {{ show_page.content | markdownify }}
+        </div>
+        <div id="productiondetails" class="{{ cancellation_class }}">
+          <h5>About this production:</h5>
+          {{ content }}
+        </div>
+        {% else %}
+        <div id="productiondetails" class="{{ cancellation_class }}">
+          {{ content }}
+        </div>
         {% endif %}
 
-        {{ content }}
-        
       </div>
-
       <div class="sidebar">
         <div class="details">
           <h6>{{ page.title }}</h6>
@@ -44,9 +63,9 @@
           <div class="featured_image">
             {% if page.image %}
             {% capture alt_text %}
-              {% if page.image_alt %}{{ page.image_alt }}
-              {% else %}{{ page.title }}
-              {% endif %}
+            {% if page.image_alt %}{{ page.image_alt }}
+            {% else %}{{ page.title }}
+            {% endif %}
             {% endcapture %}
             <figure class="image">
 
@@ -84,7 +103,7 @@
               {% endif %}
             </figure>
             {% endif %}
-            
+
           </div>
 
           <h2 id="details">Details</h2>
@@ -92,24 +111,24 @@
             <tbody>
               {% assign current_year = 'now' | date: "%Y" | plus: 0 %}
               {% assign page_year = page.year | plus: 0 %}
-              
+
               {% if page.opening_date != nil and page.opening_date != "" %}
-                <tr>
-                  <td class="leftcol">Opening Date</td>
-                  <td>
-                    {% if page.opening_date.size == 7 %}
-                      {{ page.opening_date | append: "-01" | date: "%B %Y" }}
-                    {% else %}
-                      {{ page.opening_date | date: "%B %e, %Y" }}
-                    {% endif %}
-                  </td>
-                </tr>
-                {% if page.closing_date != nil and page.closing_date != "" %}
-                <tr>
-                  <td class="leftcol">Closing Date</td>
-                  <td>{{ page.closing_date | date: "%B %-d, %Y" }}</td>
-                </tr>
-                {% endif %}
+              <tr>
+                <td class="leftcol">Opening Date</td>
+                <td>
+                  {% if page.opening_date.size == 7 %}
+                  {{ page.opening_date | append: "-01" | date: "%B %Y" }}
+                  {% else %}
+                  {{ page.opening_date | date: "%B %e, %Y" }}
+                  {% endif %}
+                </td>
+              </tr>
+              {% if page.closing_date != nil and page.closing_date != "" %}
+              <tr>
+                <td class="leftcol">Closing Date</td>
+                <td>{{ page.closing_date | date: "%B %-d, %Y" }}</td>
+              </tr>
+              {% endif %}
               {% elsif page_year != current_year or page.showtimes == nil or page.showtimes == "" %}
               <tr>
                 <td class="leftcol">Year</td>
@@ -129,8 +148,9 @@
                   {% endif %}
                   {% for value in values %}
                   {% if value contains '- wiki' -%}
-                  <a target="_blank" href="{{site.wikipedia}}{{ value | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ value |
-                                    replace: ' - wiki', '' }}</a>
+                  <a target="_blank"
+                    href="{{site.wikipedia}}{{ value | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ value |
+                    replace: ' - wiki', '' }}</a>
                   {%- elsif detail[0] == 'Website'-%}
                   <a target="_blank" href="{{ value }}" targe="_blank">Official website</a>
                   {%- elsif detail[0] == 'Premiere' -%}
@@ -155,8 +175,9 @@
                   {% assign values = detail[1] | split: ', ' %}
                   {% for value in values %}
                   {% if value contains '- wiki' -%}
-                  <a target="_blank" href="{{site.wikipedia}}{{ value | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ value |
-                                    replace: ' - wiki', '' }}</a>
+                  <a target="_blank"
+                    href="{{site.wikipedia}}{{ value | replace: ' - wiki', '' | strip | replace: ' ', '_' }}">{{ value |
+                    replace: ' - wiki', '' }}</a>
                   {%- elsif detail[0] == 'Website' -%}
                   <a target="_blank" href="{{ value }}" targe="_blank">Production website</a>
                   {%- elsif detail[0] == 'Theatre' -%}
@@ -165,21 +186,22 @@
                   {%- elsif detail[0] == 'Venue' -%}
                   {% assign venue_name = value | strip %}
                   {% if theatre_name != venue_name %}
-                  <a target="_blank" href="/venues/{{ venue_name  | replace: '&', 'and' | slugify }}">{{ venue_name }}</a><br />
+                  <a target="_blank" href="/venues/{{ venue_name  | replace: '&', 'and' | slugify }}">{{ venue_name
+                    }}</a><br />
                   {% endif %}
                   {% for page in site.venues %}
-                    {% if page.layout == 'venues' and page.title==venue_name %}
-                      {% assign venue_address = page.details.Address %}
-                      {{ venue_address | newline_to_br }}
-                      <ul class="map_links">
-                        <li><a target="_blank"
-                            href="https://www.google.com/maps/search/?api=1&query={{ venue_address | uri_escape | replace: '%0A', '%20' }}">Google
-                            Maps</a></li>
-                        <li><a target="_blank"
-                            href="https://maps.apple.com/?q={{ venue_address | uri_escape | replace: '%0A', '%20' }}">Apple
-                            Maps</a></li>
-                      </ul>
-                    {% endif %}
+                  {% if page.layout == 'venues' and page.title==venue_name %}
+                  {% assign venue_address = page.details.Address %}
+                  {{ venue_address | newline_to_br }}
+                  <ul class="map_links">
+                    <li><a target="_blank"
+                        href="https://www.google.com/maps/search/?api=1&query={{ venue_address | uri_escape | replace: '%0A', '%20' }}">Google
+                        Maps</a></li>
+                    <li><a target="_blank"
+                        href="https://maps.apple.com/?q={{ venue_address | uri_escape | replace: '%0A', '%20' }}">Apple
+                        Maps</a></li>
+                  </ul>
+                  {% endif %}
                   {% endfor %}
                   {%- else -%}
                   {{ value | markdownify | strip | remove: ' <p>' | remove: '</p>' | remove: "\r" | remove: "\n" }}
@@ -187,7 +209,7 @@
                   {%- unless forloop.last -%}, {%- endunless %}
                   {% endfor %}
                 </td>
-              
+
               </tr>
               {% endif %}
               {% endfor %}
@@ -394,23 +416,23 @@
         {% endif %}
 
         {% assign total_credits = total_cast | plus: total_crew | plus: total_understudy | plus: total_orchestra %}
-        
+
         <p>
-        {% if total_cast > 0 %}
-        Cast: {{ total_cast }}&nbsp;
-        {% endif %}
-        {% if total_crew > 0 %}
-        Crew: {{ total_crew }}&nbsp;
-        {% endif %}
-        {% if total_understudy > 0 %}
-        Understudy: {{ total_understudy }}&nbsp;
-        {% endif %}
-        {% if total_orchestra > 0 %}
-        Orchestra: {{ total_orchestra }}&nbsp;
-        {% endif %}
-        {% if total_credits > 0 %}
-        Total: {{ total_credits }}
-        {% endif %}
+          {% if total_cast > 0 %}
+          Cast: {{ total_cast }}&nbsp;
+          {% endif %}
+          {% if total_crew > 0 %}
+          Crew: {{ total_crew }}&nbsp;
+          {% endif %}
+          {% if total_understudy > 0 %}
+          Understudy: {{ total_understudy }}&nbsp;
+          {% endif %}
+          {% if total_orchestra > 0 %}
+          Orchestra: {{ total_orchestra }}&nbsp;
+          {% endif %}
+          {% if total_credits > 0 %}
+          Total: {{ total_credits }}
+          {% endif %}
         </p>
 
 

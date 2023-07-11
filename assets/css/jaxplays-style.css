@@ -4,6 +4,7 @@
 	--body-font-color: #727272;
 	--caption-font-color: #949494;
 	--header-font-color: #393939;
+	--lightgray-background-color: rgba(128, 128, 128, 0.1);
 	--logo-font-family: "Montserrat";
 	--logo-font-weight: 900;
 }
@@ -67,7 +68,7 @@ table.productiondetails thead tr th {
 
 /* Add this for a gray background on the sidebar for all devices */
 .sidebar {
-	background-color: rgba(128, 128, 128, 0.1);
+	background-color: var(--lightgray-background-color);
 }
 
 .sidebar table td.leftcol {
@@ -279,6 +280,12 @@ ul.post-list li {
 		position: sticky;
 		top: 0;
 		overflow-y: auto;
+	}
+
+	#productiondetails.cancelled {
+    display: inline-block;
+    background-color: var(--lightgray-background-color);
+    padding: 1rem;
 	}
 
 	.cast,
