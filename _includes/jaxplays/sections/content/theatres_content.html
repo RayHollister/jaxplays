@@ -46,7 +46,20 @@
             {% assign key = detail[0] | downcase %}
             {% assign value = detail[1] %}
             {% if value != "" and value != nil %}
-            {% if key == 'address' %}
+            {% if key == 'founded' %}
+            <tr>
+              <td class="leftcol">Founded</td>
+              <td>
+                {% assign date_parts = value | split: "-" %}
+                {% if date_parts.size == 3 %}
+                  {% capture formatted_date %}{{ value | date: "%B %e, %Y" }}{% endcapture %}
+                {% else %}
+                  {% assign formatted_date = date_parts[0] %}
+                {% endif %}
+                {{ formatted_date }}
+              </td>
+            </tr>
+            {% elsif key == 'address' %}
             <tr>
               <td class="leftcol">Address</td>
               <td>
