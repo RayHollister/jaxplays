@@ -18,6 +18,13 @@
   <meta name="robots" content="index, follow" />
 {% endif %}
 
+<meta property="og:title" content="{{ page.title }}"/>
+<meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+<meta property="og:type" content="article">
+{% if page.image %}<meta property="og:image" content="{{ page.image }}"/>{% endif %}
+<meta property="og:site_name" content="{{ site.title }}"/>
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
+  
 <!-- {{ page.title }} {% if page.collection == 'productions' %}@ {{ page.details.Theatre }}{% endif %} - {{ site.title }} -->
 
 {% assign pagetitle = page.name | replace: ".md", "" %}
