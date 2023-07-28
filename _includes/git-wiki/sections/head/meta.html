@@ -21,21 +21,20 @@
 <meta property="og:title" content="{{ page.title }}"/>
 <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
 <meta property="og:type" content="article">
-
 {% if page.image %}
-  <meta property="og:image" content="
-    {% if page.layout == 'people' %}
-      /wiki/media/headshots/{{ page.image }}
-    {% elsif page.layout == 'productions' or page.layout == 'shows' %}
-      /wiki/media/posters/{{ page.image }}
-    {% elsif page.layout == 'theatres' or page.layout == 'venues' %}
-      /wiki/media/logos/{{ page.image }}
-    {% else %}
-      /wiki/media/photos/{{ page.image }}
-    {% endif %}
-  "/>
+  {% assign image_path = "" %}
+  {% if page.layout == 'people' %}
+    {% assign image_path = "/wiki/media/headshots/" | append: page.image %}
+  {% elsif page.layout == 'productions' or page.layout == 'shows' %}
+    {% assign image_path = "/wiki/media/posters/" | append: page.image %}
+  {% elsif page.layout == 'theatres' or page.layout == 'venues' %}
+    {% assign image_path = "/wiki/media/logos/" | append: page.image %}
+  {% else %}
+    {% assign image_path = "/wiki/media/photos/" | append: page.image %}
+  {% endif %}
+  {% assign full_url = site.url | append: image_path | strip %}
+  <meta property="og:image" content="{{ full_url }}"/>
 {% endif %}
-
 <meta property="og:site_name" content="{{ site.title }}"/>
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
   
