@@ -180,6 +180,8 @@
                     replace: ' - wiki', '' }}</a>
                   {%- elsif detail[0] == 'Website' -%}
                   <a target="_blank" href="{{ value }}" targe="_blank">Production website</a>
+                  {%- elsif detail[0] == 'Tickets' -%}
+                  <a target="_blank" href="{{ value }}" targe="_blank">Buy tickets</a>
                   {%- elsif detail[0] == 'Theatre' -%}
                   {% assign theatre_name = value | strip %}
                   <a target="_blank" href="/theatres/{{ value | replace: '&', 'and' | slugify }}">{{ value }}</a>
