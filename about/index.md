@@ -33,3 +33,7 @@ We welcome and value your input and expertise to help make JaxPlays a comprehens
 If you have any questions, comments or complaints, please visit my website and feel free to contact me on any of the platforms listed or email jaxplayswiki@gmail.com.
 
 {% include git-wiki/components/copyrights/copyrights.html %}
+
+**Disclaimer:** JaxPlays leverages the capabilities of OpenAI's ChatGPT for drafting articles and processing data. However, the human touch remains essential to us. Each piece is thoroughly reviewed, edited, and revised by our author to ensure it aligns with our standards and voice. We, at JaxPlays, take full responsibility for the content published on our platform.
+
+We strive for accuracy in all our publications. If you spot an error or misrepresentation of facts, we urge you to contact us at jaxplayswiki@gmail.com. Your input helps us maintain the highest level of accuracy and continually improve the quality of our content.
