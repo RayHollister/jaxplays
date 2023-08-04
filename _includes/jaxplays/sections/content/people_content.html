@@ -178,7 +178,7 @@
       {% assign sorted_productions = site.productions | sort: 'year' | reverse %}
       {% assign grouped_productions = sorted_productions | group_by: 'year' %}
       
-      {% assign sections = "cast|understudy|crew|orchestra" | split: "|" %}
+      {% assign sections = "cast|understudies|crew|orchestra" | split: "|" %}
       {% for section in sections %}
         {% for year_group in grouped_productions %}
           {% assign yearly_productions = year_group.items | sort: 'opening_date' | reverse %}
@@ -210,7 +210,7 @@
                   <h2>Cast credits</h2>
                   {% assign person_cast_credits = true %}
                 {% endif %}
-                {% if section == 'understudy' and person_understudy_credits == false %}
+                {% if section == 'understudies' and person_understudy_credits == false %}
                   <h2>Understudy credits</h2>
                   {% assign person_understudy_credits = true %}
                 {% endif %}
